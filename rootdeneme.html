@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+            --box-color:rgb(214, 235, 219);
+            --widht:50px;
+            --height:50px;
+            --margintop:10px;
+            --marginleft:10px;
+        }
+    .kutu1{
+        width: var(--widht);
+        height: var(--height);
+        margin-top: var(--margintop);
+        /*ekranın yukarısından boşluk */
+        margin-left: var(--marginleft);
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    .kutu1:hover{ 
+            background-color: green;
+        }
+    .kutu2{
+        width: var(--widht);
+        height: var(--height);
+        margin-top: var(--margintop);
+        /*ekranın yukarısından boşluk */
+        margin-left: var(--marginleft);
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    .kutu2:hover{ 
+            background-color: blue;
+        }
+    .kutu3{
+        width: var(--widht);
+        height: var(--height);
+        margin-top: var(--margintop);
+        /*ekranın yukarısından boşluk */
+        margin-left: var(--marginleft);
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    .kutu3:hover{ 
+            background-color: purple;
+        }
+</style>
+<body>
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+    <div class="kutu3"></div>
+</body>
+</html>

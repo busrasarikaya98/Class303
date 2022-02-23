@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .content{
+          background-color: rgb(186, 216, 79); 
+      }
+      /* BİRİNCİ YOL */
+      .content>div{
+       width: 100px;
+       height: 100px;
+       display: inline-block;   
+      }
+      /* display inline içeriği kadar yer kapla aşağı atar,inline block yanına atar
+      content>div contentin içerisindeki divler ortak özellikleri attık */
+      
+      /* İKİNCİ YOL */
+      /* .left,.right,.kutu3{
+       width: 100px;
+       height: 100px;
+       display: inline-block; 
+      } */
+      /* sadece left ve right için çalıştı */
+      .left{ 
+          background-color: #58c8cc;        
+      } 
+      .right{         
+          background-color: rgba(240, 82, 179, 0.849);   
+          float: right;
+          /* float bulunacağı yeri yazdırır 
+          padding ic bosluk mapping dıs bosluk */
+      }
+      .kutu3{
+          background-color: #cca758;
+      }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left">BUSRA</div>
+        <div class="right">SARIKAYA</div>
+        <div class="kutu3">DENEME</div>
+
+        <!--  -->
+    </div>
+</body>
+</html>
