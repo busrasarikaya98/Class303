@@ -1,0 +1,11 @@
+
+--SQL SORGU ÇEŞİTLERİ--
+
+select *from( select Employees.EmployeeID,Employees.FirstName,Employees.LastName,COUNT(*) as 'qty' from Employees
+inner join Orders on Employees.EmployeeID=Orders.EmployeeID group by Employees.EmployeeID,Employees.FirstName,Employees.LastName) tbl where tbl.qty>100
+
+--group bydan sonra where kullanılmaz having kullanılır
+--where kullanmak için select sorgusu içine tbl şeklinde tablo oluşturarak çekebiliriz
+
+select Employees.EmployeeID,FirstName,LastName,Orders.* from Employees inner join Orders on Employees.EmployeeID=Orders.OrderID
+--ordersın hepsini getirdi
