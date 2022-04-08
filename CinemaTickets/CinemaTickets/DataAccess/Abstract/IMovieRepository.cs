@@ -7,7 +7,9 @@ using WebApi.Models;
 
 namespace WebApi.DataAccess.Abstract
 {
-    interface IMovieRepository:IBaseRepository<Movie>
+    public interface IMovieRepository:IBaseRepository<Movie>
     {
-    }
+        List<Movie> GetAllByCinemaId(int cinemaId);
+        List<Movie> GetAllByTimeId (int timeId);
+}
 }

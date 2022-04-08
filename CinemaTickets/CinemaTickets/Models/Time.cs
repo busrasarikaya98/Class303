@@ -10,8 +10,15 @@ namespace WebApi.Models
     {
         public int Id { get; set; }
         public DateTime MovieTime { get; set; }
-        public int MovieId { get; set; }
-        public int CinemaId { get; set; }
 
+        public Time()
+        {
+
+        }
+        public Time(int id,DateTime movieTime)
+        {
+            Id = id;
+            MovieTime = movieTime;
+        }
     }
 }

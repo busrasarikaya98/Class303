@@ -22,11 +22,11 @@ namespace WebApi.Core.DataAccess.Concrete
             }
         }
 
-        public bool Delete(T model)
+        public bool DeleteById(int id)
         {
             using(var context=new CinemaTicketDbContext())
             {
-                var deletedModel = context.Entry(model);
+                var deletedModel = context.Entry(id);
                 deletedModel.State = EntityState.Deleted;
                 context.SaveChanges();
                 return true;

@@ -9,8 +9,13 @@ namespace WebApi.Models
 {
     public class Cinema:IModel
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        int IModel.Id { get; set; }
+        public Cinema() { }
+        public Cinema(int id,string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
 }
