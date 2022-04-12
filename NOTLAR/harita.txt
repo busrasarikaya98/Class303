@@ -1,0 +1,147 @@
+*bootstrapthemesden tema aldık
+-aspnetcorewebapimodel solutionu açtık adı googleapi
+-html klasörünü googleapide www.root içine attık
+-index.html koudunu yeni sharedda layout ekleyip içine attık
+-yeni layout ekle 
+-controllersa yeni controller googlecontroller
+-googlecontadaki index e tıklayıp view ekle bu viewda üç noktadan oluşturduğumuz templatelayoutu seçiyoruz
+-@RenderBody() kaç cont olursa olsun tek layouta gitme izni verir, inderx geldiğinde render bodye gider onun altındakini okur
+-js css düzeltmek için href linklerine dikkat et kendi projenle aynı olamlı
+-solutiona yeni proje aspnetcorewebapi mapsapi
+-mapste dökümanlarımız yer alacak
+*entityframework tutorial
+*linq solid prensipleri ile çalışır
+*jsonconvertc#
+*docker cubernetes
+-mapsapiye controller
+-controller a googlecontroller
+-controller isim soyisim şehir ilçe konumlar
+-google a google maps api arat buradan apiservices içinden apikey arat, ayarları:
+-google a kadıkoy lat long konum degerlerini verir
+<script>
+    function myMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(40.98867000000007, 29.02732000000003),
+            zoom: 15,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        const kadiköy = { lat: 40.98867000000007, lng: 29.02732000000003 };
+        const marker = new google.maps.Marker({
+            position: kadiköy,
+            map: map,
+        });
+
+    }
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNBu0FrB73tJMK4alGK1lXlvdwsg1v0kM&callback=myMap"></script>
+
+-models klasörü açıp içine bir sınıf burada neyin adresini veriyorsak onunla alakali bilgileri veriyoruz
+-bu sınıf için controller açıyoruz api denetleyicisi boş
+-get methodu ile list çağırma en doğrusu weatherforecastteki dep injection iledir
+[HttpGet]
+        public IList<Hotel>Get()
+        {
+            IList<Hotel> hotels = new List<Hotel>();
+            hotels.Add(new Hotel { Name = "Busra", HotelName = "Papatya", PhoneNumber = "+902168549756", lat = 40.98867000000007, log = 29.02732000000003 });
+            return hotels;
+
+        }
+
+
+
+public IList<Hotel>Get()
+        {
+            IList<Hotel> hotels = new List<Hotel>();
+            hotels.Add(new Hotel { Name = "Busra", HotelName = "Papatya", PhoneNumber = "+902168549756", lat = 40.98867000000007, log = 29.02732000000003 });
+            return hotels;
+            //veya new Hotel(içine bilgiler)
+        }
+
+
+
+
+-weatherforecast controller
+public IEnumerable<WeatherForecast> Get()
+        {
+            var rng = new Random();
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+
+
+
+private static readonly string[] Summaries = new[]
+        {
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
+
+
+-controllerda apiyi çağırıyoruz .netcore api çağırma
+ public class GoogleController : Controller
+    {
+        public async Task<IActionResult> Index()
+        {
+            var client = new HttpClient();
+            var responseMessage =await client.GetAsync("https://localhost:44326/api/Google");
+            //asenkron programlama her sunucu ayrı çalışır birden fazla api ayağa kalkarsa kontrol edilmesi çin kullanılır
+            //await asenkronu tanımlamak için kullanılan bir yapı
+            //jsontipine dönüştüreceğiz
+            //content içerik contenti async şeklinde oku
+            var jsonString = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<Hotels>>(jsonString);
+            //jsondan .net e deserializable
+            return View(values);           
+        }
+    }
+
+
+
+
+-harita noktaları iğne ile
+@using GoogleApi.Models
+@model List<Hotels>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+<div id="googleMap" style="width:100%; height:400px;"></div>
+<script>
+    function myMap() {
+        var a = new Array();
+        var a = [];
+        var b = new Array();
+        var b = [];
+        @foreach(var x in Model)
+         {
+                @:a.push(@x.lat.ToString());
+         }
+        @foreach(var x in Model)
+         {
+                @:b.push(@x.lng.ToString());
+         }
+        var mapProp = {
+            center: new google.maps.LatLng(40.98867000000007, 29.02732000000003),
+            zoom:1,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        for (var i = 0; i < a.length; i++) {
+            var data = a[i];
+            var data1 = b[i];
+            var marker = new google.maps.Marker({ position: { lat: data, lng: data1 }, map: map, });
+            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
+        }
+
+
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBT1ly4d7imB7Yy3W2vLnyMlWIv5gCcFI&callback=myMap"></script>
+
+

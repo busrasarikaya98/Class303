@@ -1,0 +1,524 @@
+--SENARYO
+create database BUSRAYAZILIM
+use BUSRAYAZILIM
+create table Calisanlar(
+CalisanID int primary key,
+AD varchar(10),
+SOYAD varchar(20),
+POZİSYON varchar(20),
+MAAS int
+)
+
+create table KisiselBilgiler(
+KisiID int primary key,
+AD varchar(10),
+SOYAD varchar(20),
+CİNSİYET varchar(20),
+YAŞ int,
+MEDENİHALİ varchar(10),
+)
+select*from KisiselBilgiler
+select*from Calisanlar
+
+select KisiselBilgiler.AD,KisiselBilgiler.SOYAD,KisiselBilgiler.CİNSİYET,KisiselBilgiler.YAŞ,KisiselBilgiler.MEDENİHALİ,Calisanlar.POZİSYON,Calisanlar.MAAS 
+from KisiselBilgiler
+inner join
+Calisanlar
+on 
+KisiselBilgiler.KisiID=Calisanlar.CalisanID 
+--SQL SORGULARI
+*
+begin transaction 
+update Calisanlar set MAAS=30000
+select * from Calisanlar 
+rollback --kalıcı olmuyor --veri koruyor
+*
+
+create trigger guncellenmez on calisanlar
+after update
+as begin
+if
+(exists(select*from inserted,deleted where inserted.CalisanID=deleted.CalisanID and inserted.maas!=deleted.maas))
+begin
+raiserror('MAAŞ DEĞİŞTİRİLEMEZ',1,1) --('hata mesajınız',error_severity,error_state) 
+--1 ile 10 arası bilg mesajı/11 ile 16 arası kullanıcı kaynaklı hatalar
+rollback transaction
+end
+end
+select*from Calisanlar where CalisanID=3
+update Calisanlar set MAAS=1000 where CalisanID=3
+
+*
+create trigger kayitsil on kisiselbilgiler
+after delete
+as
+begin
+declare @id int
+select @id =kisiID from KisiselBilgiler
+delete from Calisanlar where CalisanID=@id
+end
+delete from KisiselBilgiler where KisiID=4 --silinemez olduğunu gösterdim fk pk bağlı
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------3---------------------
+create function faktoriyel
+(@sayim int)
+returns bigint
+as
+begin
+declare @i int=1;
+while @sayim >1
+begin 
+set @i = @sayim*@i;
+set @sayim=@sayim-1;
+end
+return @i;
+end
+select dbo.faktoriyel(7)
+
+-------5-------------------
+use KİTAPLİK
+select top 1 *from kisiler order by newID()
+
+--------- 8----------------
+use SCHOOL
+create function kolonbirlestir(@kelime1 varchar(20),@kelime2 varchar(20)) 
+returns varchar(50)
+as
+begin
+return rtrim(@kelime1)+space(1)+rtrim(@kelime2) 
+end
+select dbo.kolonbirlestir(OgrAdi,OgrSoyadi) from Student 
+
+------------10---------
+create function mailyazdir(@kullanici varchar(20),@mail varchar(20))
+returns varchar(50)
+as
+begin
+return (@kullanici)+'@'+(@mail)
+end
+select dbo.mailyazdir('büşra','hotmail.com')
+
+-----------
+create procedure carpim
+(@a1 int, @a2 int, @a3 int,@sonuc int output) --degiskenler atadik
+as
+set @sonuc=@a1*@a2*@a3 --sonuc 
+print 'SONUC:' + cast(@sonuc as varchar(15)) --sonucu string yaptik --buraya kadar cek
+declare @m int --sonuc icin degisken tanimladik 
+exec carpim 5,8,7,@m output --sonra kalan kısım decalre ve exec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################################################################
+--------------2-----------------
+--TUR TABLOSUNDA GUNCELLEME TARIHI KOLONU EKLE GUNCELLEME YAPILDIGINDA TARİHİ YAZSIN
+create trigger gunceltarih on Tur
+for update
+as
+begin
+update Tur set guncellemetarihi=getdate(); from Tur inner join deleted d on tur.ID=deleted.ID
+end
+
+----------3---------------------
+--PARAMETRE OLARAK GİRİLEN SAYININ FAKTÖRİYELİNİ HESAPLAYAN STORED PROCEDURE
+create procedure faktoriyelhesapla(@sayi int)
+as 
+begin
+declare @i int = 1,@deger int=1 --0 olmamalı
+while (@i<=@sayi ) --i sayıya eşit olana kadar döndürsün
+begin --ic dongu
+	Set @deger= @deger* @i
+	Set @i += 1 --1den başlasın     
+end
+select @deger
+end
+execute faktoriyelhesapla 5
+
+
+-----------4-------------------
+--PARAMETRE OLARAK GİRİLEN İKİ SAYININ BİRBİRİNE BÖLÜMNDEN SONUCU VE KALANI OUTPUT PARAMETRESİ İLE DÖNDÜREN STORED PROCEDURE
+Create Procedure BolmeHesapla(@sayi1 int,@sayi2 int,@bolum int output,@kalan int output) 
+as
+begin
+set @bolum = 0
+set @kalan=0
+while(@sayi2<=@sayi1)
+begin
+set @sayi1 = @sayi1-@sayi2
+set @bolum+=1
+end
+set @kalan = @sayi1
+end
+
+declare @d int,@r int
+execute BolmeHesapla 50,8,@d output,@r output
+select @d bolum,@r kalan
+
+
+------------5-------------------
+--KİTAPLIK TDATABASE KİSİLER TABLOSUNDAN RASTGELE VERİ LİSTELEME
+use KİTAPLİK
+select top 1 *from kisiler order by newID()
+
+
+-----------6--------------------
+--PARAMETRE OLARAK BELİRTİLEN SAYININ YİNE PARAMETRE OLARAK VERİLEN KUVVETİNİ HESAPLATAN STORED PROCEDURE
+create Procedure kuvvethesapla(@taban int,@us int, @deger int output) 
+as
+begin 
+declare @i int = 0;
+set @deger= 1
+while(@i<@us) --i us e esitlenene kadar dongu devam edecek
+begin
+set @deger= @deger* @taban --sonuc birden baslayıp artacak en sonunda us ile aynı degerde olunca duracak
+set @i += 1 --i her carpmada atacak
+end
+end
+declare @c int --output a deger ataması
+execute kuvvethesapla 2,8,@c output
+select @c deger
+
+
+-------------7---------------------
+--PARAMETRE İLE BELİRTİLEN İKİ SAYI ARASINDA YİNE PARAMETRE İLE BELİRTİLEN SAYI KADAR BİRBİRİNDEN FARKLI SAYILAR LİSTELEYEN PROCEDURE
+create procedure rastgelelistele(@miktar int,@min int,@max int)
+as 
+begin
+declare @sayilar table(number int)
+declare @i int = 0
+declare @sayi int
+while (@i<@miktar)
+begin
+set @sayi= floor(rand()*(@max-@min+1))+@min
+if(not exists(Select * from @sayilar where number = @sayi))
+begin
+insert into @sayilar values(@sayi)
+set @i = @i + 1 
+end
+end
+select * from @sayilar order by 1
+end
+execute rastgelelistele 5,20,30
+
+
+----------------8---------------------
+--STUDENT TABLE ÖĞRENCİ ADI VE SOYADINI TEK BİR KOLONDA BİRLEŞTİRME
+use SCHOOL
+create function kolonbirlestir(@kelime1 varchar(20),@kelime2 varchar(20)) 
+returns varchar(50)
+as
+begin
+return rtrim(@kelime1)+space(1)+rtrim(@kelime2) 
+end
+select dbo.kolonbirlestir(OgrAdi,OgrSoyadi) from Student 
+
+
+
+
+--------------9---------------------------
+--YAZILIM ŞİRKETİ VERİTABANI FK PK VE SORGULAR
+create database BUSRAYAZILIM
+use BUSRAYAZILIM
+create table Calisanlar(
+CalisanID int primary key,
+AD varchar(10),
+SOYAD varchar(20),
+POZİSYON varchar(20),
+MAAS int
+)
+
+create table KisiselBilgiler(
+KisiID int primary key,
+AD varchar(10),
+SOYAD varchar(20),
+CİNSİYET varchar(20),
+YAŞ int,
+MEDENİHALİ varchar(10),
+)
+select*from KisiselBilgiler
+select*from Calisanlar
+
+select KisiselBilgiler.AD,KisiselBilgiler.SOYAD,KisiselBilgiler.CİNSİYET,KisiselBilgiler.YAŞ,KisiselBilgiler.MEDENİHALİ,Calisanlar.POZİSYON,Calisanlar.MAAS 
+from KisiselBilgiler
+inner join
+Calisanlar
+on 
+KisiselBilgiler.KisiID=Calisanlar.CalisanID 
+--SQL SORGULARI
+*
+begin transaction 
+update Calisanlar set MAAS=30000
+select * from Calisanlar 
+rollback --kalıcı olmuyor --veri koruyor
+*
+
+create trigger guncellenmez on calisanlar
+after update
+as begin
+if
+(exists(select*from inserted,deleted where inserted.CalisanID=deleted.CalisanID and inserted.maas!=deleted.maas))
+begin
+raiserror('MAAŞ DEĞİŞTİRİLEMEZ',1,1) --('hata mesajınız',error_severity,error_state) 
+--1 ile 10 arası bilg mesajı/11 ile 16 arası kullanıcı kaynaklı hatalar
+rollback transaction
+end
+end
+select*from Calisanlar where CalisanID=3
+update Calisanlar set MAAS=1000 where CalisanID=3
+
+*
+create trigger kayitsil on kisiselbilgiler
+after delete
+as
+begin
+declare @id int
+select @id =kisiID from KisiselBilgiler
+delete from Calisanlar where CalisanID=@id
+end
+delete from KisiselBilgiler where KisiID=4 --silinemez olduğunu gösterdim fk pk bağlı
+
+
+------------------10----------------
+--GÖNDERİLEN PARAMETREYE GÖRE MAİL ADRESİ OLUŞTURAN 
+create function mailyazdir(@kullanici varchar(20),@mail varchar(20))
+returns varchar(50)
+as
+begin
+return (@kullanici)+'@'+(@mail)
+end
+select dbo.mailyazdir('büşra','hotmail.com')
+
+
+
+------------------11-----------------
+//C# FORM IMAGELIST ILE ZAR ATMA OYUNU
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button1.Enabled = false;
+        }
+        int sayac = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int zar1, zar2;
+            Random rnd = new Random();
+            zar1 = rnd.Next(0, 6); //0 dahil 6 değil 6 indexten birini tutacak yani 6 fotodan birini
+            zar2 = rnd.Next(0, 6);
+            pictureBox1.Image = ımageList1.Images[zar1];
+            pictureBox2.Image = ımageList1.Images[zar2];
+            sayac++;
+            if (sayac == 10)
+            {
+                timer1.Stop();
+                sayac = 0;
+                button1.Enabled = true;
+            }
+        }
+    }
+}
+
+
+
+----------------------------12---------------------------
+--DİNAMİK SATRANÇ TAHTASI OLUŞTUR 
+
+namespace SATRANÇ
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Text = "Satranç Tahtası";
+            Button[,] button = new Button[8, 8];
+            int top = 0;
+            int left = 0;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    button[i, j] = new Button();
+                    button[i, j].Width = 40;
+                    button[i, j].Height = 40;
+                    button[i, j].Left = left;
+                    button[i, j].Top = top;
+                    this.Controls.Add(button[i, j]);
+                    left += 40;
+                    if ((i + j) % 2 == 0)
+                    {
+                        button[i, j].BackColor = Color.White;
+                    }
+                    else
+                    {
+                        button[i, j].BackColor = Color.Black;
+                    }
+                }
+                top += 40;
+                left = 0;
+            }
+        }
+    }
+}
+
+
+--------------------15-----------------------
+//0 İLE 10 ARASINDAKİ SAYILARI İF İLE YAZDIRMA
+//for (int i = 0; i <= 100; i++)
+//{
+//    if (i<=10)
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
+//Console.ReadLine();
+
+
+
+
+
+--------------------16---------------------------
+//KULLANICI ADI VE PAROLASI DOĞRU İSE GİRİŞ BAŞARILI OLSUN
+//string kullaniciadi, sifre;
+//Console.WriteLine("kullanici adini giriniz:");
+//kullaniciadi = Console.ReadLine();
+//Console.WriteLine("sifrenizi giriniz:");
+//sifre = Console.ReadLine();
+//if (kullaniciadi == "busra" && sifre == "12345") 
+//Console.WriteLine("Giriş Başarılı");
+//else
+//Console.WriteLine("Giriş Başarısız");
+//Console.ReadLine();
+
+
+
+
+-------------------17----------------------------------
+//HARF GİREREK KELİME TAHMİN ETME
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        string[] kelimeler = { "MERVE", "BÜŞRA", "MELİSA", "ÇİSEM","MİRAYET" };
+//        string secilenKelime;
+//        int hak = 5;
+//        Random rnd = new Random();
+//        secilenKelime = kelimeler[rnd.Next(0, kelimeler.Length - 1)];
+//        char[] yertutucu = new char[secilenKelime.Length];
+
+//        for (int i = 0; i < yertutucu.Length; i++)
+//        {
+//            yertutucu[i] = '-';
+//            Console.Write('-');
+//        }
+//        Console.WriteLine();
+
+//        while (true)
+//        {
+
+//            Console.WriteLine("Kalan Hak:{0}", hak);
+//            Console.Write("Bir harf girin   :");
+//            char harf = Convert.ToChar(Console.ReadLine());
+
+//            bool bayrak = false;
+//            int kalanKelime = 0;
+//            for (int i = 0; i < secilenKelime.Length; i++)
+//            {
+//                if (secilenKelime[i] == harf)
+//                {
+//                    yertutucu[i] = harf;
+//                    bayrak = true;
+//                }
+//                if (yertutucu[i] == '-')
+//                {
+//                    kalanKelime++;
+//                }
+//                Console.Write(yertutucu[i]);
+//            }
+//            Console.WriteLine();
+
+//            if (kalanKelime == 0)
+//            {
+//                Console.WriteLine("Tebrikler...");
+//                break;
+//            }
+
+//            if (bayrak == false)
+//            {
+//                hak--;
+//            }
+
+//            if (hak == 0)
+//            {
+//                Console.WriteLine("Üzgünüm kaybettiniz.");
+//                break;
+//            }
+
+//            Console.WriteLine("******************");
+//        }
+
+//        Console.Write("Seçtiğim kelime << {0} >>", secilenKelime);
+//        Console.ReadLine();
+//    }
+//}

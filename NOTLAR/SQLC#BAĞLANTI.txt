@@ -1,0 +1,1076 @@
+############################################################# 14.02.2022 SQL C# BAĞLANTI ###############################################################################
+
+
+#############################################################          ADO.NET            ###############################################################################
+namespace _14022022_adonetgiris
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection();
+            baglanti.ConnectionString = "Server=LocalHost;Database=KuzeyYeli;user=sa;password=12345";
+            //baglanti.ConnectionString = "Server=LocalHost;Database=KuzeyYeli;Integrated Security=true" windows auth için
+
+            //CONNECTED MİMARİ open - execute - close
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "select*from Urunler"; //komutumuz bu
+            komut.Connection = baglanti;
+            baglanti.Open(); //connect açık //bağlantı tanımladıktan sonra her yerde yazılabilir
+            SqlDataReader rdr= komut.ExecuteReader(); //komutu execute et
+            while(rdr.Read()) //okuyabildiğin sürece dön
+            {
+               string ad= rdr["urunAdi"].ToString(); //hangi kolonu yazdırmak istiyoruz
+               string fiyat = rdr["Fiyat"].ToString(); //kolon
+               string stok = rdr["Stok"].ToString();
+               listBox1.Items.Add(string.Format("{0}---{1}---{2}", ad, fiyat, stok));
+            }
+            baglanti.Close();
+
+            SqlCommand komut2 = new SqlCommand();
+            komut2.CommandText = "select*from Kategoriler";
+            komut2.Connection = baglanti;
+            baglanti.Open();
+            SqlDataReader rdr2 = komut2.ExecuteReader();
+            while (rdr2.Read())
+            {
+                string kategoriad = rdr2["KategoriAdi"].ToString();
+                string tanim = rdr2["Tanimi"].ToString();
+                listBox2.Items.Add(string.Format("{0}---{1}", kategoriad, tanim));
+            }
+            baglanti.Close();
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------
+--formun ortada açılması için start position center screen
+--formun boyutu aynı kalması için form border style fixedtoolwindow
+
+namespace _14022022_adonetgiris
+{
+    public partial class Urunler : Form
+    {
+        public Urunler()
+        {
+            InitializeComponent();
+        }
+        SqlConnection baglanti = new SqlConnection("Server=LocalHost;Database=KuzeyYeli;user=sa;password=12345"); //baglanti kodumuz
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            //EKLEME YAPINCA TABLO REFRESH OLSUN !!!!! ONEMLI !!!!!
+            UrunListele(); //formloadtaki kodları crtl nokta yapıp method oluşturduk her eklemede direkt ekleme yapıp yenilemesi için
+        }
+
+        private void UrunListele()
+        {
+            //DISCONNECTED MİMARİ yalnızca select sorgularında çalışır
+            SqlDataAdapter adp = new SqlDataAdapter("select*from urunler", baglanti); //sqldataadp nesnesi ürettik bu nesne bağlantıyı open execute close edecek
+            DataTable dt = new DataTable(); //datagridview kullandığımız için tablo gerekli
+            adp.Fill(dt); //adaptördeki bilgiyi data table a doldur
+            dataGridView1.DataSource = dt; //datagridview ı da bununla doldur
+            //gereksiz kolonları görmek istemezsek
+            dataGridView1.Columns["urunID"].Visible = false; //bu kolonları bu şekilde görünmez yaparız
+            dataGridView1.Columns["kategoriID"].Visible = false;
+            dataGridView1.Columns["tedarikciID"].Visible = false;
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand(); //yeni metot
+            string urunad = txtUrunAdi.Text; //burada tanımladık
+            decimal fiyat = NudFiyat.Value; //eklemeleri yaptırıyoruz kullanıcıya
+            decimal stok = nudStok.Value;
+            komut.CommandText = string.Format("insert urunler(urunadi,fiyat,stok) values('{0}',{1},{2})", urunad, fiyat, stok);
+            komut.Connection = baglanti;
+            baglanti.Open();
+            int sonuc=komut.ExecuteNonQuery(); //execute edip bağlantıyı kapat
+            if (sonuc > 0) 
+            {
+                MessageBox.Show("KAYIT BAŞARILI ŞEKİLDE EKLENDİ."); //HER EKLEMEDE ÇALIŞIR
+                UrunListele();
+            }
+            else
+                MessageBox.Show("KAYIT EKLEME SIRASINDA HATA OLUŞTU"); //BAĞLANTI KOPUKLUĞU VS DURUMLARINDA
+            baglanti.Close();       
+        }
+
+        private void btn_kategori_Click(object sender, EventArgs e)
+        {
+            kategoriler k = new kategoriler();
+            k.Show();
+        }
+    }
+}
+
+-----
+
+
+namespace _14022022_adonetgiris
+{
+    public partial class kategoriler : Form
+    {
+        public kategoriler()
+        {
+            InitializeComponent();
+        }
+        SqlConnection baglanti1 = new SqlConnection("Server=LocalHost;Database=KuzeyYeli;user=sa;password=12345"); //baglanti kodumuz
+        private void kategoriler_Load(object sender, EventArgs e)
+        {
+            KategoriListele(); //formda sağ tıklayıp method haline getirdik
+        }
+
+        private void KategoriListele()
+        {
+            //DISCONNECTED MİMARİ yalnızca select sorgularında çalışır
+            SqlDataAdapter adpt = new SqlDataAdapter("select*from kategoriler", baglanti1); //sqldataadp nesnesi ürettik bu nesne bağlantıyı open execute close edecek
+            DataTable dtb = new DataTable(); //datagridview kullandığımız için tablo gerekli
+            adpt.Fill(dtb); //adaptördeki bilgiyi data table a doldur
+            dataGridView1.DataSource = dtb; //datagridview ı da bununla doldur
+            //gereksiz kolonları görmek istemezsek
+            dataGridView1.Columns["kategoriID"].Visible = false; //bu kolonları bu şekilde görünmez yaparız
+            dataGridView1.Columns["resim"].Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand(); //yeni metot
+            string kategoriadi = textBox1.Text; //burada tanımladık
+            string tanim = textBox2.Text; //eklemeleri yaptırıyoruz kullanıcıya
+            komut.CommandText = string.Format("insert Kategoriler(KategoriAdi,Tanimi) values('{0}','{1}')", kategoriadi,tanim);
+            komut.Connection = baglanti1; //connect mimari
+            baglanti1.Open();
+            int sonuc1 = komut.ExecuteNonQuery(); //execute edip bağlantıyı kapat
+            if (sonuc1 > 0)
+            {
+                MessageBox.Show("KAYIT BAŞARILI ŞEKİLDE EKLENDİ."); //HER EKLEMEDE ÇALIŞIR
+                KategoriListele();
+            }
+            else
+                MessageBox.Show("KAYIT EKLEME SIRASINDA HATA OLUŞTU"); //BAĞLANTI KOPUKLUĞU VS DURUMLARINDA
+            baglanti1.Close();
+        }
+    }
+}
+
+
+------------------------------------------------------------------------------------------------------
+**C# FORM İLE VERTİTABINA FOTO EKLEME
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        string resimPath;
+        private void button1_Click(object sender, EventArgs e) --ekle
+        {
+            openFileDialog1.Title = "Resim Aç";
+            openFileDialog1.Filter = "Jpeg Dosyası(*.jpg)|*.jpg|Gif Dosyası(*.gif)|Png Dosyası(*.png)";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+                resimPath = openFileDialog1.FileName.ToString();
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e) --kaydet
+        {
+            //resmimizi filestream metoduyla okuma moduna açıyoruz
+            FileStream fs = new FileStream(resimPath, FileMode.Open, FileAccess.Read);
+            BinaryReader br = new BinaryReader(fs);
+            byte[] resim = br.ReadBytes((int)fs.Length);
+            br.Close();
+            fs.Close();
+            //sql connection ve kayıt işlemi
+            SqlConnection bag = new SqlConnection(@"Data Source = DESKTOP-M1LC3HT; Initial Catalog = HEPSIBIZDE; Integrated Security = True");
+            SqlCommand kmt = new SqlCommand("insert into Resim(Resim)values(@image)", bag);
+            kmt.Parameters.Add("@image", SqlDbType.Image, resim.Length).Value = resim;
+            try
+            {
+                bag.Open();
+                kmt.ExecuteNonQuery();
+                MessageBox.Show("VERİTABANINA KAYIT YAPILDI!!");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+    ;       }
+            finally
+            {
+                bag.Close();
+            }
+        }
+    }
+}
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+############################################################## 15.02.2022 ###########################################################
+
+
+namespace _14022022_adonetgiris
+{
+    public partial class Urunler : Form
+    {
+        public Urunler()
+        {
+            InitializeComponent();
+        }
+        SqlConnection baglanti = new SqlConnection("Server=LocalHost;Database=KuzeyYeli;user=sa;password=12345"); //baglanti kodumuz
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            //EKLEME YAPINCA TABLO REFRESH OLSUN !!!!! ONEMLI !!!!!
+            UrunListele(); //formloadtaki kodları crtl nokta yapıp method oluşturduk her eklemede direkt ekleme yapıp yenilemesi için
+        }
+
+        private void UrunListele()
+        {
+            //DISCONNECTED MİMARİ yalnızca select sorgularında çalışır
+            SqlDataAdapter adp = new SqlDataAdapter("select*from urunler", baglanti); //sqldataadp nesnesi ürettik bu nesne bağlantıyı open execute close edecek
+            DataTable dt = new DataTable(); //datagridview kullandığımız için tablo gerekli
+            adp.Fill(dt); //adaptördeki bilgiyi data table a doldur
+            dataGridView1.DataSource = dt; //datagridview ı da bununla doldur
+            //gereksiz kolonları görmek istemezsek
+            dataGridView1.Columns["urunID"].Visible = false; //bu kolonları bu şekilde görünmez yaparız
+            dataGridView1.Columns["kategoriID"].Visible = false;
+            dataGridView1.Columns["tedarikciID"].Visible = false;
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand(); //yeni metot
+            string urunad = txtUrunAdi.Text; //burada tanımladık
+            decimal fiyat = NudFiyat.Value; //eklemeleri yaptırıyoruz kullanıcıya
+            decimal stok = nudStok.Value; //numeric up down
+            komut.Connection = baglanti;
+            //komut.CommandText = string.Format("insert urunler(urunadi,fiyat,stok) values('{0}',{1},{2})", urunad, fiyat, stok); EKLEME YÖNTEMİ
+            //VEYA DAHA GÜVENLİ BAĞLANTI İÇİN DATABASEI KORUMAK İÇİN xxx,1,1) drop database--
+            komut.CommandText = "insert Urunler (UrunAdi,Fiyat,Stok) values (@urunadi,@fiyat,@stok)"; //PARAMETRE İLE ALDIK
+            komut.Parameters.AddWithValue("@urunadi", txtUrunAdi.Text);
+            komut.Parameters.AddWithValue("@fiyat", NudFiyat.Value);
+            komut.Parameters.AddWithValue("@stok", nudStok.Value);
+            baglanti.Open();
+            int sonuc=komut.ExecuteNonQuery(); //execute edip bağlantıyı kapat
+            if (sonuc > 0) 
+            {
+                MessageBox.Show("KAYIT BAŞARILI ŞEKİLDE EKLENDİ."); //HER EKLEMEDE ÇALIŞIR
+                UrunListele();
+            }
+            else
+                MessageBox.Show("KAYIT EKLEME SIRASINDA HATA OLUŞTU"); //BAĞLANTI KOPUKLUĞU VS DURUMLARINDA
+            baglanti.Close();       
+        }
+
+        private void btn_kategori_Click(object sender, EventArgs e)
+        {
+            kategoriler k = new kategoriler();
+            k.Show(); //diğer forma geçiş
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e) //seçili veriyi textlerde yazdırma
+        {
+            //tıkladığımız butonlar yukarıda text butonlarında gözüksün istersek
+            txtUrunAdi.Text = dataGridView1.CurrentRow.Cells
+                ["UrunAdi"].Value.ToString();
+            NudFiyat.Value = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["Fiyat"].Value);
+            nudStok.Value = (short)dataGridView1.CurrentRow.Cells["Stok"].Value;
+            txtUrunAdi.Tag = dataGridView1.CurrentRow.Cells["UrunID"].Value; //tag görünmeyen kısımda tutuyor
+        }
+
+        private void btnguncelle_Click(object sender, EventArgs e) //güncelleme butonu
+        {
+            NudFiyat.Text = NudFiyat.Text.Replace(',', '.');
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = string.Format("update Urunler set UrunAdi='{0}',Fiyat={1},Stok={2} where UrunID={3}"
+                , txtUrunAdi.Text, Convert.ToDecimal(NudFiyat.Text), nudStok.Text,txtUrunAdi.Tag); //arkada calisan veri tag görünürde yok
+            komut.Connection = baglanti;
+            baglanti.Open();
+            int sonuc=komut.ExecuteNonQuery();
+            if (sonuc > 0)
+            {
+                MessageBox.Show("KAYIT GÜNCELLENDİ");
+                UrunListele();
+            }
+            else
+                MessageBox.Show("KAYIT GÜNCELLEME BAŞARISIZ");
+            baglanti.Close();
+            UrunListele();
+        }
+
+        private void sİLToolStripMenuItem_Click(object sender, EventArgs e) //verinin üstünde sağ tıkla yapınca çıkıyor silme komutu
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["UrunID"].Value);
+            SqlCommand komut = new SqlCommand(string.Format("delete Urunler where UrunID={0}",id),baglanti); //bu sekilde tek satırda da yazabiliriz
+            baglanti.Open();
+            int sonuc = komut.ExecuteNonQuery();
+            
+            if (sonuc > 0)
+            {
+                MessageBox.Show("KAYIT SİLİNDİ");
+                UrunListele();
+            }
+            else
+                MessageBox.Show("KAYIT SİLME BAŞARISIZ");
+            baglanti.Close();
+        }
+
+        private void btnSPekle_Click(object sender, EventArgs e) //sqlde store procedure olusturduk store procedure ile ekleme yapıyoruz
+        {
+            SqlCommand komut = new SqlCommand("UrunEkle",baglanti); //yeni komut
+            komut.CommandType = CommandType.StoredProcedure; //sp ile iliskilendirdik
+            komut.Parameters.AddWithValue("@ad", txtUrunAdi.Text); //girilen verileri iliskilendir
+            komut.Parameters.AddWithValue("@fiyat", NudFiyat.Value);
+            komut.Parameters.AddWithValue("@stok", nudStok.Value);
+            baglanti.Open();
+            int sonuc =komut.ExecuteNonQuery();
+            if (sonuc > 0)
+            {
+                MessageBox.Show("KAYIT BAŞARILI ŞEKİLDE EKLENDİ."); //HER EKLEMEDE ÇALIŞIR
+                UrunListele();
+            }
+            else
+                MessageBox.Show("KAYIT EKLEME SIRASINDA HATA OLUŞTU"); //BAĞLANTI KOPUKLUĞU VS DURUMLARINDA
+            baglanti.Close();
+        }
+
+        private void btnSPguncelle_Click(object sender, EventArgs e) //sp ile guncelleme yapalim
+        {
+            SqlCommand komut = new SqlCommand("UrunGuncelle", baglanti); //sp ile iliskilendirdik
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.Parameters.AddWithValue("@id", txtUrunAdi.Tag);
+            komut.Parameters.AddWithValue("@ad", txtUrunAdi.Text); //girilen verileri iliskilendir
+            komut.Parameters.AddWithValue("@fiyat", NudFiyat.Value);
+            komut.Parameters.AddWithValue("@stok", nudStok.Value);
+            baglanti.Open();
+            int sonuc = komut.ExecuteNonQuery();
+            if (sonuc > 0)
+            {
+                MessageBox.Show("KAYIT BAŞARILI ŞEKİLDE GÜNCELLENDİ."); 
+                UrunListele();
+            }
+            else
+                MessageBox.Show("GÜNCELLEME SIRASINDA HATA OLUŞTU"); 
+            baglanti.Close();
+        }
+    }
+}
+
+
+create proc UrunEkle
+@ad nvarchar(50),
+@fiyat money,
+@stok smallint
+as
+insert into Urunler(UrunAdi,Fiyat,Stok) values(@ad,@fiyat,@stok)
+go
+create proc UrunGuncelle 
+@id int,
+@ad nvarchar(50),
+@fiyat money,
+@stok smallint
+as
+update Urunler set UrunAdi=@ad,Fiyat=@fiyat,Stok=@stok where UrunID=@id
+
+
+
+create trigger silmemeliyim on OGRETMEN
+after delete
+as
+begin
+if(exists(select*from deleted where deleted.OgrAd=ISNULL))
+begin
+raiserror('Silme Yapılamaz',15,1) 
+rollback transaction
+end
+
+insert into OGRETMEN(silindi) values(1)
+
+
+###################################################### 16.02.2022 ##################################################################
+
+--store procedure ile sildirdik --urunler tablosu --kuzeyyeli
+ private void sİLToolStripMenuItem_Click(object sender, EventArgs e) //verinin üstünde sağ tıkla yapınca çıkıyor silme komutu
+            //datagridwiev in context menusunu aktiflestirdik!!!!!!!!!!!!!! veri gelmesi icin
+        {
+            
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["UrunID"].Value);
+            /*if (dataGridView1.CurrentRow.SetValues().ToString() != null)*/ //tıklama yapmadan silmeye çalışılırsa silme hatası versin
+            
+                /* SqlCommand komut = new SqlCommand(string.Format("delete Urunler where UrunID={0}",id),baglanti);*/ //bu sekilde tek satırda da yazabiliriz
+
+
+
+                //VEYA PROCEDURE ILE SILDIREBILIRIZ //DAHA GÜVENLİ
+                SqlCommand komut = new SqlCommand("UrunSil", baglanti);
+                komut.CommandType = CommandType.StoredProcedure;
+                komut.Parameters.AddWithValue("@id", id); //or ,txtUrunAdi.tag
+
+                baglanti.Open();
+                int sonuc = komut.ExecuteNonQuery();
+
+                if (sonuc > 0)
+                {
+                    MessageBox.Show("KAYIT SİLİNDİ :(");
+                    UrunListele();
+                }
+                else
+                    MessageBox.Show("KAYIT SİLME BAŞARISIZ :(");
+            baglanti.Close();
+            
+        }
+
+
+
+------------------------------------------------------------------------------------------------
+**TELEFON REHBERİ
+*SQL
+
+create database TelefonRehberi
+create table Kullanici
+(KullaniciID uniqueidentifier primary key,
+KullaniciAdi nvarchar(20)  unique,
+Sifre nvarchar(20) not null
+)
+insert into Kullanici values(newid(),'Demo','Demo') --newid key olusturmayı sağlar
+Alter table Rehber
+(ID int primary key identity(1,1),
+Isim nvarchar(30) not null,
+Soyisim nvarchar(30) not null,
+Telefon1 nvarchar(12),
+Telefon2 nvarchar(12),
+Email nvarchar(30),
+WebAdres nvarchar(100),
+Aciklama nvarchar(100),
+)
+select*from rehber
+create proc RehberEkle(
+@Isim nvarchar(30) ,
+@Soyisim nvarchar(30) ,
+@Telefon1 nvarchar(12),
+@Telefon2 nvarchar(12),
+@Email nvarchar(30),
+@WebAdres nvarchar(100),
+@Aciklama nvarchar(100)
+)
+as
+insert Rehber values(@Isim,@Soyisim,@Telefon1,@Telefon2,@Email,@WebAdres,@Aciklama)
+
+
+-----------
+*VISUAL
+-view taborder sekmeli geçiş 0-1-2-3 tablı geçişi sağlıyor
+
+--KULLANICI ADI ŞİFRE FORMU
+
+namespace _16022022_TelefonRehberi
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        SqlConnection baglanti = new SqlConnection("server=localhost;database=TelefonRehberi;user=sa;password=12345");
+        private void btbGiris_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("select count(*) from Kullanici where KullaniciAdi = @ad and Sifre=@sifre",baglanti); 
+            //kullanıcı adı ve sifremizi sqlden alıyoruz sqlde varsa giris yapabiliriz
+            komut.Parameters.AddWithValue("@ad", txtKulAd.Text); //sql eslesmelerimizi textboxla eslestiriyoruz
+            komut.Parameters.AddWithValue("@sifre", txtSifre.Text); //sql eslesmelerimizi textboxla eslestiriyoruz
+            baglanti.Open();
+            int sayi =(int)komut.ExecuteScalar(); //tek bir kolon döndürme işlemi
+            if (sayi > 0)
+            {
+                MessageBox.Show("KULLANICI GEÇERLİ");
+                RehberForm REH = new RehberForm();
+                REH.Show();
+            }
+            else
+                MessageBox.Show("HATALI KULLANICI ADI VEYA ŞİFRE","UYARI",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            //i ikon resmi ve yularıda uyarı yazar
+            baglanti.Close();
+
+        }
+    }
+}
+
+
+--REHBER KAYDETME GÜNCELLEME SİLME FORMU
+
+namespace _16022022_TelefonRehberi
+{
+    public partial class RehberForm : Form
+    {
+        public RehberForm()
+        {
+            InitializeComponent();
+        }
+        SqlConnection baglanti = new SqlConnection("server=localhost;database=TelefonRehberi;user=sa;password=12345");
+        private void RehberForm_Load(object sender, EventArgs e)
+        {
+            //class olusturduk rehber adlı sqldeki parametlere göre proplar olusturduk
+
+            RehberListele();
+        }
+
+        private void RehberListele()
+        {
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "Select*From rehber";
+            komut.Connection = baglanti;
+            baglanti.Open();
+            SqlDataReader rdr = komut.ExecuteReader();//sql data reader döndürecek
+            List<Rehber> rehberlistesi = new List<Rehber>(); //rehber class ından okuma verdik
+            while (rdr.Read()) //satır satır okuyarak listeye alacak listboxa aktaracak
+            {
+                rehberlistesi.Add(new Rehber()
+                {
+                    ID = rdr.GetInt32(0),
+                    Isim = rdr.GetString(1),
+                    Soyisim = rdr.GetString(2),
+                    Telefon1 = rdr.GetString(3),
+                    Telefon2 = rdr.GetString(4),
+                    Email = rdr.GetString(5),
+                    WebAdres = rdr.GetString(6),
+                    Aciklama = rdr.GetString(7)
+                });
+            }
+            baglanti.Close();
+            list_Rehber.DataSource = rehberlistesi;
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("RehberEkle", baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.Parameters.AddWithValue("@Isim", txtisim.Text);
+            komut.Parameters.AddWithValue("@Soyisim", txtsoyisim.Text);
+            komut.Parameters.AddWithValue("@Telefon1", txttel1.Text);
+            komut.Parameters.AddWithValue("@Telefon2", txttel2.Text);
+            komut.Parameters.AddWithValue("@Email", txtemail.Text);
+            komut.Parameters.AddWithValue("@WebAdres", txtwebadres.Text);
+            komut.Parameters.AddWithValue("@Aciklama", txtaciklama.Text);
+            baglanti.Open();
+            int sonuc = komut.ExecuteNonQuery();
+            baglanti.Close();
+            if (sonuc > 0)
+            { 
+            MessageBox.Show("KAYIT BAŞARILI :)");
+            RehberListele();
+        }
+            else
+                MessageBox.Show("KAYIT BAŞARISIZ :(");
+        }
+
+        private void list_Rehber_Click(object sender, EventArgs e) //rehber clasından ulaşmaya çalışıyoruz
+        {
+            Rehber r = (Rehber)list_Rehber.SelectedItem;
+            txt_secisim.Text = r.Isim;
+            txt_secsoyisim.Text = r.Soyisim;
+            txt_sectel1.Text = r.Telefon1;
+            txt_sectel2.Text = r.Telefon2;
+            txt_secemail.Text = r.Email;
+            txt_secwebadres.Text = r.WebAdres;
+            txt_secaciklama.Text = r.Aciklama;
+        }
+    }
+}
+
+--rehber class ı
+
+namespace _16022022_TelefonRehberi
+{
+    public class Rehber
+    {
+        public int ID { get; set; }
+        public string Isim { get; set; }
+        public string Soyisim { get; set; }
+        public string Telefon1 { get; set; }
+        public string Telefon2 { get; set; }
+        public string Email { get; set; }
+        public string WebAdres { get; set; }
+        public string Aciklama { get; set; }
+
+        public override string ToString()
+        {
+            return Isim + " " + Soyisim + " " + Telefon1 + " "+Telefon2+" "+Email+" "+WebAdres+" "+Aciklama;
+        }
+    }
+}
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+################################################################# 17.02.2022 ##############################################################
+**TELEFON REHBERI GUNCELLE VE SİL BUTONU EKLEDIK 
+
+*SQL STORED PROCEDURE
+
+create proc rehberguncelle
+(
+@ID int,
+@Isim nvarchar(30) ,
+@Soyisim nvarchar(30) ,
+@Telefon1 nvarchar(12),
+@Telefon2 nvarchar(12),
+@Email nvarchar(30),
+@WebAdres nvarchar(100),
+@Aciklama nvarchar(100)
+)
+as
+update Rehber set Isim=@Isim,Soyisim=@soyisim,Telefon1=@telefon1,
+Telefon2=@Telefon2,Email=@email,WebAdres=@WebAdres,Aciklama=@aciklama
+where ID=@ID 
+
+-------------------
+
+create proc rehbersil
+(
+@ID int
+)
+as
+delete Rehber where ID=@ID
+
+
+
+
+
+*FORM
+//LİSTBOXTA SEÇTİĞİMİZ VERİDE GÜNCELLEME YAPMA
+
+ private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = ((Rehber)list_Rehber.SelectedItem).ID; //listboxtan arka plandaki id yi alıyor tutuyor id e göre güncelleme yapacağız
+            SqlCommand komut = new SqlCommand("RehberGuncelle", baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.Parameters.AddWithValue("@ID", id); //id yi yukarda çektik listeboxtan tıklayınca ekrana yazdırıyordu 
+            komut.Parameters.AddWithValue("@Isim", txt_secisim.Text); //listboxta seöilen kişi
+            komut.Parameters.AddWithValue("@Soyisim", txt_secsoyisim.Text);
+            komut.Parameters.AddWithValue("@Telefon1", txt_secsoyisim.Text);
+            komut.Parameters.AddWithValue("@Telefon2", txt_sectel2.Text);
+            komut.Parameters.AddWithValue("@Email", txt_secemail.Text);
+            komut.Parameters.AddWithValue("@Webadres", txt_secwebadres.Text);
+            komut.Parameters.AddWithValue("@Aciklama", txt_secaciklama.Text);
+            baglanti.Open();
+            int sonuc=komut.ExecuteNonQuery();
+            baglanti.Close();
+            if (sonuc > 0)
+            { MessageBox.Show("KAYIT GÜNCELLENDİ");
+                RehberListele();
+            }
+            else
+                MessageBox.Show("KAYIT GÜNCELLENDİ");
+            
+        }
+
+
+---------------------
+
+//LİSTBOXTA SEÇTİĞİMİZ VERİDE SİLME YAPMA
+
+ private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id = ((Rehber)list_Rehber.SelectedItem).ID;
+            SqlCommand komut = new SqlCommand("rehbersil", baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.Parameters.AddWithValue("@ID", id);
+            baglanti.Open();
+            int sonuc = komut.ExecuteNonQuery();
+            baglanti.Close();
+            if (sonuc > 0)
+            {
+                MessageBox.Show("KAYIT SİLİNDİ");
+                txt_secisim.Text = "";
+                txt_secsoyisim.Text = "";
+                txt_sectel1.Text = "";
+                txt_sectel2.Text = "";
+                txt_secemail.Text = "";
+                txt_secwebadres.Text = "";
+                txt_secaciklama.Text = "";
+                RehberListele();
+            }
+            else
+                MessageBox.Show("KAYIT SİLME BAŞARISIZ");
+        }
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+**SERVER ŞİFRESİNİ DEĞİŞTİRDİĞİNDE BİZE İHTİYACI OLMADAN DEĞİŞTİREBİLSİN DİYE APPCONFİG TANIMLAYACAĞIZ
+*APPCONFİG SAĞDA
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<connectionStrings>
+		<add name ="baglanti" connectionString="server=localhost;database=TelefonRehberi;user=sa;password=12345"></add>	
+		</connectionStrings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+</configuration>
+
+*BAĞLANTI YOLU ŞU ŞEKİLDE OLDU
+*using System.Configuration;
+
+//SqlConnection baglanti = new SqlConnection("server=localhost;database=TelefonRehberi;user=sa;password=12345");
+        //SERVER BİLGİLERİ DEĞİŞİRSE appconfig e tanımladık bağlantıyı değiştirdik
+        SqlConnection baglanti = new SqlConnection(ConfigurationManager.ConnectionStrings["baglanti"].ConnectionString);
+
+
+
+
+
+
+
+
+
+
+############################# KATMANLI MİMARİ ##########################################################
+-ENTİTY FORM VE ORM PROJELERİ OLUŞTURDUK
+-ENTİTY CLASSLAR kategori.cs/urun.cs
+-FORM DESIGNLAR form1.cs kategori.cs
+-ORM CLASSLAR kategoriler.cs/urunler.cs/tools.cs
+tools.cs, her classtan ayrı bağlantılar çekmek yerine tek classta bağlantı tanımlayıp 
+diğer classlarda orn sadece tools.baglanti yazarak sql e baglayacagız
+
+-ENTITY 
+
+kategori.cs
+namespace KuzeyYeliEntity_17022022
+{
+    public class Kategori
+    {
+        public int KategoriID { get; set; }
+        public int KategoriAdi { get; set; }
+        public string Tanimi { get; set; }
+    }
+}
+
+
+urun.cs
+namespace KuzeyYeliEntity_17022022
+{
+    public class Urun
+    {
+        public int UrunID { get; set; }
+        public string UrunAdi { get; set; }
+        public int TedarikciID { get; set; }
+        public int KategoriID { get; set; }
+        public string BirimdekiMiktar { get; set; }
+        public decimal Fiyat { get; set; }
+        public int Stok { get; set; }
+        public short YenidenSatis { get; set; }
+        public short EnAzYenidenSatisMikatari { get; set; }
+        public bool Sonlandi { get; set; }
+    }
+}
+
+
+
+--FORM
+
+kategori.cs
+namespace KuzeyYeli_17022022
+{
+    public partial class Kategori : Form
+    {
+        public Kategori()
+        {
+            InitializeComponent();
+        }
+
+        private void Kategori_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Kategoriler.listele();
+        }
+    }
+}
+
+
+form1.cs
+namespace KuzeyYeli_17022022
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Urunler.listele();
+        }
+
+        private void btnKategori_Click(object sender, EventArgs e)
+        {
+            Kategori k = new Kategori(); //kategori formu class değil
+            k.Show();
+        }
+    }
+}
+
+
+--ORM
+
+tools.cs
+namespace KuzeyYeliORM_17022022
+{
+    public static class Tools
+    {
+        private static SqlConnection baglanti= new SqlConnection(ConfigurationManager.ConnectionStrings["baglanti"].ConnectionString);
+        //her classtan ayrı bağlantılar çekmek yerine tek classta bağlantı tanımlayıp diğer classlarda orn sadece tools.baglanti yazarak sql e baglayacagız
+        public static SqlConnection Baglanti
+        {
+            get { return baglanti; }
+            set { baglanti = value; }
+        }
+    }
+}
+
+
+-Urunler.cs
+namespace KuzeyYeliORM_17022022
+{
+    public class Urunler
+    {
+        public static DataTable listele()
+        {
+        SqlDataAdapter adp = new SqlDataAdapter("select*from Urunler", Tools.Baglanti);
+        DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
+        
+        }
+    //SELECT INSERT UPDATE DELETE İŞLEMLERİNİ YAPACAK
+
+}
+}
+
+
+kategoriler.cs
+namespace KuzeyYeliORM_17022022
+{
+    public class Kategoriler
+    {
+        //KATEGORİ TABLOSU İÇİN SELECT INSERT UPDATE VE DELETE İŞLERİ YAPACAK
+        public static DataTable listele()
+        {
+            SqlDataAdapter adp = new SqlDataAdapter("Select*from Kategoriler", Tools.Baglanti);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
+        }
+    }
+}
+
+
+
+
+
+########################################################### 18.02.2022 ##############################################################
+-formlar
+form1.cs
+namespace KuzeyYeli_17022022
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Urunler.listele();
+            cmbKategoriler.DataSource = Kategoriler.listele();
+            cmbKategoriler.DisplayMember = "KategoriAdi";//GÖRÜNEN ADI
+            cmbKategoriler.ValueMember = "KategoriID";//TUTTUĞU DEĞER
+            cmbTedarikciler.DataSource = Tedarikciler.listele();
+            cmbTedarikciler.DisplayMember = "SirketAdi"; //SEÇİMDE GÖRÜNEN ADI
+            cmbTedarikciler.ValueMember = "TedarikciID"; //SEÇİMDE TUTTUĞU DEĞER
+
+        }
+
+        private void btnKategori_Click(object sender, EventArgs e)
+        {
+            Kategori k = new Kategori(); //kategori formu class değil
+            k.Show();
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e) //urunler csde method oluşturduk
+        {
+            Urun u = new Urun();
+            u.UrunAdi = txtUrunAd.Text;
+            u.Stok =(int)nudStok.Value; //decimal tanımlıymış çevirdik
+            u.Fiyat = nudFiyat.Value;
+            u.KategoriID = (int)cmbKategoriler.SelectedValue;
+            u.TedarikciID = (int)cmbTedarikciler.SelectedValue;
+            bool sonuc=Urunler.Ekle(u); //ekle dediğimi<de
+            if (sonuc)
+            {
+                MessageBox.Show("Kayıt Başarılı");
+                dataGridView1.DataSource = Urunler.listele();
+            }
+            else
+                MessageBox.Show("Kayıt Hatalı");
+        }
+    }
+}
+
+
+
+kategori.cs
+namespace KuzeyYeli_17022022
+{
+    public partial class Kategori : Form
+    {
+        public Kategori()
+        {
+            InitializeComponent();
+        }
+
+        private void Kategori_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Kategoriler.listele();
+        }
+    }
+}
+
+
+--entity
+
+kategori.cs
+namespace KuzeyYeliEntity_17022022
+{
+    public class Kategori
+    {
+        public int KategoriID { get; set; }
+        public int KategoriAdi { get; set; }
+        public string Tanimi { get; set; }
+    }
+}
+
+
+urun.cs
+namespace KuzeyYeliEntity_17022022
+{
+    public class Urun
+    {
+        public int UrunID { get; set; }
+        public string UrunAdi { get; set; }
+        public int TedarikciID { get; set; }
+        public int KategoriID { get; set; }
+        public string BirimdekiMiktar { get; set; }
+        public decimal Fiyat { get; set; }
+        public int Stok { get; set; }
+        public short YenidenSatis { get; set; }
+        public short EnAzYenidenSatisMikatari { get; set; }
+        public bool Sonlandi { get; set; }
+    }
+}
+
+
+--orm
+kategoriler.cs
+namespace KuzeyYeliORM_17022022
+{
+    public class Kategoriler
+    {
+        //KATEGORİ TABLOSU İÇİN SELECT INSERT UPDATE VE DELETE İŞLERİ YAPACAK
+        public static DataTable listele()
+        {
+            SqlDataAdapter adp = new SqlDataAdapter("Select*from Kategoriler", Tools.Baglanti);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
+        }
+    }
+}
+
+
+tedarikciler.cs
+namespace KuzeyYeliORM_17022022
+{
+    public class Tedarikciler
+    {
+        public static DataTable listele()
+        {
+            SqlDataAdapter adp = new SqlDataAdapter("Select*from Tedarikciler", Tools.Baglanti);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
+        }
+    }
+}
+
+
+tools.cs
+namespace KuzeyYeliORM_17022022
+{
+    public static class Tools
+    {
+        private static SqlConnection baglanti= new SqlConnection(ConfigurationManager.ConnectionStrings["baglanti"].ConnectionString);
+        //her classtan ayrı bağlantılar çekmek yerine tek classta bağlantı tanımlayıp diğer classlarda orn sadece tools.baglanti yazarak sql e baglayacagız
+        public static SqlConnection Baglanti
+        {
+            get { return baglanti; }
+            set { baglanti = value; }
+        }
+    }
+}
+
+
+urunler.cs
+namespace KuzeyYeliORM_17022022
+{
+    public class Urunler
+    {
+        public static DataTable listele()
+        {
+        SqlDataAdapter adp = new SqlDataAdapter("select*from Urunler", Tools.Baglanti);
+        DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
+        
+        }
+        //SELECT INSERT UPDATE DELETE İŞLEMLERİNİ YAPACAK
+        public static bool Ekle(Urun u) //metodun geri dönüş tipi bool tipinde //entitydeki nesne adı //kütüphaneye kuzey yeli entity ekledik
+        {
+            SqlCommand komut = new SqlCommand("UrunEkle", Tools.Baglanti); //sqldeki store procedure
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.Parameters.AddWithValue("@ad", u.UrunAdi);
+            komut.Parameters.AddWithValue("@fiyat", u.Fiyat);
+            komut.Parameters.AddWithValue("@stok", u.Stok);
+            komut.Parameters.AddWithValue("@tedarikciID", u.TedarikciID);
+            komut.Parameters.AddWithValue("@kategoriID", u.KategoriID);
+            Tools.Baglanti.Open();
+            int sonuc=komut.ExecuteNonQuery();
+            Tools.Baglanti.Close();
+            if (sonuc > 0) return true;
+            else return false;
+        }
+    }
+}

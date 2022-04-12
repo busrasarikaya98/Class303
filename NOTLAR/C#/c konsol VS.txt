@@ -1,0 +1,5902 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            //CONSOLE YAZI YAZDIRMA
+
+            //Console.WriteLine("Hello World!");
+            //Console.WriteLine("busra sarikaya");
+
+            Console.Write("yazılım"+"\t"+"dunyasi");
+            *
+            
+            Console.ReadLine();       
+        }
+    }
+}
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+using System;
+
+namespace veri_tipleri
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //byte veri tipi
+            //byte first = 12;
+            //byte second = 20;
+            //Console.WriteLine(first);
+            // Console.WriteLine(second);
+
+            //byte maxdeger = byte.MaxValue;
+            //byte mindeger = byte.MinValue;
+
+            //Console.ReadLine(maxdeger);
+            //Console.ReadLine(mindeger);
+
+            //short veri tipi
+            //short MaxDeger = short.MaxValue;
+            //short MinDeger = short.MinValue;
+
+            //3.int veri tipi ram bellekte 4 byte yer kaplar
+
+            //int degisken = 76885;
+            //Console.WriteLine(degisken);
+
+
+
+
+            //4.long veri tipi 8 byte yer kaplar
+            //long MaxDeger = long.MaxValue;
+            //long MinDeger = long.MinValue;
+
+            //Console.WriteLine(MaxDeger);
+            //Console.WriteLine(MinDeger);
+
+
+            //5.
+
+
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+using System;
+
+namespace VeriTipleri1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Console.WriteLine("Hello World!");
+            //double veri tipi 8 byte yer kaplar. 15 bas ondalikli sayi
+
+            //double ondalikli_sayi = 23.1;
+            //Console.WriteLine(ondalikli_sayi);
+            //Console.ReadLine();
+
+            //float 4 byte yer kaplar
+
+            // float ondalikli_sayim = 7.5f;
+            //Console.WriteLine(ondalikli_sayim);
+
+            //char veri tipi tek bir karakteri tutmak için kullanılır
+
+            //char karakter = 'B';
+            //Console.WriteLine(karakter);
+
+            //string veri tipi metin için kullanılır
+            //string ad = "busra";
+            //string soyad = "sarikaya";
+
+
+            //bool veri tipi
+            bool control = true;
+            bool control1 = false;
+            bool sonuc = 60 < 50;
+
+            //object veri tipi tüm veri tiplerini görür ve tutar.
+            object m = 3.5;
+            Console.WriteLine(m);
+
+            object e = 4;
+            Console.WriteLine(e);
+
+            //
+           
+            Console.ReadLine();
+
+        }
+    }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+using System;
+
+namespace OperatorlereGiris
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Hello World!");
+            //toplama ve çıkarma operatörleri
+
+            //int sayi1 = 50;
+            //int sayi2 = 24;
+            //int sayi3 = 15;
+            //int sayi4 = 30;
+            //int sonuc = (sayi1 + sayi2 + sayi3) - sayi4;
+            //Console.WriteLine(sonuc);
+            //Console.ReadLine();
+
+            //carpma ve bolme
+
+            //int sayi = 12;
+            //int sayi1 = 13;
+            //int sonuc = sayi1 * sayi;
+
+            //int sayi = 64;
+            //int sayi1 = 8;
+            //int sonuc = sayi / sayi1;
+
+
+            // Console.WriteLine(sonuc);
+
+            //mod alma operatörü
+            //int number = 90;
+            //int number1 = 24;
+            //Console.WriteLine(number % number1);
+            //Console.ReadLine();
+
+            //arttırmna ++ azaltma -- operatörü
+
+            //int number = 25;
+            //number++;
+            //number--;
+
+            //atama operatörü
+            //int yas = 30;
+
+            //eşittir operatörü
+            //int sayi = 6;
+            //int sayi1 = 8;
+            //bool check = sayi == sayi1;
+            //Console.WriteLine(check);
+
+            ////eşit değildir operatörü
+            //int sayi1 = 20;
+            //int sayi2 = 24;
+            //bool kontrolet = sayi1 != sayi2;
+            //Console.WriteLine(kontrolet);
+
+            //büyüktür ve eşittir operatörü
+            //int yas = 25;
+            //bool kontrolet = yas >= 15;
+            //Console.WriteLine(kontrolet);
+
+            //kücüktür ve eşittir operatörü
+
+            int yas = 30;
+            bool kontrolet = yas <= 20;
+            Console.WriteLine(kontrolet);
+
+            //mantıksal operatörler
+            // && ve operatörü
+            //int sayi = 6;
+            //int sayi1 = 6;
+            //int sayi2 = 14;
+            //bool check = sayi == sayi1 && sayi2 < sayi1;
+            //Console.WriteLine(check);
+
+            //veya operatörü ||
+            //int sayi1 = 8;
+            //int sayi2 = 13;
+            //int sayi3 = 8;
+            //bool check = sayi1 == sayi2 || sayi3 > sayi2;
+            //Console.WriteLine(check);
+
+            //değil operatörü değişkenin değerini tersine çevirir
+            //bool b = false;
+            //Console.WriteLine(!b);
+
+            //ek matematiksel operatörler
+            int a = 4;
+            //a = a + 1; 5  sonucunu verir
+            //a += 2; a yı 2 arttırmak için 6 sonucunu verir
+            //a -= 3; 1 sonucunu verir
+
+            Console.WriteLine(a);
+
+
+            
+
+
+
+
+
+
+            
+            
+            
+            Console.ReadLine();
+
+
+
+
+        }
+    }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+using System;
+
+namespace KullanicidanDegerAlma
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("lütfen adınızı giriniz");
+            string ad = Console.ReadLine();
+            Console.WriteLine("lütfen soyadınız giriniz");
+            string soyad = Console.ReadLine();
+            Console.WriteLine("kullanıcının adı:" + ad);
+            Console.WriteLine("kullanıcnın soyadı:" + soyad);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+using System;
+
+namespace turdonusumu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int a = 14;
+            //byte b = (byte)a;
+            //Console.WriteLine(b.GetType());
+            //Console.WriteLine(b);
+            //Console.ReadLine();
+
+            //1.yöntem parse
+            //string sayi1 = "2"; 
+            //string sayi2 = "5";
+            //int c = int.Parse(sayi1);
+            //int d = int.Parse(sayi2);y
+
+            //2.yöntem convert.ToInt32
+            //string sayi1 = "10";
+            //string sayi2 = "4";
+            //int c = Convert.ToInt32(sayi1);
+            //int d = Convert.ToInt32(sayi2);
+            //Console.WriteLine(c + d);
+
+            //int string dönüştürme
+            int sayi1 = 8;
+            int sayi2 = 10;
+            string a = sayi1.ToString();
+            string b = sayi2.ToString();
+            Console.WriteLine(a + b);
+
+
+
+
+
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++using System;
+
+namespace turdonusumu2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //kullanıcıdan yaşını alıp ekrana yazdırıp çıktı alma string veriyi integere cevirme
+            //Console.WriteLine("lütfen yaşınızı giriniz");
+            //string kullanici_yasi = Console.ReadLine();
+            //int kullanici_yasiInt = int.Parse(kullanici_yasi);
+            //int kullanici_yasiInt = Convert.ToInt32(kullanici_yasi);
+            //Console.WriteLine(kullanici_yasi);
+            //Console.ReadLine();
+
+            //EKRANA İKİ SAYI GİRDİRME VE BU İKİ SAYIYI INT YAPMA
+
+            Console.WriteLine("birinci sayiyi giriniz");
+            string sayi1 = Console.ReadLine();
+            Console.WriteLine("ikinci sayiyi giriniz");
+            string sayi2 = Console.ReadLine();
+            int sayi1Int = Convert.ToInt32(sayi1);
+            int sayi2Int = Convert.ToInt32(sayi2);
+            
+            Console.WriteLine(sayi1Int + sayi2Int);
+            Console.ReadLine();
+
+
+
+            
+
+
+        }
+    }
+}
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+28.12.2021
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //öğrencinin 3 not ortalamasını alan ve öğrencinin notunu yazdıran program
+            //şartlar 85-100 arasında ise harf notu A+ 65-85 arasında ise A 45-65 ise B+ not<45 ise F
+            Console.WriteLine("lütfen birinci notu giriniz");
+            int birinci_not = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("lütfen ikinci notu giriniz");
+            int ikinci_not = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("lütfen ucuncu notu giriniz");
+            int ucuncu_not = Convert.ToInt32(Console.ReadLine());
+            int sonuc = (birinci_not + ikinci_not + ucuncu_not) / 3;
+
+            if (sonuc > 85 && sonuc < 100)
+            {
+                Console.Write("not degeri A+");
+            }
+            else if (sonuc > 65 && sonuc < 85)
+            {
+                Console.WriteLine("not degeri A");
+            }
+            else if (sonuc > 45 && sonuc < 65)
+            {
+                Console.WriteLine("not degeri B+");
+            }
+            else
+
+            {
+                Console.WriteLine("not degeri F");
+            }
+            Console.ReadLine();
+        }
+
+    }
+}
+          
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  28.12.2021  
+using System;
+
+namespace KararYapılarıUygulaması
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //ÖĞRENCİNİN VİZE VE FİNAL NOTLARINA GÖRE ORT HESAPLATMA VİZE%40 FİNAL%60
+            //double sonuc;
+            //Console.WriteLine("lutfen vize notunu giriniz");
+            //double vize_notu = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("lutfen final notunu giriniz");
+            //double final_notu = Convert.ToInt32(Console.ReadLine());
+
+            //sonuc = (vize_notu * 40 / 100) + (final_notu * 60 / 100);
+            //if (sonuc >= 50)
+
+            //Console.WriteLine("gectiniz {0}",sonuc);
+
+            //else 
+
+            // Console.WriteLine("kaldınız {0}",sonuc);
+
+            //KULLANICIYA BİZDE TANIMLI OLAN KULLANICI BİLGİLERİNİ GİRDİRME
+            /*
+            string kadi, sifre;
+            Console.WriteLine("kullanici adini giriniz:");
+            kadi = Console.ReadLine();
+            Console.WriteLine("sifrenizi giriniz:");
+            sifre = Console.ReadLine();
+            if (kadi=="admin" && sifre=="123") ;
+            Console.WriteLine("giris islemi basarili");
+            else
+            Console.WriteLine("giris islemi basarisiz");
+            Console.ReadLine();
+            */
+            //KLAVYEDEN GİRİLEN SAYI ÇİFT MİDİR TEK MİDİR?
+            //Console.WriteLine("sayi giriniz");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //if (sayi%2 == 0)
+            //Console.WriteLine("sayı çifttir");
+            //else
+            //Console.WriteLine("sayı tektir");
+            //Console.ReadLine();
+
+            //KİŞİ KLAVYEDEN BİR SAYI GİRSİN GİRİLEN SAYI POZİTİF Mİ NEGATİF Mİ 0 MI
+            //Console.WriteLine("bir sayı giriniz");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //if (sayi > 0)
+            //Console.WriteLine("{0} sayı pozitiftir", sayi);
+            //else if (sayi < 0) 
+            //Console.WriteLine("{0} sayı negatiftir" , sayi);
+            //else 
+            //Console.WriteLine("sayı pozitif veya negatif degildir");
+            //Console.ReadLine();
+
+            //KLAVYEDEN KİŞİ SICAKLIĞI GİRECEK BU SICAKLIĞA GÖRE KATI SIVI GAZ 
+            //Console.WriteLine("lutfen sicakligi giriniz");
+            //int sicaklik = Convert.ToInt32(Console.ReadLine());   VİRGÜLLÜ SAYI GİRECEKSEK INT YERINE DOUBLE
+            //if (sicaklik >= 100)
+            //Console.WriteLine("gaz hale gecmistir");
+            //else if (sicaklik <= 0)
+            //Console.WriteLine("kati");
+            //else
+            //Console.WriteLine("sivi");
+
+            //BİR SAYI GİRELİM 36 BU GİRİLEN SAYININ KARESİNİ KÜPÜNÜ VE KAREKÖKÜNÜ HESAPLA
+            //int m, secim;
+            //double kup, kare, karekok;
+            //Console.WriteLine("bir sayı giriniz");
+            //m = int.Parse(Console.ReadLine());
+            //Console.WriteLine("1-kare 2-kup 3-kok\n");
+            //Console.WriteLine("secim");
+            //secim = int.Parse(Console.ReadLine());
+            //if (secim ==1) 
+            //kare = m * m;
+            //Console.WriteLine("girdiginiz sayinin karesi={0}", kare);
+            //else if (secim == 2) 
+            //kup = m * m * m;
+            //Console.WriteLine("girdiginiz sayinin küpü={0}", kup);
+            //else if (secim == 3)
+            //karekok = Math.Sqrt(m);
+            //Console.WriteLine("girdiginiz sayinin karekoku={0}"karekok);
+
+            //GİRİLEN SAYILARI KARŞILAŞTIRMA
+            //Console.WriteLine("b sayisini giriniz");
+            //int b = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("a sayisini giriniz");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //if (a > b)
+            //Console.WriteLine("{0} sayısı {1} sayısından büyüktür" , a,b);
+            //else if (b > a)
+            //Console.WriteLine("{0} sayısı {1} sayısından büyüktür" , b,a);
+            //else
+            // Console.WriteLine("sayılar eşittir");
+
+            //VKİ ENDEKSİ HESAPLAMA EĞER KİTLE İNDEKSİ <=18.49 İDEAL KİLONUN ALTINDA EĞER >=18.5 VEYA VKİ <= 24.99 İSE İDEAL KİLO
+            //VKİ >=25 VEYA <=29.99 İDEAL KİLONUN ÜZERİNDE
+            /*
+            Console.WriteLine("lütfen kilonuzu giriniz");
+            double kilo = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("lütfen boyunuzu giriniz");
+            double boy = Convert.ToDouble(Console.ReadLine());
+            double sonuc = (kilo / (boy * boy));
+            if (sonuc <= 18.49)
+                Console.WriteLine(" {0} ideal kilonun altındasınız" , sonuc);
+            else if (sonuc >= 25)
+                Console.WriteLine("{0} ideal kilonun üstündesiniz", sonuc);
+
+            else if (sonuc >= 18.5 || sonuc <= 24.99)
+                Console.WriteLine(" {0} ideal kilodasınız" , sonuc);
+                              
+            
+            //TOPLAM TUTARI YAZDIR EĞER 100TLDEN KÜÇÜKSE 6 TL İŞLEM ÜCRETİ 100DEN EŞİT BÜYÜKSE TUTARI YAZDIR
+            Console.WriteLine("lütfen tutarı giriniz");
+            double tutar = Convert.ToDouble(Console.ReadLine());
+            if (tutar >= 100)
+                Console.WriteLine("toplam tutar," + tutar);
+            else
+                tutar = ( tutar + 6); VEYA TOPLAM+= 6
+            Console.WriteLine("toplam tutar," + tutar);
+            
+            //İKİ ÜRÜN VAR BİR ALANA İKİNCİ ÜRÜN %25 İNDİRMLİ ANCAK TUTAR 200E EŞİT VEYA BÜYÜKSE
+
+            Console.WriteLine("birinci ürünün fiyatını giriniz");
+            int birinci_urun = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ikinci ürünün fiyatını giriniz");
+            int ikinci_urun = Convert.ToInt32(Console.ReadLine());
+            double toplam;
+            toplam = (birinci_urun + ikinci_urun);
+            if (toplam <= 200)
+                Console.WriteLine("toplam tutar:" + toplam);
+            else
+                toplam = (birinci_urun + (ikinci_urun / 100 * 75));
+            Console.WriteLine("toplam tutar:" + toplam);
+            Console.ReadKey();
+
+
+            Console.ReadLine();
+            */
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+29.12.2021
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ornek12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         //1.Daire-- > seç1-- > satılık daire / kiralık daire--->50.000tl(satılık için bütçe 50.000den büyükse satın alabilirsin küçükse alamazsın) 
+            /// 1000tl(kiralık için bütçen 1000tlden küçükse alamazsın büyükse alabilirsin)
+            //2.Villa-- > seç2-- > satılık villa / kiralık villa--->500.000tl
+            //(satılık için bütçe 500.000 tlden büyükse satın alabilirsin küçükse satın alamazsın) / 
+            //100.000tl(kiralık için bütçe 100.000tlden büyükse kiralayabilirsin küçükse kiralayamazsın)
+
+            Console.WriteLine("İşlem yapmak istediğiniz konut türünü seçiniz:");
+            Console.WriteLine("1= Daire  2= Villa");
+
+            int secim = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("İşlem yapmak istediğiniz kategoriyi seçiniz:");
+            Console.WriteLine("1= Satılık    2= Kiralık");
+
+            int islem = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen bütçenizi giriniz:");
+
+            int butce = Convert.ToInt32(Console.ReadLine());
+
+
+            if (secim == 1)
+            {
+                
+                if (islem == 1)
+                {
+                    if (butce > 50000)
+                    {
+                        Console.WriteLine("Bütçeniz satın alma işlemi için yeterlidir.");
+                    }
+                    else
+                        Console.WriteLine("Bütçeniz satın alma işlemi için yetersizdir.");
+                }
+                else if (islem == 2)
+                {
+                    if (butce < 1000)
+                    {
+                        Console.WriteLine("Bütçeniz kiralama işlemi için yetersizdir.");
+                    }
+                    else
+                        Console.WriteLine("Bütçeniz kiralama işlemi için yeterlidir.");
+                }
+
+
+            }
+
+            if (secim == 2)
+            {
+                
+                if (islem == 1)
+                {
+                    if (butce > 500000)
+                    {
+                        Console.WriteLine("Bütçeniz satın alma işlemi için yeterlidir.");
+                    }
+                    else
+                        Console.WriteLine("Bütçeniz satın alma işlemi için yetersizdir.");
+                }
+                else if (islem == 2)
+                {
+                    if (butce > 100000)
+                    {
+                        Console.WriteLine("Bütçeniz kiralama işlemi için yeterlidir.");
+                    }
+                    else
+                        Console.WriteLine("Bütçeniz kiralama işlemi için yetersizdir.");
+                }
+
+
+            }
+
+
+            Console.ReadLine();
+
+}
+            //ATM UYGULAMA
+            //1. BAKİYE GÖRÜNTÜLEME 2. PARA ÇEK 3. PARA YATIR 4.ÇIKIŞ YAP
+            //1-2-3-4 DIŞI DEĞERDE HATA VERSİN
+            int bakiye = 1000;
+            Console.WriteLine("ATM'ye HOŞGELDİNİZ");
+            Console.WriteLine("LÜTFEN BİR SEÇİM YAPINIZ");
+            Console.WriteLine("1. BAKİYE GÖRÜNTÜLEME");
+            Console.WriteLine("2. PARA ÇEK");
+            Console.WriteLine("3. PARA YATIR");
+            Console.WriteLine("4. ÇIKIŞ YAP");
+            string secim = Console.ReadLine();
+            switch(secim)
+            {
+                case "1":
+                    Console.WriteLine("bakiyeniz:" + bakiye);
+                    Console.ReadLine();
+                    break;
+                case "2":
+                    Console.WriteLine("çekmek istediğiniz tutarı giriniz");
+                    int tutar = Convert.ToInt32(Console.ReadLine());
+                    if (tutar > bakiye)
+                    {
+                        Console.WriteLine("yetersiz bakiye");
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("kalan bakiyeniz:" + (bakiye - tutar));
+                        Console.ReadLine();
+                    }
+                    break;
+                case "3":
+                    Console.WriteLine("yatırmak istediğiniz tutarı giriniz");
+                    int para_tutari = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("yeni para tutarınız:" + (bakiye + para_tutari));
+                    Console.ReadLine();
+                    break;
+                case "4":
+                    Console.WriteLine("hesabınızdan çıkış işlemi yapılıyor");
+                    Console.ReadLine();
+                    break;
+                default:
+                    Console.WriteLine("lütfen geçerli bir işlem seçiniz");
+                    Console.ReadLine();
+                    break;
+
+            }
+
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
+
+++++++++++++++++++++++++++++++++++++++++++ DONGULER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+using System;
+
+namespace Donguler
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           //1.UYGULAMA 1 İLE 100 ARASINDAKİ SAYILARI ALT ALTA YAZDIR
+           for (int i=1; i<100; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+//1.UYGULAMA 1 İLE 100 ARASINDAKİ SAYILARI ALT ALTA YAZDIR
+            //for (int i=1; i<100; i++)
+            // {
+            //     Console.WriteLine(i);
+            // }
+            // Console.ReadKey();
+
+
+            //2.UYGULAMA 1 İLE 50 ARASINDA 5 ADET RASTGELE SAYI OLUŞTURMA
+            //Random rastgele = new Random();
+            //for (int i = 1; i < 5; i++)
+            //{
+            //    int sayi = rastgele.Next(1, 50);
+            //    Console.WriteLine(sayi.ToString());
+            //}
+
+
+            //3.UYGULAMA 0 İLE 10 ARASINDAKİ ÇİFT SAYILARI YAZDIR
+            //for (int i = 1; i < 10; i+=2) ;
+
+            //Console.WriteLine(i);
+            //Console.ReadLine();
+
+
+            //4.UYGULAMA 1'den kullanıcının girdiği sayıya kadar yazdırma
+            //Console.WriteLine("lütfen bir sayı giriniz");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 1; i <= sayi; i++) 
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            //5.UYGULAMA KULLANICIDAN VERİ İSTEYİP 10 KERE YAZDIRMA
+            //Console.WriteLine("lutfen adınızı giriniz");
+            //string ad = Console.ReadLine();
+            //for (int i=0; i<10; i++) 
+            //{
+            //    Console.WriteLine(ad);
+            //}
+
+
+            //6.UYGULAMA BAŞLANGIÇ VE BİTİŞ DEĞERİ KULLANICI TARAFINDAN VERİLEN SAYILAR ARASINDAKİLERİ YAZDIRMA
+            //Console.WriteLine("baslangic degerini giriniz:");
+            //int baslangic_degeri = Convert.ToInt32(Console.ReadLine()); 
+            //Console.WriteLine("bitis degerini giriniz:");
+            //int bitis_degeri = Convert.ToInt32(Console.ReadLine());
+            //for (int i = baslangic_degeri; i < bitis_degeri; i++) 
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            //7. UYGULAMA ALFABEYİ YAZDIRALIM
+            //char karakter;
+            //for (karakter = 'a'; karakter <= 'z'; karakter++)
+            //{
+            //    Console.WriteLine(karakter);
+            //}
+
+
+
+            //8. UYGULAMA KULLANICIDAN 10 TANE SAYI ALACAĞIZ BU SAYILARI TOPLATACAĞIZ
+            //int toplam, sayi, i;
+            //toplam = 0;
+            //for(i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine("{0}.sayıyı girin " , i);
+            //    sayi = Convert.ToInt32(Console.ReadLine());
+            //    toplam = toplam + sayi;
+            //}
+
+            //Console.WriteLine("yazdığınız sayıların toplamı {0}", toplam);
+
+
+            //9.BİR KULLANICININ İSMİNİ ÖĞRENİN BU İSMİ 5 KERE YAZDIRALIM FAKAT BAŞINDA NUMARALANDIRMA OLSUN
+            //Console.WriteLine("lutfen adınızı giriniz");
+            //string isim = Console.ReadLine();
+
+            //    for (int i=1; i<=5; i++)
+            //{
+            //    Console.WriteLine("{0} , {1}", i , isim);
+            //}
+
+
+
+            //10. UYGULAMA 1 ile 100 ARASINDA 3E BÖLÜNEBİLEN SAYILARI YAZDIRMA
+            for (int i = 1; i <= 100; i++)
+            { 
+                if ( i%3 == 0)
+                Console.WriteLine(i);
+            }
+            
+ 
+            //11.UYGULAMA 1 ile 100 ARASINDA HEM 3E HEM 4E BÖLÜNEN SAYILAR
+            //for(int i=1; i<=100; i++)
+            //{
+            //    if (i % 3 == 0 && i % 4 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            //12.UYGULAMA KULLANICI İKİ SAYI GİRSİN BU SAYILAR ARASINDAKİ 5E BÖLÜNEN SAYILARI YAZDIRMA
+            //Console.WriteLine("birinci sayiyi giriniz");
+            //int birinci_sayi = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("ikinci sayiyi giriniz");
+            //int ikinci_sayi = Convert.ToInt32(Console.ReadLine());
+            //for (int i = birinci_sayi; i <= ikinci_sayi; i++) 
+            //{
+            //    if (i % 5 == 0)
+            //        Console.WriteLine(i);
+            //}
+
+
+            //13.UYGULAMA 1 İLE 80 ARASINDA TEK VE ÇİFT SAYILARI AYRI AYRI TOPLATMA
+            //int i;
+            //int tt = 0;
+            //int tc = 0;
+            //for (i = 1; i <= 80; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        tc = tc + i;
+
+            //    }
+            //    else
+            //        tt = tt + i;
+            //}
+            //Console.WriteLine("Tek sayıların toplamı:{0}", tt);
+            //Console.WriteLine("Çift sayıların toplamı:{0}", tc);
+
+
+            //14.UYGULAMA KULLANICI BAŞ VE BİTİŞ SAYISI GİRECEK 2YE BÖLÜNENLERİ YAZDIRACAĞIZ BAŞLANGIÇ VE BİTİŞ HANGİSİ BÜYÜK BAKACAĞIZ
+            //BİRİNCİ DURUM BAŞLANGIÇ BİTİŞTEN KÜÇÜKSE 2YE BÖLÜMÜNDEN KALAN BÜYÜKSE 2YE BÖLÜNEN SAYILAR EŞİTSE EŞİTTİR DESİN
+            //int i;
+            //Console.WriteLine("bir sayı giriniz");
+            //int birinci_sayi = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("bir sayı daha giriniz");
+            //int ikinci_sayi = Convert.ToInt32(Console.ReadLine());
+            //if (birinci_sayi < ikinci_sayi)
+            //{
+            //    for (i = birinci_sayi; i <= ikinci_sayi; i++)
+            //        if (i % 2 == 0)
+            //        {
+            //            Console.WriteLine(i);
+            //        }
+            //}
+            //else if (ikinci_sayi < birinci_sayi)
+            //{
+            //    for (i = birinci_sayi; i >= ikinci_sayi; i--)
+            //        if (i % 2 == 0)
+            //        {
+            //            Console.WriteLine(i);
+            //        }
+            //}
+            //else
+            //    Console.WriteLine("sayilar esittir");
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+FOR İÇİNDE FOR
+//using System;
+
+//namespace İÇİÇEFOR
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            //IC ICE DONGULER sayı agacı olusturma
+//               for ( int i=1; i<=10; i++)
+//            {
+//                for (int j=1; j<=i; j++)
+//                {
+//                    Console.Write(j);
+//                }
+//                Console.WriteLine("");
+
+                    
+//            }
+//            Console.ReadLine();
+//        }
+//    }
+//}
+
+
+
+           //int kontrol = 0;
+            //Console.Write("Sayı Girin : ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //if (sayi == 1 || sayi == 0)
+            //{
+            //    Console.WriteLine("Girdiğiniz sayı asal değildir.");
+
+            //}
+            //else
+            //{
+            //    for (int i = 2; i < sayi; i++)
+            //    {
+            //        if (sayi % i == 0) //Kalansız bölünüyormu?
+            //        {
+            //            kontrol++;
+            //            break; //Diğer sayılara bakmaya gerek duymuyoruz.
+            //        }
+
+
+            //    }
+
+            //    if (kontrol != 0)
+            //    {
+            //        Console.WriteLine("Girdiğiniz sayı asal değildir.");
+            //    }
+
+            //    else
+            //    {
+            //        Console.WriteLine("Girdiğiniz sayı asaldır.");
+            //    }
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++ 30.12.2021 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****WHILE*****
+
+            //1.UYG EKRANA 10 KERE BUSRA YAZDIRALIM
+            //int i = 1;
+            //while (i <= 10)
+            //{
+            //    Console.WriteLine("BUSRA");
+            //    i++;
+            //}
+
+
+
+            // 2.UYG 1 İLE 10 ARASINDAKİ SAYILARI YAZDIRALIM
+            //int i = 1;
+            //while (i <= 10) 
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+            //Console.ReadLine();
+
+            //3.UYG 100DEN GERİYE ÇİFT SAYILARI YAZDIRALIM
+            //int i = 100;
+            //while (i >= 0)
+            //{
+            //    if (i%2 == 0)
+            //    Console.WriteLine(i);
+            //    i--; //veya if yerine i-2=0;
+            //}
+
+
+            //4.UYG 10DAN GERİYE SAYILARI DO WHILE ILE YAZDIRALIM
+            //int i = 10;
+            //    do
+            //{
+            //    Console.WriteLine(i);
+            //    i--;
+            //}
+            //while (i >= 1); //burada koşulu 11 verseydik program yine de çalışır ve 10 çıktısını verir
+            Console.ReadLine();
+        }
+    }
+}
+            //1DEN 100E KADAR OLAN SAYILARIN TOPLAMINI EKRANA YAZDIRMA
+
+            //int i = 1;
+            //int toplam = 0;
+            //    do
+            //{                
+            //    toplam = toplam + i;
+            //    i++;
+            //}
+            //while (i <=100);
+            //Console.WriteLine(toplam);
+            //Console.ReadLine();
+
+
+
+*****BREAK CONTINUE*****
+//JUMP STATEMENTS
+ 
+            //1.UYG A NIN DEĞERİ 7 OLDUĞUNDA DÖNGÜDEN ÇIK
+            //int a;
+            //for(a=1; a<=10; a++)
+            //{
+            //    if (a == 7) 
+            //    {
+            //        break; // 7Yİ ATLA DEVAM ET DEMEK İÇİN BREAK YERİNE CONTINUE DİYECEĞİZ
+            //    }
+            //    Console.WriteLine("a'nın değeri:" + a);
+            //}
+
+
+            
+            
+            Console.ReadLine();
+        }
+    }
+}
+
+
+*****GOTO*****
+ //GOTO ORNEKLERI
+            //1.UYG VALUE VERDIGIMIZE GIDECEK KOMUTU VARSA ONU UYGULAYACAK
+            //int value = 3;
+            //switch(value)
+            //{
+            //    case 1:
+            //        Console.WriteLine("value 1");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("value 2");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("value 3");
+            //        goto case 1;
+            //    default:
+            //        Console.WriteLine("default");
+            //        break;
+            //}
+            //Console.ReadLine();
+
+ORNEK==> int sayi;
+         baslangic:
+            Console.Write("Notunuzu Giriniz:");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            if (sayi>=0 && sayi<45)
+            {
+                Console.WriteLine("Kötü Not");
+            }
+            if (sayi>=45 && sayi<65)
+            {
+                Console.WriteLine("Geçer Not");
+            }
+            if (sayi>=65 && sayi<75)
+            {
+                Console.WriteLine("Orta Not");
+            }
+            if (sayi>=75 && sayi<85)
+            {
+                Console.WriteLine("İyi Not");
+            }
+            if (sayi>=85 && sayi<=100)
+            {
+                Console.WriteLine("Pekiyi Not");
+            }
+            if ((sayi<0 || sayi>100))
+            {
+                Console.WriteLine("Yanlış sayı birimi girdiniz");
+                goto baslangic;
+            }
+            Console.ReadLine();
+
+----------------
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi;
+        baslangic:
+            Console.Write("LÜTFEN KACINCI AY OLDUGUNU GİRİNİZ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            
+            if (sayi >= 1 && sayi <= 2)
+            {
+                Console.WriteLine("KIŞ MEVSİMİ");
+                Console.WriteLine("devam etmek ister misiniz");
+                string cevap2 = Console.ReadLine();
+
+                if (cevap2 == "yes")
+
+                    goto baslangic;
+                
+            }
+            if (sayi >= 3 && sayi <=5)
+            {
+                Console.WriteLine("İLKBAHAR MEVSIMI");
+                Console.WriteLine("devam etmek ister misiniz");
+                string cevap3 = Console.ReadLine();
+
+                if (cevap3 == "yes")
+
+                    goto baslangic;
+            }
+            if (sayi >= 6 && sayi <=8)
+            {
+                Console.WriteLine("YAZ MEVSIMI");
+                Console.WriteLine("devam etmek ister misiniz");
+                string cevap1 = Console.ReadLine();
+
+                if (cevap1 == "yes")
+
+                    goto baslangic;
+            }
+            if (sayi >= 9 && sayi <=11)
+            {
+                Console.WriteLine("SONBAHAR MEVSIMI");
+                Console.WriteLine("devam etmek ister misiniz");
+                string cevap4 = Console.ReadLine();
+
+                if (cevap4 == "yes")
+
+                    goto baslangic;
+            }
+            if (sayi == 12)
+            {
+                Console.WriteLine("KIŞ MEVSİMİ");
+                Console.WriteLine("devam etmek ister misiniz");
+                string cevap5 = Console.ReadLine();
+
+                if (cevap5 == "yes")
+
+                    goto baslangic;
+            }
+            if ((sayi <= 0 || sayi > 12))
+            {
+                Console.WriteLine("Yanlış sayı birimi girdiniz, TEKRAR DENEMEK İSTER MİSİNİZ?");
+                string cevap = Console.ReadLine();
+                
+                if (cevap == "yes" )
+                {
+                goto baslangic;
+                }
+                else 
+                    {
+                    Console.WriteLine("peki");
+                }
+                
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+
+----------------
+
+baslangıc:
+            Console.WriteLine("Lütfen bir sayı giriniz.");
+            int sayi = int.Parse(Console.ReadLine());
+            if (sayi == 12 || sayi == 1 || sayi == 2)
+            {
+                Console.WriteLine("Bu mevsim kıştır.");
+            }
+            else if (sayi > 2 && sayi < 6)
+            {
+                Console.WriteLine("Bu mevsim ilkbahardır.");
+            }
+            else if (sayi > 5 && sayi < 9)
+            {
+                Console.WriteLine("Bu mevsim yazdır.");
+            }
+            else if (sayi > 8 && sayi < 12)
+            {
+                Console.WriteLine("Bu mevsim sonbahardır.");
+            }
+            else if (sayi < 0 || sayi > 12)
+            {
+                Console.WriteLine("Yanlış bir sayı girdiniz.");
+                goto baslangıc;
+            }
+            Console.ReadLine();
+
+*****UYGULAMALAR*****
+
+            //FOR DÖNGÜSÜ İLE ÇARPIM TABLOSU OLUŞTURMA
+            //int i, j, carpim_tablosu ;
+            //for (i = 1; i <= 10; i++) 
+            //{
+            //    for (j = 1; j <= 10; j++)
+            //    {
+            //        carpim_tablosu = (i * j);
+            //        Console.WriteLine(i + "x" + j + "=" + carpim_tablosu);
+            //    }
+            //    Console.WriteLine("*********************");
+
+            //}
+
+            //KULLANICI GİRİŞ SAYFASI OLUŞTURALIM WHILE ILE ADINI VE ŞİFREYİ DOĞRU GİRERSE GİRİŞ YAPTINIZ
+            //DOĞRU GİRMEZSE HATALI GİRİŞ 3DEN FAZLA GİRİŞ OLURSA ŞİFRENİZ BLOKE OLDU
+            //int islemSayisi = 3;
+            //while (true)
+            //{
+            //    Console.WriteLine("Kullanıcı adını giriniz");
+            //    string user_name = Console.ReadLine();
+            //    Console.WriteLine("Şifrenizi giriniz");
+            //    string password = Console.ReadLine();
+            //    if (user_name == "software" && password == "2022")
+            //    {
+            //        Console.WriteLine("Tebrikler başarılı giriş yaptınız");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Kullanıcı adını veya şifreyi yanlış girdiniz");
+            //        if (islemSayisi > 0)
+            //        {
+            //            islemSayisi -= 1;
+            //        }
+            //        if (islemSayisi == 0)
+            //        {
+            //            Console.WriteLine("İşlem hakkınız bitmiştir");
+            //            break;
+            //        }
+            //    }
+
+            //}
+
+
+
+            //DOWHILE 1 İLE 100 ARASINDA RANDOM SAYI ÜRETTİRECEĞİZ BİZİM GİRDİĞİMİZ SAYI İLE ONUN VERDİĞİ AYNI İSE TEBRİKLER DİYECEK
+            //Random r = new Random();
+            //int rs = 0;
+            //int s;
+            //rs = r.Next(1, 101);
+            //do
+            //{
+            //    Console.WriteLine("Sayı Giriniz");
+            //    s = int.Parse(Console.ReadLine());
+            //    if (s < rs)
+            //        Console.WriteLine("Büyük sayı giriniz");
+            //    else if (s > rs)
+            //        Console.WriteLine("Küçük sayı giriniz");
+            //    else
+            //        Console.WriteLine("Tebrikler bildiniz");
+
+            //} while (s != rs);
+
+*****DİZİLER*****
+
+//DİZİLER
+            //int[] numbers = new int[4];
+            //numbers[0] = 15;
+            //numbers[1] = 15;
+            //numbers[2] = 35;
+            //numbers[3] = 45;
+            //for (int i = 0; i < numbers.Length; i++) 
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //STRING OLARAK VERI TIPI TANIMLAYARAK DIZI YAZDIRALIM
+            //string[] kelime = { "ben", "busra", "sarikaya" };
+            //for (int i = 0; i < kelime.Length; i++)
+            //{
+            //    Console.WriteLine(kelime[i]);
+            //}
+
+            //CHAR ILE YAPALIM
+            //char[] karakter= { 'a', 'b', 'c', 'd' };
+            //for (int i=0; i<karakter.Length; i++)
+            //    {
+            //    Console.WriteLine(harf[i]);
+
+            //}
+
+            //DİZİNİN İÇİNDEKİ SAYILARI KULLANICIYA GİRDİR
+            //int[] numbers = new int[3];
+            //int i;
+
+            //for (i = 0; i < numbers.Length; i++)
+            //{
+            //Console.WriteLine("sayılar dizisinin " + i + " . değerini giriniz");
+            //    numbers[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //Console.WriteLine("+++++++++++++++++++");
+            //for (i = 0; i <= numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //BİR DİZİ BELİRLEYELİM SAYILARI ATAYALIM BU SAYILARDAKİ EN KÜÇÜK VE EN BÜYÜK SAYILARI YAZDIR
+            //int[] dizi = { 10, 20, 30, 40, 8, 9, 3, 5, 12 };
+            //int enbuyuk = dizi[0];
+            //int enkucuk = dizi[0];
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    if (dizi[i] > enbuyuk)
+            //        enbuyuk = dizi[i];
+            //    if (dizi[i] < enkucuk)
+            //        enkucuk = dizi[i];
+            //}
+            //Console.WriteLine("En küçük:{0}", enkucuk);
+            //Console.WriteLine("En büyük:{0}", enbuyuk);
+            //Console.ReadKey();
+
+++++++++++++++++++++++++++++++++++++++++++++++++31.12.2021+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ //DİZİNİN BELİRLİ ELEMANINI YAZDIRMA
+            //string[] renkler = { "sari", "kirmizi", "turuncu", "mavi" };
+            //for (int i=0; i<renkler.Length; i++)
+            //    {
+            //    Console.WriteLine(renkler[2]);
+                
+            //}
+
+
+
+            //FOR EACH (dizi icinde gezinmek diyebiliriz)
+            //double[] ondalikli_sayilar = { 1.2, 2.3, 3.4, 5.6, 6.7 };
+            //foreach (double c in ondalikli_sayilar)
+            //    {
+            //    Console.WriteLine(c);
+            //    }
+
+            //1.UYG Mevsimler olsun 
+            //string[] mevsimler = { "ilkbahar", "yaz", "sonbahar", "kis" };
+            //foreach (string b in mevsimler)
+            //{
+            //    Console.WriteLine(b);
+            //}
+
+            //KULLANICIN GİRDİĞİ SAYI DİZİDE VAR MI KONTROL ETME
+            //int[] sayilar = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 70, 50, 40, 30, 20, 10 };
+            //int adet = 0;
+            //int sayi;
+            //Console.WriteLine("Lütfen sayıyı giriniz:");
+            //sayi = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i < sayilar.Length; i++)
+
+            //{
+            //    if (sayi == sayilar[i])
+            //    {
+            //        adet++;   //for un içinde sayaç döndürüp gezdirip kaç tane olduğunu görüp tutuyoruz
+            //    }
+
+            //}  //aşağıda tuttuğumuz adet sayısını karşılaştıracağız
+
+            //if (adet == 0)
+            //{
+            //    Console.WriteLine("Girdiğiniz sayı dizimde yok!Üzgünüm:(");
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Oley girdiğiniz sayı dizimde var");
+            //    Console.WriteLine("Adet:" + adet);
+            //}
+
+
+
+
+
+int i;
+            int[] notlar = { 10, 20, 25, 35, 60, 70, };
+            int gecen_sayisi = 0;
+            int kalan_sayisi = 0;
+            for (i=0; i<notlar.Length; i++)
+            {
+                if (notlar[i] < 50)
+                {
+                    kalan_sayisi++;
+                }
+                else
+                {
+                    gecen_sayisi++;
+                }
+            }
+            if (gecen_sayisi > 0)
+            {
+                Console.WriteLine("gecen ogrenci sayisi:" + gecen_sayisi);
+            }
+            if (kalan_sayisi > 0)
+            {
+                Console.WriteLine("kalan ogrenci sayisi:" + kalan_sayisi);
+            }
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
+
+//KULLANICIDAN 12 DEĞER ALIP TEK CIFT BELIRLEME TOPLAMLARINI YAZDIRMA
+int[] deger = new int[12];
+            int ciftsayilar = 0;
+            int teksayilar = 0;
+            int cst = 0;
+            int tst = 0;
+
+            for (int i=0; i<deger.Length; i++)
+            {
+                Console.WriteLine("dizinin " + (i + 1) + ". degerini giriniz");
+                int kullanicidegeri = Convert.ToInt32(Console.ReadLine());
+                deger[i] = kullanicidegeri;
+            }
+            foreach (int x in deger)
+            {
+                if (x % 2 == 0)
+                {
+                    cst = cst + x;
+                    ciftsayilar++;
+                }
+                else
+                {
+                    tst = tst + x;
+                    teksayilar++;
+                }
+            }
+            Console.WriteLine("###############################");
+            Console.WriteLine("cift sayi adedi = " + ciftsayilar);
+            Console.WriteLine("tek sayi adedi = " + teksayilar);
+            Console.WriteLine("###############################");
+            Console.WriteLine("cift sayilarin toplami = " + cst);
+            Console.WriteLine("tek sayilarin toplami = " + tst);
+            Console.WriteLine("###############################");
+
+
+            if (cst > tst)
+            {
+                Console.WriteLine("cift sayilarin toplami daha büyüktür");
+            }
+            else if ( tst > cst)
+            {
+                Console.WriteLine(" tek sayilarin toplami daha büyüktür");
+            }
+            else
+            {
+                Console.WriteLine("tek sayilarin toplami ve cift sayilarin toplami birbirine esittir");
+            }
+
+
+################################################### 03.01.2022 ####################################################################
+
+//KLAVYEDEN GİRDİĞİMİZ CÜMLENİN İÇİNDEKİ SESLİ HARF SAYISINI VE SESSİZ HARF SAYISINI YAZDIRMA
+string sentence;
+            int vowel_counter = 0;
+            int consonant_counter = 0;
+            Console.WriteLine("lutfen kucuk harflerle bir cumle yaziniz");
+            sentence = Convert.ToString(Console.ReadLine());
+            char[] vowels = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
+            for (int x = 0; x < sentence.Length; x++)
+            {
+                for (int i = 0; i < vowels.Length; i++)
+                {
+                    if ( sentence[x]==vowels[i])
+                    {
+                        vowel_counter++;
+                    }
+                }
+            }
+
+            consonant_counter = ((sentence.Length - 1) - vowel_counter);
+            Console.WriteLine("sesli harfler : " + vowel_counter);
+            Console.WriteLine("sessiz harfler : " + consonant_counter);
+
+            Console.ReadLine();
+
+
+//KÜÇÜK GİRİLEN METNİ BÜYÜĞE ÇEVİRME
+            Console.WriteLine("Metni Giriniz");
+            string cumle = Console.ReadLine();
+            for (int  i=0; i<cumle.Length; i++)
+            {
+                char c = cumle[i];
+                int d = c;
+                int sonuc = d - 32; // 32 BÜYÜK KÜÇÜK ÇEVİRMEDE SABİTTİR. KÜÇÜKTEN BÜYÜĞE İSE -. BÜYÜKTEN KÜÇÜĞE İSE +. 
+                Console.Write((char)sonuc);
+            }
+            Console.ReadKey();
+
+
+//KELİMEDEKİ SESLİ HARF SAYISINI TÜM HARF SAYISINA BÖLME
+            //char[] sesli = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' }; //sesli harfler sabit olduğu için dizi tanımlıyoruz
+            //int adet = 0; //sesli harf sayısını içinde tutacak değişken tanımlıyoruz
+            //Console.WriteLine("Bir cümle giriniz:"); //dışarıdan cümlemizi giriyoruz
+            //String cumle = Console.ReadLine(); //cümlemizi değişkene aktarıyoruz
+            //for (int i = 0; i < cumle.Length ; i++) //cümlemizin harf harf inceleneceği döngümüzü oluşturuyoruz
+            //{
+            //    for (int j = 0; j < sesli.Length; j++) // cümlemizz harf harf incelenirken her harfi sesli harfle karşılaştıracak döngümüzü hazırlıyoruz
+            //    {
+            //        if (cumle[i] == sesli[j]) //harfleri karşılaştırıyoruz
+            //        {
+            //            adet++; //şart doğru ise sesli harf değişkenini bir arttırıyoruz
+            //        }
+            //    }
+            //}
+            //float oran = Convert.ToSingle(adet) / Convert.ToSingle(cumle.Length);
+            //Console.WriteLine("harf sayısı :" + (cumle.Length ).ToString());
+            //Console.WriteLine("sesli harf sayısı : {0}", adet); // sonucu ekranda gösteriyoruz.
+            //Console.WriteLine("oran :" + oran.ToString());
+            //Console.ReadKey();
+
+////RASTGELE 10 ELEMANLI BİR DİZİ OLUŞTURUP TERS ÇEVİRME
+            //Random rastgele = new Random();
+            //int[] dizi = new int[10];
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    dizi[i] = rastgele.Next(0, 10);
+            //    Console.Write(dizi[i].ToString() + "");
+            //}
+            //Console.WriteLine();
+            ////Ters çevirme işlemi
+            //int gecici;
+            //for (int i = 0; i < dizi.Length / 2; i++)
+            //{
+            //    gecici = dizi[i];
+            //    dizi[i] = dizi[dizi.Length - 1 - i];
+            //    dizi[dizi.Length - 1 - i] = gecici;
+            //}
+
+            ////Dizi yazdırılıyor
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    Console.Write(dizi[i] + "");
+            //}
+
+            ////VEYA
+
+            //Random rastgele = new Random();
+            //int[] dizi = new int[10];
+
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    dizi[i] = rastgele.Next(0, 10);
+            //    Console.WriteLine(dizi[i] + "");
+            //}
+            //Console.WriteLine("=============");
+            //for (int i = dizi.Length - 1; i >= 0; i--)
+            //{
+
+
+            //    Console.WriteLine(dizi[i] + "");
+            //}
+
+
+//KULLANICI SAYI GİRECEK BU SAYI DEĞERİ KADAR DİZİ OLUŞTURUP BU DİZİDEKİ ELEMANIN KAÇ KERE TEKRAR ETTİĞİNİ YAZALIM
+            //int n, sayac = 0, i, j, k, l;
+            //Console.WriteLine("Dizinin Eleman Sayısını Girin");
+            //n = Int16.Parse(Console.ReadLine());
+            //int[] dizi = new int[n];
+            //Console.WriteLine("Dizinin Elemanlarını Sırayla Girin");
+            //for (i = 0; i < n; i++)
+            //{
+            //    dizi[i] = Int16.Parse(Console.ReadLine());
+            //    //diziye değerleri aldık 
+            //}
+            //ilk iki for dizideki elemanların eşit olup olmadığını öğrenmek için dönüyor, mesela dizi[3]=1 ve dizi[7]=1
+            //for (j = 0; j < n; j++)
+            //{
+            //    for (k = 0; k < n; k++)
+            //    {
+            //        //eğer tekrar eden değer bulunursa if'in içindeki kod çalışıyor 
+            //        if (dizi[j] == dizi[k])
+            //        {
+            //            //bu for da, dizinin bütün değerleri için ekranda yazdırmanın önüne geçmek için.
+            //            //örneğin 2 üç kez tekrar ediyor olabilir ama ekranda sadece bir tane 2nin üç kez girildiğini görmemiz lazım aksi takdirde ekranda kaç kez girildiyse o kadar yazdırıyor.
+            //            for (l = 0; l < j; l++)
+            //            {
+            //                //eğer değerin kaç kez girildiğini önceden yazdırmışsam bunu tekrar yazdırmama gerek yok
+            //                if (dizi[l] == dizi[j])
+            //                    //sayacı -1'e eşitliyorum çünkü sonrasında 1 artıracak 0 olacak ve en son ekrana yazdırırken sayaç 0 değilse yazdıracak 
+            //                    sayac = -1;
+            //            }
+            //            sayac++;
+            //        }
+            //    }
+            //    if (sayac != 0)
+            //        Console.WriteLine(dizi[j] + " sayısı " + sayac + " kez tekrar edildi");
+            //    sayac = 0;
+            //}
+
+
+***********Matrisler************Cok Boyutlu Diziler
+//////https://mustafabukulmez.com/2018/03/12/c-sharp-cok-boyutlu-diziler-en-ayrintili-anlatim/
+
+//COK BOYUTLU DİZİLER
+            //int[,] dizi2d = new int[3, 4];
+            //dizi2d[0, 0] = 8;
+            //dizi2d[0, 1] = 2;
+            //dizi2d[0, 2] = 3;
+            //dizi2d[0, 3] = 4;
+
+            //dizi2d[1, 0] = 5;
+            //dizi2d[1, 1] = 6;
+            //dizi2d[1, 2] = 7;
+            //dizi2d[1, 3] = 8;
+
+            //dizi2d[2, 0] = 9;
+            //dizi2d[2, 1] = 10;
+            //dizi2d[2, 2] = 11;
+            //dizi2d[2, 3] = 12;
+            //for (int i = 0; i < dizi2d.GetLength(0); i++)
+            //{
+
+            //    for (int j = 0; j < dizi2d.GetLength(1); j++)
+            //    {
+            //        Console.Write(dizi2d[i, j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+//2 BOYUTLU BİR DİZİNİN HER SATIR VE SÜTUNUN TOPLAMLARINI AYRI HESAPLAMA -- GETLENGTH DE 0 SATIR 1 SÜTUN
+            //int[,] dizi = new int[4, 5];  // Dizi Tanımlıyoruz.
+            //Random rnd = new Random();
+
+            //for (int i = 0; i < dizi.GetLength(0); i++)   // Diziye Rastgele Sayılar Atıyoruz.
+            //{
+            //    for (int j = 0; j < dizi.GetLength(1); j++)
+            //    {
+            //        dizi[i, j] = rnd.Next(10);
+            //        Console.Write(dizi[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Console.WriteLine("_________________");
+
+            //for (int m = 0; m < dizi.GetLength(0); m++)    // Satırları Topluyoruz.
+            //{
+            //    int satır = 0;
+            //    for (int n = 0; n < dizi.GetLength(1); n++)
+            //    {
+            //        satır += dizi[m, n];
+            //    }
+            //    Console.WriteLine((m + 1) + ". Satırın Toplamı = " + satır);
+            //}
+
+            //Console.WriteLine("_________________");
+
+            //for (int m = 0; m < dizi.GetLength(1); m++)     // Sütunları Topluyoruz.
+            //{
+            //    int sutun = 0;
+            //    for (int n = 0; n < dizi.GetLength(0); n++)
+            //    {
+            //        sutun += dizi[n, m];
+            //    }
+            //    Console.WriteLine((m + 1) + ". Sütunun Toplamı = " + sutun);
+            //}
+
+            ////////////FARKLI YÖNTEM///////////////////
+
+            //int[,] dizi = new int[10, 10];
+            //Random rnd = new Random();
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    for (int j = 0; j < 10; j++)
+            //    {
+            //        dizi[i, j] = rnd.Next(10);
+            //        Console.Write(dizi[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("***************************");
+            //Console.WriteLine();
+            //for (int m = 0; m < 10; m++)
+            //{
+            //    int sutun_toplam = 0;
+            //    int satır_toplam = 0;
+            //    for (int n = 0; n < 10; n++)
+            //    {
+            //        satır_toplam += dizi[m, n];
+            //        sutun_toplam += dizi[n, m];
+            //    }
+            //    Console.WriteLine("{0}. Satırın Toplamı\t: {1}\t\t{2}. SütununToplamı\t: {3}", (m + 1), satır_toplam, (m + 1), sutun_toplam);
+            //}
+
+
+//MATRİSTE KÖŞEGEN ELEMANLARIN TOPLAMINI VE ÇARPIMINI BULALIM
+            //int n;
+            //int[,] dz = new int[4, 4];  // Dizi Tanımlıyoruz.
+            //Random rnd = new Random();
+
+            //for (int i = 0; i < dz.GetLength(0); i++)   // Diziye Rastgele Sayılar Atıyoruz.
+            //{
+            //    for (int j = 0; j < dz.GetLength(1); j++)
+            //    {
+            //        dz[i, j] = rnd.Next(10);
+            //        Console.Write(dz[i, j] + " ");
+            //    }
+                
+            //    Console.WriteLine();
+                
+            //}
+            //Console.WriteLine("_________________");
+            //for (n = 0; n < dz.GetLength(1); n++)
+            //{
+            //    Console.WriteLine(dz[n, n]);
+            // }
+            //Console.WriteLine("_________________");
+            //for (n = 0; n < dz.GetLength(1); n++)
+            //{
+            //    Console.WriteLine(dz[n, 3 -n]);
+            //}
+
+            //Console.WriteLine("_________________");
+            ////1.KÖŞEGEN TOPLAMI
+            //int toplam = 0;
+            //for ( n=0; n<dz.GetLength(0); n++)
+            //{
+            //    toplam = toplam + dz[n, n];
+            //}
+            
+            //Console.WriteLine("1.köşegen toplamı:" + toplam.ToString());
+            
+            ////2.KÖŞEGEN TOPLAMI
+            //int toplam2 = 0;
+            //for ( n=0; n<dz.GetLength(0); n++)
+            //    {
+            //    toplam2 = toplam2 + dz[n, 3 - n];
+            //    }
+            //Console.WriteLine("2.köşegen toplamı:" + toplam2.ToString());
+
+            ////1.KÖŞEGEN ÇARPIMI
+            //int carpim= 1;
+            //for ( n = 0; n < dz.GetLength(0); n++)
+            //{
+            //    carpim= carpim * dz[n, n];
+            //}
+            //Console.WriteLine("1.köşegen carpimi:" + carpim.ToString());
+
+            ////2.KÖŞEGEN ÇARPIMI
+            //int carpim2 = 1;
+            //for (n = 0; n < dz.GetLength(0); n++)
+            //{
+            //    carpim2 = carpim2 * dz[n,3-n];
+            //}
+            //Console.WriteLine("2.köşegen carpimi:" + carpim2.ToString());
+
+            //Console.ReadLine();
+
+
+
+
+
+################################################### 04.01.2022 ####################################################################
+*******2 BOYUTLU MATRİSLER DEVAMM
+
+
+////2 DİZİNİN ELEMANLARINI TOPLAYIP YENİ DİZİ OLUŞTURMA (3X3)
+            //int[,] dizi1 = { { 20, 30, 40 }, { 60, 23, 34 }, { 47, 34, 20 } };
+            //int[,] dizi2 = { { 40, 50, 70 }, { 31, 52, 78 }, { 38, 48, 57 } };
+
+            //int[,] dizi3 = new int[3, 3]; İ SATIR J SUTUN
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        dizi3[i, j] = dizi1[i, j] + dizi2[i, j];
+            //    }
+            //}
+            //for (int k = 0; k < 3; k++) //yeni dizi yazdırma işlemi K SATIR M SÜTUN
+            //{
+            //    Console.WriteLine(); //SATIR ATLAMA KOMUTU
+            //    for (int m = 0; m < 3; m++)
+            //    {
+            //        Console.Write(" " + dizi3[k, m] + " ");
+            //    }
+            //}
+
+            //Console.Read();
+
+***********DÜZENSİZ DİZİLER
+            //int[][] dizi = new int[3][];
+            //dizi[0] = new int[] { 1, 2, 3 };
+            //dizi[1] = new int[] { 4, 5, 6, 7 };
+            //dizi[2] = new int[] { 8, 9 };
+            //int i = 0;
+            //while (i < dizi.Length)
+            //{
+            //    int t = 0;
+            //    while (t < dizi[i].Length)
+            //      {   
+            //        Console.Write(dizi[i][t] + "\t");
+            //        t++;
+            //    }
+            //    Console.WriteLine();
+            //    i++;
+
+            //}
+
+**********ARRAY METHOD PROPERTIES************
+//*ISFIXEDSIZE OZELLIK DIZININ SABIT OLUP OLMADIGINI GOSTERIYOR DUZENLI MI DEGIL MI TEK BOYUTLULARDA TRUE DEGERİ VERİR
+            //Array isimler = new[] { "ALİ", "VELİ", "OKTAY", "ASLI", "SELİM", "MUSTAFA" };
+            //Console.WriteLine(isimler.IsFixedSize);
+
+//*ISREADONLY DIZININ SADECE OKUNUR MU OLDUGUNU GOSTERIR-- SADECE OKUNUR MU YOKSA YAZMA DA YAPILABILIR MI?--
+            //Console.WriteLine(isimler.IsReadOnly);
+
+//*LENGTH OZELLIK
+            //Console.WriteLine(isimler.Length);
+
+//*RANK OZELLIK
+            //Console.WriteLine(isimler.Rank);
+
+
+-ORNEK
+int[] sayilar = { 2, 3, 56, 8, 7, 10, 1, 5, };
+//*ARRAY.CLEAR() DİZİDEN İSTEDİGİMİZ ELEMANA KADAR SIFIRLAMA 0,3
+            //Array.Clear(sayilar, 0, 3);
+
+//*ARRAY.SORT SAYILARI BÜYÜKTEN KÜÇÜĞE SIRALAMA
+            //Array.Sort(sayilar);
+
+//*ARRAY.REVERSE SAYILARI TERSTEN YAZDIRMA İNDEXLERE GÖRE
+            //Array.Reverse(sayilar);
+
+//*ARRAY.RESIZE INDEX EKLEME UZUNLUGU ARTTIRMA diziye yeni elemen ekledik  -- indexe degerini yazdık
+            //Array.Resize(ref sayilar, 9);
+            //sayilar[8] = 12;
+
+
+            for (int i=0; i<sayilar.Length; i++)
+            {   
+                
+                Console.WriteLine("sayı[" + i + "]=" + sayilar[i]);
+            }
+            
+//*ARRAY.INDEXOF elemanın index degerini sorduruyoruz
+            //Console.WriteLine(Array.IndexOf(sayilar, 8).ToString());
+            //Console.WriteLine(Array.LastIndexOf(sayilar, 8)); //sondan arattık aynı sonucu verdi
+
+
+//*KULLANICIYA İÇİNDE ARAYACAĞI METNİ GİRDİRELİM? GİRİLEN METİN YAZININ İÇİNDE KAÇ TANE VARDIR
+            //int sayac = 0;
+            //Console.WriteLine("Lutfen Arama Yapılacak Metni Giriniz");
+            //string metin = Console.ReadLine();
+            //Console.WriteLine("Lutfen Aratmak İstediğiniz Kelimeyi Giriniz");
+            //string kelime = Console.ReadLine();
+            //int konum = metin.IndexOf(kelime);
+            //while(konum!=-1)
+            //{
+            //    konum = metin.IndexOf(kelime, konum + 1);
+            //    sayac++;
+            //}
+            //Console.WriteLine("aradığınız metinde " + sayac + " kere bulunmaktadır" );
+            //Console.ReadLine();
+
+//*TRIM //baştaki ve sondaki boşlukları siler
+            //string metin = "        networkakademi.com     ";
+            //Console.WriteLine(metin.Trim());
+
+            //string metin2 = "    network akademi   ";
+            //Console.WriteLine(metin2.TrimStart()); //metin başındaki boşlukları siler
+            //Console.WriteLine(metin2.TrimEnd()); //metin sonundaki boşlukları siler
+
+//*REPLACE DEGİSTİRMEK İSTEDİGİMİZ DEGERİ HARFİ KELİMEYİ DEGİSTİRİYORUZ
+            // string value1 = "MERHABA TÜNYA";
+            //string value2 = value1.Replace("TÜNYA","BUSRA");
+            //Console.WriteLine(value2);
+
+//*REPLACE ILE BOSLUKLARI TEMIZLEME
+            //string metin = "NETWORK AKADEMI";
+            //string replace = metin.Replace("", string.Empty);
+            //Console.WriteLine(replace);
+
+//*REPLACE KULLANARAK METINDEKI VIRGULLERI NOKTAYA DONUSTUR
+            //Console.WriteLine("lutfen metni giriniz");
+            //string metin = Console.ReadLine();
+            //string value1 = metin;
+            //string value2 = value1.Replace(",", ".");
+            //Console.WriteLine(value2);
+
+//*TRY CATCH FINALLY--TRY DA KOMUTU YAZARIZ-CATCH DE HATALI KOMUTU YAZARIZ-FINALLY HER İKİ DURUMDA DA YAZACAK OLAN KOD
+            //int x, y;
+            //Console.WriteLine("1.sayıyı giriniz");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("2.sayıyı giriniz");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //try
+            //{
+            //    Console.WriteLine("{0}/{1} = {2}", x, y, x / y);
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine("hata oluştu:{0}", e);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("iyi günler");
+            //}
+            
+            //--
+            
+            //try
+            //{
+            //    Console.WriteLine("yaşınızı giriniz");
+            //    int yas = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("bilgilendirme için teşekkürler");
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message); //sistem mesajı kullanmayıp kendi mesajımızı da yazabilirdik
+            //}
+
+
+
+*******ARRAYLIST********
+//ArrayList koleksiyon türünde bir sııftıt. İstediğimiz veri tipini tutar
+            //Yardımcı metotlar tutar
+            //Primitive array(ilkel dizi)
+            //string[] names = { "busra", "kıvanç", "kerem", "burak", "meryem" };
+            //foreach(string a in names)
+            //{
+            //    Console.WriteLine(a);
+            //}
+
+//ArrayList yukarıya using system.collections eklemek gerekir.
+            ArrayList collection = new ArrayList();
+            collection.Add("mertkan"); //Sona ekleme yapar.
+            collection.Add("yasin");
+            collection.Add("furkan");
+            collection.Add("bilge");
+            collection.Add("çisem");
+            collection.Add("busra");
+            collection.Add("yalcın");
+
+//Remove - istedigimiz satırı silmek icin
+            //collection.Remove("mertkan");
+
+//count - dizideki elemanları sayar
+            //int count = collection.Count;
+            //Console.WriteLine(count);
+
+//clear - diziyi tamamen temizler
+            //collection.Clear();
+
+//reverse - diziyi tersten yazdırma
+            //collection.Reverse();
+
+//insert - indekse ekleme yapıyoruz 
+            //collection.Insert(3, "sait");
+
+//collection.indexof kaçıncı indexte oldugunu sorgulatma
+            //int index = collection.IndexOf("yasin");
+            //Console.WriteLine("index numarası" + index);
+
+//collection.contains - dizide var mı yok mu kontrol etme
+            //bool control = collection.Contains("merve");
+            //Console.WriteLine(control);
+
+            //
+
+            foreach (var item in collection)
+            {
+                Console.WriteLine(item);
+            }
+
+            
+            Console.ReadLine();
+
+//ArrayList numbers = new ArrayList();
+            //numbers.Add(13);
+            //numbers.Add(87);
+            //numbers.Add(3);
+            //numbers.Add(19);
+            ////numbers.Sort(); //küçükten büyüğe sıralama
+
+            //foreach(int a in numbers)
+            //{
+            //    Console.WriteLine(a);
+            //}
+            ////ToString
+            //int val = 14;
+            //string msg = "BU SINIFTA " + val.ToString() + " KİŞİ VARDIR.";
+            //Console.WriteLine(msg);
+
+
+
+**ODEV: 10 ADET SAYIYI TEK VE CIFT OLARAK GOSTEREN ARRAY LIST UYGULAMASI
+ÇİFT SAYILARIN ADEDİ
+TEK SAYILARIN ADEDİ
+SAYILARIN ORTALAMASINI EKRANA YAZDIR
+SAYILAR RANDOM OLACAK
+
+ ArrayList tekSayilar = new ArrayList();
+            ArrayList ciftSayilar = new ArrayList();
+            int ortalama = 0, toplam = 0;
+            Random rnd = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                int sayi = rnd.Next(1, 100);
+                Console.Write(sayi + "   ");
+                toplam += sayi;
+                if (sayi % 2 == 0)
+                {
+                    ciftSayilar.Add(sayi);
+                }
+                else
+                {
+                    tekSayilar.Add(sayi);
+                }
+
+            }
+            Console.WriteLine();
+            Console.WriteLine("============================================================");
+            ortalama = toplam / 10;
+
+            Console.WriteLine("Sayıların Ortalaması : {0}", ortalama);
+            Console.WriteLine("Tek Sayıların Adeti : {0}", tekSayilar.Count);
+            Console.WriteLine("Çift Sayıların Adeti : {0}", ciftSayilar.Count);
+            Console.ReadKey();
+        }
+
+
+
+################################################ 05.12.2022 ###################################################################
+https://csharp-tutorials.com/tr-TR/linq/Bool/bool-degiskeninin-if-ile-kullanimi
+
+//*KEY YAZDIRMA
+            //Dictionary<int, string> Ogrenci = new Dictionary<int, string>();
+            //Ogrenci.Add(150, "tom hanks");
+            //Ogrenci.Add(230, "steve jobs");
+            //Ogrenci.Add(300, "sergey brin");
+            //Ogrenci.Add (145, "larry page");
+            //Dictionary<int, string>.KeyCollection AnahtarListesi = Ogrenci.Keys;
+            //foreach(int anahtar in AnahtarListesi)
+            //{
+            //    Console.WriteLine(anahtar);
+            //}
+
+//*DEĞERE GÖRE YAZDIR
+            //Dictionary<int, string>.ValueCollection DegerListesi = Ogrenci.Values;
+            //foreach(string deger in DegerListesi)
+            //{
+            //    Console.WriteLine(deger);
+            //}
+
+
+            //KeyValuePair<Key_Tipi,Value_Tipi>Yapısı                                           numara:150 - isim:tom hanks
+            //foreach (KeyValuePair<int,string>veri in Ogrenci)                                 numara: 230 - isim:steve jobs
+            // {                                                                                numara:300 - isim:sergey brin
+            //    Console.WriteLine("numara:{0} - isim:{1}", veri.Key, veri.Value);             numara: 145 - isim:larry page
+            //}
+            Console.ReadKey();
+
+
+//*TryGetValue(a, outb)Metodu
+            //Koleksiyon içerisinde a anahtarı mevcutsa ilişkili degeri b degiskenine aktarip true döndürür.
+            //Aksi durumda false dondurur.
+            //*OGRENCI NO SORDURARAK İSİM SORMA
+            //Dictionary<int, string> ogrenci = new Dictionary<int, string>();
+            //ogrenci.Add(134, "Tolga Demirer");
+            //ogrenci.Add(158, "Ümit Özkan");
+            //ogrenci.Add(115, "Kadir Aydemir");
+            //ogrenci.Add(174, "Cemal Çiftçi");
+            //Console.Write("Öğrenci No Giriniz:");
+            //int No = int.Parse(Console.ReadLine());
+            //string isim = " ";
+            
+            //if (ogrenci.TryGetValue(No, out isim))
+            //    Console.WriteLine(isim);
+            //else
+            //    Console.WriteLine("Öğrenci Bulunamadı.");
+
+//*TRYCATCH KULLANARAK YAPALIM
+            //try 
+            //{   
+            //    Console.WriteLine(ogrenci[No]);
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("ogrenci bulunamadı");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("son");
+            //}
+
+
+//*DINAMIK VERI EKLEME KONTROL YAPACAGIZ VERIYI SORGULATACAGIZ YOKSA EKLETECEGIZ
+            //var kullanicilar = new Dictionary<int, string>();
+            //kullanicilar.Add(0, "Kerem Bürsin");
+            //kullanicilar.Add(1, "Ali Atalay");
+            //kullanicilar.Add(2, "Okan Bayülgen");
+            //kullanicilar.Add(3, "Sinan Kaya");
+            //kullanicilar.Add(4, "Haluk Bilginer");
+            //kullanicilar.Add(5, "Furkan Erbaş");
+            //foreach (KeyValuePair<int, string> kullanici in kullanicilar)
+            //{
+            //    Console.WriteLine("ID=>" + kullanici.Key + "\t" + "Ad Soyad=>" + kullanici.Value);
+
+            //}
+            //string newUser;
+            //bool varMi = kullanicilar.TryGetValue(6, out newUser);
+            //newUser = "Mertkan İskurt";
+            //if (varMi)
+            //{
+            //    Console.WriteLine("Bu ID'DE KULLLANICI MEVCUTTUR");
+            //}
+            //else
+            //{
+            //    //EKLEME İŞLEMİ YAPAR
+            //    kullanicilar.Add(6, newUser);
+            //    Console.WriteLine("Ekleme işlemi başarıyla gerçekleşmiştir.");
+            //    Console.WriteLine(newUser);
+
+            //}
+            //Console.ReadLine();
+
+
+//*DICTIONARY VE SORTED LIST FARKI
+            //var kullanicilarSortedList = new SortedList<int, string>();
+            //var kullanicilarDictionary = new Dictionary<int, string>();
+            //kullanicilarSortedList.Add(3, "sinan tuzcu");
+            //kullanicilarSortedList.Add(8, "ali kurt");
+            //kullanicilarSortedList.Add(2, "okan bayulgen");
+            //kullanicilarSortedList.Add(7, "emir emiroglu");
+            //kullanicilarSortedList.Add(6, "murat boz");
+            //kullanicilarSortedList.Add(0, "zeynep bastık");
+
+            //kullanicilarDictionary.Add(3, "sinan tuzcu");
+            //kullanicilarDictionary.Add(8, "ali atay");
+            //kullanicilarDictionary.Add(2, "okan bayulgen");
+            //kullanicilarDictionary.Add(7, "emir emiroglu");
+            //kullanicilarDictionary.Add(6, "murat boz");
+            //kullanicilarDictionary.Add(0, "zeynep bastık");
+            //Console.WriteLine("dictionary ile ");
+            //foreach(KeyValuePair<int,string>kullanici in kullanicilarDictionary) //DICTIONARY İLE YAZDIGIMIZ SEKİLDE VERİR
+            //{
+            //    Console.WriteLine("ID=>" + kullanici.Key + "\t" + "ad soyad=>" + kullanici.Value);
+            //}
+            //Console.WriteLine("");
+            //Console.WriteLine("sortedlist ile");
+            //foreach (KeyValuePair<int,string>kullanici in kullanicilarSortedList) //SORT İLE SIRALI SEKİLDE VERİR
+            //{
+            //    Console.WriteLine("ID=>" + kullanici.Key + "\t" + "ad soyad=>" + kullanici.Value);
+            //}
+
+            //Console.ReadLine();
+
+
+******METHODLAR**********
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            toplamyap(20, 30);
+            Console.ReadKey();
+        }
+        static void toplamyap(int number1 , int number2) //METHOD TANIMLADIK //PARAMETRE ALAN GERİYE DEĞER DÖNDÜRMEYEN METOT
+        {
+            Console.WriteLine("dönen sayıların toplamı:" + (number1 + number2));
+        }
+        
+    }
+}
+
+---------------
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            carpmayap(20, 4, 6);
+            Console.ReadKey();
+        }
+        static void carpmayap(int number1,int number2,int number3)
+        {
+            Console.WriteLine("sayıların carpımı=" + (number1 * number2 * number3));
+        }
+        
+    }
+}
+
+-------------
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             adsoyadyazdır("busra" , "sarikaya");
+            Console.ReadKey();
+        }
+	static void adsoyadyazdır(string ad, string soyad)
+        {
+            Console.WriteLine("ad ve soyad:" + ad + " " + soyad);
+        }
+        
+    }
+}
+
+
+------------
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {//kullanıcıdan sayı al karesini al 36dan büyük mü kücük mü?
+            Console.WriteLine("sayı giriniz");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+            sayınınkaresi(sayi1);
+            Console.ReadKey();
+        }
+        static void sayınınkaresi(int sayi1)
+        {
+            Console.WriteLine(sayi1 * sayi1);
+            if (sayi1*sayi1 > 36)
+            {
+                Console.WriteLine("sayının karesi 36dan büyüktür");
+            }
+            else
+            {
+                Console.WriteLine("sayının karesi 36dan büyük degildir");
+            }
+        }
+
+    }
+}
+
+
+Console.WriteLine("Bir sayı giriniz");
+            int sayi = int.Parse(Console.ReadLine());
+            int KareDeger = KaresiniAl(sayi);
+            if (KareDeger>36)
+            {
+                Console.WriteLine("Karesi 36'dan büyüktür.");
+            }
+            else
+                Console.WriteLine("Karesi 36'dan küçüktür.");
+            Console.ReadLine();
+        }
+
+        static int KaresiniAl(int a)
+        {
+            return a * a;
+        }
+    }
+
+
+-----------------
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //KULLANICI SAYI GİRECEK TEK Mİ ÇİFT Mİ DİYE METHOD İLE KONTROL EDECEĞİZ
+            Console.WriteLine("bir sayı giriniz");
+            int girilebsayi = int.Parse(Console.ReadLine());
+            tekmiciftmi(girilebsayi);
+            Console.ReadLine();
+            
+        }
+
+        static void tekmiciftmi(int sayi)
+        {
+            if (sayi%0 ==0)
+            {
+                Console.WriteLine("sayı çifttir");
+            }
+            else
+            {
+                Console.WriteLine("sayı tektir");
+            }
+        }
+           
+    }
+}
+
+----------------
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //KULLANICIDAN 2 SAYI İSTEYİP KÜÇÜK BÜYÜK KONTROLÜ
+            Console.WriteLine("1.sayıyı giriniz");
+            int sayi1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("2. sayıyı giriniz");
+            int sayi2 = int.Parse(Console.ReadLine());
+            kontrol(sayi1, sayi2);
+           Console.ReadLine();
+
+        }
+
+        static void kontrol(int sayi1, int sayi2)
+        {
+            if (sayi1 > sayi2)
+            {
+                Console.WriteLine("1.sayı büyüktür");
+            }
+            else if( sayi2> sayi1)
+            {
+                Console.WriteLine("2. sayı büyüktür");
+            }
+            else
+            {
+                Console.WriteLine("sayılar eşittir");
+            }
+        }
+    }
+}
+
+----------
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            adiniyazdir();
+        }
+
+        static void adiniyazdir()
+        {
+            Console.WriteLine("çisem türkoğlu");
+            Console.ReadLine();
+        }
+    }
+}
+{
+    class Program
+{
+    static void Main(string[] args)
+    {
+        selamver();
+    }
+
+    static void selamver()
+    {
+        Console.WriteLine("merhaba ben çisem");
+        Console.ReadLine();
+    }
+}
+}
+
+-------------------
+https://docs.microsoft.com/tr-tr/dotnet/api/system.string.concat?view=net-6.0#System_String_Concat_System_String_System_String_System_String_
+-------------------
+
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1.metni giriniz");
+            string metin1 = Console.ReadLine();
+            Console.WriteLine("2.metni giriniz");
+            string metin2 = Console.ReadLine();
+            string birlesme = string.Concat(metin1, metin2); //CONCAT STRING ILE KULLANILDIGINDA METINLERI BIRLESTIRIR
+            Console.WriteLine("{0} ve {1} kelimelerin birleşmiş hali = {2}", metin1, metin2, birlesme);
+            Console.ReadKey();
+
+
+        }
+    }
+}
+
+-------------------------------
+
+####################################################### 06.12.2021 ######################################################################
+******DATETIME ORNEKLERI int suankiyil = Convert.ToInt32(DateTime.Now.ToString("%y")); ---> CİFT TIRNAK İCİN BİR KERE e bastık yıl kısmı çıktı
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int GirilenYil, Fark;
+            string mesaj;
+
+            int SuanKiYil = Convert.ToInt32(DateTime.Now.ToString("%y"));
+            Console.WriteLine();
+            SuanKiYil += 2000;
+            Console.WriteLine("{0} yılındayız.", SuanKiYil);
+
+            Console.WriteLine("Doğum yılınızı yazınız:");
+            GirilenYil = Convert.ToInt32(Console.ReadLine());
+            Fark = SuanKiYil - GirilenYil;
+            if (Fark < 20)
+            {
+                mesaj = "Ergensin:D";
+
+            }
+            else if (Fark < 30)
+            {
+                mesaj = "Gençsiniz:D";
+            }
+            else if (Fark < 40)
+            {
+                mesaj = "Yaşlanıyorsunuz:(";
+            }
+
+            else
+            {
+                mesaj = "Yaşlısınız";
+            }
+            Console.WriteLine(mesaj);
+            Console.ReadLine();
+        }
+
+    
+    }
+}
+
+**************CLASS ORNEKLERI
+1-class olustur
+2-class property olustur
+3-class methodları olustur
+4-program.cs icerisinde property yazdır-methodalrı cagırdık
+
+**ARABA ORNEGI**
+araba.cs
+namespace CLASSLAR
+{
+    public class Araba //sınıf tanımladık //hicbisey yazmasaydık private olurdu
+    {//property tanımlayacağız
+        public int kapisayisi;
+        public string arabamodeli;
+        public string arabarengi;
+
+        public Araba() //method tanımladık
+        {
+            Console.WriteLine("araba sınıfının yapıcı metodu çalıştı");
+        }
+        public void motorucalistir() //method çağırıyoruz
+        {
+            Console.WriteLine("motor calisiyor");
+        }
+        public void kapilarikilitle() //method çağırıyoruz
+        {
+            Console.WriteLine("kapilar kilitleniyor");
+        }
+
+    }
+}
+
+program.cs
+namespace CLASSLAR
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Araba araba1 = new Araba(); //classtan yeni object oluşturduk //burayi tanimlamadan islem yapamazyiz
+            araba1.kapisayisi = 4;
+            araba1.arabarengi = "siyah";
+            araba1.arabamodeli = "BMW";
+
+            araba1.kapilarikilitle(); //nesne ile cagirdik ulasimi nesne ile sagliyoruyz nesne=araba1
+            araba1.motorucalistir();
+
+            Console.WriteLine("arabanın kapı sayısı:"+araba1.kapisayisi );
+            Console.WriteLine("arabanın rengi:" + araba1.arabarengi);
+            Console.WriteLine("arabanın modeli:" + araba1.arabamodeli);
+            Console.ReadLine();
+        }
+    }
+}
+
+-----yapıcı method ile araba ornegi
+class.cs
+namespace CLASSLAR
+{
+    public class Araba //sınıf tanımladık //hicbisey yazmasaydık private olurdu
+    {//property tanımlayacağız
+        public int kapisayisi;
+        public string arabamodeli;
+        public string arabarengi;
+ 
+        public Araba(int _kapisaiyisi, string _arabamodeli, string _arabarengi) //yapıcı method icerisindeki ozellikler lazım bize
+        {
+            kapisayisi = _kapisaiyisi;
+            arabamodeli = _arabamodeli;
+            arabarengi = _arabarengi;
+
+        }
+
+    }
+}
+
+
+
+program.cs
+namespace CLASSLAR
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         //YAPICI METHODUN KULLANMA ALANI
+         Araba araba1 = new Araba(4, "mini cooper", "kırmızı");
+            Console.WriteLine("arabanın kapı sayısı:"+araba1.kapisayisi );
+            Console.WriteLine("arabanın rengi:" + araba1.arabarengi);
+            Console.WriteLine("arabanın modeli:" + araba1.arabamodeli);
+            Console.ReadLine();
+        }
+    }
+}
+
+* program.cs te yapıcı methoda break point koyarak class.cs e gidip oradan bilgileri alıp, 
+program.cs e tekrar dönerek yazdırdığını görebiliriz.        
+
+
+*****MUSTERI ORNEGI****
+
+class.cs
+namespace CLASSLARUYGULAMA
+{
+     public class Musteri
+    {
+        public string ad;
+public string soyad;
+        public int yas;
+        public string cinsiyet;
+        public int maasMiktari;
+        public Musteri()
+        {
+            //yapıcı metot
+            Console.WriteLine("Müşteri sınfının yapıcı metodu çalışıyor");
+            Console.WriteLine();
+        }
+
+        public void musteriBilgileriGoster() //method tanımlama
+        {
+            Console.WriteLine("Ad:" + ad);
+            Console.WriteLine("Soyad:" + soyad);
+            Console.WriteLine("Yaş" + yas);
+            Console.WriteLine("Maas Miktarı:" + maasMiktari);
+            Console.ReadLine();
+
+        }
+
+
+    }
+}
+
+
+program.cs
+namespace CLASSLARUYGULAMA
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Musteri Musteri1 = new Musteri();
+            Musteri1.ad = "busra";
+            Musteri1.soyad = "sarikaya";
+            Musteri1.cinsiyet = "kadin";
+            Musteri1.yas = 23;
+            Musteri1.maasMiktari = 23000;
+
+            Musteri1.musteriBilgileriGoster();
+            Console.ReadKey();
+                
+        }
+    }
+}
+
+
+****kutu.cs
+
+namespace KUTUUYG
+{
+    public class Kutu
+    {
+        double genislik;
+        double yukseklik;
+        double derinlik;
+
+        public Kutu() //yapıcı metot
+        {
+            Console.WriteLine("Kutu oluşuyor");
+            genislik = 6;
+            yukseklik = 4;
+            derinlik = 7;
+        }
+        ~Kutu() //yıkıcı metot(destructor)
+        {
+            Console.WriteLine("Kutu nesnesi kaldırılıyor");
+        }
+        public void setDerinlik(double d)
+        {
+            derinlik = d;
+        }
+
+        public void setGenislik(double g)
+        {
+            genislik = g;
+        }
+        public void setYukseklik(double y)
+        {
+            yukseklik = y;
+        }
+        public void hacimHesapla()
+        {
+            double hacim = derinlik * yukseklik * genislik;
+            Console.WriteLine("Hacim{0}", hacim);
+        }
+    }
+}
+
+program.cs
+
+namespace KUTUUYG
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Kutu kutu1 = new kutu();
+            kutu1.setgenislik(5);
+            kutu1.setyukseklik(8);
+            kutu1.setderinlik(7);
+            kutu1.hacimhesapla();
+            //2.kutu
+
+            kutu kutu2 = new kutu();
+            kutu2.setgenislik(10);
+            kutu2.setyukseklik(5);
+            kutu2.setderinlik(9);
+            kutu2.hacimhesapla();
+            //3.kutu
+            kutu kutu3 = new kutu();
+            kutu3.hacimhesapla();
+            Console.ReadLine();
+        }
+    }
+}
+
+*****ogrenci sistemi ornegi
+ogrenci.cs
+
+namespace OgrenciUygulama
+{
+    class ogrenci
+    {
+        string adsoyad;
+        string okuladi;
+        int vize1notu;
+        int vize2notu;
+        int finalnotu;
+        public ogrenci() //yapıcı method
+        {
+            Console.WriteLine("ogrenci bilgileri gosteriliyor");
+            adsoyad = "busra sarikaya";
+            okuladi = "istanbul universitesi";
+            vize1notu = 60;
+            vize2notu = 70;
+            finalnotu = 70;
+        }
+        public void setadsoyad(string a)
+        {
+            adsoyad = a;
+        }
+        public void setokuladi(string o)
+        {
+            okuladi = o;
+        }
+        public void setvize1notu(int v)
+        {
+            vize1notu = v;
+        }
+        public void setvize2notu(int i)
+        {
+            vize2notu = i;
+        }
+        public void setfinalnotu(int f)
+        {
+            finalnotu = f;
+        }
+        public void kimlikbilgileriGoster()
+        {
+            Console.WriteLine("Adı Soyadı" + adsoyad);
+        }
+        public void okulbilgileriGoster()
+        {
+            Console.WriteLine("Okul Adı" + okuladi);
+        }
+        public void ortalamahesapla()
+        {
+            int ortalama = (vize1notu%20 + vize2notu%20 + finalnotu%60);
+            Console.WriteLine("öğrencinin ortalaması" + ortalama);
+        }
+
+            
+
+
+
+    }
+}
+
+program.cs
+
+namespace OgrenciUygulama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ogrenci ogrenci1 = new ogrenci();
+            ogrenci ogrenci2 = new ogrenci();
+            ogrenci ogrenci3 = new ogrenci(); 
+            ogrenci1.setadsoyad("aslihan aydin");
+            ogrenci1.setokuladi("istanbul universitesi");
+            ogrenci1.setvize1notu(60);
+            ogrenci1.setvize2notu(85);
+            ogrenci1.setfinalnotu(100);
+            ogrenci2.setadsoyad("nazlı ermeç");
+            ogrenci2.setokuladi("istanbul universitesi");
+            ogrenci2.setvize1notu(100);
+            ogrenci2.setvize2notu(85);
+            ogrenci2.setfinalnotu(60);
+
+            Console.WriteLine("lütfen öğrenci numarasını giriniz:");
+            int secim = Convert.ToInt32(Console.ReadLine());
+            if (secim == 99)
+            {
+                Console.WriteLine("ne islem yapmak istiyorsunuz 1-kimlik bilgileri goster 2-okul bilgileri goster 3-not bilgisi goster");
+                int secim1 = Convert.ToInt32(Console.ReadLine());
+                {
+                    if (secim1 == 1)
+                    {
+
+                        ogrenci1.kimlikbilgileriGoster();
+                    }
+                    if (secim1 == 2)
+                    {
+                        ogrenci1.okulbilgileriGoster();
+                    }
+                    if (secim1 == 3)
+                    {
+                        ogrenci1.ortalamahesapla();
+                    }
+                }
+            }
+            if (secim == 44)
+            {
+                Console.WriteLine("ne islem yapmak istiyorsunuz 1-kimlik bilgileri goster 2-okul bilgileri goster 3-bot bilgisi goster");
+                int secim1 = Convert.ToInt32(Console.ReadLine());
+                {
+                    if (secim1 == 1)
+                    {
+
+                        ogrenci2.kimlikbilgileriGoster();
+                    }
+                    if (secim1 == 2)
+                    {
+                        ogrenci2.okulbilgileriGoster();
+                    }
+                    if (secim1 == 3)
+                    {
+                        ogrenci2.ortalamahesapla();
+                    }
+                }
+            }
+            if (secim == 25)
+            {
+                Console.WriteLine("ne islem yapmak istiyorsunuz 1-kimlik bilgileri goster 2-okul bilgileri goster 3-bot bilgisi goster");
+                int secim1 = Convert.ToInt32(Console.ReadLine());
+                {
+                    if (secim1 == 1)
+                    {
+                        
+                        ogrenci3.kimlikbilgileriGoster();
+                    }
+                    if (secim1 == 2)
+                    {
+                        ogrenci3.okulbilgileriGoster();
+                    }
+                    if (secim1 ==3)
+                    {
+                        ogrenci3.ortalamahesapla();
+                    }
+                }
+            }
+           
+           Console.ReadKey();
+
+
+        }
+    }
+}
+
+---hoca cözümü
+
+ogrenci.cs
+private int ogrenciNo;
+        private string ad;
+        private string soyad;
+        private int vize1;
+        private int vize2;
+        private int final;
+        private string okulAdi;           ------->alt+enter otomatik yapıcı methodu oluşturur..
+        public Ogrenci(int _ogrenciNo,string _ad,string _soyad,int _vize1,int _vize2,int _final,string _okulAdi)
+        {
+            ogrenciNo = _ogrenciNo;
+            ad = _ad;
+            soyad = _soyad;
+            vize1 = _vize1;
+            vize2 = _vize2;
+            final = _final;
+            okulAdi = _okulAdi;
+        }
+        public void OgrenciBilgileriGoster()
+        {
+            Console.WriteLine("Öğrenci Numarası:"+ogrenciNo);
+            Console.WriteLine("Öğrenci Adı:" + ad);
+            Console.WriteLine("Öğrenci Soyad:" + soyad);
+            Console.WriteLine("Öğrenci Vize 1:" + vize1);
+            Console.WriteLine("Öğrenci Vize 2:" + vize2);
+            Console.WriteLine("Öğrenci Final:" +final);
+            Console.WriteLine("Öğrenci Okul Adı:"+okulAdi);
+        }
+        public double OgrenciNotunuHesapla()
+        {
+            double ortalama = (vize1 * 0.2 + vize2 * 0.2 + final * 0.6);
+            return ortalama;
+        }
+        public void OkulGetir()
+        {
+            Console.WriteLine("Öğrencinin Okulunun Adı:"+okulAdi);
+        }
+        
+    }
+}
+
+program.cs
+
+static void Main(string[] args)
+        {
+            bool control = true;
+            Ogrenci ogrenci1 = new Ogrenci(963, "Tom", "Hardy", 78, 60, 80, "Standford University");
+            Console.WriteLine("Öğrenci Portalına Hoş Geldiniz"+ "\n"+"Yapmak İstediğiniz İşlemi Seçiniz");
+            while (control)
+            {
+                islemleriGoster();
+                string secim = Console.ReadLine();
+                switch (secim)
+                {
+                    case "1":
+                        ogrenci1.OgrenciBilgileriGoster();
+                        break;
+                    case "2":
+                        double ogrenciOrtalama = ogrenci1.OgrenciNotunuHesapla();
+                        Console.WriteLine("Öğrencinin Ortalaması"+ogrenciOrtalama);
+                        break;
+                    case "3":
+                        ogrenci1.OkulGetir();
+                        break;
+                    case "4":
+                        control = false;
+                        break;
+
+                   
+                }
+            }
+        }
+
+        static void islemleriGoster()
+        {
+            Console.WriteLine("1.Öğrenci Bilgileri Göster");
+            Console.WriteLine("2.Öğrenci Ortalamasını Göster");
+            Console.WriteLine("3.Öğrenci Okulunu Göster");
+            Console.WriteLine("4.Çıkış Yap");
+        }
+    }
+}
+
+############################## 07.01.2022 ##################################3
+
+**Personel.cs ornegi
+---HOCA ÇÖZÜMÜ
+string isim, soyisim, unvan = null;
+        double maas;
+        int izinGunu;
+        string ayrac = new string('-', 10);
+        public void setPersonelBilgileri(string isim,string soyisim,double maas)
+        {
+            if(isim.Length>0 && soyisim.Length>0 )
+            {
+                if(maas>=2500)
+                {
+                    this.isim = isim;
+                    this.soyisim = soyisim;
+                    this.maas = maas;
+                    this.izinGunu = 14;
+                    if(maas>=3000 && maas<=4000)
+                    {
+                        this.unvan = "Kıdemli Personel";
+                        this.izinGunu = 20;
+
+                    }
+                    else if(maas>=4001 && maas<=5500)
+                    {
+                        this.unvan = "Kıdemli+Personel";
+                        this.izinGunu = 24;
+                    }
+                    else if(maas>5500)
+                    {
+                        this.unvan = "Uzman Personel";
+                        this.izinGunu = 30;
+                    }
+                    else
+                    {
+                        this.unvan = "Personel";
+
+                    }
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("{0}\n<Personel Oluşturulamadı>\n{1}\n->Personelin maaşı en az 2500 Tl olmalıdır.\n{2}",ayrac,ayrac,ayrac);
+
+
+                }
+            }
+        }
+        public string getPersonelBilgileri()
+        {
+            if (unvan != null)
+
+                return ayrac + "\n<Personel Oluşturuldu>\n" + ayrac + "\n->Personel İsmi:" + isim + "\n->Personel Soyismi:" + soyisim + "\n->Personel Maaş:" + maas + "TL\n->Personel Unvanı:" + unvan + "\n->Personel İzin Günü:" + izinGunu + "Gün\n" + ayrac;
+            else
+                return ayrac + "\n<Personel Oluşturmanız Gerekiyor>\n" + ayrac;
+
+            
+        }
+    }
+}
+
+program.cs
+
+Personel yasin = new Personel();
+            Personel mertkan = new Personel();
+            Personel sait = new Personel();
+            Personel mirayet = new Personel();
+            yasin.setPersonelBilgileri("Yasin", "Göktepe", 5000);
+            mertkan.setPersonelBilgileri("Mertkan", "İskurt", 6000);
+            sait.setPersonelBilgileri("Sait", "Kayar", 8000);
+            mirayet.setPersonelBilgileri("Mirayet", "Müftüoğlu", 4001);
+
+            Console.WriteLine(yasin.getPersonelBilgileri());
+            Console.WriteLine(mertkan.getPersonelBilgileri());
+            Console.WriteLine(sait.getPersonelBilgileri());
+            Console.WriteLine(mirayet.getPersonelBilgileri());
+            Console.ReadLine();
+
+----benim
+personel.cs
+namespace PersonelUyg
+{
+    class personel
+    {
+        string adsoyad;
+        string unvan;
+        int maas;
+        int izingunu;
+        public personel()
+        {
+            Console.WriteLine("PERSONEL BİLGİLERİ GÖSTERİLİYOR");
+            
+        }
+        public void setadsoyad(string a)
+        {
+            adsoyad = a;
+        }
+        public void setunvan(string u)
+        {
+            unvan = u;
+        }
+        public void setmaas (int m)
+        {
+            maas = m;
+        }
+        public void setizingunu (int i)
+        {
+            izingunu = i;
+        }
+        public void personelbilgileriduzenle()
+        {
+            if (maas >= 3000 && maas<=4000)
+            {
+                unvan = "kıdemli personel";
+                izingunu = 7;
+            }
+            if (maas >=4001 && maas<= 5500)
+            {
+                unvan = "kıdemli+ personel";
+                izingunu = 10;
+            }
+            if (maas>5500)
+            {
+                unvan = "uzman personel";
+                izingunu = 14;
+            }
+            if (maas<2500 )
+            {
+                unvan = "personel";
+                izingunu = 0;
+            }
+            Console.WriteLine("\n personelin unvanı:  "  + unvan +  "\n personelin maası:  " + maas +  "\n personelin izin gunu:  " + izingunu );
+            Console.WriteLine("------------------------");
+        }
+        public void personelbilgilerinigoster()
+        {
+            Console.WriteLine("\n personelin adı:  " + adsoyad );
+            
+        }
+        
+
+            
+           
+        
+        
+        
+
+    }
+}
+
+program.cs
+
+namespace PersonelUyg
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            personel personel1 = new personel();
+            personel personel2 = new personel();
+            personel personel3 = new personel();
+            personel personel4 = new personel();
+            personel1.setadsoyad("busra sarikaya");
+            personel2.setadsoyad("cisem turkoglu");
+            personel3.setadsoyad("merve catak");
+            personel4.setadsoyad("melisa mirayet");
+            personel1.setmaas(5000);
+            personel2.setmaas(4000);
+            personel3.setmaas(5600);
+            personel4.setmaas(2000);
+            baslangic:
+            {
+                Console.WriteLine("LÜTFEN PERSONEL NUMARASINI GİRİNİZ");
+                int secim = Convert.ToInt32(Console.ReadLine());
+                if (secim == 1)
+                {
+                    personel1.personelbilgilerinigoster();
+                    personel1.personelbilgileriduzenle();
+                    goto baslangic;
+                }
+                if (secim == 2)
+                {
+                    personel2.personelbilgilerinigoster();
+                    personel2.personelbilgileriduzenle();
+                    goto baslangic;
+                }
+                if (secim == 3)
+                {
+                    personel3.personelbilgilerinigoster();
+                    personel3.personelbilgileriduzenle();
+                    goto baslangic;
+                }
+                if (secim == 4)
+                {
+                    personel4.personelbilgilerinigoster();
+                    personel4.personelbilgileriduzenle();
+                    goto baslangic;
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+************************KAPSÜLLEME
+
+method yöntemi ile get set
+
+namespace EnCapsulation
+{
+    public class Ogrencim
+    {
+        private string isim;
+        public void setIsim(string _isim)
+        {
+            isim = _isim;
+        }
+        public string getIsim()
+        {
+            return isim;
+        }
+    }
+}
+
+namespace EnCapsulation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Ogrencim ogrenci1 = new Ogrencim();
+            ogrenci1.setIsim("DILARA");
+            string gelenIsim = ogrenci1.getIsim();
+            if(gelenIsim=="DILARA")
+            {
+                Console.WriteLine("Doğru Kullanıcı Adını Girdiniz");
+            }
+            else
+            {
+                Console.WriteLine("Kullanıcı Adını Kontrol Et");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+****ENCAPSULATION YONTEMLERI
+-get/set methodları tanımladık
+-prop ile get/set yaptık
+
+
+****YEMEKSEPETI ORNEGI
+yemeksepeti.cs
+namespace YemekSepetiUyg
+{
+    class YemekSepeti
+    {   
+        private string tckimlikno;
+        public string TCKİMLİKNO
+        {
+           get
+            {
+               return tckimlikno.Substring(0,3)+"********";
+            }
+            set
+            {
+                bool control = false;
+                if (value.Length==11)
+                {
+                    for (int i=0; i<value.Length; i++)
+                    {
+                        bool sayiMi = char.IsNumber(value[i]); //charlar number mı diye kontrol ettik!!!
+                        if(sayiMi)
+                        {
+                            //işlem yok
+                        }
+                        else
+                        {
+                            control = true;
+                            break;
+                        }
+                    }
+                    if (control)
+                    {
+                        Console.WriteLine("Lutfen TC Kımlık Numaranızda gecersiz karakter bulundu,dikkat ediniz1");
+                    }
+                    else
+                    {
+                        tckimlikno = value;
+                    }
+                }
+                else if (value.Length!=11)
+                {
+                    Console.WriteLine("TC Kımlık NO 11 Karakter Olmalıdır!");
+                    Console.ReadLine();
+                }
+
+            }
+        }
+        
+
+    }
+}
+
+program.cs
+
+
+namespace YemekSepetiUyg
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            YemekSepeti musteri = new YemekSepeti();
+            musteri.TCKİMLİKNO = "98765432104";
+            Console.WriteLine("TC KIMLIK NO:" + musteri.TCKİMLİKNO);
+            Console.ReadLine();
+
+        }
+    }
+}
+
+****DIKDORTGEN ORNEGI
+class.cs
+private int boy;
+        private int en;
+        public int alan = 0;
+
+        public int Boy
+        {
+            get
+            {
+                return boy;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    value = 0;
+                    Console.WriteLine("Lütfen geçerli bir sayı giriniz");
+                }
+                else
+                {
+                    boy = value;
+                }
+            }
+        }
+        public int En
+        {
+            get
+            {
+                return en;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    value = 0;
+                    Console.WriteLine("Lütfen geçerli bir sayı giriniz");
+                }
+                else
+                {
+                    en = value;
+                }
+                
+            }
+        }
+        public int AlanHesapla(int boy, int en)
+        {
+            return boy * en;
+        }
+
+program.cs
+
+Dikdortgen dikdortgen = new Dikdortgen();
+            dikdortgen.En = 20;
+            dikdortgen.Boy = 30;
+            dikdortgen.AlanHesapla(dikdortgen.En, dikdortgen.Boy);
+            Console.WriteLine("Alan : " + dikdortgen.AlanHesapla(dikdortgen.En, dikdortgen.Boy));
+            Console.ReadLine();
+
+
+
+############################################### 10.01.2022 ########################################################################
+Ülke isimli bir sınıf oluştur. (Class)
+      Ad,başkent,nüfus,para birimi
+      2 tane ülke tanımla
+      Private yap adını,para birimini,nüfus,başkent
+      Get,set kullan
+      ad,başkent,para birimi mainde olcak
+      Konsola bastır
+      Ülke Türkiyedir,başkenti Ankaradır,para birimi tl dir,nüfusu bilmem kaçtır
+
+
+      class Ulke
+    {
+        private string ulkeIsmi;
+        private string baskent;
+        private double nufus;
+        private string paraBirimi;
+
+        public string ULKEISMI
+        {
+            get
+            {
+                return ulkeIsmi;
+
+            }
+            set
+            {
+                ulkeIsmi = value;
+            }
+        }
+        public string BASKENT
+        {
+            get
+            {
+                return baskent;
+
+            }
+            set
+            {
+                baskent = value;
+            }
+        }
+        public double NUFUS
+        {
+            get
+            {
+                return nufus;
+
+            }
+            set
+            {
+                nufus = value;
+            }
+        }
+        public string PARABIRIMI
+        {
+            get
+            {
+                return paraBirimi;
+
+            }
+            set
+            {
+                paraBirimi = value;
+            }
+        }
+    }
+
+             /// Program.cs
+
+         
+            Ulke ulke1 = new Ulke();
+            ulke1.ULKEISMI = "Türkiye";
+            ulke1.BASKENT = "Ankara";
+            ulke1.NUFUS = 80789675;
+            ulke1.PARABIRIMI = "Türk Lirası";
+
+            Ulke ulke2 = new Ulke();
+            ulke2.ULKEISMI = "Almanya";
+            ulke2.BASKENT = "Berlin";
+            ulke2.NUFUS = 79234235;
+            ulke2.PARABIRIMI = "Euro";
+
+            Console.WriteLine("Ülke adı= " + ulke1.ULKEISMI + " Ülke başkenti= " + ulke1.BASKENT + " Ülke Nüfusu=" + ulke1.NUFUS + " Ülke Parabirimi= " + ulke1.PARABIRIMI);
+
+
+            Console.ReadLine();
+
+
+          *** 2.YOL ***
+
+         class country
+    {
+      private string ad;//sistem private olarak kabul edilir.
+        public string Ad
+
+        {
+            get { return ad; }
+            set { ad = value; }
+            
+        }
+
+        private string baskent;
+        public string Baskent 
+        {
+            get { return baskent; }
+            set { baskent = value; }
+
+        }
+        private string nufus;
+        public string Nufus
+        
+        {
+            get { return nufus; }
+            set { nufus = value; }
+
+        }
+
+        private string paraBirimi;
+        public string ParaBirimi
+        {
+            get { return paraBirimi; }
+            set { paraBirimi = value; }
+                
+                
+        }
+        public void Yazdir()
+        {
+            Console.WriteLine("Ülke Adı: " +ad);
+            Console.WriteLine("Başkenti: " + baskent);
+            Console.WriteLine("Nüfusu: " + nufus);
+            
+            Console.WriteLine("Para Birimi: " + paraBirimi);
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$");
+        }
+
+
+            // Program.Cs
+
+            country devlet1 = new country();
+            devlet1.Ad = "Türkiye";
+            devlet1.Baskent = "Ankara";
+            devlet1.ParaBirimi = "TL";
+            devlet1.Nufus = "2.276.150";
+
+            devlet1.Yazdir();
+
+            country devlet2 = new country();
+            devlet2.Ad = "İngiltere";
+            devlet2.Baskent = "Londra";
+            devlet2.ParaBirimi = "İngiliz Sterlini";
+            devlet2.Nufus="66.796.807";
+
+            devlet2.Yazdir();
+            Console.ReadLine();
+
+        }
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+        Ürünümzün adı,fiyatı,kodu var.Bunlar private olucak.
+        prop get-set ile yap
+        Ürün kodunu random at.
+        Ürün fiyatında yuvarlama yap (math sınıfı)
+
+
+         ////////////////////
+         public class Urun
+    {
+        private string urunad;
+        private string urunkod;
+        private double urunfyt;
+
+        public string UrunAd
+        {
+            get { return urunad; }
+            set { urunad = value; }
+        }
+
+        public string UrunKod
+        {
+            get { return urunkod; }
+            set
+            {
+                Random rnd = new Random();
+                urunkod = value.ToString() + rnd.Next(100, 999).ToString();
+
+            }
+        }
+         public double UrunFyt
+         {
+            get { return urunfyt; }
+            set
+            {
+                urunfyt = Math.Round(value, 1);
+            }
+         }
+        }
+    }
+      
+        /////// Program.Cs
+        
+         static void Main(string[] args)
+        {
+            Urun urn = new Urun();
+            urn.UrunAd = "Laptop";
+            urn.UrunKod = "LPT";
+            urn.UrunFyt = 1499.99;
+            Console.WriteLine("Ürün Adı: {0}-Ürün Kodu:{1}-Ürün Fiyatı:{2}",urn.UrunAd,urn.UrunKod,urn.UrunFyt);
+
+            Console.ReadKey();
+        }
+    }
+    
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+        
+
+
+         class UserControl
+    {
+        private string _kullaniciadi;
+        private string _sifre;
+
+        public string KullaniciAdi
+        {
+
+            get
+            {
+                return _kullaniciadi;
+            }
+            set
+            {
+                bool isOK = true;
+                for(int i=0; i<value.Length; i++)
+                { 
+                    if(!char.IsLetter(value[i]))
+                    {
+                        isOK = false;
+                        break;
+                    }
+
+                }
+
+                if(isOK)
+                {
+                    _kullaniciadi = value;
+                }
+                else
+                {
+                    Console.WriteLine("Kullanıcı Adı Harf Dışında Karakter İçeremez.Lütfen Düzeltin");
+                }
+                    
+                   
+
+            }
+        }
+
+        public string Sifre
+        {
+            get
+            {
+                return _sifre;
+            } 
+            set
+            {
+                _sifre = value;
+
+            }
+        }
+
+    }
+          
+
+            ////// Program.Cs
+
+            UserControl uye = new UserControl();
+            uye.KullaniciAdi = "software*";
+            uye.Sifre = "123456";
+            Console.WriteLine("Kullanıcı Adı: {0}"+"\n"+"Şifre: {1}",uye.KullaniciAdi,uye.Sifre);
+            Console.Read();
+
+---------------------------------------------------------------------------------------------------------------------
+            
+             ////////// Fibonacci Serisi 
+
+
+            int x = 0;
+            int y = 1;
+            int sayi;
+            Console.WriteLine("Fibonacci Dizisi Kaç Elemanlı Olsun:D");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$");
+            Console.Write(x + " " + y + " ");
+            for(int i=3; i<=sayi; i++)
+            {
+                int z = x + y;
+                Console.WriteLine(z+ " ");
+                x = y;
+                y = z;
+            }
+            Console.ReadLine();
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+         public static string SplitCamelCase(this string str)
+        {
+            return Regex.Replace(Regex.Replace(str, @"(\P{Ll})(\P{Ll}\p{Ll})", "$1 $2"), @"(\p{Ll})(\P{Ll})", "$1 $2");
+        }
+    }
+
+
+            
+             return Regex.Replace(Regex.Replace(str, @"(\P{Ll})(\P{Ll}\p{Ll})", "$1 $2"), @"(\p{Ll})(\P{Ll})", "$1 $2");
+        }
+            //////////7
+            Console.WriteLine("One123two987".SplitCamelCase());
+            Console.WriteLine("aComputer".SplitCamelCase());
+            Console.WriteLine("casedWordHTTPWriter".SplitCamelCase());
+            Console.WriteLine("AppleComputer".SplitCamelCase());
+            Console.WriteLine("anIBM".SplitCamelCase());
+            Console.ReadLine();
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+             MATH CLASS
+
+            //double sayi = -9;
+            //double sayı = 4;
+            //double sayım = 0;
+            //double ilkdeger = Math.Sign(sayi); // SAYININ İŞARETLERİNİ VERDİ
+            //double ikincideger = Math.Sign(sayı);
+            //double sayımdeger = Math.Sign(sayım);
+            //Console.WriteLine("SONUÇ 1: " + ilkdeger + "SONUÇ 2: " + ikincideger + "SONUÇ 3: " + sayımdeger);
+
+            //double Girilen_Sayi = 60;
+            //double Sayı_Logaritma = Math.Log10(Girilen_Sayi);  //SAYININ LOGARİTMASINI HESAPLATTIK
+            //Console.WriteLine("60 SAYISININ LOG10 HALİ = " + Sayı_Logaritma);
+
+            //double Girilen_Sayi = 45;
+            //double Sayı_Tanjantı = Math.Tan(Girilen_Sayi);  //SAYININ TANJANTINI HESAPLADIK
+            //Console.WriteLine("60 SAYISININ TANJANTI = " + Sayı_Tanjantı);
+
+
+            double MAX = Math.Max(5, 98.13);
+            Console.WriteLine("Max Değer." + MAX);
+            Console.ReadLine();
+
+            double MİN = Math.Min(2, 59.3);
+            Console.WriteLine("Min Değer." + MİN);
+            Console.ReadLine();
+
+            Double sayi;
+            Console.WriteLine("mutlak değeri alınacak sayıyı girin");
+            sayi = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("sayı mutlak değeri: {0}", Math.Abs(sayi));
+
+            double pisayı = Math.PI;
+            Console.WriteLine(pisayı);
+            Console.ReadLine();
+
+            double girilensayi = 400;
+            double kokhesap = Math.Sqrt(girilensayi);
+            Console.WriteLine("kokhesap");
+            Console.ReadLine();
+
+            double girsayi = 919.51;
+            double enyakinyuvarla = Math.Round(girsayi;
+            Console.WriteLine("enyakinyuvarla");
+
+            Console.Write("1.sayıyı gir");
+            double sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("2.sayıyı gir");
+            double sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("sonuc=" + Math.Pow(sayi1, sayi2));
+
+            double girsayı = 60;
+            double sayıcos = Math.Cos(girsayı);
+            Console.WriteLine("sayıcos");
+
+            double girsayi = Math.E;
+            Console.WriteLine("girsayi");
+ 
+            double sayim;
+            Console.WriteLine("sinüs değeri alınacak sayı giriniz:");
+            sayim = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("sayının sinüsü:{0}", Math.Sin(sayim));
+
+
+            double sayi = 4.9;
+            double yuvarla = Math.Floor(sayi);
+            Console.WriteLine("sonuc:" + yuvarla);
+
+
+            Console.ReadLine();
+
+        }
+    }
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+        public Student()//yapıcı metot
+        {
+          Console.WriteLine("Yapıcı metot aktif!!");
+        }
+        public string Adi {get; set; }
+
+        public string Soyadi { get; set; }
+
+        public int Numara { get; set; }
+
+        public double Ortalama { get; set; }
+
+        ~Student() //yıkıcı metot
+        {
+            Console.WriteLine("Yıkıcı metot aktif ve   nesne kaldırıldı!");
+            Console.ReadKey();
+        }
+
+           ///////////////////////////////
+
+           Console.WriteLine("Uygulama Basladı");
+            Student newStudent = new Student();
+            Console.WriteLine("Öğrenci nesnesi oluştu");
+
+            Console.WriteLine("Uygulama bitti");
+            Console.ReadKey();
+
+--------------------------------------------------------------------------------------------------------------------------
+
+           class toplama
+    {
+        public int s1;
+        public int s2;
+
+        public toplama()
+        {
+            s1 = -1;
+            s2 = -1;
+
+        }
+        public toplama(int a, int b)
+        {
+            s1 = a;
+            s2 = b;
+        }
+        public toplama(toplama t) // copy yapıcı metot
+        {
+            s1 = t.s1;
+            s2 = t.s2;
+        }
+        public int Islem()
+        {
+            return s1 + s2;
+        }
+    }        
+
+     //// Program.cs
+
+            toplama topla = new toplama(3, 5);
+            toplama t2 = new toplama(topla);
+            Console.WriteLine(t2.Islem());
+
+            topla.s1 = 2;
+            topla.s2 = 3;
+            Console.WriteLine(topla.Islem());
+            Console.ReadKey();
+
+
+---------------------------------------------------------------------------------
+
+
+            const double piSayisi = 3.14;  // pi sayısı const olarak tanımlanır.
+            int yaricap = 5;
+            double cevre = 2 * piSayisi * yaricap;
+            Console.WriteLine("Dairenin çevresi:"+ +cevre + "cm");
+            Console.ReadKey();
+
+
+################################################# 11.01.2021 ############################################################
+******STATIC METHOD
+
+namespace StaticMethod
+{
+    class Perosnel
+    {
+        //public void AdSoyadYazdir()  //METHOD OLUŞTURDUK
+        //{
+        //    Console.WriteLine("STEPHAN HAWKING");
+        //}
+
+        //STATIC OLMA DURUMU
+        //public static void AdSoyadYzadir()
+        //{
+        //    Console.WriteLine("STEPHAN HAWKING");
+        //}
+
+        //STATIC CAGIRMA
+        //public static void numbersAddup (int number1, int number2)
+        //{
+        //    Console.WriteLine("İKİ SAYININ TOPLAMI = " + (number1+number2));
+        //}
+
+
+        
+
+        
+
+    }
+}
+
+
+program.cs
+namespace StaticMethod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Perosnel p1 = new Perosnel();  //OBJE OLUŞTURDUK
+            //p1.AdSoyadYazdir();
+
+            //STATIC //OBJE OLUŞTURMUYORUZ
+            //Perosnel.AdSoyadYzadir();
+
+            //STATIC TOPLAMA
+            //Perosnel.numbersAddup(100, 80); //methodu çağırdık
+            Console.ReadKey();
+        }
+    }
+}
+
+******STATIC DEGISKEN
+
+namespace StaticDegisken
+{
+    class Personel
+    {
+        //1.yöntem degisken tanımlama
+        //public int personelID;
+        //public string ad;
+        //public string soyad;
+
+        //public static int maas; //static degisken
+
+        //2.yöntem prop ile
+        //public int personelID { get; set; }
+        //public string ad { get; set; }
+        //public string soyad { get; set; }
+        //public static int maas { get; set; }  //static degisken
+    }
+}
+
+namespace StaticDegisken
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1.yöntem degisken tanımlama
+            //Personel p2 = new Personel();
+            //p2.personelID = 1;
+            //p2.ad = "NİKOLA";
+            //p2.soyad = "TESLA";
+            //Personel.maas = 50000;
+
+            //Console.WriteLine("PERSONEL ID = " + p2.personelID);
+            //Console.WriteLine("PERSONEL AD = " + p2.ad);
+            //Console.WriteLine("PERSONEL SOYAD = " + p2.soyad);
+            //Console.WriteLine("PERSONEL MAAS = " + Personel.maas);
+
+            //2.yöntem prop ile
+            //Personel p2 = new Personel();
+            //p2.personelID = 1;
+            //p2.ad = "NİKOLA";
+            //p2.soyad = "TESLA";
+            //Personel.maas = 50000;
+            //Console.WriteLine("PERSONEL ID = " + p2.personelID);
+            //Console.WriteLine("PERSONEL AD = " + p2.ad);
+            //Console.WriteLine("PERSONEL SOYAD = " + p2.soyad);
+            //Console.WriteLine("PERSONEL MAAS = " + Personel.maas);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+***STATIC YAPICI METHOD
+
+namespace StaticYapiciMethod
+{
+    class User
+    {
+        private int userID { get; set; }
+        private string name { get; set; }
+        private string surname { get; set; }
+        private static int salary { get; set; }
+        static User()
+        {
+            salary = 100000;  //maası staticte verdik
+        }
+        public User(int _userıd, string _name, string _surname)
+        {
+            userID = _userıd;
+            name = _name;
+            surname = _surname;
+        }
+        public void showInformation()
+        {
+            Console.WriteLine("USER INFORMATION");
+            Console.WriteLine(userID);
+            Console.WriteLine(name);
+            Console.WriteLine(surname);
+            Console.WriteLine(salary);
+        }
+        public void makeRaise (int raiseAmount)
+        {
+            Console.WriteLine("The User is Give a Raise");  //cagırmamamıza ragmen static maası bastı..
+            Console.WriteLine("Current Salary = " + (salary + raiseAmount ));  
+        }
+
+        
+    }
+}
+
+program.cs
+
+namespace StaticYapiciMethod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            User U1 = new User(1, "Franz", "KAFKA");
+            U1.showInformation();
+            U1.makeRaise(50000);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+****STATIC CLASS
+
+//public int number; //degisken static oldugu icin tanımlanamadı!
+//public void Yazdır() {} //static olmayan metot kabul edilmedi!
+
+//User u1 = new User();  //degiskeni static tanımla methodu cagır -- yeni obje kabul edilmez
+
+namespace StaticUygulama
+{
+    public static class Hesapla
+    {
+       public static int topla(int x, int y) //method tanımladık  //voidler parantez icinde parametre almaz!!
+       {
+            return x + y;
+       }
+    }
+}
+
+program.cs
+namespace StaticUygulama
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            var toplam = Hesapla.topla(100, 200);
+            Console.WriteLine("TOPLAM = " + toplam);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+***İKİ SINIFLI MUHASEBE UYG
+vergiler.cs
+namespace StaticDeneme
+{
+    class Vergiler
+    {
+        public static decimal brutGelir;
+        const byte vergiYuzdesi = 30;
+        public static decimal GelirVergisiHesapla(decimal x)
+        {
+            decimal y;
+            brutGelir = x;
+            y = (x * vergiYuzdesi) / 100;
+            return y;
+        }
+    }
+}
+
+hesap.cs
+namespace StaticDeneme
+{
+    class Hesap
+    {
+        static decimal vergi;
+        public static void VergiYaz()
+        {
+            string m;
+            Console.WriteLine("Brüt Gelirinizi Girer Misiniz?");
+            m = Console.ReadLine();
+            Vergiler.brutGelir = decimal.Parse(m);
+            vergi = Vergiler.GelirVergisiHesapla(Vergiler.brutGelir);
+            Console.WriteLine("{0}'ın Vergisi {1} TL'dir.", Vergiler.brutGelir, vergi);
+        }
+    }
+}
+
+program.cs
+namespace StaticDeneme
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Hesap.VergiYaz();
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+******METHOD OVERLOADING********
+
+Aynı adla birden fazla method tanımlıyoruz. (Parantez icleri farklı)
+
+namespace MethodOverloading
+{
+    class Program
+    {
+        //1.METOT
+        static void Islem(int sayi1, int sayi2)
+        {
+            int sonuc = sayi1 / sayi2;
+            Console.WriteLine("İŞLEMİN SONUCU = " + sonuc);
+        }
+        //2.METOT
+        static void Islem(int sayi1, int sayi2, int sayi3 )
+        {
+            int sonuc = sayi1 * sayi2 * sayi3;
+            Console.WriteLine("İŞLEMİN SONUCU = " + sonuc);
+        }
+
+        //3.METOT
+        static void Islem(int sayi1 , int sayi2, int sayi3, int sayi4)
+        {
+            int sonuc = sayi1 + sayi2 + sayi3 + sayi4 ;
+            Console.WriteLine("İŞLEMİN SONUCU = " + sonuc);
+        }
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("2 PARAMETRE=BÖLME İŞLEMİ \n" + "3 PARAMETRE=ÇARPMA İŞLEMİ \n" + "4 PARAMETRE=TOPLAMA İŞLEMİ \n");
+            Islem(250, 5);
+            Islem(30, 4, 5);
+            Islem(13, 3, 19, 8);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+************ KENDİNİ ÇAĞIRAN (RECURSIVE) METHOD
+namespace RecursiveUygulama
+{
+    class Program
+    {
+        public static ulong FaktoriyelHesapla (ulong sayi)
+        {
+            if (sayi<=1)
+            {
+                return 1;
+            }
+            else
+            {
+                return sayi * FaktoriyelHesapla(sayi-(1));
+            }
+        }
+        
+        
+        public static void Main(string[] args)
+        {
+         for (ulong sayac =1; sayac<=30; sayac++)
+            {
+                Console.WriteLine("{0}!={1}", sayac,FaktoriyelHesapla(sayac));
+                
+            }
+            Console.ReadLine();
+        }
+        
+    }
+}
+
+
+***DEĞİŞKEN SAYIDA PARAMETRE ALAN METOTLAR ( PARAMS )
+namespace ParamsAnahtar
+{
+    class Program
+    {
+        public static int SayilariTopla(params int[]sayilar) //bunu kullanmasaydık aşağıda değişik sayıda metot çağıramazdık
+        {
+            int toplam = 0;
+            foreach (int i in sayilar)
+            {
+                toplam += i;
+            }
+            return toplam;
+        }
+        static void Main(string[] args)
+        {
+            int result1 = SayilariTopla(22);
+            int result2 = SayilariTopla(7, 5, -3);
+            int result3 = SayilariTopla(-8, 8, 7, 5, -7, 2, 9, 0);
+            Console.WriteLine("SONUÇLARI GÖSTER = " + result1);
+            Console.WriteLine("SONUÇLARI GÖSTER = " + result2);
+            Console.WriteLine("SONUÇLARI GÖSTER = " + result3);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+**makine isimli bir sınıf
+**ısı isimli bir propertysi olacak
+**ısı kapsüllenecek
+**ısıyı kullanıcı verecek
+**eğer ısı<0 ise ısı = 0 olacak ve ısı>100 ise ısı = 100 olacak ve sistem uyarı verecek
+**0<=ısı<=100 olursa ısı normaldir
+
+makine.cs
+namespace MakineKapsulleme
+{
+    class Makine
+    {
+        public int ısı
+        {
+            get
+            {
+                return ısı;
+            }
+            set
+            {   
+                
+                if ( 0 <= value)
+                {    if (value <= 100)
+                        {
+                        Console.WriteLine("ISI NORMALDİR!");
+                        }
+                   
+                }
+                if (value < 0)
+                {
+                    value = 0;
+                    Console.WriteLine("MAKİNA FAZLA SOĞUDU! DİKKAT!");
+                }
+                if (value > 100)
+                {
+                    value = 100;
+                    Console.WriteLine("MAKİNA FAZLA ISINDI! DİKKAT!");
+                }
+                
+                
+                
+                
+                
+            }
+        }
+        
+            
+
+    }
+}
+
+program.cs
+namespace MakineKapsulleme
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            try
+            {
+                Makine makine2 = new Makine();
+                Console.WriteLine("LÜTFEN ISI DERECESİNİ GİRİNİZ ? ");
+                makine2.ısı = Convert.ToInt32(Console.ReadLine());
+                Console.ReadKey();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadKey();
+            }
+            
+            Console.ReadKey();
+
+            
+            
+        }
+    }
+}
+
+private int ısı;
+
+        public int ISI 
+        {
+            get
+            {
+                return ısı;
+            }
+            set
+            {
+                ısı = value;
+            }
+        }
+        public void IsıGoster()
+        {
+		if (ısı >= 0 && ısı <= 100)
+                {
+                    Console.WriteLine("Isı Normal");
+                }
+                else if (ısı > 100)
+                {
+                    Console.WriteLine("Isı çok yüksek");
+                }
+                else if (ısı < 0)
+                {
+                    Console.WriteLine("Isı çok düşük");
+                }
+        }
+        
+        
+        PROGRAM CS*
+        
+        try
+            {
+                Console.WriteLine("Lütfen bir ısı değeri giriniz");
+                int isi = Convert.ToInt32(Console.ReadLine());
+
+                Makine makine = new Makine();
+                makine.ISI = isi;
+                makine.IsıGoster();
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadLine();
+            }
+
+
+
+****ASANSOR UYGULAMA
+namespace AsansorUygulama
+{
+    class asansor
+    {
+        public int asansorno;
+        public int ASANSORNO        ////ASANSORNO YU KAPSULLEDIK
+        {
+            get
+            {
+                return asansorno;
+            }
+            set
+            {
+                if (value <= 9)
+                { if (value >= 0)
+                    {
+                        Console.WriteLine(value + ". KATA ÇIKILIYOR");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("GİRİLEN KAT NUMARASI BULUNAMADI!");
+                }
+            }
+        }
+        
+
+    }
+}
+
+
+namespace AsansorUygulama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            asansor asansor1 = new asansor();
+            Console.WriteLine("LÜTFEN KAT NUMARASINI GİRİNİZ = ");
+            asansor1.ASANSORNO = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+        }
+    }
+}
+
+
+################################################ 12.01.2022 ##################################################################
+*********KALITIM**********
+
+
+
+animal.cs ana sınıf
+namespace Inheritance
+{
+    class Animal
+    {
+        public string animal_name;
+        public string animal_gender;
+        public string animal_color;
+        public int animal_age;
+
+        public void animalInfoShow()  //METHOD OLUŞTURDUK!
+        {
+            Console.WriteLine("ANİMAL NAME = " + animal_name);
+            Console.WriteLine("ANİMAL GENDER = " + animal_gender);
+            Console.WriteLine("ANİMAL COLOR = " + animal_color);
+            Console.WriteLine("ANİMAL AGE = " + animal_age);
+
+        }
+    }
+}
+
+dog.cs 
+namespace Inheritance
+{
+    class Dog:Animal
+    {
+        public int dog_size;
+        public int dog_weight;
+
+        public void dogMethod()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dog is Barking!!");
+            Console.WriteLine("Dog's Size: " + dog_size);
+            Console.WriteLine("Dog's Weight: " + dog_weight);
+        }
+    }
+}
+
+
+program.cs
+namespace Inheritance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dog dog = new Dog();  //yeni obje tanımladık
+            dog.animal_name = "KANGAL";  //temel sınıf değişkenleri yeni propertyler atadık
+            dog.animal_gender = "FEMALE";
+            dog.animal_color = "GREY";
+            dog.animal_age = 2;
+           
+            dog.dog_size = 65;  //alt sınıfın değişkenleri
+            dog.dog_weight = 45;
+            
+            dog.animalInfoShow();
+            dog.dogMethod();
+            
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+-----------------------------------------------------
+
+program.cs te sınıflar olusturarak yaptık
+namespace KuslarKalitim
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Kalitim baykus = new Kalitim();
+            baykus.Dogal();
+            baykus.BaykusTur();
+            
+            Console.ReadKey();
+
+        }
+        class Cesit
+        {
+            public Cesit ()   //anasınıf
+            {
+                Console.WriteLine("ÇOK FAZLA KUŞ TÜRÜ VARDIR!!");
+            }
+        }
+        class Kuslar:Cesit     //cesit in altsınıfı
+        {
+            public void Dogal()
+            {
+                Console.WriteLine("GECE YIRTICI KUŞLARI EN ÇOK SEVDİĞİM KUŞ TÜRÜDÜR!!");
+            }
+        }
+        class Kalitim:Kuslar  //kusların altsınıfı
+        {
+            public void BaykusTur()
+            {
+            Console.WriteLine("BAYKUŞGİLLER VE PEÇELİ BAYKUŞGİLLER OLMAK ÜZERE İKİ TÜRÜ VARDIR!!");
+            }
+            
+        }
+    }
+}
+
+
+---------------------------------
+*********kopek ornegi
+
+
+program.cste sınıflar
+
+namespace KopekKalitim
+{
+    class Program
+    {   public class Canli  //anasınıf
+        {
+            public int ayak;
+            public int disSayisi;
+            public string tur;
+        }
+        public class Kopek:Canli   //kalıtım alır
+        {
+            public void Havla()  // method tanımladık
+            {
+                Console.WriteLine("BANA MAMA VER. HAVA SOĞUK, ÜŞÜYORUM, AÇIM!");
+                Console.ReadLine();
+            }
+        }
+        static void Main(string[] args)
+        {
+            Kopek kop = new Kopek();
+            kop.ayak = 4;
+            kop.disSayisi = 42;
+            kop.tur = "C.Lupus";
+
+            Console.WriteLine("KÖPEK AYAK SAYISI = " + kop.ayak);
+            Console.WriteLine("KÖPEK DİŞ SAYISI = " + kop.disSayisi);
+            Console.WriteLine("KÖPEK TÜRÜ = " + kop.tur);
+            kop.Havla();
+            Console.ReadLine();    
+        }
+    }
+}
+
+yapıcı method ---> ctor tabtab
+prop ---> prop tabtab
+-------------------------------------------------------
+*****************cocuk anne ornegi
+
+
+anne.cs anasınıf
+
+namespace AnneCocukKalitim
+{
+    class Anne
+    {
+        public string ad;
+        public string soyad;
+
+        public void Annem() //method
+        {
+            Console.WriteLine("Anne her zaman evin kurucusudur!");
+        }
+        public void Selam()
+        {
+            Console.WriteLine("Merhaba Evladım");
+        }
+        public void Konus()
+        {
+            Console.WriteLine("Bulaşıkları yıkamama yardım et.Yoksa babana söylerim!");
+        }
+    }
+}
+
+cocuk.cs //altsınıf
+
+namespace AnneCocukKalitim
+{
+    class Cocuk:Anne
+    {
+        //public string cocukAd;
+        public void miniCocuk() //method
+        {
+            Console.WriteLine("Çocuk annenin yardımcı kurucusudur!");
+        }
+        public void CocukKonus()
+        {
+            Console.WriteLine("Anne! Lütfen babama söyleme ceza verir bana :( ");
+        }
+    }
+}
+
+program.cs
+
+namespace AnneCocukKalitim
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Anne an = new Anne();
+            an.ad = "Mina";
+            an.soyad = "URGAN";
+
+            Cocuk coc = new Cocuk();
+            coc.ad = "Zeynep";
+            coc.soyad = an.soyad;
+
+            Console.WriteLine(an.ad + "\n" + an.soyad);
+            an.Annem();
+            an.Selam();
+            an.Konus();
+            
+
+            Console.WriteLine(coc.ad + "\n" + coc.soyad);
+            coc.miniCocuk();
+            coc.CocukKonus();
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+----------------------------------------------
+*******************sporcu ornegi
+
+sporcu.cs
+namespace BasketbolSuperLig
+{
+    class Sporcu
+    {
+        private string ad;
+        private string soyad;
+        private int yas;
+        private string pozisyon;
+        
+        public string AD
+        {
+            get { return ad; }
+            set { ad = value; }
+        }
+        public string SOYAD
+        {
+            get { return soyad; }
+            set { soyad = value; }
+        }
+        public int YAS
+        {
+            get { return yas; }
+            set { yas = value; }
+        }
+        public string POZISYON
+        {
+            get { return pozisyon; }
+            set { pozisyon = value; }
+        }
+
+
+    }
+}
+
+basketbolcu.cs
+namespace BasketbolSuperLig
+{
+    class Basketbolcu:Sporcu //kalıtım alacak
+    {
+        private string ulke;
+        private string takim;
+        private string lig;
+
+        public string ULKE
+        {
+            get { return ulke; }
+            set { ulke = value; }
+        }
+        public string TAKIM
+        {
+            get { return takim; }
+            set { takim = value; }
+        }
+        public string LIG
+        {
+            get { return lig; }
+            set { lig = value; }
+        }
+    }
+}
+
+program.cs
+namespace BasketbolSuperLig
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Basketbolcu KOBE = new Basketbolcu();
+            KOBE.ULKE = "Amerika";
+            KOBE.LIG = "NBA";
+            KOBE.TAKIM = "Los Angeles Lakers";
+            KOBE.AD = "KOBE";
+            KOBE.SOYAD = "BRYANT";
+            KOBE.POZISYON = "Şütor Grd"; //kısa forvet
+            KOBE.YAS = 41;
+
+            Console.WriteLine("AD = " + KOBE.AD);
+            Console.WriteLine("SOYAD = " + KOBE.SOYAD);            
+            Console.WriteLine("YAS = " + KOBE.YAS);
+            Console.WriteLine("POZİSYON= " + KOBE.POZISYON);
+            
+            Console.WriteLine("ÜLKE = " + KOBE.ULKE);
+            Console.WriteLine("LİG = " + KOBE.LIG);
+            Console.WriteLine("TAKIM = " + KOBE.TAKIM);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+--------------------------------------
+****************calisan ornegi
+
+calisan.cs
+namespace CALISANUYGULAMA
+{
+    class Calisan1
+    {
+        private string ad;
+        private string soyad;
+        private int maas;
+
+        public string AD
+        {
+            get { return ad; }
+            set { ad = value; }
+        }
+        public string SOYAD
+        {
+            get { return soyad; }
+            set { soyad = value; }
+        }
+        public int MAAS
+        {
+            get { return maas; }
+            set { maas = value; }
+        }
+    }
+}
+
+
+
+satis.cs
+namespace CALISANUYGULAMA
+{
+    class Satis1:Calisan1
+    {
+        private int satismiktari;
+        public int SATISMIKTARI
+        {
+            get { return satismiktari; }
+            set { satismiktari = value; }
+        }
+
+        private int primmiktari;
+        public void PRIMMIKTARI()
+        {
+            
+            {
+                if (satismiktari < 10)
+                {
+                    primmiktari = 100;
+                }
+                else if (satismiktari > 15)
+                {
+                    primmiktari = 200;
+                }
+                else if (satismiktari > 20)
+                {
+                    primmiktari = 300;
+                }
+                Console.WriteLine("PRIM MIKTARI = " + primmiktari);
+            }
+        }
+    }
+}
+
+
+
+program.cs
+namespace CALISANUYGULAMA
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Satis1 Personel = new Satis1();
+            Personel.SATISMIKTARI = 9;           
+            Personel.AD = "BÜŞRA";
+            Personel.SOYAD = "SARIKAYA";
+            Personel.MAAS = 3000;
+            
+
+            Console.WriteLine("AD = " + Personel.AD);
+            Console.WriteLine("SOYAD = " + Personel.SOYAD);
+            Console.WriteLine("MAAS= " + Personel.MAAS);
+            Console.WriteLine("SATIS MIKTARI = " + Personel.SATISMIKTARI);
+            Personel.PRIMMIKTARI();
+            
+            Console.ReadLine();
+
+        }
+    }
+}
+
+diger cözüm sekli
+-----------------
+
+       class calısan
+    {
+        private string ad;
+        private string soyad;
+        private int maas;
+
+        public string getad { get { return ad; } set {ad=value; } }
+        public string getsoyad { get { return soyad; } set { soyad = value; } }
+        public int getmaas { get { return maas; } set { maas = value; } }
+    }
+    ///
+    
+        
+class satıs:calısan
+    {
+        private int satismiktarı;
+        private int prim;
+
+        public int satism { get { return satismiktarı; } set { satismiktarı = value; } }
+        public int primm { get { return prim; } set { prim = value; } }
+
+        public int primekle()
+        {
+            if (satismiktarı>200)
+            {
+                prim = 50;
+                getmaas = getmaas + prim;
+            }
+            return getmaas;
+        }
+        public void ekranabas()
+        {
+            Console.WriteLine("Ad: {0} Soyad: {1} maas: {2} satis miktarı: {3} Prim {4}",
+                getad,getsoyad,getmaas,satismiktarı,prim);
+        }
+        
+    }
+}
+ 
+
+ ////////////////
+ static void Main(string[] args)
+        {
+            satıs s1 = new satıs();
+            s1.getad = "Elif";
+            s1.getsoyad = "Cansu";
+            s1.getmaas = 1500;
+            s1.satism = 250;
+            s1.primekle();
+
+            satıs s2 = new satıs();
+            s2.getad = "Miko";
+            s2.getsoyad = "Aksoy";
+            s2.getmaas = 5000;
+            s2.satism = 0;
+            s2.primekle();
+
+            s1.ekranabas();
+            s2.ekranabas();
+            Console.Read();
+
+---------------------------------------------------
+*****akademik personel örnegi
+akademik personel.cs
+namespace AkademikPersonel
+{
+    class AkademikPersonel:Personel
+    {
+        public string personelUnvan, personelMail;
+    }
+}
+
+
+personel.cs
+namespace AkademikPersonel
+{
+    class Personel
+    {
+        public string personelAdi, personelSoyadi;
+    }
+}
+
+
+program.cs
+namespace AkademikPersonel
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            AkademikPersonel personel = new AkademikPersonel();
+            personel.personelAdi = "İlber";
+            personel.personelSoyadi = "Ortaylı";
+            personel.personelUnvan = "Prof. Dr. Tarihçi";
+            personel.personelMail = "ilber.ortayli@gmail.com";
+
+            Console.WriteLine("Personelin Adı = " + personel.personelAdi);
+            Console.WriteLine("Personelin Soyadı = " + personel.personelSoyadi);
+            Console.WriteLine("Personelin Unvanı = " + personel.personelUnvan);
+            Console.WriteLine("Personelin Maili = " + personel.personelMail);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+-------------------------------------
+********LİST T YONTEMİ
+
+namespace ListTekrar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> yazarlar = new List<string>();
+            yazarlar.Add("CEMAL SÜREYA");
+            yazarlar.Add("FYODOR DOSTOYEVSKI");
+            yazarlar.Add("MONTAIGNE");
+            yazarlar.Add("TURGUT UYAR");
+            yazarlar.Add("OĞUZ ATAY");
+
+            Console.WriteLine();
+            Console.WriteLine("LİSTEDEKİ YAZAR SAYISI = {0}", yazarlar.Count);
+            foreach(string yazar in yazarlar)
+            {
+                Console.WriteLine(yazar);
+            }
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+** https://www.yazilimkodlama.com/programlama/c-class-ve-list-kullanimi-ornegi/
+
+class ekleyerek list t yontemi
+namespace REHBER
+{
+    class TelefonList
+    {
+        string ad;
+        string soyad;
+        string telefon;
+
+        public string Ad
+        {
+            get
+            {
+                return ad;
+            }
+
+            set
+            {
+                ad = value;
+            }
+        }
+
+        public string Soyad
+        {
+            get
+            {
+                return soyad;
+            }
+
+            set
+            {
+                soyad = value;
+            }
+        }
+
+        public string Telefon
+        {
+            get
+            {
+                return telefon;
+            }
+
+            set
+            {
+                telefon = value;
+            }
+        }
+
+    }
+}
+
+
+namespace REHBER
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<TelefonList> kisiListesi = new List<TelefonList>();
+            TelefonList yenikisi1 = new TelefonList();
+            TelefonList yenikisi2 = new TelefonList();
+            TelefonList yenikisi3 = new TelefonList();
+
+            yenikisi1.Ad = "Ahmet";
+            yenikisi1.Soyad = "Can";
+            yenikisi1.Telefon = "050555554";
+
+            yenikisi2.Ad = "Ali";
+            yenikisi2.Soyad = "Aydın";
+            yenikisi2.Telefon = "13213546541";
+
+
+            yenikisi3.Ad = "Serdar";
+            yenikisi3.Soyad = "Kaymaz";
+            yenikisi3.Telefon = "875154";
+
+            kisiListesi.Add(yenikisi1);
+            kisiListesi.Add(yenikisi2);
+            kisiListesi.Add(yenikisi3);
+            for (int i = 0; i < kisiListesi.Count; i++)
+            {
+                Console.WriteLine(kisiListesi[i].Ad + "\t" + kisiListesi[i].Soyad + "\t" + kisiListesi[i].Telefon);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+####################################################### 13.01.2022 ##########################################################
+*****KALITIM DEVAM
+*****INNER TYPE 
+İÇ İÇE SINIFLAR(TEK CLASS KULLANIP İÇ İÇE YAZIYORUZ) BELİRLİ ŞEKİLDE ERİŞİM SAĞLAYABİLİYORUZ ALT SINIF ANA SINIF BİRBİRİNİ GÖREBİLİR
+AYRI CLASSLARDA SADECE ALT SINIFTAN ELEMAN OLUŞTURUP ÜST SINIFTAN METOD CAGIRABILIYORDUK..
+INNER TYPE DA ÜST SINIFTAN DA ELEMAN OLUSTURABILRIZ
+
+namespace InnerType
+{
+    public class Araba
+    {
+        public string Marka;
+        public string Model;
+
+        public void InfoShow()
+        {
+            Marka = "Lamborghini";
+            Model = "Aventador";
+            Console.WriteLine(" Arabanın Markası = " + Marka + " Model = " + Model);
+        }
+        public class ArabaIcDonanim //innertype
+        {
+            public string direksiyon;
+            public string viteskolu;
+
+            public void IcBilgi()
+            {
+                direksiyon = "Elektirkli Direksiyon";
+                viteskolu = "Tam Otomatik";
+                Console.WriteLine(" Direksiyon Türü = " + direksiyon + " Vites Kolu = " + viteskolu);
+            }
+        }
+    }
+}
+
+program.cs
+namespace InnerType
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Araba bilgi = new Araba();
+            bilgi.InfoShow();
+            Console.WriteLine();
+            Araba.ArabaIcDonanim donanim = new Araba.ArabaIcDonanim();
+            donanim.IcBilgi();
+            Console.Read();
+
+        }
+    }
+}
+
+
+
+
+
+
+*****VIRTUAL OVERRIDE
+Anasınıfta public virtual void metot tanımlıyoruz
+Altsınıfta public override void metot tanımlıyoruz
+Aynı isimli metotu sınıflarda kullanmıs olduk
+Alt sınıftaki metot üstteki metot adını alabildi, ezebildi.
+
+namespace VirtualOverride
+{
+    class Telefon
+    {
+        public double alisfiyat = 5000;
+
+        public virtual double Fiyat()
+        {
+            return alisfiyat + 1000;
+        }
+    }
+}
+
+
+
+
+namespace VirtualOverride
+{
+    class IkinciTelefon:Telefon
+    {
+        public override double Fiyat()
+        {
+            return alisfiyat - 400;
+        }
+    }
+}
+
+
+
+namespace VirtualOverride
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Telefon Tel1 = new Telefon();
+            IkinciTelefon ikincitel = new IkinciTelefon();
+
+            Console.WriteLine("Sıfır Telefon = " + Tel1.Fiyat());
+            Console.WriteLine("İkinci El Telefon = " + ikincitel.Fiyat());
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+
+
+*****BASE ANAHTAR
+base anahtar sözcügü ile alt sınıftan üst sınıfın metodunu cekebilirz
+console kısmında en alt sınıfın metodu ile üst sınıfların metotlarını da çağırabiliyoruz
+
+
+namespace BaseAnahtar
+{
+    class Program
+    {   
+        class Tanısma
+        {
+            protected void İsminizNe() //korumalı metot
+            {
+                Console.WriteLine("İsminiz Nedir? ");
+            }
+        }
+        class Tanısma1:Tanısma
+        {
+            public void YasKac()
+            {
+                base.İsminizNe();
+                Console.WriteLine("Yaşınız Kaç Acaba?");
+            }
+        }
+        class Tanısma2:Tanısma1
+        {
+            public void MeslekNe()
+            {
+                base.YasKac();
+                Console.WriteLine("Mesleğiniz Nedir Peki?");
+            }
+        }
+        static void Main(string[] args)
+        {
+            Tanısma2 tanis = new Tanısma2();
+            tanis.MeslekNe();
+            //Tanısma1 tani = new Tanısma1();
+            //tani.YasKac();
+            Console.Read();
+        }
+    }
+}
+
+
+csharp-tutorials.com
+
+
+*araba limuzin ornegi
+namespace BaseAnahtar1
+{
+    public class Araba
+    {
+        public int MotorGucu { get; set; }
+        public string Marka { get; set; }
+
+        public Araba(int motorgucu, string marka)
+        {
+            this.MotorGucu = motorgucu;
+            this.Marka = marka;
+        }
+        public virtual void OzellikleriGoster()
+        {
+            Console.WriteLine("Marka: {0}", Marka);
+            Console.WriteLine("Motor Gücü: {0}", MotorGucu);
+        }
+    }
+}
+
+
+
+
+
+namespace BaseAnahtar1
+{
+    public class Limuzin:Araba
+    {
+        public int Uzunluk { get; set; }
+        public string Segment { get; set; }
+
+        public Limuzin(int motorgucu,string marka,int uzunluk):base(motorgucu,marka)  //MOTORGUCU VE MARKAYI UST SINIFTAN CEKTIK!
+        {
+            this.Uzunluk = uzunluk;
+            
+        }
+        public override void OzellikleriGoster()
+        {
+            base.OzellikleriGoster();
+            Console.WriteLine("Uzunluk: {0}", Uzunluk);
+            if (base.MotorGucu>3000)
+            {
+                Segment = "Exclusive";
+            }
+            else
+            {
+                Segment = "Premium";
+            }
+            Console.WriteLine("Segment:{0}", Segment);
+        }
+    }
+}
+
+
+
+namespace BaseAnahtar1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Limuzin limuzin = new Limuzin(3000, "Bentley", 5);
+            limuzin.OzellikleriGoster();
+            Console.Read();
+        }
+    }
+}
+
+
+
+
+***********PARTIAL CLASS
+AYNI PARTIAL CLASSTA FARKLI METOTLAR TANIMLIYORUZ,
+PROGRAM CSTE TEK ELEMAN OLUSTURUP FARKLI METOTLARI CAGIRIYORUZ.
+
+namespace PartialClass
+{
+    public partial class Partial1
+    {
+        public void MesajYazdır1()
+        {
+            Console.WriteLine("Hey!!");
+        }
+    }
+    public partial class Partial1
+    {
+        public void MesajYazdır2()
+        {
+            Console.WriteLine("Ben");
+        }
+    }
+    public partial class Partial1
+    {
+        public void MesajYazdır3()
+        {
+            Console.WriteLine("Partial Class'ım!!");
+        }
+    }
+}
+
+
+
+
+namespace PartialClass
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Partial1 deneme = new Partial1();
+            deneme.MesajYazdır1();
+            deneme.MesajYazdır2();
+            deneme.MesajYazdır3();
+            Console.Read();
+        }
+    }
+}
+
+
+
+
+******ABSTRACTLAR
+
+ ** Abstract (Soyutlama) Konusu **
+
+
+        abstract class Mobilya
+    {
+        public string renk;
+        abstract public void ozellikyaz(); // bildirim
+    }
+    class kanepe:Mobilya
+    {
+        public string kumas;
+        public override void ozellikyaz()
+        {
+            Console.WriteLine("Kanepenin Özellikleri");
+            Console.WriteLine("Renk:{0}", renk);
+            Console.WriteLine("Kumaş:{0}", kumas);
+        }
+    }
+    class masa:Mobilya
+    {
+        public string malzeme;
+        public override void ozellikyaz()
+        {
+            Console.WriteLine("Masanın Özellikleri:");
+            Console.WriteLine("Renk:{0}", renk);
+            Console.WriteLine("Malzeme:{0}", malzeme);
+        }
+    }
+}
+
+
+       //  Program.Cs 
+
+       static void Main(string[] args)
+        {
+            kanepe knp1 = new kanepe();
+            masa calısma_masası = new masa();
+            knp1.renk = "Pembe";
+            knp1.kumas = "Deri";
+
+            calısma_masası.renk = "Yeşil";
+            calısma_masası.malzeme = "Ahşap";
+            knp1.ozellikyaz();
+            calısma_masası.ozellikyaz();
+
+            Console.ReadLine();
+
+
+
+
+
+
+**********ENUMLAR
+Enum tanımlamalarında herhangi bir değer verilmez ise, 0 dan başlayarak 1 arta arta, sıraya göre otomatik değerler atanır.
+
+------------------------------------------------------
+
+namespace EnumUygulama
+{
+    enum bolumler  //alt alta yazdıklarımızı sıralıyor
+    {
+        bilgisayar_muhendisligi,
+        elektrik_muhendisligi,
+        makine_muhendisligi,
+        insaat_muhendisligi,
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bolumler b;  //bolumlere b diye degisken atadık
+            for (b = bolumler.bilgisayar_muhendisligi; b <= bolumler.insaat_muhendisligi; b++)
+            {
+                Console.WriteLine("{0}'nin numberı = {1} ", b, (int)b);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+----------------------------------------------------
+
+namespace EnumUygulama1
+{
+    enum Gun { Pazartesi =1, Salı=2, Çarşamba=3, Perşembe=4, Cuma=5, Cumartesi=6, Pazar=7}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int secilenGun = (int)Gun.Cuma;
+            if (secilenGun == (int)Gun.Cumartesi || secilenGun==(int)Gun.Pazar)
+            {
+                Console.WriteLine("Hafta Sonudur.");
+            }
+            else
+            {
+                Console.WriteLine("Hafta İçidir.");
+            }
+            Console.ReadLine();
+        }
+
+    }
+}
+
+---------------------------------------------------namespace EnumUygulama2
+{   public enum EvTuru
+    {
+        Belirsiz,
+        Apart,
+        Apartman,
+        Mustakil,
+        Residence,
+        Villa,
+    }
+    public class Ev
+    {
+        public EvTuru ozellik;
+        public Ev()
+        {
+            ozellik = EvTuru.Belirsiz;
+        }
+        public void Goruntule()
+        {
+            Console.WriteLine("Konut Türü:{0}", ozellik);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Ev bicim = new Ev();
+            bicim.Goruntule();
+            bicim.ozellik = EvTuru.Villa;
+            bicim.Goruntule();
+            Console.WriteLine();
+            Console.Read();
+        }
+    }
+}
+-----------------------------------------------
+namespace EnumUygulama3
+{
+    class Program
+    {
+        enum Kadrolar : byte
+        {
+            Başhekim,
+            Mali_Mudur,
+            Doktor,
+            Hemşire,
+        }
+        static void PersonelBul(Kadrolar e)
+        {
+            switch (e)
+            {
+                case Kadrolar.Başhekim:
+                    Console.WriteLine("Başhekimsiniz->5000 TL");
+                    break;
+                case Kadrolar.Mali_Mudur:
+                    Console.WriteLine("Mali İşler Müdürüsünüz-->4500 TL");
+                    break;
+                case Kadrolar.Doktor:
+                    Console.WriteLine("Doktorsunuz->3000 TL");
+                    break;
+                case Kadrolar.Hemşire:
+                    Console.WriteLine("Hemşiresiniz-->1000 TL");
+                    break;
+            }
+            Console.WriteLine();
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kadro Türünü seçiniz");
+            Console.WriteLine();
+            Console.WriteLine("Başhekim->1");
+            Console.WriteLine("Mali İşler Müdürü->2");
+            Console.WriteLine("Doktor->3");
+            Console.WriteLine("Hemşire->4");
+            Console.WriteLine("Seçiminiz");
+            Kadrolar personel = (Kadrolar)Convert.ToByte(Console.ReadLine());
+            PersonelBul(personel - 1);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+
+*****KUTULAMA DÖNÜŞTÜRMESİ( BOXING CONVERSION )
+
+
+
+
+
+*****PERSONEL YONETIM SISTEMI ORNEGI
+personelyonetim.cs
+namespace YONETIM
+{
+    class PersonelYonetim
+    {
+        public string personeladi;
+        public string personelsoyadi;        
+    }
+}
+
+
+
+
+muhendisyonetim.cs
+namespace YONETIM
+{
+    class MuhendisYonetim:PersonelYonetim
+    {
+        public string meslekadi;
+        public int maas;
+        private int zam;
+        public void ZAM()
+        {
+          
+            {
+            if(meslekadi == "Bilgisayar Muhendisligi")
+                {
+                    zam = 1000;
+                    maas = maas + zam;
+                    Console.WriteLine("Personel Zam Almıştır.! :)"+ "\n"+ "Personelin Yeni Maaşı:" + maas);
+                }
+            else
+                {
+                    zam = -550;
+                    maas = maas + zam;
+                    Console.WriteLine("Üzgünüz.. Maaşınız Düşürüldü :(" + "\n" + "Personelin Yeni Maaşı:" + maas);
+                }
+            }
+        }
+        public void PersonelBilgileriGoster()
+        {
+            Console.WriteLine("Personelin Adı:" + personeladi +"\n"+"Personelin Soyadı: " + personelsoyadi + "\n" + 
+                "Personelin Mesleği: " + meslekadi + "\n" + "Personelin Eski Maaşı: " +maas);
+        }
+
+    }
+}
+
+
+
+
+program.cs
+namespace YONETIM
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MuhendisYonetim Muhendis1 = new MuhendisYonetim();
+            MuhendisYonetim Muhendis2 = new MuhendisYonetim();
+            MuhendisYonetim Muhendis3 = new MuhendisYonetim();
+
+            Muhendis1.personeladi = "BÜŞRA";
+            Muhendis1.personelsoyadi = "SARIKAYA";
+            Muhendis1.meslekadi = "Endustri Muhendisligi";
+            Muhendis1.maas = 5000;
+
+            Muhendis2.personeladi = "ÇİSEM";
+            Muhendis2.personelsoyadi = "TÜRKOĞLU";
+            Muhendis2.meslekadi = "Elektrik Muhendisligi";
+            Muhendis2.maas = 6000;
+
+            Muhendis3.personeladi = "MERVE";
+            Muhendis3.personelsoyadi = "ÇATAK";
+            Muhendis3.meslekadi = "Bilgisayar Muhendisligi";
+            Muhendis3.maas = 7000;
+
+            Muhendis1.PersonelBilgileriGoster();
+            Console.WriteLine();
+            Muhendis1.ZAM();
+            Console.WriteLine("------------------------");
+            Muhendis2.PersonelBilgileriGoster();
+            Console.WriteLine();
+            Muhendis2.ZAM();
+            Console.WriteLine("------------------------");
+            Muhendis3.PersonelBilgileriGoster();
+            Console.WriteLine();
+            Muhendis3.ZAM();
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+**Kredi Ornegi
+KrediBilgileri.cs
+-----------------
+namespace KrediTipiUygulamaBusraSarikaya
+{
+    public class KrediBilgileri
+    {
+        public string krediadi;
+        public double faizorani;
+        public int vadesuresi;
+
+        public void KREDIBILGILERIYAZDIR()
+        {
+            Console.WriteLine("KREDİ ADI = " + krediadi + "\n" + "FAİZ ORANI = " + faizorani + "\n" + "VADE SÜRESİ = " + vadesuresi +" AY  ");
+        }
+    }
+}
+
+
+KrediOzellikleri.cs
+-------------------
+namespace KrediTipiUygulamaBusraSarikaya
+{
+    public class KrediOzellikleri:KrediBilgileri
+    { 
+        public double kredicekilentutar;
+        public void KREDICEKILENTUTARYAZDIR()
+        {
+            Console.WriteLine("ÇEKMEK İSTEDİĞİNİZ KREDİ TUTARINI GİRİNİZ = ");
+            kredicekilentutar = Convert.ToInt32(Console.ReadLine());
+        } 
+
+        public double geriodenecektutar;
+        public void GERIODENECEKTUTARYAZDIR()
+        {
+            geriodenecektutar = (kredicekilentutar* faizorani) + kredicekilentutar;
+            Console.WriteLine("GERİ ÖDEYECEĞİNİZ TUTAR = " + geriodenecektutar);
+        }
+
+    }
+}
+
+
+program.cs
+----------
+namespace KrediTipiUygulamaBusraSarikaya
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int secim2;
+            Console.WriteLine("BANKAMIZA HOŞGELDİNİZ"+"\n"+"LÜTFEN BİLGİ ALMAK İSTEDİĞİNİZ KREDİ ÇEŞİDİNİ SEÇİNİZ = "+"\n"
+                +"1-İHTİYAÇ KREDİSİ 2-KONUT KREDİSİ 3-ARAÇ KREDİSİ 4-EĞİTİM KREDİSİ");
+            secim2 = Convert.ToInt32(Console.ReadLine());
+            if (secim2 == 1)
+            {
+             KrediOzellikleri ihtiyackredisi = new KrediOzellikleri();
+             ihtiyackredisi.krediadi = "İHTİYAÇ KREDİSİ";
+             ihtiyackredisi.vadesuresi = 12;
+             ihtiyackredisi.faizorani = 0.65;
+             ihtiyackredisi.KREDIBILGILERIYAZDIR();
+             ihtiyackredisi.KREDICEKILENTUTARYAZDIR();
+             ihtiyackredisi.GERIODENECEKTUTARYAZDIR();
+            }
+            if (secim2 == 2)
+            {
+            KrediOzellikleri konutkredisi = new KrediOzellikleri();
+            konutkredisi.krediadi = "KONUT KREDİSİ";
+            konutkredisi.vadesuresi = 48;
+            konutkredisi.faizorani = 0.95;
+            konutkredisi.KREDIBILGILERIYAZDIR();
+            konutkredisi.KREDICEKILENTUTARYAZDIR();
+            konutkredisi.GERIODENECEKTUTARYAZDIR();
+            }
+            if (secim2 == 3)
+            {
+            KrediOzellikleri arackredisi = new KrediOzellikleri();
+            arackredisi.krediadi = "ARAÇ KREDİSİ";
+            arackredisi.vadesuresi = 24;
+            arackredisi.faizorani = 0.45;
+            arackredisi.KREDIBILGILERIYAZDIR();
+            arackredisi.KREDICEKILENTUTARYAZDIR();
+            arackredisi.GERIODENECEKTUTARYAZDIR();
+            }
+            if ( secim2 ==4)
+            {
+            KrediOzellikleri egitimkredisi = new KrediOzellikleri();
+            egitimkredisi.krediadi = "EĞİTİM KREDİSİ";
+            egitimkredisi.vadesuresi = 36;
+            egitimkredisi.faizorani = 0.35;
+            egitimkredisi.KREDIBILGILERIYAZDIR();
+            egitimkredisi.KREDICEKILENTUTARYAZDIR();
+            egitimkredisi.GERIODENECEKTUTARYAZDIR();
+            }            
+            Console.ReadLine();
+        }
+        
+    }
+}
+
+-------------------------------
+protected string krediAdi, krediCesidi, mark = new string('-', 6);
+        protected double krediDegeri, krediFaizi, krediOdemeAyi, krediSonPara = 0;
+        public KrediYonetim()
+        {
+            ///---> Default Value <---\\\
+            this.krediAdi = "Ticari Kredi";
+            this.krediCesidi = "İhtiyaç";
+            this.krediFaizi = 0.82;
+            this.krediOdemeAyi = 9;
+        }
+        public double KrediAl(double krediDegeri)
+        {
+            this.krediDegeri = krediDegeri;
+            krediSonPara += krediDegeri;
+            double krediMiktari = (krediSonPara / krediOdemeAyi);
+            for (int i = 0; i < krediOdemeAyi; i++)
+                krediSonPara += (krediDegeri * (krediFaizi - (i / 1000) + (((krediMiktari / 1000) * krediOdemeAyi)) / 1000) - krediMiktari * 0.5);
+            return krediSonPara = Math.Round(krediSonPara, 2);
+        }
+
+        public void KrediBilgi()
+        {
+            Console.WriteLine("{0}\n < Kredi Bilgileriniz > \n{1}\n-> Kredi İsmi: {2}\n-> Kredi Tipi: {3}\n-> Kredi Çektiğiniz Tutar: {4} TL\n-> Kredi Faiz Oranı: % {5}   -> Kredi Vadesi: {6} Ay\n-> Ödenecek Tutar: {7} TL\n{8}"
+                , mark, mark, krediAdi, krediCesidi, krediDegeri, (krediFaizi * 100), krediOdemeAyi, krediSonPara, mark);
+        }
+    }
+}
+EsnafKredi
+        class EsnafKrediYonetim : KrediYonetim
+    {
+        public EsnafKrediYonetim()
+        {
+            this.krediAdi = "Esnaf Kredisi";
+            this.krediCesidi = "İşletme Kredisi";
+            this.krediFaizi = 0.63;
+            this.krediOdemeAyi = 12;
+        }
+        public void KrediHesap()
+        {
+            krediSonPara = KrediAl(krediDegeri) - (krediDegeri * (krediOdemeAyi / 100) + (krediSonPara * krediFaizi * 1.2));
+        }
+    }
+program.cs
+class Program
+    {
+        static void Main(string[] args)
+        {
+            KrediYonetim manager = new KrediYonetim();
+            manager.KrediAl(5200);
+            manager.KrediBilgi();
+
+            EsnafKrediYonetim esnaf = new EsnafKrediYonetim();
+            esnaf.KrediAl(5200);
+            esnaf.KrediHesap();
+            esnaf.KrediBilgi();
+
+            Console.ReadLine();
+
+
+######################################################### 14.01.2022 ########################################################
+
+*****INTERFACE
+interfacede  void tanımlıyoruz 
+tek class oluşturuyoruz
+bu classta interfacei cekiyoruz ayrı ayrı classlar olusturup kalıtım yapmaktansa.
+
+namespace InterfaceUygulama
+{       public interface IIslem
+        {
+        void topla (int sayi1 , int sayi2);
+        void carp (int sayi1 , int sayi2);
+        }
+    public class Hesap:IIslem
+    {
+        public void carp(int sayi1,int sayi2)
+        {
+            Console.WriteLine(sayi1 + "*" + sayi2+ "=" + sayi1 * sayi2);
+        }
+        public void topla(int sayi1, int sayi2)
+        {
+            Console.WriteLine(sayi1 + "+" + sayi2 + "=" + (sayi1 + sayi2));
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Hesap hesap = new Hesap();
+            hesap.topla(5, 10);
+            hesap.carp(5, 10);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+*****POLYMORPHISM
+
+namespace DynamicPolymorphism
+{
+    class Program
+    {
+        public class Hesaplama
+        {
+            public virtual double Alan()
+            {
+                return 0;
+            }
+        }
+        public class Cember : Hesaplama
+        {
+            public double YariCap { get; set; }
+            public Cember()
+            {
+                YariCap = 5;
+            }
+            public override double Alan()
+            {
+                return (3.14) * Math.Pow(YariCap, 2);
+            }
+        }
+        public class Kare:Hesaplama
+        {
+            public double Uzunluk { get; set; }
+            public Kare()
+            {
+                Uzunluk = 6;
+            }
+            public override double Alan()
+            {
+                return Math.Pow(Uzunluk,2);
+            }
+        }
+        public class Dikdortgen:Hesaplama
+        {
+            public double Yukseklik { get; set; }
+            public double Genislik { get; set; }
+            public Dikdortgen()
+            {
+                Yukseklik = 5.3;
+                Genislik = 3.4;
+            }
+            public override double Alan()
+            {
+                return Yukseklik * Genislik;
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Cember cember = new Cember();
+            Console.WriteLine("Cember Alanı:" + cember.Alan());
+
+            Kare kare = new Kare();
+            Console.WriteLine("Kare Alanı:" + kare.Alan());
+
+            Dikdortgen dikdortgen = new Dikdortgen();
+            Console.WriteLine("Dikdörtgenin Alan:" + dikdortgen.Alan());
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+*****OPERATOR OVERLOADING    https://aktif.net/operatorlerin-asiri-yuklenmesi/
+namespace OperatorOverloading
+{
+    class Sayim
+    {
+        private int sayimiz;
+        public Sayim(int gelenSayi)
+        {
+            this.sayimiz = gelenSayi;
+        }
+        public void Yazdir()
+        {
+            Console.WriteLine(this.sayimiz);
+        }
+        public static int operator +(Sayim a, Sayim b)
+        {
+            return a.sayimiz + b.sayimiz;
+        }
+        public static implicit operator int (Sayim a) //kullanıcı tanımlı operator donusturme  //operator ile farklı işlevli yapıları toplattık
+        {
+            return a.sayimiz;
+        }
+        public static implicit operator Sayim(int a)
+        {
+            return new Sayim(a);
+        }
+    }
+}
+
+
+
+namespace OperatorOverloading
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Sayim s1 = new Sayim(10);
+            Sayim s2 = new Sayim(10);
+            int s3 = s1 + s2;
+            Console.WriteLine(s3);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+*****GENERIC      //sistem üzerindeki elemanları saydırıyoruz
+namespace GenericClass
+{
+    public class MyList<T>
+    {
+        private static int nesneSay = 0;
+        public MyList()
+        {
+            nesneSay++;
+        }
+        public int Say
+        {
+            get { return nesneSay; }
+        }
+    }
+}
+
+
+
+
+
+namespace GenericClass
+{
+    class Program
+    {
+        class SampleClass { }
+        static void Main(string[] args)
+        {
+            MyList<int> myIntList = new MyList<int>();
+            MyList<int> myIntList2 = new MyList<int>(); //MY LISTLERI SIRALATACAGIZ
+
+            MyList<double> myDoubleList = new MyList<double>();
+
+            MyList<SampleClass> mySampleList = new MyList<SampleClass>();
+
+            Console.WriteLine(myIntList.Say);
+            Console.WriteLine(myIntList2.Say);
+            Console.WriteLine(myDoubleList.Say);
+            Console.WriteLine(mySampleList.Say);
+            Console.WriteLine(new MyList<SampleClass>().Say);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+######################################################3## 17.01.2022 ##################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

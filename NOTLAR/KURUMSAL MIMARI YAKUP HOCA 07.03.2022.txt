@@ -1,0 +1,1354 @@
+########################################################### 07.03.2022 ###########################################################
+*KURUMSAL MIMARI *ENTERPRISE ARCHITECTURE -BOŞ ÇÖZÜM AÇTIK 
+
+
+-yeni proje ekledik class library -entities, entities bir katmandır
+-yeni proje sınıf kitaplığı adı business yeni bir katman -yeni katman dataaccess
+-review olusturcaz asp.net web apisi, başlangıç projesi olarak ayarladık
+
+
+
+
+-webapi ye request attık bizi business katmana atacak bütün işlemler güvenlik işlemleri, validation, username boş mu vs burada kontrol edilecek yönetilecek
+-veri tabanına dataccess ile eriştik gelen datanın tipini entities aracılığıyla bilir, data çekme yazma
+-dbden datayı alacak sadece dataccesstir
+-entities de model katmanıdır classlar userlar
+-cross cutting concess -security logger caching on before on after 
+-dataaccesse yalnızca business erişir
+-database core a baseler için erişir
+
+
+
+
+-entities icine dtos ve entity klasörler açtık
+-dataacces içine abstract ve concrete klasörleri
+abst içine ıuserrep concrete icine userrep ekle userrep i ıuser a implement et bunlar class
+-business içine abstract icine ıuserservice interface ve concrete icine usermanager klasörleri 
+ıuserservice using Entities.Entity; ekledik
+-ıuserserv de get expression ile tanımladık ve linq.express ekledik aynısını usermanager a
+-usermanagerlarda linq eklediğimize göre dataaccess e de eklemeliyiz
+
+
+
+
+
+-core sınıf kitaplığı ekledik içine entities klasörü içine ientity interfacei
+core hiçbirşeyden referans almaz entegrasyon hariç
+
+
+-user.cs e ientity i implement ettik (core üzerine başvuru ekleyin diyor)
+
+
+-core içine dataccess içine abstract ve EfConcrete
+abstract içine ibaserep
+    public interface IBaseRepository<TEntity,TContext> where TEntity : class,IEntity,new()
+        where TContext :DbContext,new()
+
+dbcontextin alltını çizecek mic paket yükle diycez
+
+
+
+-ibaserep public interface IBaseRepository<TEntity> where TEntity : class,IEntity,new()
+-efbase public class EfBaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, IEntity, new()
+
+
+
+-webapide controller a common apiden boş api ekledik adı userscontroller
+
+-singleton ıuserserv istenirse usermanager ver bu interface istenirse bu classı çalıştır
+
+
+
+
+
+
+-startup a 
+            services.AddSingleton<IUserService, UserManager>();
+            services.AddSingleton<IUserRepository, UserRepository>();
+nuget paketlerinden dependencyinject ekledik
+namespace WebApi
+{
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+        //appset deki configurasyonlaraı calıstırır. baglantı bilgileri appsettingse yazılır
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            //projedeki controllerları projeye injekte eder
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
+            });
+            services.AddSingleton<IUserService, UserManager>();
+            services.AddSingleton<IUserRepository, UserRepository>();
+        }
+        
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) //proje calısınca tüm kontrollerin calısacagı yer
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage(); //hatalaarı gösterir
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
+            }
+            //release modda ise swagger kullanamayız
+            app.UseHttpsRedirection();
+            //ssl sertifikalı gönderiler
+            app.UseRouting();
+            //loginden sonra kullanılacak seyler
+            app.UseAuthorization();
+            
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
+    }
+}
+
+
+
+
+
+
+-business klasörüne dependency resolvers içine autofac klasörü içine autofac classı 
+nuget paketlerinden
+autofac
+autofacdynamicproxy
+
+
+
+-core klasörüne utilities klasörü ekledik
+
+
+
+
+
+
+
+
+
+
+
+
+############################################################################ 08.03.2022 #############################################################################################
+*cross cutting concess -security logger caching on before on after 
+-CORE İÇİNE IoC klasörü açtık
+içine ıcoremodule interfacei açtık. bu bir provider
+servicetool.cs classı açtık
+
+-CORE içine dependencyresolvers açtık ımodule ü implement ettik
+
+-CORE içine crosscuttingconcerns açtık içine caching klasörü
+içine ICacheManager interfacei
+*caching yapılan işlemlerde bekleme süresini azaltmak amacıyla veriyi ön bellekte tutma amacına sahiptir
+
+
+
+-CORE caching klasörü içine microsoft klasörü açtık içine memorycachemanager classı
+
+
+
+-CORE içine extensions klasörü
+extensions içine servicecollectionext sınıfı açtık -bir extension hali hazırda bulunan bir kütüphaneye özellik ekle 
+
+namespace Core.Extensions
+{
+    public static class ServiceCollectionExtensions
+    {
+        public static IServiceCollection AddDependencyResolvers(this IServiceCollection services,ICoreModule[] modules)
+        { //bu özelliği kullanarak bu fonk adında bir fonk ekle bu değerden sonra bu modulei ekle
+            modules.ToList().ForEach(module => { module.Load(services); });
+            return ServiceTool.Create(services);
+        }
+    }
+}
+
+
+
+
+
+-CORE crosscutting içine validation içine validationtools -fluentvalidation kütüphanesini ekledik -jwt kütüphanesini ekledik
+
+-CORE Utilities içine security açtık içine
+
+encryption klasörü - içine securitykeyhelper ve signingcredentialshelper sınıfları ekledik
+
+hashing klasörü - içine hashinghelper classı
+
+namespace Core.Utilities.Security.Hashing
+{
+    public class HashingHelper //değerlerin encode haline dönemsi şifreleme
+    {
+    public static void CreatePasswordHash(string password,out byte[] passwordHash, out byte[] passwordSalt)
+        {
+            using(var hmac=new System.Security.Cryptography.HMACSHA512())
+            {
+                passwordSalt = hmac.Key;
+                passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
+                //bir kullanıcı oluştur şifresi olsun hmackey bizim olusturdugumuz keyi alırsa her kullanıcıya ayrı bir key olusturur
+                //her kullanıcı için olusan key biri zarar görürse digerininkini etkilemez o yüzden ayrı key kullanmak daha mantıklıdır
+            }
+        }
+        public static bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
+        {
+            using (var hmac = new System.Security.Cryptography.HMACSHA512())
+            {
+                var computeHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));//kullanıcıdan şifreyi aldık salt tuttuk 
+                for(int i=0; i<computeHash.Length;i++)
+                {
+                    if(computeHash[i]!=passwordHash[i])
+                    {
+                        return false;
+                    }                 
+                } 
+                return true;
+                //array tipinde indexler 0dan baslayacak ve bunlar hmacte bir degere sahip olur birbirine esitleme yapar
+            }
+        }
+
+    }
+}
+
+
+
+jwt klasörü içine accesstoken
+
+
+
+-coreda entities içine operationclaim sınıfı ve useroperationclaim sınıf ekledik
+
+
+
+-appsettingjson'a
+
+
+{
+  "TokenOptions": {
+    "Audience": "www.busrasarikaya.com",
+    "Issuer": "mail@busrasarikaya.com",
+    "AccessTokenExpiration": 15, //online olma süresi
+    "SecurityKey": "busrasarikayabusrasarikaya" //keyadı
+  },
+
+
+
+
+
+-Coreda extensions içine claimextensions classı ekledik
+namespace Core.Extensions
+{
+    public static class ClaimExtensions
+    {
+        private static ClaimsIdentity name;
+
+        public static void AddEMail(this ICollection<Claim> claims,string email)
+        {
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));
+        }
+        public static void AddName(this ICollection<Claim> claims, string name)
+        {
+            claims.Add(new Claim(JwtRegisteredClaimNames.Name, name));
+        }
+        public static void AddNameIdentifier(this ICollection<Claim> claims, string nameIdentifier)
+        {
+            claims.Add(new Claim(JwtRegisteredClaimNames.NameId, nameIdentifier));
+        }
+        public static void AddRoles(this ICollection<Claim> claims, string[] roles)
+        {
+            roles.ToList().ForEach(role => claims.Add(new Claim(ClaimTypes.Role, role)));
+        }
+    }
+}
+
+
+
+
+-COREda utilities e result klasörü açtık içine iresult interfacei
+namespace Core.Utilities.Results
+{
+    public interface IResult
+    {
+        public bool Success { get;} //işlem başarılı mı başarısız mı
+        public string Message { get;}
+    }
+    public class Result:IResult
+    {
+        public bool Success { get; } //işlem başarılı mı başarısız mı
+        public string Message { get; }
+        public Result (bool success)
+        {
+            Success = success;
+        }
+        public Result(bool success,string message):this(success)
+        {
+            Message = message;
+        }
+    }
+    public class SuccessResult:Result
+    {
+        public SuccessResult(string message):base(true,message)
+        {
+        }
+        public SuccessResult() : base(true)
+        {
+        }
+    }
+    public class ErrorResult : Result
+    {
+        public ErrorResult(string message) : base(false, message)
+        {
+        }
+        public ErrorResult() : base(false)
+        {
+        }
+    }
+    public interface IDataResult<T>:IResult
+    {
+        T Data { get; }
+    }
+    public class DataResult<T>:Result,IDataResult<T>
+    {
+        public T Data { get; }
+        public DataResult(T data, bool success,string message):base(success,message)
+        {
+            Data = data;
+        }
+        public DataResult(T data, bool success) : base(success)
+        {
+            Data = data;
+        }
+    }
+    public class SuccessDataResult<T>:DataResult<T>
+    {
+        public SuccessDataResult(T data,string message) : base(data, true, message) { }
+        public SuccessDataResult(string message) : base(default, true, message) { }
+        public SuccessDataResult() : base(default,true) { }
+    }
+}
+
+
+
+
+################################################################# 09.03.2022 ##############################################################3
+*cross cutting concern modülerliği arttırmak için kullanılan bir yapıdır 
+görevleri parçlara ayırır
+-middle ware aracı, ara işleri yapar
+biz exception middle ware kullanacağız en büyük güvenlik açıkları geri dönen hatalar yüzünden olur
+exc middle wareı hata yönetimi için kullanacağız
+
+
+
+
+
+
+
+
+*resultta iki farklı result türü vardır -RESULT -DATARESULT
+
+-resultta biri success biri message
+success:true,false + message
+
+-data resultta bir success bir message bir de data vardır
+success:true + message:pazara gittim + data:elma,armut
+
+dry- do not repeat yourself 
+succcessresult:result ben success çağırdığımda success gelsin
+errorresult:result ben error çağırdığımda error gelsin
+
+
+
+--extensions a exceptionmiddleware ekledik
+namespace Core.Extensions
+{
+    public class ExceptionMiddleWare
+    {
+        public RequestDelegate _next;
+        public ExceptionMiddleWare(RequestDelegate next)
+        {
+            _next = next;
+        }
+        public async Task InvokeAsync(HttpContext httpContext)
+        {
+            try
+            {
+                await _next(httpContext);
+            }
+            catch (Exception e)
+            {
+                await HandleExceptionAsync(httpContext, e);
+            }
+        }
+        private Task HandleExceptionAsync(HttpContext httpContext, Exception e)
+        {
+            httpContext.Response.ContentType = "application/json";
+            httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+            string message = "InternalServerError";
+            if(e.GetType()==typeof(ValidationException)) //custom exc özelleştirilmiş tür 
+            {
+                message = e.Message;
+            }
+            var errorDetails = new ErrorDetails()
+            {
+                StatusCode = httpContext.Response.StatusCode,
+                Message = message
+            };
+            return httpContext.Response.WriteAsync(errorDetails.ToString());
+        }
+    }
+}
+
+
+
+
+--corea custom a alogger klasörü açtık içine 
+logdetail sınıfı
+
+namespace Core.CrossCuttingConcerns.Logging
+{
+    public class LogDetail
+    {
+        public string MethodName { get; set; }
+        public List<LogParameter> LogParameters { get; set; }
+        public class LogParameter
+        {
+            public string Name { get; set; }
+            public object Value { get; set; }
+            public string Type { get; set; }
+        }        //bir log tutulduğu zaman bu log methodnamei aldı buna parametre geldi 
+        //object hepsini kabul eder objenin tipi ve adı
+    }
+    public class LogDetailWithException:LogDetail 
+       //log detail detaylı log istiyorsak mesela aldığı hata mesajı o da buradan verilir
+    {
+        public string ExceptionMessage { get; set; }
+    }
+}
+
+
+
+
+--logging içine log4 dosyası
+içine baseloggerservice sınıfı
+namespace Core.CrossCuttingConcerns.Logging.Log4Net
+{
+    public class BaseLoggerService
+    {
+        private ILog _log;
+
+        public BaseLoggerService(string name)
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(File.OpenRead("log4net.config"));
+
+            ILoggerRepository loggerRepository = LogManager.CreateRepository(Assembly.GetEntryAssembly(), typeof(log4net.Repository.Hierarchy.Hierarchy));
+            log4net.Config.XmlConfigurator.Configure(loggerRepository, xmlDocument["log4net"]);
+            _log = LogManager.GetLogger(loggerRepository.Name, name);
+        }
+        public bool IsInfoEnabled => _log.IsInfoEnabled;
+        public bool IsDebugEnabled => _log.IsDebugEnabled;
+        public bool IsWarnEnabled => _log.IsWarnEnabled;
+        public bool IsFatalEnabled => _log.IsFatalEnabled;
+        public bool IsErrorEnabled => _log.IsErrorEnabled;
+
+        public void Info(object logMessage)
+        {
+            if (IsErrorEnabled)
+                _log.Info(logMessage);
+        }
+        public void Debug(object logMessage)
+        {
+            if (IsDebugEnabled)
+                _log.Debug(logMessage);
+        }
+        public void Warn(object logMessage)
+        {
+            if (IsWarnEnabled)
+                _log.Warn(logMessage);
+        }
+        public void Fatal(object logMessage)
+        {
+            if (IsFatalEnabled)
+                _log.Fatal(logMessage);
+        }
+        public void Error(object logMessage)
+        {
+            if (IsErrorEnabled)
+                _log.Error(logMessage);
+        }
+    }
+}
+
+
+
+-log4net.config ekledik notepad ile.
+
+--log4net klasörü içine layouts klasörü
+içine jsonlayout sınıfı ve seriliazable sınıfı
+
+
+--log4net klasörü içine loggers klasörü
+içine databaselogger sınıfı ve sınıfı
+
+namespace Core.CrossCuttingConcerns.Logging.Log4Net.Loggers
+{
+    public class DataBaseLogger:BaseLoggerService
+    {
+        public DataBaseLogger():base("DatabaseLogger")
+        {
+
+        }
+    }
+    public class FileLogger : BaseLoggerService
+    {
+        public FileLogger() : base("JsonFileLogger")
+        {
+
+        }
+    }
+}
+
+
+
+
+-core içine aspects klasörü içine alt klasörler
+cache klasörü içine cacheaspect sınıfı
+
+namespace Core.Aspects.Autofac.Caching
+{
+    class CacheAspect:MethodInterception
+    {
+        public int _duration;
+        public ICacheManager _cacheManager;
+        public CacheAspect(int duration=60) //süre verdirdi 60 dk boyunca tut
+        {
+            _duration = duration;
+            _cacheManager = ServiceTool.ServiceProvider.GetService<ICacheManager>(); //cachetekileri buraya tutturduk ekleme silme vs
+        }
+        public override void Intercept(IInvocation invocation)
+        {
+            var methodName = string.Format($"{invocation.Method.ReflectedType.FullName}.{invocation.Method.Name}");
+            //business.concrete burası fullname .useradd method name
+            var arguments = invocation.Arguments.ToList();
+            var key =$"{methodName}({string.Join(",",arguments.Select(x=>x?.ToString()??"<Null>"))})"; //yukarıdakini uniqkey olarak belirledi
+            if(_cacheManager.IsAdd(key)) //bu key varmı
+            {
+                invocation.ReturnValue = _cacheManager.Get(key); //varsa datayı getir
+                return;
+            }
+            invocation.Proceed();
+            _cacheManager.Add(key, invocation.ReturnValue, _duration);
+        }
+    }
+    public class CacheRemoveAspect:MethodInterception //gelendatayı temizle bir sonraki sorgu ile beraber getir yenile yani
+    {
+        private string _pattern;
+        private ICacheManager _cacheManager;
+
+        public CacheRemoveAspect(string pattern)
+        {
+            _pattern = pattern;
+            _cacheManager = ServiceTool.ServiceProvider.GetService<ICacheManager>();
+        }
+        public override void OnSuccess(IInvocation invocation)
+        {
+            _cacheManager.RemoveByPattern(_pattern); //eğer işlem başarılı ise bunu yap başarısız ise yapma
+        }
+    }
+}
+
+
+
+
+
+############################################################### 14.03.2022 ################################################################
+--dataaccess e context klasörü açtık içine 
+student db i sınıfı açtık
+databasei bağlamak için
+
+--appsettings e 
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=127.0.0.1;Database=StudentDb;User Id=sa;Password=12345;"
+  },
+
+BUNUN SEBEBİ SQL BAĞLANTISININ ZAMANLA VEYA KİŞİYE BAĞLI DEĞİŞTİĞİNDE SÜREKLİ DEĞİŞİM YAPMAMAK
+
+--studebt db e
+
+public class StudentDbContext:DbContext
+    {
+        private IConfiguration Configuration;
+        public StudentDbContext()
+        {
+            Configuration = ServiceTool.ServiceProvider.GetService<IConfiguration>();
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+        }
+        DbSet<User> Users { get; set; } //users veritabanındaki table ismi 
+    }
+
+
+
+--efbaserep e işlemleri ekledik
+namespace Core.DataAccess.Concrete
+{
+    public abstract class EfBaseRepository<TEntity,TContext> : IBaseRepository<TEntity> where TEntity : class, IEntity, new()
+        where TContext:DbContext,new()
+    {
+        public virtual bool Add(TEntity entity)
+        {
+            using (var context=new TContext())
+            {
+                var addedEntity = context.Entry(entity);
+                addedEntity.State = EntityState.Added;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+        public virtual bool Delete(TEntity entity)
+        {
+            using (var context = new TContext())
+            {
+                var deletedEntity = context.Entry(entity);
+                deletedEntity.State = EntityState.Deleted;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+        public virtual TEntity Get(Expression<Func<TEntity,bool>> filter)
+        {
+            using (var context = new TContext())
+            {
+                return context.Set<TEntity>().SingleOrDefault(filter);
+            }
+        }
+
+        public virtual List<TEntity> GetAll(Expression<Func<TEntity,bool>> filter = null)
+        {
+            using (var context = new TContext())
+            {
+                return (filter==null)?
+                    context.Set<TEntity>().ToList():
+                    context.Set<TEntity>().Where(filter).ToList();
+            }
+        }
+
+        public virtual bool Update(TEntity entity)
+        {
+            using (var context = new TContext())
+            {
+                var updatedEntity = context.Entry(entity);
+                updatedEntity.State = EntityState.Modified;
+                context.SaveChanges();
+                return true;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+--iuserservice e filter bool yaptık
+
+{
+    public interface IUserService
+    {
+        public IDataResult<List<User>> GetAll(Expression<Func<User,bool>> filter = null);
+        //hiçbir şartım yoksa var olan bütün datayı getir
+        public IDataResult<User> Get(Expression<Func<User,bool>> filter);
+        //bana bir filtre vermek zorundasın
+        public IResult Add(User user);
+        public IResult Update(User user);
+        public IResult Delete(User user);
+    }
+}
+
+
+
+--userrep e
+namespace DataAccess.Concrete
+{
+    public class UserRepository:EfBaseRepository<User,StudentDbContext>,IUserRepository
+    {
+    }
+}
+
+
+***interceptorlar işin hangi akış ile yapılacağını belirler
+aspect aop işin akışta hangi sırada yapılacağını söyler
+ccc işleri yönetir
+
+
+
+
+--entities klasöründe entities içine dept.cs student.cs tteacher.cs vs açtık
+
+
+
+
+--studentdbcontext e
+DbSet<User> Users { get; set; }
+        DbSet<UserInformation> UserInformations { get; set; }
+        DbSet<Student> Students { get; set; }
+        DbSet<Teacher> Teachers { get; set; }
+        DbSet<UserDepartment> UserDepartments { get; set; }
+        DbSet<Department> Departments { get; set; }
+
+
+
+--business a iauthservice interfaceini ekliyoruz
+bu login yapınca karşılaşacağı seçenekler
+
+--normalizasyon kurallarına göre bir field yalnızca bir islevi görür
+
+
+--dtos klasörüne userforlogin sınıfı ve userforregisterdto açtık bunu idtodan implemet ettik
+idto da coreda entities e açtık
+
+
+
+--student otomasyonunu instagram olarak değiştiriyoruz!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+1)entities içindeki classları sildik employee.cs açtık
+namespace Entities.Concrete
+{
+    public class Employee:IEntity
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+    }
+    public class Account : IEntity
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string EMail { get; set; }
+        public string Gender { get; set; }
+        public DateTime BirthDate { get; set; }
+        public bool IsVerification { get; set; }
+        public string WebSite { get; set; }
+        public string Biography { get; set; }
+    }
+    public class AccountAvatar:IEntity
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string ImageUrl { get; set; }
+    }
+    public class PostInformation : IEntity
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string Description { get; set; }
+        public string Location { get; set; }
+        public DateTime SharedDate { get; set; }
+    }
+    public class PostTag : IEntity
+    {
+        public int Id { get; set; }
+        public int PostId { get; set; }
+        public string UserId { get; set; }
+    }
+    public class PostComment : IEntity
+    {
+        public int Id { get; set; }
+        public int PostId { get; set; }
+        public int UserId { get; set; }
+        public string Comment { get; set; }
+    }
+    public class PostLike : IEntity
+    {
+        public int Id { get; set; }
+        public int PostId { get; set; }
+        public int UserId { get; set; }
+    }
+    public class TextMessage : IEntity
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public int ReceiverId { get; set; }
+        public string Message { get; set; }
+        public bool IsRead { get; set; }
+    }
+}
+
+
+
+2)migrationsları temizledik yeni ekleyeceğiz
+
+
+3)appjsonda database i instagramclone yaptık
+
+
+4)instagramdbcontext
+
+DbSet<User> Users { get; set; }
+        DbSet<Employee> Employees { get; set; }
+        DbSet<Account> Accounts { get; set; }
+        DbSet<AccountAvatar> AccountAvatars { get; set; }
+        DbSet<PostInformation> PostInformations { get; set; }
+        DbSet<PostTag> PostTags { get; set; }
+        DbSet<PostComment> PostComments { get; set; }
+        DbSet<PostLike> PostLikes { get; set; }
+        DbSet<TextMessage> TextMessages { get; set; }
+
+
+5)userrep ve iuserrep güncelleme
+
+
+
+
+6)userforlogin ve userforregister dtoları
+
+
+public class UserForLoginDto:IDto
+    {
+        public string UserName { get; set; }
+        public string Password { get; set; }
+    }
+
+
+
+
+
+public class UserForRegisterDto : IDto
+    {
+        public string UserName { get; set; }
+        public string EMail { get; set; }
+        public string FullName { get; set; }
+        public string Gender { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string Password { get; set; }
+        public string RePassword { get; set; }
+    }
+
+
+
+public class UserForVerificationDto : IDto
+    {
+        public int EmailId { get; set; }
+        public string Code { get; set; }
+    }
+
+
+
+7)iauthservice
+public interface IAuthService
+    {
+        public IDataResult<AccessToken> Login(UserForLoginDto userForLoginDto);//kullanıcıdan bir dto istedik //geriye dönecek data tipi token
+        public IResult Register(UserForRegisterDto userForRegisterDto); //kayıtolma
+        public IResult UserExists(string userName);
+        public IResult ResetPassword(string userName);
+        public IResult UserVerification(UserForVerificationDto userForVerificationDto);
+    }
+
+
+
+
+
+
+
+########################################################## 15.03.2022 ##########################################################
+
+-iauthservice idataresult accesstoken döndürdü
+-business concrete e authmanager classı ekledik iauthserviceden implement ettik
+
+
+
+
+-dependency injection
+public class AuthManager : IAuthService
+    {
+        private IUserService _userService; //obje ve field
+        private ITokenHelper _tokenHelper; //obje ve field //dışardan erişilemez
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper) //dependency injection
+            //istediğin türde projeye injekte etme
+            //generic sadece type
+            //field ile property farkı yoktur _ ile başlayanlar field
+        {
+            _userService = userService;
+            _tokenHelper = tokenHelper;
+        }
+
+        public IDataResult<AccessToken> CreateAccessToken(User user) //claim=yetki
+        {
+            var claims = _userService.GetClaims(user); //ıusermanagera gidip cliams metodunu tanımladık
+            var accessToken = _tokenHelper.CreateToken(user, claims);
+            return new SuccessDataResult<AccessToken>(accessToken, "Token oluşturuldu.");
+        }
+
+        public IDataResult<User> Login(UserForLoginDto userForLoginDto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IResult Register(UserForRegisterDto userForRegisterDto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IResult ResetPassword(string userName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IResult UserExists(string userName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IResult UserVerification(UserForVerificationDto userForVerificationDto)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+
+-iuserservice
+usermanager
+iuserrep
+userrep
+bunlara da list getclaims gelmek zorunda
+
+
+-instagramdbcontext e dbset operationclaim ve useroperationclaim ekledik ve hepsi public
+
+
+-dataacc userrep
+
+public class UserRepository : EfBaseRepository<User, InstagramDbContext>, IUserRepository
+    {
+        public List<OperationClaim> GetClaims(User user)
+        {
+            using(var context=new InstagramDbContext())
+            {
+                var result = from operationClaims in context.OperationClaims
+                             join userOperationClaims in
+                             context.UserOperationClaims on operationClaims.Id equals userOperationClaims.Id
+                             where userOperationClaims.UserId == user.Id
+                             select new OperationClaim() { Id = operationClaims.Id, Name = operationClaims.Name };
+                return result.ToList();
+                //oopnin avantajı propertyleri getirmesi ve yanlış property kullanımının önüne geçmesi
+            }
+            //repository içinde yazılmış komutlar entity framework kütüphanesi kulanılıyor ise entity framework e aitttir
+            //dbcontext ten üretilmiş db ayarları da entity framework e aittir
+        }
+    }
+
+
+
+
+-authmanager !!!!!!!!!!!!!!!! onemli
+
+-entegrations katmanı ekledik
+smtpmailentegration classı ekledik
+
+public class SmtpMailEntegration
+    {
+        public Task Send(List<string> recipientEmails,string subject,string content)
+        {
+            MailMessage mailMessage = new MailMessage();
+            foreach(var addresses in recipientEmails)
+            {
+                mailMessage.To.Add(addresses);
+            }
+            mailMessage.Subject = subject;
+            mailMessage.Body = content;
+            mailMessage.IsBodyHtml = true;
+            mailMessage.From = new MailAddress("classmail@signedsoftware.com", "BUSRA SARIKAYA");
+            SmtpClient smtpClient = new SmtpClient();
+            smtpClient.Host = "mail.signedsoftware.com"; //sunucu
+            smtpClient.Port = 587;
+            smtpClient.Credentials = new NetworkCredential("classmail@signedsoftware.com", "Class303..");
+            smtpClient.EnableSsl = true;
+            return smtpClient.SendMailAsync(mailMessage);
+        }
+    }
+
+
+
+
+
+-coreda abstracta imailservice interfacei
+-coreda concrete e mailadapter sınıfı
+
+-coremodule a dependency injection ekledik
+
+services.AddSingleton<IMailService, MailAdapter>();
+
+
+*dış sistem entegrasyonlarında gelen data ve giden data core katmanı üzerinde soyutlanarak sisteme injekte edilir!!!
+
+*dış sistem entegrasyonlarında parametreler gönderilirken entityler kullanılmaz
+entegrasyon katmanından dataaccess e kontrol etmeden data alırsak datayı korumamaış oluruz. 
+
+
+*nodejs
+-içinde hazır paketler var npm
+-asenkron yapıda çalışır
+-bellek yönetimi kolay
+-işlem yönetimi kolay
+-referans alınan obje veya değerde yapılan değişiklikler otomatik senkronize olur
+
+*npm
+-halihazırda yüklü olan node paketleri yönetebileceğimiz 
+
+
+*çoklu sistemlerin birarada kullanılması için api tercih edilir
+
+
+########################################################## 16.03.2022 #############################################################
+
+-entitiesde concrete e mailtransaction ve verificationcode sınıfı ekledik
+
+
+-instagramdbcontext e mailtransaction ve verificationcode ekledik
+
+
+-dataacc de abstract klasörüne soyut olarak efbasedeki islemleri yerine getirmesi icin imailtransaction ve iverificationcode interfacei ekledik
+
+-datacc de concrete klasörüne soyuttan gelenleri karsılayacak olan islemleri yerine getirecek metotları yazacagız
+verificationcodemanager ve mailtransactionmanager classları ekledik
+
+-autofact de bunları çağıracak metotları yazıyoruz
+
+
+
+
+*
+
+**nodejs indirdik
+**angulariodan kodu alıp powershelle yapıştırdık
+**vscode de yeni folder oluşturduk
+**vscodede yeni terminal oluşturup cmd de ng new Instagram-CloneUI çalıştırdık yes ve css onayladık
+**gelen clone a sağ tıklayıp integrated terminali açıp cmd e
+dir diyoruz
+cd Instagram-CloneUI
+ng serve
+çalıştırıyoruz.....
+**terminalde ng g c login diyerek component oluştururuz
+
+
+
+*DOM NEDİR?
+
+
+*ANGULAR
+-içerisinde oop kullanabiliriz
+-erişim belirteçleri
+-html elementlerinin özel sellektörlerine ihtiyaç duymadan değişiklik yapılabilir
+-lifecyclehookta yer alan fonk otomatik kullanabilirz
+-dom üzerinde aktif yetkinlik sağlar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################### 17.03.2022 ################################################################
+* href kullanmayacağız,routerlink kullanmayacağız.. bütün elementleri istediğimiz gibi yönetebildiğimiz için sayfa yenileme yapmayacağız
+
+-appcomponent.html router hariç temizle
+-integrated terminal e -ng g m Auth --routing bas
+-authmoduleda sağ tıklayıp -ng g m Login bas
+-authmodule routing cs. de routes objesi oluşturduk
+-instagramcloneda terminalde -npm i bootstrap kütüphanesini ekledik -ng serve 
+-bootstrapı import edeceğiz
+angular.json da styles kısmına:
+"styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+-app routing module.ts te obje olusturduk
+const routes: Routes = [{path: "auth",loadChildren:()=>import('./auth/auth.module').then(m=>m.AuthModule)}];
+//authtaki dosyadaki auth module a git
+
+
+-auth routing module.ts
+const routes: Routes = [{path:"",component:LoginComponent},{path:"login",component:LoginComponent},{path:"register",component:RegisterComponent}];
+//link boş gelirse buraya git demek registeryazarsa register a git demek
+
+
+-çalıştırmak için ng serve --open
+
+-bootstrap alignment column ekledik bootstrapları angular json a ekleriz
+
+-login component html düzenliyoruz
+<div class="container">
+<div class="row justify-content-center" style="height: 80vh;">
+    <div class="col-6 align-self-center bg-light">
+asd
+    </div>
+</div>
+</div>
+
+
+-stylecss e body rengi için
+
+body{
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+
+-slider ekliyoruz
+logincomponent.html de div e slider ve sliderin resimlerini ekliyoruz
+logincomponent.css de sliderin ve resimlerin ozelliklerini tanımlıyoruz
+
+
+
+
+################################################ 21.03.2022
+
+https://www.npmjs.com/package/json-server
+
+-terminale code . yazıp instagramclone uı farklı vs code
+-google npm js server kodu terminale
+-terminal npm i -g json-server install ettik
+-instagramcloneda db.json açtık productları yazdık
+{
+    "products":[
+        {
+            "id":1,
+            "name":"Macbook",
+            "brand":"Apple",
+            "price":1200,
+            "currency":"USD"
+        },
+        {
+            "id":1,
+            "name":"IdeaPad",
+            "brand":"Lenovo",
+            "price":800,
+            "currency":"USD"
+        }
+    ]
+}
+
+
+
+-terminale json-server --watch db.json
+
+-dış sistemlere istek oluştıracaksak appte services klasörü açacağız
+bunu service etmek için terminale ng generate service product
+
+-product service ts
+httpclient import edeceğiz 
+import { HttpClient } from '@angular/common/http';
+
+dönüş tipi product olan bir fonksiton oluşturduk
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Product } from '../models/products';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProductService {
+  apiUrl="http://localhost:3000/products"
+  constructor(private httpClient:HttpClient) { }
+  getAll():Observable<Product[]>{
+    return this.httpClient.get<Product[]>(this.apiUrl);
+  }
+  
+}
+
+
+
+-appmodule.ts te
+imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
+
+
+
+
+-app.routing.module
+{path:"",component:ProductComponent}
+
+
+-app.comp.html tableımızı yazdık
+<div class="row justify-content-center">
+    <div class="col-6">
+        <table class="table table-danger table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Currency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.brand}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.currency}}</td>
+            </tr>
+            </tbody>
+              </table>
+    </div>
+</div>
+
+
+
+
+-productcomponentts
+import { Component, OnInit } from '@angular/core';
+import { Product } from '../models/product';
+import { ProductService } from '../services/product.service';
+
+@Component({
+  selector: 'app-product',
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.css']
+})
+export class ProductComponent implements OnInit {
+  products:Product[]=[]
+  constructor(private productService:ProductService) { }
+
+  ngOnInit(): void {
+this.getProducts();
+  }
+    getProducts():void{
+      this.productService.getAll().subscribe(result=>{this.products=result},error=>{console.log(error)});
+    }
+
+}
+
+*VERİDE SEARCH BUTONU
+
+-producthtml e
+<input type="text" class="form-control" (change)="getProducts()" [(ngModel)]="name">
+
+
+
+
+-productcompts e
+export class ProductComponent implements OnInit {
+  name:string=''
+  products:Product[]=[]
+  constructor(private productService:ProductService) { }
+
+  ngOnInit(): void {
+this.getProducts();
+  }
+    getProducts():void{
+      this.productService.getAll(this.name).subscribe(result=>{this.products=result},error=>{console.log(error)});
+    }
+
+}
+
+-appmodule a formsmodule ekle
+
+
+
+-productservice e
+
+export class ProductService {
+  apiUrl="http://localhost:3000/products"
+  constructor(private httpClient:HttpClient) { }
+  getAll(name:string):Observable<Product[]>{
+    return this.httpClient.get<Product[]>(this.apiUrl+'?name_like='+name);
+  }
+  
+}
+
+
+
+
+
+-LOGINDTO olusturalım
+
+-modelste userforlogin.ts  buradaki inteerface değer tipi belirteci erişim belirteci
+export interface UserForLogin{
+    UserName:string,
+    Password:string
+}
+
+
+
+
+-servicede authservice ng g s auth
+export class AuthService {
+  apiUrl="https://localhost:5001/api/auth"
+  constructor(private httpClient:HttpClient) 
+    login(userForLogin:UserForLogin)
+   {}}
+}
+
+
+-modelste response.ts burada response alınan cevap tanımlanır
+export interface Response{
+    success:boolean,
+    message:string
+}
+export interface DataResponse<T> extends Response{
+    data:T
+}
+
+
+
+
+
+
+
+
+
+
+
+#################################################### 22.03.2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

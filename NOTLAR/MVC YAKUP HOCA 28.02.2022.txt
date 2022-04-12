@@ -1,0 +1,1573 @@
+########################################################## 28.02.2022 #####################################################################
+
+{   class User
+    //CONSTRUCTOR(YAPICI METHODLAR) her klasın default olarak boş parametresiz constructorı mevcuttur
+    //eğer custom constructor eklenirse classın instance ı oluşturulurken cons da belirlenen parametreler kullanılabilir
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public User(int id,string name)
+        {
+            this.Id = id;
+            this.Name = name;
+        }
+    }
+    class Program
+    {
+        //for(int i=1; i<6; i++)
+        //    {
+        //     Console.WriteLine(i);
+        //    }
+        //FOR DÖNGÜSÜ BENZERİ CUSTOM LOOP
+        
+        public static void CustomLoop(int start,int end)
+        {
+        CustomLoop(1,100);
+        startCode:
+            Console.WriteLine(start.ToString());
+            start++;
+         if(start<end)
+            goto startCode;
+        }
+    }
+}
+
+
+--list ctrl tick listin özelliklerini açar
+--bp 1 custom döngü customloop
+--bp 2 interface ile istediğimiz özelliğe göre filtreleyebiliriz
+farklı değerler gönderip patlamasını engeller
+consda yeni bir kopya oluşturduğumuzda gereksiz bellek yeri kaplar 
+onun yerine idata tanımlayıp içine yeni new yapıcı methodlar oluşturabiliriz
+referans interface
+User user=new user(); yerine
+Idata data=new User();
+data=new Book();
+interfacelerin ortak özelliği public
+--bp 3 extensionslar erişim yetkimizin olmadığı classlara veya class yapısında oluşturulmuş nesnelere ihtiuyacımıza uygun özellik eklemenin 
+genel ismidir.
+
+--att hepsine tanımlanabilir ekstra özellik getirmek için kullanılabilir örneğin renk adında bi prop tanımladık 
+burada renk ve yoğunluk özellikleri olsun
+yoğunluk özelliğini konsolda listeleme yaparken çağırmak istemezsek writeatt false yaparız
+writeatt true dediğimiz anda yoğunluğu da listelenir
+
+
+--BOOTSTRAP
+container- ögeyi tam ortaladı
+container fluid- sayfayı yüzde yüz kullanır
+container-sm- fluid- sayfa küçülünce yüzde yüz kullanır
+grid row sütunları eşit aralıklı olarak koydu col bg-dark text-white- özellik atamaları
+col-5 bg-dark text-white- 5 sütunluk yer kapla
+col-5 col-md-12 bg-dark text-white- 5 sütunluk yer kapla sayfa küçülünce 12 sütunluk yer kapla md medium ekran
+js güvenlik açığı verir 
+
+
+
+
+
+
+########################################################## MVC ##################################################################3
+.NET CORE WEB MVC SOLUTION DOSYASI
+-layout (sharedin icinde)
+   <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="index">Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="index">Products</a>
+
+CLASSLAR MODELS E ++ INDEXLER VIEWS E ++ CONTROLLER CONTROLLER A
+
+
+-homecontroller
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------
+-users
+
+users.controller
+using WebCoreMvc.Models;
+
+namespace WebCoreMvc.Controllers
+{
+    public class UsersController : Controller
+    {
+        public IActionResult Index()
+        {
+            List<User> users = new List<User>();
+            users.Add(new User(1, "Büşra", "Sarıkaya"));
+            users.Add(new User(2, "Mikdat", "Gürses"));
+            ViewBag.users = users;
+            //usersın listesi bag içine koy anlamı verir ihtiyacın olduğunda çek
+            return View();
+        }
+    }
+}
+
+
+index.cshtml
+
+@{
+    ViewData["Title"] = "Users Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Users Page</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<table class="table table-success table-striped">
+ <thead>
+     <tr>
+         <th>Id</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+     </tr>
+     </thead>
+ <tbody>
+     @foreach (var user in ViewBag.users)
+     {
+         //c#ta olan kodları nasıl html e cekeriz?
+         <tr>
+             <td>@user.Id</td>
+             <td>@user.FirstName</td>
+             <td>@user.LastName</td>
+         </tr>
+     }
+ </tbody>
+</table>
+
+
+user.cs
+namespace WebCoreMvc.Models
+{
+    public class User
+    {
+        public int Id{ get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public User()
+        {
+        }
+        public User(int ıd, string firstName, string lastName)
+        {
+            Id = ıd;
+            FirstName = firstName;
+            LastName = lastName;
+        }
+    }
+}
+
+
+
+-----------
+-products
+viewin icine products folderı actık 
+icine index dosyasını aattık
+-controllerda products controller
+-modelsta products.cs
+
+products.controller
+namespace WebCoreMvc.Controllers
+{
+    public class ProductsController : Controller
+    {
+        public IActionResult Index()
+        {
+            List<Product> Products = new List<Product>();
+            Products.Add(new Product(1, "Book", 12.30f));
+            Products.Add(new Product(1, "Pencil", 15.40f));
+            ViewBag.products = Products;
+            return View();
+        }
+    }
+}
+
+
+
+product.cs
+namespace WebCoreMvc.Models
+{
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Price { get; set; }
+        public Product()
+        {
+        }
+        public Product(int ıd, string name, float price)
+        {
+            Id = ıd;
+            Name=name;
+            Price=price;
+        }
+    }
+}
+
+index
+@{
+    ViewData["Title"] = "Products Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Product in ViewBag.Products)
+        {
+            //c#ta olan kodları nasıl html e cekeriz?
+            <tr>
+                <td>@Product.Id</td>
+                <td>@Product.Name</td>
+                <td>@Product.Price.ToString("0.00")</td>
+            </tr>
+        }
+    </tbody>
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+-DB BAĞLAMA
+nuget paketleri
+tools
+entityframework
+design
+sql server
+view diğer pencereler package ekle
+
+------------------------
+package manager console
+direkt database e bağlanıp tablo ekleme güncelleme yapılabilir
+enter tuşuyla yönetilir
+
+namespace WebCoreMvc.Models
+{
+    public class SimpleDbContext:DbContext
+    {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=127.0.0.1;Database=SimpleDb;User Id=sa;Password=12345;");
+        }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
+    }
+}
+
+
+namespace WebCoreMvc.Migrations
+{
+    public partial class FirstInitialize : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Price = table.Column<float>(type: "real", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Users");
+        }
+    }
+}
+
+
+######################################################################### 01-02.03.2022 #############################################################
+MVC ADD UPDATE DELETE
+*sarı renkli @ içerisinde .net kodu çalıştırabilirsin demek
+*sitenin f12 sayfasında ctrl+f yaparsak bul çalışır input vs yazarsak kaç adet input olduğu vs gözükür
+*iactionresult dönüş tipidir
+
+-->ilk users indexte buton olusturduk btn a basınca users cont sayfasına git dedik, içindeki action methodunu bul dedik
+<a class="btn btn-sm btn-success text-light" asp-controller="Users" asp-action="Add">Add</a> 
+@*bootstrap kütüphanesinden seçtik controller users a yolladı actionu add add butonu*@
+
+-userscontrollera geçtik action add actionunu yazdık(controllerda method action olur)
+public IActionResult Add()
+        {
+            return View();
+        }
+
+
+
+
+
+-->viewsta users klasorune indexi kopyalayıp yeni ad vererek add.cshtml ekledik buna bootstraptan aldığımız formu kopyaladık
+ @*firstname datadan çekileceği ismi istiyor veritabanındaki karşılığı aynı zamanda classlardaki*@
+
+@{
+    ViewData["Title"] = "User Add";
+}
+<form action="/Users/Save" method="post">
+    <div class="mb-3">
+        <label class="form-label">FirstName</label>
+        <input type="text" name="FirstName" class="form-control" id="exampleInputEmail1">
+    </div>
+    @*firstname datadan çekileceği ismi istiyor veritabanındaki karşılığı aynı zamanda classlardaki*@
+    <div class="mb-3">
+        <label class="form-label">LastName</label>
+        <input type="text" name="FirstName" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-warning">Warning</button>
+</form>
+
+
+
+
+-->update.cshtml ekledik buna da form ekledik update adı verdik butona,id butonu ekleyip buna hidden demeliyz 
+<input type="hidden" name="Id" value="@ViewBag.Id">
+    <button type="submit" class="btn btn-warning">Update</button>
+
+
+users controller a gidip update action ı olusturmalıyız
+public IActionResult Update(int id)
+        {
+            return View();
+        }
+
+
+
+
+
+
+-->DataAccess klasörü oluşturduk, sql işlemlerini buradan yöneteceğiz
+abstract soyut ve concrete somut alt klasörleri
+ıuserrep ve userrep classları
+
+-ıuserrepository
+namespace WebCoreMvc.DataAccess.Abstract
+{
+    interface IUserRepository
+    {   //webcoremvc kütüphanesini ekledik
+        List<User> GetAll(); //tümünü çağırdık
+        User GetById(int id); //id e göre bir kayıt getiriyor
+        bool Add(User user); //bool deger döndürme
+        bool Update(User user);
+        bool DeleteById(User user);
+        //deleteallbyfirstnamestartswith(string value)
+    }
+}
+
+
+-userrepository
+iuserrep implement ettik alt enter ile kütüphaneleri using WebCoreMvc.DataAccess.Abstract;  ve kodları aldık
+
+namespace WebCoreMvc.DataAccess.Concrete
+{
+    public class UserRepository : IUserRepository
+    {
+        public bool Add(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool DeleteById(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<User> GetAll()
+        {
+           using(var context=new SimpleDbContext())
+            {
+                return context.Set<User>().ToList();
+            }
+        }
+
+        public User GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(User user)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
+
+
+
+
+-->repositorylerden sonra userscontrollera gittik ve  ıuserrep u private ettik somut katmanı çağırdık
+
+private IUserRepository _userRepository; alt enter yaptık oluşturucu açıp
+
+public UsersController()
+        {
+            _userRepository = new UserRepository();
+        }                                                 dataaccess kütüphanesini istedi                                             
+ 
+değer tipi bellek tipi bellekte şişme yaptığı için bu işlemi yapıyoruz
+
+
+
+
+
+-->users controller a gidip indexe this ekledik
+public IActionResult Index()
+        {
+            ViewBag.users = this._userRepository.GetAll();
+            return View();
+        }
+
+
+- save actionunu ekledik
+   public IActionResult Save(User user)
+        {
+           if(user.Id==0)
+            {
+                this._userRepository.Add(user);
+            }
+           else
+            {
+                this._userRepository.Update(user);
+            }
+            return RedirectToAction("Index");
+//redirect to action bu aksiyonlardan birine yönlendir demek
+
+
+
+
+-->böyle çalıştırıp add yaparsak eklemez hata verir çünkü userrep de public bool add e using database eklemeliyiz
+public bool Add(User user)
+        {
+            using(var context=new SimpleDbContext())
+            {
+                var addedUser = context.Entry(user);
+                addedUser.State = EntityState.Added;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+
+
+-->daha sonra aynı sekilde userrep a getbyid ekliycez
+public User GetById(int id)
+        {
+           using(var context=new SimpleDbContext())
+            {
+                return context.Set<User>().SingleOrDefault(u => u.Id == id);
+            }
+        }
+
+
+
+-->simdi update adımlarına gidiyoruz 
+userscontrolles a gidiyoruz update avctionunu ekliyoruz
+public IActionResult Update(int id)
+        {
+            var user = this._userRepository.GetById(id);
+            ViewBag.user = user;
+            return View();
+        }
+
+
+veritabanından userı cektik 
+
+
+
+-->user cont güncellemeler
+öncelikle modelse errorresult sınıfı ekledik
+public class ErrorResult
+    {
+        public string Message { get; set; }
+        public ErrorResult(string message)
+        {
+            Message = message;
+        }
+    }  
+
+
+
+
+public IActionResult Update(int id)
+        {
+            var user = this._userRepository.GetById(id);
+            if(user==null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.user = user;
+            return View();
+        }
+
+
+public IActionResult Save(User user)
+        {
+            string route = (user.Id == 0) ? "Add" : "Update";
+            if(user.FirstName==null)
+            {
+                return RedirectToAction(route,new ErrorResult("Pls enter FirstName"));
+            }
+            if (user.LastName == null)
+            {
+                return RedirectToAction(route, new ErrorResult("Pls enter LastName"));
+            }
+            if (user.Id == 0)
+            {
+                this._userRepository.Add(user);
+            }
+            else
+            {
+                this._userRepository.Update(user);
+            }
+            return RedirectToAction("Index");
+            //redirect to action bu aksiyonlardan birine yönlendir demek
+        }
+
+
+public IActionResult Add(string Message=null)//değer gelmezse defaultu null
+        {
+            ViewBag.message = Message;      
+            return View();
+        }
+
+
+
+
+
+-->add.cs e en başa
+<form action="/Users/Save" method="post">
+    @{
+        if(ViewBag.message != null)
+        {
+            <div class="alert alert-danger">@ViewBag.message</div>
+        }
+    }
+
+burada boş kayıt yapmaya çalışırken hata vercek pls enter firstname
+
+
+
+
+-->edit ve delete butonlarını ekleyelim
+index in icine 
+<td>
+                 <a class="btn btn-link"href="/Users/Update/@user.Id">Edit</a>
+                 <a class="btn btn-link"href="/Users/Delete/@user.Id">Delete</a>
+             </td>
+
+*buradaki a tagı hypertext olarak geçiyor
+*hrefteki link controllerda update e gidip ide ye göre userı bulup, eğer gelen satır null ise
+ana sayfaya geri dön eğer null değilse viewbagdan bu userın datasını al
+
+
+
+
+
+--> update dedikten sonra seçilen veriyi update sayfasında kolonlarda göstersin istersek
+update.cs e gidiyoruz ve input satırına value ekliyoruz value="@ViewBag.user.FirstName"
+
+<div class="mb-3">
+        <label class="form-label">FirstName</label>
+        <input type="text" name="FirstName" class="form-control" value="@ViewBag.user.FirstName">
+    </div>
+    @*firstname datadan çekileceği ismi istiyor veritabanındaki karşılığı aynı zamanda classlardaki*@
+    <div class="mb-3">
+        <label class="form-label">LastName</label>
+        <input type="text" name="FirstName" class="form-control" value="@ViewBag.user.LastName">
+    </div>
+    <input type="hidden" name="Id" value="@ViewBag.user.Id">
+
+
+
+
+-->update dediğinde boşsa hata versin
+error result a git, yeni error result aç(isteğimize uygun cons oluşturduk boş geçilirse hata veriyor)
+
+-public int Id { get; set; }
+
+-public ErrorResult(int id,string message)
+        {
+            Message = message;
+            Id = id;
+        }
+
+
+
+-->userscont gidip update actionunu güncelledik string message ve viewbag string message ekledik
+
+public IActionResult Update(int id,string message=null)
+        {
+            var user = this._userRepository.GetById(id);
+            if(user==null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.user = user;
+            ViewBag.message = message;
+            return View();
+        }
+id değerini kendi eşitliyor,mesajı da string alıyor
+
+
+-save actionunu da güncelledik mesaj iflerine user.Id ekledik
+if(user.FirstName==null)
+            {
+                return RedirectToAction(route,new ErrorResult(user.Id,"Pls enter FirstName"));
+            }
+            if (user.LastName == null)
+            {
+                return RedirectToAction(route, new ErrorResult(user.Id,"Pls enter LastName"));
+            }
+
+
+
+
+-->update.cs e gidip mesaj butonunu ekliyoruz
+form action="/Users/Save" method="post">
+    @{
+        if(ViewBag.message != null)
+        {
+            <div class="alert alert-danger">@ViewBag.message</div>
+        }
+    }
+
+
+
+
+-->userrep a bool update i ekliyoruz
+public bool Update(User user)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                var updatedUser = context.Entry(user);
+                updatedUser.State = EntityState.Modified;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+
+bu işlemleri yaparken simpledb kullan, bu ayarlarla user tipini User tablosuyla bağla
+context e bir girdi oluştur bu girdi users tablosundaki bilgilerle eşleştir yani id,fname,lname.
+bu kaydı oluştururken mofified(update) olarak oluştur, yani var olan bir kaydı güncelle
+
+
+
+
+-->delete adımlarına geçiyoruz user rep e, bool delete i ekleyelim
+public bool DeleteById(int id)
+        {
+            var user = this.GetById(id);
+            using (var context = new SimpleDbContext())
+            {
+                var deletedUser = context.Entry(user);
+                deletedUser.State = EntityState.Deleted;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+
+
+-usercontroller a
+public IActionResult Delete(int id)
+        {
+            this._userRepository.DeleteById(id);
+            return RedirectToAction("Index");
+        }
+
+bitti :)
+
+
+
+
+
+
+#####################################################################02.03.2022#############################################################
+
+
+
+-->products page e fotograflı form ekledik
+-layouta fontawesome eklemeyi unutma
+-productsın indexine;
+@{
+    ViewData["Title"] = "Products Page";
+}
+<p>WELCOME</p>
+<button type="button" class="btn btn-warning">Add</button>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var Product in ViewBag.products)
+    {
+    <div class="col-md-4 col-sm-2">
+        <div class="card">
+            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2054321.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">"@Product.Name"</h5>
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-light float-right mr-1"><i class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn btn-info float-lg-right"><i class="fa-solid fa-square-pen"></i></button>
+            </div>
+        </div>
+    </div>
+     }
+</div>
+
+
+
+
+
+-->products page fotoğraflı ve desc ürünler ekledik
+
+-index
+@{
+    ViewData["Title"] = "Products Page";
+}
+<p>WELCOME</p>
+<button type="button" class="btn btn-warning">Add</button>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var Product in ViewBag.products)
+    {
+    <div class="col-md-4 col-sm-2">
+        <div class="card">
+            <img src="@Product.imageurl" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">"@Product.Name"</h5>
+                <p class="card-text">"@Product.Description.Substring(0,(Product.Description.Length>110)?110:Product.Description.Length)..."</p>
+                <button type="button" class="btn btn-light float-right mr-1"><i class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn btn-info float-lg-right"><i class="fa-solid fa-square-pen"></i></button>
+            </div>
+        </div>
+    </div>
+     }
+</div>
+
+
+-products
+namespace WebCoreMvc.Models
+{
+    public class Product
+    {
+        public int Id { get; set; }
+        public int CategoryId { get; set; }
+        public string Name { get; set; }
+        public string imageurl { get; set; }
+        public float Price { get; set; }
+        public string Description { get; set; }
+        public Product()
+        {
+        }
+        public Product(int ıd,int categoryid, string name,string imgurl, float price,string desc)
+        {
+            Id = ıd;
+            CategoryId = categoryid;
+            Name=name;
+            imageurl = imgurl;
+            Price=price;          
+            Description = desc;
+
+        }
+    }
+}
+
+
+-products.cont
+namespace WebCoreMvc.Controllers
+{
+    public class ProductsController : Controller
+    {
+        public IActionResult Index()
+        {
+            List<Product> Products = new List<Product>();
+            Products.Add(new Product(1,1, "Book", "https://static.wixstatic.com/media/2b6d5a_97f68af04cfd4a069161d51b118be4cb~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01/2b6d5a_97f68af04cfd4a069161d51b118be4cb~mv2.webp",12.30f, @"Penguin Books Birleşik Krallık'ta kurulu bir yayınevidir. 1935 yılında Allen Lane tarafından The Bodley Head yayınevinin bir kolu olarak kurulmuş ve ertesi yıl bağımsız bir şirket olmuştur.[1] Penguen yayınevi 1930'larda ucuz cep kitapları basarak ve bunları çeşitli zincir dükkanlarda geniş çaplı olarak dağıtarak kitap yayımcılığında çığır açmıştır. Penguin'in başarısı ciddi kitaplar için büyük kitlelerin ilgilendiğini göstermiştir. Penguen ayrıca siyaset, sanat ve bilim üzerine bastığı kitaplarla Birleşik Krallık'ta kamuoyunda etkili olmuştur.[2])
+Penguin Books artık 2013 yılında iki büyük yayımevinin birleşmesi ile oluşan dünya çapında kitap pazarlayan Penguin Random House'un bir parçasıdır."));
+            Products.Add(new Product(2, 2, "Pencil", "https://www.besthobi.com/wp-content/uploads/2021/07/Resim-Kalemleri.jpg", 12.30f, @"Kurşun kalem, kâğıt üzerine yazı veya çizim için kullanılan, yazıcı kısmı çoğunlukla kil ve grafitten üretilen kalem. Tipik bir kurşun kalemde grafitin etrafı ahşap kaplıdır. Bunun yanı sıra metal veya plastik muhafazaya sahip kurşun kalemler de mevcuttur.Kurşun kalemden ilk kez Alman vatandaşı İsviçreli doğa tarihçisi Conrad Gesner 1565 yılında bahsetmiştir.[1] O dönemde grafitin bir tür kurşun olduğu düşünülüyordu.[1] Gesner sonradan grafitin farklı bir mineral olduğunu keşfetmiştir.[1]"));
+            ViewBag.products = Products;
+            return View();
+        }
+    }
+}
+
+
+
+
+
+-->productın databaseine erismek istiyoruz
+
+ıproductrep ve productrep olusturuyoruz
+namespace WebCoreMvc.DataAccess.Abstract
+{
+    namespace WebCoreMvc.DataAccess.Abstract
+    {
+        interface IUserRepository
+        {   //webcoremvc kütüphanesini ekledik
+            List<Product> GetAll(); //tümünü çağırdık
+            List<Product> GetAllByCategoryId(); //kategori idsine göre 1ini cagırdı
+            Product GetById(int id); //id e göre bir kayıt getiriyor
+            bool Add(Product product); //bool deger döndürme
+            bool Update(Product product);
+            bool DeleteById(int id);
+            //deleteallbyfirstnamestartswith(string value)
+        }
+    }
+}
+
+
+-->productrepository e gidelim
+namespace WebCoreMvc.DataAccess.Concrete
+{
+    public class ProductRepository : IProductRepository
+    {
+        public bool Add(Product product)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                var addedProduct = context.Entry(product);
+                addedProduct.State = EntityState.Added;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+        public bool DeleteById(int id)
+        {
+            var product = this.GetById(id);
+            using (var context = new SimpleDbContext())
+            {
+                var deletedProduct = context.Entry(product);
+                deletedProduct.State = EntityState.Deleted;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+        public List<Product> GetAll()
+        {
+            using (var context = new SimpleDbContext())
+            {
+                return context.Set<Product>().ToList();
+            }
+        }
+
+        public List<Product> GetAllByCategoryId(int categoryid)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                return context.Set<Product>().Where(p => p.CategoryId== categoryid).ToList();
+            }
+        }
+
+        public List<Product> GetAllByCategoryId()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetById(int id)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                return context.Set<Product>().SingleOrDefault(p => p.Id == id);
+            }
+        }
+
+        public bool Update(Product product)
+        {
+                using (var context = new SimpleDbContext())
+                {
+                    var updatedProduct = context.Entry(product);
+                    updatedProduct.State = EntityState.Modified;
+                    context.SaveChanges();
+                return true;
+                }
+        }
+    }
+}
+
+
+
+
+-->products controller 
+namespace WebCoreMvc.Controllers
+{
+    public class ProductsController : Controller
+    {
+        private IProductRepository _productRepository;
+
+        public ProductsController()
+        {
+            _productRepository = new ProductRepository();
+        }
+
+        public IActionResult Index()
+        {
+            ViewBag.products = this._productRepository.GetAll();
+            return View();
+        }
+        public IActionResult Add(string Message)//değer gelmezse defaultu null
+        {
+            ViewBag.message = Message;
+            return View();
+        }
+        public IActionResult Update(int id, string message)
+        {
+            var product = this._productRepository.GetById(id);
+            if (product == null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.product = product;
+            ViewBag.message = message;
+            return View();
+        }
+        public IActionResult Delete(int id)
+        {
+            this._productRepository.DeleteById(id);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Save(Product product)
+        {
+            string route = (product.Id == 0) ? "Add" : "Update";
+            if (product.CategoryId == 0)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls select CategoryId"));
+            }
+            if (product.imageurl == null)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls select ImageUrl"));
+            }
+            if (product.Name == null)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls enter Name"));
+            }
+            if (product.Price == 0)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls enter Price"));
+            }
+            if (product.Description == null)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls enter Description"));
+            }
+            if (product.Id == 0)
+            {
+                this._productRepository.Add(product);
+            }
+            else
+            {
+                this._productRepository.Update(product);
+            }
+            return RedirectToAction("Index");
+            //redirect to action bu aksiyonlardan birine yönlendir demek
+        }
+    }
+}
+
+
+
+
+
+
+
+--edit ve delete kısımları ödev
+
+
+
+
+
+
+##################################################################03.03.2022##################################################################
+product controller tekrar
+
+namespace WebCoreMvc.Controllers
+{
+    public class ProductsController : Controller
+    {
+        private IProductRepository _productRepository;
+
+        public ProductsController()
+        {
+            _productRepository = new ProductRepository();
+        }
+        //prod cont olultupu zaman bununla doldur demek
+        public IActionResult Index()
+        {
+            ViewBag.products = this._productRepository.GetAll();
+            return View();
+        }
+        //this tarafı datayı göterir sol taraf verdiğimiz isimlendirme
+        //viewin icindeki indexi bulur
+        public IActionResult Add(string Message)//değer gelmezse defaultu null
+        {
+            ViewBag.message = Message;
+            return View();
+        }
+        //datayı eksik gönderirsek uyarı verir
+        public IActionResult Update(int id, string message)
+        {
+            var product = this._productRepository.GetById(id);
+            if (product == null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.product = product;
+            ViewBag.message = message;
+            return View();
+        }
+        //bu idye ait productta bir veri varsa al gel
+        //yoksa products sayfasına geri dön viewin icerisindeki update cs calıstı
+        public IActionResult Delete(int id)
+        {
+            this._productRepository.DeleteById(id);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Save(Product product)
+        {
+            string route = (product.Id == 0) ? "Add" : "Update";
+            if (product.CategoryId == 0)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls select CategoryId"));
+            }
+            if (product.imageurl == null)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls select ImageUrl"));
+            }
+            if (product.Name == null)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls enter Name"));
+            }
+            if (product.Price == 0)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls enter Price"));
+            }
+            if (product.Description == null)
+            {
+                return RedirectToAction(route, new ErrorResult(product.Id, "Pls enter Description"));
+            }
+            if (product.Id == 0)
+            {
+                this._productRepository.Add(product);
+            }
+            else
+            {
+                this._productRepository.Update(product);
+            }
+            return RedirectToAction("Index");
+            //redirect to action controllerda bu actionlardan birine yönlendir demek
+        }
+    }
+}
+
+
+-->prodcts index
+@{
+    ViewData["Title"] = "Products Page";
+}
+<p>WELCOME</p>
+<a class="btn btn-sm btn-primary" href="/Products/Add">+</a>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var Product in ViewBag.products)
+    {
+    <div class="col-md-4 col-sm-2">
+        <div class="card">
+            <img src="@Product.imageurl" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">"@Product.Name"</h5>
+                <p class="card-text">"@Product.Description.Substring(0,(Product.Description.Length>110)?110:Product.Description.Length)..."</p>
+                <a class="btn btn-sm btn-success" href="/Products/Update/@Product.Id"><i class="fa-solid fa-trash-can"></i></a>
+                <a class="btn btn-sm btn-warning" href="/Products/Delete/@Product.Id"><i class="fa-solid fa-square-pen"></i></a>
+</div>
+        </div>
+    </div>
+     }
+</div>
+
+
+
+
+-->products add
+html de selecte ait optionlardan birinin seçilii olmasını istiyorsam option elementinin içine select ekleriz
+
+@{
+    ViewData["Title"] = "User Add";
+}
+<form action="/Products/Save" method="post">            //aşağıdaki buton bunu çalıştıracak
+    @{
+        if (ViewBag.message != null)
+        {
+            <div class="alert alert-danger">@ViewBag.message</div>
+        }
+    }
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <select name="CategoryId" class="form-control">
+            <option value="1" selected>Stationery</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image</label>
+        <input type="text" name="imageurl" class="form-control" id="exampleInputEmail1">
+    </div>
+    @*firstname datadan çekileceği ismi istiyor veritabanındaki karşılığı aynı zamanda classlardaki*@
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" name="Name" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="number" name="Price" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea name="Description" rows="4" class="form-control" id="exampleInputPassword1"></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning">Add</button>
+</form>
+
+
+
+
+
+
+-->image linkini ?
+-->products update
+@{
+    ViewData["Title"] = "User Add";
+}
+<form action="/Products/Save" method="post"> 
+    @{
+        if (ViewBag.message != null)
+        {
+            <div class="alert alert-danger">@ViewBag.message</div>
+        }
+    }
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <select name="CategoryId" class="form-control">
+            <option value="1" selected>Stationery</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image</label>
+        <input type="text" name=imageurl class="form-control" value="@ViewBag.product.imageurl">
+    </div>
+    @*firstname datadan çekileceği ismi istiyor veritabanındaki karşılığı aynı zamanda classlardaki*@
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" name=Name class="form-control" value="@ViewBag.product.Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="number" name=Price class="form-control" value="@ViewBag.product.Price">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea name=Description rows="4" class="form-control">@ViewBag.product.Description</textarea>
+    </div>
+    <input type="hidden" name="Id" value="@ViewBag.product.Id" />
+    <button type="submit" class="btn btn-warning">Update</button>
+</form>
+
+
+--hiddeni unutma yoksa güncelleme yapmaz!!
+
+
+-->şimdi ıuser rep ve ıproduct repe tekrarlatan id add update name vs parametreleri için; dataaccess klasörüne ıbaserepository açacağız
+ikisini implement edeceğiz
+ıcatrep
+cat.cs
+catrep
+catcontroller
+
+
+-->core klasörü açtık veri yönetiminin çekirdeğinin bulunduğu yer dataaccess içine ibaserepository
+-
+ibaserepository
+namespace WebCoreMvc.Core.DataAccess
+{   public interface IBaseRepository<T>
+    {
+        List<T> GetAll();
+        List<T> GetAllByCategoryId();
+        bool Add(T model);
+        bool Update(T model);
+        bool DeleteById(int id);
+    }
+}
+
+
+
+
+
+-baserep
+namespace WebCoreMvc.Core.DataAccess
+{
+    public abstract class BaseRepository<T> where T:class, IModel,new()
+    {
+        public virtual bool Add(T model)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                var addedModel = context.Entry(model);
+                addedModel.State = EntityState.Added;
+                context.SaveChanges();
+                return true;
+            }
+        }
+        public virtual bool Update(T model)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                var updatedModel = context.Entry(model);
+                updatedModel.State = EntityState.Modified;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+        public virtual bool DeleteById(int id)
+        {
+            var model = this.GetById(id);
+            using (var context = new SimpleDbContext())
+            {
+                var deletedModel = context.Entry(model);
+                deletedModel.State = EntityState.Deleted;
+                context.SaveChanges();
+                return true;
+            }
+        }
+
+        public List<T> GetAll()
+        {
+            using (var context = new SimpleDbContext())
+            {
+                return context.Set<T>().ToList();
+            }
+        }
+
+        public virtual T GetById(int id)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                return context.Set<T>().SingleOrDefault(u => u.Id == id);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+-->model klasörü açtık imodel interface i ekledik  ***imodelde metadata kütüphanesi ekleme!! webcore ekle!!
+
+namespace WebCoreMvc.Core.Model
+{
+    public interface IModel
+    {
+        public int Id { get; set; }
+    }
+}
+
+
+
+
+-->ıproductrep e gidip güncelleme yapıyoruz
+ibase e geçiş
+
+namespace WebCoreMvc.DataAccess.Abstract
+{
+    namespace WebCoreMvc.DataAccess.Abstract
+    {
+        interface IProductRepository:IBaseRepository<Product>
+        {   //webcoremvc kütüphanesini ekledik
+            //List<Product> GetAll(); //tümünü çağırdık
+            
+            List<Product> GetAllByCategoryId(int categoryId); //kategori idsine göre 1ini cagırdı
+            
+            //Product GetById(int id); //id e göre bir kayıt getiriyor
+            //bool Add(Product product); //bool deger döndürme
+            //bool Update(Product product);
+            //bool DeleteById(int id);
+            //deleteallbyfirstnamestartswith(string value)
+        }
+    }
+}
+
+
+
+-->iuserrep a geçiyoruz ibas e geçiş
+namespace WebCoreMvc.DataAccess.Abstract
+{
+    public interface IUserRepository:IBaseRepository<User>
+    {   //webcoremvc kütüphanesini ekledik
+        //List<User> GetAll(); //tümünü çağırdık
+        //User GetById(int id); //id e göre bir kayıt getiriyor
+        //bool Add(User user); //bool deger döndürme
+        //bool Update(User user);
+        //bool DeleteById(int id);
+        //deleteallbyfirstnamestartswith(string value)
+    }
+}
+
+
+
+
+-->productrep e geçiyoruz
+sadece bu kalacak
+public class ProductRepository : BaseRepository<Product>, IProductRepository
+{
+public List<Product> GetAllByCategoryId(int categoryid)
+        {
+            using (var context = new SimpleDbContext())
+            {
+                return context.Set<Product>().Where(p => p.CategoryId == categoryid).ToList();
+            }
+        }
+}
+
+
+
+-->userrep e geçiyoruz
+her şeyi silelim
+public class UserRepository : BaseRepository<User>, IUserRepository
+    {
+    }
+
+
+
+-->product.cs e gidip imodel implement edicez
+public class Product:IModel
+
+-->user.cs e gidip imodel implement edicez
+public class User:IModel
+
+
+bitti :)
+
+
+
+
+
+
+-->models e categories ekliyoruz
+category.cs
+namespace WebCoreMvc.Models
+{
+    public class Category:IModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Category()
+        {
+
+        }
+        public Category(int id,string name)
+        {
+            Id = Id;
+            Name = name;
+        }
+    }
+}
+
+
+
+
+simpledb e
+public DbSet<Category> Categories { get; set; }
+
+
+
+-->package manager console
+add migration "categories-inject"
+update-database
+categories tablosunu ekledik
+
+
+-->icategoryrep açtık
+
+
+namespace WebCoreMvc.DataAccess.Abstract
+{
+   public interface ICategoryRepository:IBaseRepository<Category>
+    {
+    }
+}
+
+
+
+
+-->categoryrep açtık
+namespace WebCoreMvc.DataAccess.Concrete
+{
+    public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
+    {
+    }
+}
+
+
+
+
+-->categoriescontroller categories a sağ tıklayarak boş mvc dent ekledik
+otomatik controllerı açtı
+
+
+
+
+
+-->categoriescontda viewa sağ tıklayıp add view dedik otomatik categories klasöründe açtı
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

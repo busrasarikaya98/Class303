@@ -1,0 +1,2170 @@
+############################################## 17.01.2022 ###############################################################
+
+FORM
+namespace HelloWorld
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();  //formun yapıcı metodu
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello World :D");  //butona tıkladığında ne göstereceğini yazalım
+        }
+    }
+}
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+namespace KayitUygulama2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = " BENİ DEĞİŞTİRDİ"; //butona tıkladığımızda label değişti
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label2.Text = " C# FORM UYGULAMASINA GEÇTİK";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "KAYIT DENEME YAPILDI";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label3.Text = textBox1.Text; //textboxta yazılanı labela yolladı
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------
+
+
+
+
+namespace RehberDeneme
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label9.Text = textBox1.Text; //textbox kısmına yazdığımız text labela attırdık
+            label10.Text = textBox2.Text; //textbox kısmına yazdığımız text labela attırdık
+            label11.Text = comboBox1.Text; //combodan seçimimizi labela aktardık
+            label12.Text = textBox3.Text; //textbox kısmına yazdığımız text labela attırdık
+
+            comboBox2.Items.Add("İSTANBUL"); //combo kısmına buradan ekleme yaapbiliriz kaydet tusuna bastıktan sonra geliyor
+            comboBox2.Items.Add("ANKARA");
+            comboBox2.Items.Add("İZMİR");
+            comboBox2.Items.Add("MERSİN");
+        }
+    }
+}
+
+------------------------------------------------------------------------------
+
+
+
+
+
+namespace HesapUygulama
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        { 
+            int number1;
+            int number2;
+            int total;
+            number1 = Convert.ToInt32(textBox1.Text); //textbox1 de yazdığımız sayı number1 dir
+            number2 = Convert.ToInt32(textBox2.Text); //textbox2 de yazdığımız sayı number2 dir 
+            total = number1 + number2; //totali tanımladık
+            label4.Text = total.ToString();  //labela yazdırabilmesi için to string yapmalıyız label4 tür
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a, b, carpim;
+            a = Convert.ToInt32(textBox3.Text); //texbox 3 te yazdığımız sayı a sayısıdır
+            b = Convert.ToInt32(textBox4.Text); //texbox 4 te yazdığımız sayı b sayısıdır
+            carpim = a * b; //carpimi tanimaldik
+            label8.Text = carpim.ToString(); //label8 e carpimi yazdirdik
+        }
+    }
+}
+
+---------------------------------------------------------------------------------
+
+namespace NotHesaplama
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double vize1, vize2, ortalama;
+            vize1 = Convert.ToDouble(textBox2.Text); //textbox2 değeri vize1 dir
+            vize2 = Convert.ToDouble(textBox3.Text); //textbox3 değeri vize2dir
+            ortalama = (vize1 + vize2) / 2;
+            textBox4.Text = ortalama.ToString(); //textbox4 değeri ortalamadır
+            
+            listBox1.Items.Add(textBox1.Text); //adsoyad yazıp her hesapla tıkladığımızda listbox1 e eklesin
+            listBox2.Items.Add(textBox2.Text); //vize1 yazıp her tıkladığımızda listbox2 e eklesin
+            listBox3.Items.Add(textBox3.Text); //vize2 yazıp her tıkladığımızda listbox3 e eklesin
+            listBox4.Items.Add(textBox4.Text); //her ortalamayı listbox4 e eklesin
+
+            if (ortalama>=65)  //ortalamaya göre listbox5 e yazı yazdırdık
+            {
+                listBox5.Items.Add("GEÇTİNİZ!");
+            }
+            else
+            {
+                listBox5.Items.Add("KALDINIZ :(");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();  //sil butonuna her tıkladığımzda textboxları temizleyecek elle silmemize gerek yok
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+        }
+    }
+}
+
+------------------------------------------------------------------------
+
+namespace CarpimTablosuUyg  LİSTELE DEYİNCE CARPIM TABLOSU GELİYOR
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int i=1; i<11; i++)
+            {
+                for (int j=0; j<11; j++)
+                {
+                    listBox1.Items.Add(i + "x" + j + "=" + i * j);
+                }
+                listBox1.Items.Add("------------------------------");
+            }
+        }
+    }
+}
+
+------------------------------------------------------------
+
+kullanıcının girdiği sayıya kadar 15e bölünenleri yazdırma
+namespace BolunmeUYG
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int ilksayi, sonsayi;
+            ilksayi = Convert.ToInt32(textBox1.Text);
+            sonsayi = Convert.ToInt32(textBox2.Text);
+
+            for (int i = ilksayi; i <= sonsayi; i++)
+            {
+            if (i%15 == 0)
+                {
+                    listBox1.Items.Add(i);
+                }
+            }
+            listBox1.Items.Add("--");
+        }
+    }
+}
+
+------------------------------------------------------------------
+
+yazdığımız değere kadar listeleme
+namespace SayıListelemeUyg
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int girilensayi;
+            girilensayi = Convert.ToInt32(textBox1.Text);
+            int i;
+            for (i=1; i<=girilensayi; i++)
+            {
+                listBox1.Items.Add(i);
+            }
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------
+
+faktöriyel hesaplattık
+namespace FaktoriyelHesapUyg
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sonuc = 1;
+            int sayi = Convert.ToInt32(textBox1.Text);
+            for (int i=1; i<=sayi; i++)
+            {
+                sonuc *= i;
+            }
+            MessageBox.Show("SAYININ FAKTÖRİYELİ = " + sonuc); //listbox değil ekrana sayı yazdırıyor
+            textBox1.Clear(); //gelen mesaja tamam deyince girilen verileri sıfırlıyor
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------
+
+
+
+namespace GirilenSayilarArasiCiftSayilarUyg
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int ilksayi, sonsayi;
+            ilksayi = Convert.ToInt32(textBox1.Text);
+            sonsayi = Convert.ToInt32(textBox2.Text);
+
+            for (int i = ilksayi; i <= sonsayi; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    listBox1.Items.Add(i);
+                }
+            }
+            listBox1.Items.Add("--");
+        }
+    }
+}
+
+
+
+
+------------------------------------------------------------------
+girilen sayı asal mıdır kontrol
+
+namespace AsalMıdır
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int kontrol = 0;
+            int sayi = Convert.ToInt32(textBox1.Text);
+            if (sayi == 1 || sayi == 0)
+            {
+                MessageBox.Show("Girdiğiniz sayı asal değildir.");
+                textBox1.Clear();
+
+            }
+            else
+            {
+                for (int i = 2; i < sayi; i++)
+                {
+                    if (sayi % i == 0) //Kalansız bölünüyormu?
+                    {
+                        kontrol++;
+                        break; //Diğer sayılara bakmaya gerek duymuyoruz.
+                    }
+
+
+                }
+
+                if (kontrol != 0)
+                {
+                    MessageBox.Show("Girdiğiniz sayı asal değildir.");
+                    textBox1.Clear();
+                }
+
+                else
+                {
+                    MessageBox.Show("Girdiğiniz sayı asaldır.");
+                    textBox1.Clear();
+                }
+            }
+        }
+    }
+}
+
+
+
+-----------------------------------------------------------------------
+kelimeyi parcalara bolerek yazdirma
+
+namespace KelimeParcala
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string kelime = textBox1.Text;
+            string show = "";
+            for (int i=0; i<kelime.Length; )
+            {
+                show += kelime[i];
+                listBox1.Items.Add(show);
+            }
+        }
+    }
+}
+
+
+----------------------------------------------------------------------------
+ekrana sayı girdirip girilen sayıları sıralatalım
+
+namespace SayıGiripSıralat
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        ArrayList sayi = new ArrayList();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sayi1 = Convert.ToInt32(textBox1.Text);
+            listBox1.Items.Add(sayi1);
+            sayi.Add(sayi1);
+            textBox1.Clear();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            sayi.Sort();
+            foreach(var m in sayi)
+            {
+                listBox1.Items.Add(m);       
+            }
+        }
+    }
+}
+
+
+-------------------------------------------------------------------------------
+girilen iki sayı arası rastgele sayı ürettirme
+
+namespace RastgeleSayıOlusturma
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sayi1 = Convert.ToInt32(textBox1.Text);
+            int sayi2 = Convert.ToInt32(textBox2.Text);
+            Random rastgele = new Random();
+            for (int i = 1; i < 10; i++)     //veya int rnd = rastgele.Next(sayi1, sayi2); tek sayı üretir
+            {
+                int rndmsayi = rastgele.Next(sayi1, sayi2);
+                listBox1.Items.Add(rndmsayi);
+            }
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------
+celsius - fahrenheit cevirme
+
+namespace SicaklikDegisim
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)  f cevir
+        {
+            double f = Convert.ToDouble(textBox2.Text);
+            textBox1.Text = Convert.ToString((f-32)/1.8);
+        }
+
+        private void button2_Click(object sender, EventArgs e) c cevir
+        {
+            double c = Convert.ToDouble(textBox1.Text);
+            textBox2.Text = Convert.ToString((c * 1.8) + 32);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+################################################ 18.01.2022 #############################################################3
+
+hesaplatıcı olusturma
+
+namespace MatematikHesap
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = "KARE";
+            label3.Visible = false; //GÖRÜNÜMLERİNİ KAPATTIK
+            label4.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            panel1.Visible = true;
+            button4.Visible = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int kenar_uzunlugu;
+            int alan, cevre;
+            kenar_uzunlugu = Convert.ToInt32(textBox1.Text);
+            cevre = 4 * (kenar_uzunlugu);
+            alan = kenar_uzunlugu * kenar_uzunlugu;
+            label7.Text = cevre.ToString();
+            label8.Text = alan.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Text = "DİKDÖRTGEN";
+            panel1.Visible = true;
+            label2.Visible = false;
+            textBox1.Visible = false;
+            button3.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int kisa, uzun, cevre, alan;
+            kisa = Convert.ToInt32(textBox2.Text);
+            uzun = Convert.ToInt32(textBox3.Text);
+            cevre = (kisa + uzun) * 2;
+            alan = kisa * uzun;
+            label7.Text = cevre.ToString();
+            label8.Text = alan.ToString();
+        }
+    }
+}
+
+
+
+
+
+------------------------------------------------------------------
+saat ve dakika hesaplatma
+
+namespace Saat_VeDakikaCinsindenYazdırma
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sayi = Convert.ToInt32(textBox1.Text);
+            int saat = sayi / 60;
+            double dakika = sayi % 60;
+            label4.Text = saat.ToString();
+            label5.Text = dakika.ToString();
+        }
+    }
+}
+
+
+----------------------------------------------------------------------
+
+ ***** FORMLAR ARASI GEÇİŞ *****
+namespace FormlarArasiGecisler
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e) //FORM1 DEKİ GİRİŞE TIKLATIYORUZ DEĞERLER DOĞRU İSE İKİNCİ FORM AÇILACAK
+        {
+            if (textBox1.Text == "sa" & textBox2.Text =="1234") 
+            {
+                Form2 yeni = new Form2();  //İKİNCİ FORMU BURADA AÇTIRIYORUZ //İKİNCİ FORMDA HENÜZ İŞLEM YAPTIRMADIK
+                yeni.Show();
+                this.Hide(); //1.formu gizledik
+            }
+            else
+            {
+                MessageBox.Show("KULLANICI ADI YA DA ŞİFRE HATALIDIR !");
+            }
+            
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------
+formlar arası geçiş, ikinci forma yazma
+
+Form1.cs
+namespace AdminGirisPanel
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            textBox2.PasswordChar = char.Parse("*");//şifre kısmını yıldızlamak için 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "admin" && textBox2.Text == "1234") //SİFREYİ YILDIZLI GOSTERMEK İCİN OZ KISMINDA USESYSTEMPASS TRUE OLACAK
+            {
+                Form2 fr2 = new Form2(); //bilgiler doğru ise form2 ekranına geçiş yapıyoruz
+                fr2.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("HATALI GİRİŞ YAPTINIZ!"); //bilgiler yanlış ise form2ye geçiş yok mesaj yazdır
+                textBox1.Clear();
+                textBox2.Clear();
+            }
+        }
+    }
+}
+
+Form2.cs
+namespace AdminGirisPanel
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e) //butona bastığımzda;
+        {
+            if (comboBox1.Text == "KIRMIZI")
+            {
+                label4.Text = textBox1.Text + "" + comboBox1.Text + "" + "RENK=" + "LİDERLİK,HIRS, İRADEYİ TEMSİL EDER";
+                button2.BackColor = Color.Red;
+            }
+            else if (comboBox1.Text == "SARI")
+            {
+                label4.Text = textBox1.Text + "" + comboBox1.Text + "" + "RENK=" + "UMUT, MUTLULUK, NEŞE VE EĞLENCE SUNAR";
+                button2.BackColor = Color.Yellow;
+            } //label4 e adımızı rengimizi ve açıklamamızı eklettik
+            else 
+            {
+                label4.Text = textBox1.Text + "" + comboBox1.Text + "" + "RENK=" + "HUZURUN VE BARIŞIN RENGİ";
+                button2.BackColor = Color.Blue;
+            }
+        }
+    }
+}
+
+-------------------------------------------------------------------------
+ygs puanı hesaplatma
+
+namespace YGSHESAP
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double turkce, matematik, sosyal, fen;
+            double ygs1, ygs2;
+
+            turkce = Convert.ToDouble(textBox1.Text);
+            sosyal = Convert.ToDouble(textBox2.Text);
+            matematik = Convert.ToDouble(textBox3.Text);
+            fen = Convert.ToDouble(textBox4.Text);
+            ygs1 = 100.160 + (turkce * 1.999) + (sosyal * 1) + (matematik * 3.998) + (fen * 2.999);
+            label7.Text = ygs1.ToString();
+            ygs2 = 100.160 + (turkce * 1.999) + (sosyal * 1) + (matematik * 2.999) + (fen * 3.998);
+            label8.Text = ygs2.ToString();
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------
+radyo müziği ekleme
+
+namespace MediaPlayerUyg
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = "http://37.247.98.8/stream/166/";  //SİTEDEN URL ALDIK //güncel mms yazarak alabilirz
+        }
+    }
+}
+
+
+----------------------------------------------------------------------------
+web sayfasını çalıştırma
+
+namespace WebBrowser
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://www.youtube.com/");
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------
+gün sayısı girip günü sordurtma switch case ile
+
+namespace GünleriSorgulatma
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sayi = int.Parse(textBox1.Text);
+            string sonuc = "";
+            switch(sayi)
+            {
+                case 1: sonuc = "PAZARTESİ";break;
+                case 2: sonuc = "SALI"; break;
+                case 3: sonuc = "ÇARŞAMBA"; break;
+                case 4: sonuc = "PERŞEMBE"; break;
+                case 5: sonuc = "CUMA"; break;
+                case 6: sonuc = "CUNARTESİ"; break;
+                case 7: sonuc = "PAZAR"; break;
+                default:
+                    MessageBox.Show("UYGUN SEÇİM DEĞİLDİR");
+                    break;
+            }
+            MessageBox.Show("SEÇİLEN GÜN:" + sonuc);
+        }
+    }
+}
+
+
+
+
+------------------------------------------------------------------------------
+#################################################### 19.01.2022 ##################################################################3
+sınav tarihimizi gireceğiz
+bugünün tarihini gireceğiz
+kalan gün ve dakika sayısını verecek
+
+https://docs.microsoft.com/tr-tr/dotnet/api/system.timespan?view=net-6.0
+https://www.mshowto.org/datetime-tarih-islemleri.html
+
+namespace KalanGunHesaplatma
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime buguntarihimiz = DateTime.Now;
+            DateTime sinavtarihi = new DateTime(2022, 11, 20);
+            TimeSpan ts = sinavtarihi - buguntarihimiz;
+            label1.Text = "SINAV TARİHİ = " + sinavtarihi.ToShortDateString();
+            label2.Text = "KALAN GÜN = " + ts.Days.ToString();
+        }
+    }
+}
+-------deneme
+namespace kalangun
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime sinavtarihi, buguntarihimiz;
+            buguntarihimiz = DateTime.Now;
+            sinavtarihi = Convert.ToDateTime(textBox1.Text);
+            TimeSpan kalangun = sinavtarihi - buguntarihimiz;
+            label3.Text = "KALAN GÜN = " + kalangun;
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------
+namespace DOWHILEFORM
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int j = 0;
+            do
+            {
+                listBox2.Items.Add(j);
+                j++;
+            }
+            while (j <= 40);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for(int m=0; m<=35; m++)
+            {
+                listBox3.Items.Add(m);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            while (i < 20) 
+            {
+                listBox1.Items.Add(i);
+                i++;
+            }
+        }
+    }
+}
+
+
+
+
+---------------------------------------------------------------------
+buton yakalama, butonla yaklastıgımızda kacacak tıkladıgımızda mesaj yazdıracak
+butona yaklasınca kacması ici butonda ozelliklerden mousehover çift tıkladık
+
+namespace ButonYakala
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("AFERİN SANA :)");
+            this.Close(); //kapatma durumu
+        }
+        Random r = new Random();
+        int boyut = 40;  //butonun hareket alanı 
+
+        private void button1_MouseHover(object sender, EventArgs e)  //formda yakala kısmında ozelkden mousehover seçip çift tıkladık
+        {
+            boyut += 4; //ok yaklaştığında kaçacak
+            button1.Top = r.Next(0, this.Height - 40); //üstünden yaklaştığımızdaki hareketi
+            button1.Left = r.Next(0, this.Width - 40); //genisliginden cıkardık
+            button1.Width = boyut;
+            button1.Height = boyut;  
+        }
+    }
+}
+
+
+
+-----------------------------------------------------------------------------
+zamani gosterme
+
+namespace ZamaniGoster
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true; //butona bastıgımızda harekete gecsin //ozlliklerde false kayıtlı
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.Hour.ToString(); //label1 saattir dönüşümü
+            label2.Text = DateTime.Now.Minute.ToString();
+            label3.Text = DateTime.Now.Second.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //button1.Enabled = false; //butona basmayı engelleyebiliriz
+        }
+    }
+}
+
+
+-------------------------------------------------------------------------------
+kronometre 
+
+timer1 interval ozelliginden hızını ayarlıyoruz 1000 hız saniye
+https://www.yazilimkodlama.com/c-2/c-timer-kullanarak-kronometre-yapimi/
+
+namespace kronometrealarm
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) //BAŞLA
+        {
+            int sayi = Convert.ToInt32(label1.Text); //labeldaki sayıyı tutturduk
+            sayi++; //tıklayınca artmaya basıyor
+            label1.Text = sayi.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e) //DURDUR
+        {
+            timer1.Stop();
+        }
+
+        private void button3_Click(object sender, EventArgs e) //SIFIRLA
+        {
+            int sayi = Convert.ToInt32(label1.Text);
+            sayi = 0;
+            label1.Text = sayi.ToString();
+        }
+    }
+}
+
+--------------------------------------------------------------------------
+alarm
+
+namespace ALARM
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label5.Text = DateTime.Now.Hour.ToString();
+            label6.Text = DateTime.Now.Minute.ToString();
+            if (label5.Text == comboBox1.Text && label6.Text == comboBox2.Text) 
+            {
+                timer1.Enabled = false;
+                axWindowsMediaPlayer1.URL = "C:\\Users\\303BUSRA_AKSAM\\Desktop\\music.mp3"; 
+                //veya sağa sürüklediğim müzikten tam yolu kopyala başına @ koy
+                //MessageBox.Show("UYAN ARTIK"); //seçimimiz zamana eşitse uyarı versin
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i=0; i<24; i++)  //comboboxlara sayı ekleme yapıyoruz
+            {
+                comboBox1.Items.Add(i);
+            }
+            for(int j=0; j<60; j++)
+            {
+                comboBox2.Items.Add(j);
+            }
+            
+
+        }
+    }
+}
+
+
+------------------------------------------------------------------------
+radiobutton seçenek yaptırmak için
+
+namespace RadioButton
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = radioButton1.Text; //seçim yaptığımız butonu yazdırıyor
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = radioButton2.Text;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = radioButton3.Text;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = radioButton4.Text;
+        }
+    }
+}
+----------------------------------------------------------------------
+hamburger sayfası olusturma
+groupbox icinde checkboxlar ekleme
+
+namespace LezzetHamburger
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(textBox1.Text);//seçim yaptırdığımız checkboxı yazdıracağız
+            listBox2.Items.Add(textBox2.Text);
+            listBox3.Items.Add(textBox3.Text);
+            listBox4.Items.Add(comboBox1.Text);
+            listBox5.Items.Add(comboBox2.Text);
+            foreach (Control kontrol in this.groupBox1.Controls)
+            {
+            if (kontrol is CheckBox)   
+                {
+                    if (((CheckBox)kontrol).Checked == true)
+                    {
+                        listBox6.Items.Add(((CheckBox)kontrol).Text.ToString());
+                    }
+                }
+            }
+            //VEYA YENİ GBOX OLUSTUR VE LABELLAR KOY GBOX1DEKİ CHECKLERİ(ÜSTÜNE TIKLA) TEKTEK LABELLARA ESİTLE
+            //GBOX2 NIN VISIBLEINI FALSE YAP
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            comboBox1.Text = "";
+            comboBox2.Text = "";
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+        }
+    }
+}
+
+----------------------------------------------------------------------------
+trafik lambası
+3buton 1label
+buton1 ilk renk kırmızı
+if kosul olustur
+sayı ya da sayaç 30 olduğunda buton2 sarı
+sayaç 40 olduğunda buton1-2 gri, buton3 yeşil
+sayaç 70 olduğunda buton1 kırmızı, buton3 gri
+
+
+namespace TrafikLambası
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int sayi = Convert.ToInt32(label1.Text); 
+            sayi++; 
+            label1.Text = sayi.ToString();
+            //button1.BackColor = Color.Red;
+            if (sayi < 30)
+            {
+                button1.BackColor = Color.Red;
+                button2.BackColor = Color.Gray;
+                button3.BackColor = Color.Gray;
+            }
+            if (sayi == 30)
+            {
+                button1.BackColor = Color.Gray;
+                button2.BackColor = Color.Yellow;
+                button3.BackColor = Color.Gray;
+            }
+            if (sayi == 40)
+            {
+                button1.BackColor = Color.Gray;
+                button2.BackColor = Color.Gray;
+                button3.BackColor = Color.Green;
+            }
+        
+            if (sayi == 70)
+            {
+                sayi=0;
+                button1.BackColor = Color.Red;
+                button2.BackColor = Color.Gray;
+                button3.BackColor = Color.Gray;
+            }
+        
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+    }
+}
+
+
+
+
+############################################### 20.01.2022 ###################################################################
+progress bar yüklenen oran gösterir
+
+namespace ProgressBar
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            progressBar1.Value = 50; //açılışta yüzde elli doluluk olsun dedik özellikler kısmından da yapabilirdik
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            progressBar1.Value += 10; //tıkladığımızda yuzde on artıyor
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            progressBar1.Value = 0; //değerini sıfırlama butonu
+        }
+    }
+}
+
+
+namespace ProgressBar
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            progressBar1.Value += 10;
+            if (progressBar1.Value==100)
+            {
+                timer1.Stop();
+            }
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------
+tabcontrol sekmeli geçişleri sağlar
+richtextbox sekme içindeki metni tutar
+richtextbox özl den enabled false yaparsak yazıya müdahaleyi engelleriz
+
+---------------------------------------------------------------------------
+menustrip
+yukarda yeni araç kutuları oluşturup seçenekler ekledik
+
+namespace MenuStrip
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void toolStripComboBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vForVendettaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "V for Vendetta, 2020 yılında ve İngiltere'de geçiyor.";
+            listBox1.Items.Add("V for Vendetta");
+            listBox2.Items.Add(toolStripComboBox1.Text);
+
+        }
+    }
+}
+
+
+----------------------------------------------------------------------------
+VscrollBar 
+vscrollbar uzun yazılarda aşağı inmeyi sağlar
+
+
+namespace VscrollBarLinkLabel
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            if (vScrollBar1.Value>=50) //kaydırdığımızda alacakları değerler her kaydırışta 10-10
+            {
+                this.BackColor = Color.Yellow;
+            }
+            if (vScrollBar1.Value<=30)
+            {
+                this.BackColor = Color.Red;
+            }
+        }
+    }
+}
+
+
+
+LinkLabel
+linklabel yereldeki ve uzaktaki ağlara erişim
+
+namespace VscrollBarLinkLabel
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            /*pictureBox1.Visible = false;*/ //komuta tıklayınca resmi yokettik
+            pictureBox1.BackColor = Color.Coral; //komuta basınca renk atadı
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("www.google.com");
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("www.onedio.com");
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel4.LinkBehavior = LinkBehavior.HoverUnderline; //mousela üzerine geldiğimizde çizgisi kalksın
+            //davranışını belirliyoruz
+            System.Diagnostics.Process.Start("Mspaint.exe"); //painti çalıştır
+        }
+    }
+}
+
+
+
+----------------------------------------------------------------------------
+treeview
+
+bilgisayar ögesi diyelim bilgisayarın icindekileri gösteren dügümler ekliyoruz
+belgeler kısmında soldaki hızlı erişim gibi
+
+namespace TreeView
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TreeNode ekle = new TreeNode("Windows"); //form kısmında degilde burada da yazabilirz
+            treeView2.Nodes.Add(ekle);
+            ekle = new TreeNode("Linux");
+            treeView2.Nodes.Add(ekle);
+            TreeNode child = new TreeNode("C#");
+            TreeNode child1 = new TreeNode("Visual Basic");
+            TreeNode child2 = new TreeNode("ASP .NET");
+            TreeNode[] array = new TreeNode[] { child, child1, child2 }; //dizi olusturduk
+            ekle = new TreeNode("Programlama Dilleri", array); //array ile dizideki elemanları yazdırdık içiçe komutlar
+            treeView2.Nodes.Add(ekle); //
+        }
+    }
+}
+
+
+hızlı erisim ornegi
+
+namespace TreeView
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TreeNode ekle = new TreeNode("MASAÜSTÜ");
+            treeView1.Nodes.Add(ekle);
+            ekle = new TreeNode("İNDİRİLENLER");
+            treeView1.Nodes.Add(ekle);
+            TreeNode child = new TreeNode("RESİMLER");
+            TreeNode child1 = new TreeNode("MÜZİKLER");
+            TreeNode[] array = { child, child1};
+            ekle = new TreeNode("BELGELER",array);
+            treeView1.Nodes.Add(ekle);
+        }
+    }
+}
+veya
+namespace TreeView
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TreeNode ekle = new TreeNode("MASAÜSTÜ");
+            treeView1.Nodes.Add(ekle);
+            ekle = new TreeNode("İNDİRİLENLER");
+            treeView1.Nodes.Add(ekle);
+            TreeNode child = new TreeNode("RESİMLER");
+            TreeNode schild = new TreeNode("FAVORİLER");
+            TreeNode schild1 = new TreeNode("SON ÇALINANLAR");
+            TreeNode[] array2 = { schild, schild1 };
+            TreeNode child1 = new TreeNode("MÜZİKLER",array2);
+            TreeNode[] array = { child, child1};
+            ekle = new TreeNode("BELGELER",array);
+            treeView1.Nodes.Add(ekle);
+        }
+    }
+}
+
+-----------------------------------------------------------------------------
+datetimepicker
+
+
+namespace DateTimePicker
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(dateTimePicker2.Text + " " + dateTimePicker3.Text + " " + textBox1.Text);
+            textBox1.Clear();
+        }
+    }
+}
+
+
+---------------------------------------------------------------------
+using System.IO; //input output ekledik
+notepad kaydetme , dosyadan veri çekme ,
+
+arac kutusundan folderbrowser openfile ve savefile ekledik
+
+namespace MetinBelgesi
+{   public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        StreamWriter sw; //IO nun bir sınıfı
+        string belgeadi, belgeyolu;
+       private void button2_Click(object sender, EventArgs e)
+        {
+            belgeadi = textBox1.Text; //yazdığımız ad
+            sw = File.CreateText(belgeyolu + "\\" + belgeadi + ".txt"); //belgeyi bu sekilde kaydet
+            sw.Close();
+            MessageBox.Show("Efendim belgeniz oluşturuldu!");
+        }
+       private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+       private void ilaktar_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                StreamReader oku = new StreamReader(openFileDialog1.FileName);
+                string satir = oku.ReadLine();
+                while(satir!=null)
+                {
+                    listBox1.Items.Add(satir);
+                    satir = oku.ReadLine(); //satır satır okuma yöntemi
+                }
+            }
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                saveFileDialog1.Title = "KAYIT YERİNİ SEÇ"; //kayıt kutusunda üsttki metin
+                saveFileDialog1.Filter = "METİN DOYASI(*.txt)|*.txt"; //kayıt kutusunda kayıt türü
+                saveFileDialog1.FilterIndex = 2; //kayıt türünde oto hangisini seçsin
+                saveFileDialog1.InitialDirectory = "C:\\"; //hangi klasör oto açılsın
+                saveFileDialog1.ShowDialog(); //bunları göster komutu
+                StreamWriter kaydet = new StreamWriter(saveFileDialog1.FileName); //yazdıklarımızı kaydediyor
+                kaydet.WriteLine(richTextBox2.Text); //yazdık
+                kaydet.Close();
+                MessageBox.Show("Kaynak Metin Belgesine Yazdırıldı");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hata oluştu");
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK) //açılan penceredeki dosyalardan birini seçiyoruz
+            { //folderbrowswe kayıt edilebilecek dosyaları gösterir show ile //dialogresult bizim secimimiz
+                belgeyolu = folderBrowserDialog1.SelectedPath.ToString(); //sectigimizi tutuyor
+                //belgeyolunun adını seçime eşitledi
+                textBox2.Text = belgeyolu.ToString();
+            }
+        }
+    }
+}
+
+
+---------------------------------------------------------------------
+backgroundworker 
+event i runworker sececegiz dowork sececegiz
+
+namespace BackGroundWorker
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false; //hata fırlatmasını engellemiş olacağız
+        }
+        private void dongu()
+        {
+            long toplam = 0;
+            for(int i=0; i<1000; i++)
+            {
+                toplam = toplam + i;
+                this.Text = i.ToString(); //en ustteki form yazı alanındaki yazıyı degistirdik
+            }
+            MessageBox.Show(toplam.ToString());
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dongu(); //arkaplanda islem yapıyor yukarda sayı artıyor o calısırken ekranda islem yapamıyoruz!
+        }
+       private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            MessageBox.Show(topla.ToString());
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            backgroundWorker1.RunWorkerAsync();
+        }
+        long topla = 0;
+        private void dongum()
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                topla = topla + i;
+                this.Text = i.ToString(); //en ustteki form yazı alanındaki yazıyı degistirdik
+            }
+        }
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            dongum();
+        }
+    }
+}
+
+
+
+################################################## 21.01.2022 ##########################################################
+notepadden dosya içeriği çektirme
+
+using System.IO;
+
+namespace Metin2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Metin Dosyası(*txt)|.txt"; //sadece bu uzantılı olanları filtreledik
+            open.Multiselect = false;
+            if(open.ShowDialog()==System.Windows.Forms.DialogResult.OK) //seçimim gösterdiklerinden biri ise
+            {
+                textBox1.Text = open.SafeFileName; //dosyayı güvenli okuma
+                try
+                {
+                    StreamReader oku = new StreamReader(open.FileName); //dosya adını okuma metodu
+                    richTextBox1.Text = oku.ReadToEnd(); //dosyayı sonuna kadarr oku
+                    oku.Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("DOSYA OKUNAMADI");
+                }
+            }
+        }
+    }
+}
+
+
+------------------------------------------------------------------------------
+pdf axAcroPDF1
+
+using System.IO;
+
+namespace Pdf
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog pdfac = new OpenFileDialog();
+            pdfac.Title = "PDF AÇ";
+            pdfac.Filter = "Pdf Dosyaları(*.pdf)|*pdf";
+            if (pdfac.ShowDialog()==DialogResult.OK)
+            {
+                textBox1.Text = pdfac.FileName;
+                axAcroPDF1.LoadFile(pdfac.FileName);
+            }
+        }
+    }
+}
+
+
+
+----------------------------------------------------------------------------------
+numerik updown sepette adet seçme gibi
+otomatik seçme yaptık başlangıç değerini sağdan valuedan da değiştirebiliriz
+
+
+namespace NumerikUpDown
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+       private void button1_Click(object sender, EventArgs e)
+        {
+            int toplam;
+            toplam = Convert.ToInt32(numericUpDown2.Value + numericUpDown3.Value);
+            //numeriklerden seçtiğimiz adetleri toplattırdık
+            label2.Text = toplam.ToString();
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------
+printscreen
+
+
+namespace NumerikUpDown
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+       private void button1_Click(object sender, EventArgs e)
+       {
+            Bitmap photo = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Graphics gr = Graphics.FromImage(photo);
+            gr.CopyFromScreen(0, 0, 0, 0, new Size(photo.Width, photo.Height));
+            pictureBox1.Image = photo;
+       }
+    }
+}
+
+
+
+
+------------------------------------------------------------------------------------------
+FontDialogInputBox
+
+basvurular kısmında visualbasici ekledik
+
+namespace FontDialogInputBox
+{ public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e) //yazı tipi butonu
+        {
+            FontDialog yazi = new FontDialog(); //metodumuzu olusturduk
+            yazi.ShowDialog(); //yazının fontunu değiştirmek için bir pencere açılacak
+            label1.Font = yazi.Font; //yazı tipinin degismis hali
+        }
+        private void button2_Click(object sender, EventArgs e) //kaydet butonu
+        {
+            string ad,soyad;
+            ad = textBox1.Text;
+            soyad = textBox2.Text;
+            string ilce = Interaction.InputBox("İLÇE GİRİN" /*iç*/, "KİŞİ BİLGİLERİ" /*dış*/, "İLÇE" /*seçenek yeri*/, 50, 50); 
+            //ilçe girme butonu çıkıyor
+            label5.Text = ad + " " + soyad + " " + ilce;
+        }
+    }
+}
+
+
+
+---------------------------------------------------------------------------
+formlar arası geçiş
+şifre ve kullanıcı adı girdik(ifsiz), diğer form ekranına girdiklerimizi yazdırdık
+
+namespace Formlararasıgeçiş
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 fr = new Form2();
+            fr.user_name = textBox1.Text;
+            fr.password = textBox2.Text;
+            fr.ShowDialog();
+        }
+    }
+}
+
+
+namespace Formlararasıgeçiş
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+        public string user_name;
+        public string password;
+       private void Form2_Load(object sender, EventArgs e)
+        {
+            label3.Text = user_name;
+            label4.Text = password;
+        }
+    }
+}
+
+
+-------------------------------------------------------------------------------------
+contextmenustrip
+sağ klik menüsü açma
+
+namespace ContextMenuStrip
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void kırmızıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Red;
+        }
+        private void maviToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Blue;
+        }
+        private void yeşilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Green;
+        }
+    }
+}
+
+------------------------------------------------------------------------------------
+IP ADRESI
+
+namespace PCIP
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "BİLGİSAYAR:" + Dns.GetHostName(); //bilgisayarımzın adı
+            foreach (IPAddress adres in Dns.GetHostAddresses(Dns.GetHostName())) //ip adreste obje tanımladık
+            //bu obje gethostta gezip benim ip me erisecek
+            {
+                textBox2.Text = "IP ADRESİ=" + adres;
+            }
+        }
+    }
+}
+
+
+
+---------------------------------------------------------------------------------------
+LABEL KONUMLANDIRMA
+
+namespace dinamiklabel
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Label lbl = new Label();
+            Point lblkonum = new Point(100,100); //labeli konumlandırdık
+            lbl.Location = lblkonum;
+            lbl.Text = "LABEL1";
+            lbl.Name = "LBL1";
+            this.Controls.Add(lbl);
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------------------
+kalıtım iki sınıf ekledik
+
+personel.cs
+namespace kalıtım
+{
+    public class personel:insan
+    {
+        public string departman { get; set; }
+        public string yer { get; set; }
+    }
+}
+
+
+insan.cs
+namespace kalıtım
+{   public class insan
+    {
+        public string ad { get; set; }
+        public string soyad { get; set; }
+        public int yas { get; set; }
+    }
+}
+
+
+form ekranı
+namespace kalıtım
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            personel pers = new personel();
+            pers.ad = "SALVADOR";
+            pers.soyad = "DALİ";
+            pers.yas = 50;
+            pers.departman = "SANAT";
+            pers.yer = "ŞUBE-303";
+            label6.Text = pers.ad.ToString();
+            label7.Text = pers.soyad.ToString();
+            label8.Text = pers.yas.ToString();
+            label9.Text = pers.departman.ToString();
+            label10.Text = pers.yer.ToString();
+        }
+    }
+} 
+
+
+
+
+---------------------------------------------------------------------------------------------
+listview sınıf ile
+
+listbox ın sütunlu halini oluşturduk - textbox seçimlerini columnheaderlara atıyoruz 
+
+emlakçı.cs
+namespace kapsullemefrm
+{
+    class emlakçı
+    {
+        private string semt; //sağ tıkla hızlı eylemler alanı kapsulle otomatik get set
+        private int odasayisi;
+        private int katno;
+
+        public string Semt { get => semt; set => semt = value.ToUpper(); } //yazılanları daima büyük yapacak
+        public int Odasayisi { get => odasayisi; set => odasayisi = Math.Abs(value); } //negatif olmasnı engelliyor
+        public int Katno { get => katno; set => katno = Math.Abs(value); }
+    }
+}
+
+form.cs
+namespace kapsullemefrm
+{
+    public partial class Form1 : Form
+    {      public Form1()
+        {
+            InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            emlakçı ev = new emlakçı();
+            ev.Semt = textBox1.Text; //verileri aldık
+            ev.Odasayisi = Convert.ToInt32(textBox2.Text);
+            ev.Katno = Convert.ToInt32(textBox3.Text);
+            ListViewItem kayıt = new ListViewItem(); //listview metodu olusturduk
+            kayıt.Text = ev.Semt;
+
+            kayıt.SubItems.Add(ev.Odasayisi.ToString());
+            kayıt.SubItems.Add(ev.Katno.ToString()); //itemleri ekledik
+            listView1.Items.Add(kayıt); //kayıtları yazdır
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear(); 
+            textBox2.Focus(); //uygulama açıldığında imlecim üstünde olacak
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------
+polimorfizm
+
+ürün.cs
+namespace polimorphism
+{
+    public class ürün
+    {
+        public string urunadi { get; set; }
+        public double fiyatim { get; set; }
+        public ürün()
+        {
+                
+        }
+        public ürün(string ad, double fiyat)
+        {
+            urunadi = ad;
+            fiyatim = fiyat;
+        }
+    }
+}
+
+
+tekstil.cs
+namespace polimorphism
+{
+    class tekstil:ürün
+    {
+        public string kumasturu { get; set; }
+        public string ureticifirma { get; set; }
+        public tekstil() //yıkıcı ctor
+        {
+
+        }
+        public tekstil(string ad, double fiyat, string kumasturum, string ureticifirmam)
+        {
+            urunadi = ad;
+            fiyatim = fiyat;
+            kumasturu = kumasturum;
+            ureticifirma = ureticifirmam;
+        }
+    }
+}
+
+
+form.cs
+namespace polimorphism
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tekstil text = new tekstil();
+            text.urunadi = "ŞAL";
+            text.kumasturu = "IPEK";
+            text.ureticifirma = "ARMİNE";
+            text.fiyatim = 1000;
+            textBox1.Text = text.urunadi; //yukarıdaki değerleri textboxa yazdırdık
+            textBox2.Text = text.kumasturu;
+            textBox3.Text = text.ureticifirma;
+            textBox4.Text = Convert.ToString(text.fiyatim);
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------
+maskedtextbox telefon no giris yeri gibi cizgileri olusturur
+------------------------------------------------------------------------------------------
+listviewla kendi kayıt sistemimizi olusturcaz kalıtımla
+
+
+
+################################################# 31.01.2022 ##########################################################
+BUTONU FORM KISMINDA OLUŞTURMA - YUVARLAK BUTON
+using System.Drawing.Drawing2D; //ekledik
+
+namespace ButonOlusturmam
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            yuvarlakbutton ybuton = new yuvarlakbutton(); //butondan kalıtım aldığımız için geliyor
+            ybuton.Size = new Size(200, 200); //butonumuzun boyutları
+            ybuton.Location = new System.Drawing.Point(50, 50); //konumu
+            ybuton.BackColor = Color.Yellow;
+            ybuton.FlatAppearance.BorderSize = 0; //kenar boslugu
+            ybuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat; //üzerine gelince sekli degismesin
+            ybuton.FlatAppearance.BorderColor = Color.Red; //kenar rengi
+            ybuton.Text = "BUTON1";
+            ybuton.ForeColor = Color.DeepSkyBlue; //textin rengi
+            this.Controls.Add(ybuton); //bütün kontrol
+        }
+    }
+    public class yuvarlakbutton:Button // dock buton sabit ler
+    {
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);  //
+            GraphicsPath gp = new GraphicsPath();
+            gp.AddEllipse(new Rectangle(Point.Empty, this.Size)); //2d kütüphanenin araçlarını ekledik
+            this.Region = new Region(gp);  //yeni bir bolge olusturdu           
+        }
+ 
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------------------
+
+LINQ TO
+dataGridView1 ekledik button ekledik
+urun.cs
+
+
+form1.cs
+
+namespace LINQTOOBJECT
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            urunler = new List<urun>();
+            urun u = new urun();
+            u.urunadi = "YİYECEK";
+            Kategori kat01 = new Kategori() { KategoriID = 1, KategoriAdi = "MEYVELER" };
+            Kategori kat02 = new Kategori() { KategoriID = 2, KategoriAdi = "SEBZELER" };
+            urunler.Add(new urun()
+            { urunID = 1, urunadi = "ELMA", kategori = kat01, fiyat = 3.45m, stok = 250 });
+            urunler.Add(new urun()
+            { urunID = 2, urunadi = "KİRAZ", kategori = kat01, fiyat = 3.75m, stok = 50 });
+            urunler.Add(new urun()
+            { urunID = 3, urunadi = "KABAK", kategori = kat02, fiyat = 5.35m, stok = 150 });
+            urunler.Add(new urun()
+            { urunID = 4, urunadi = "PATLICAN", kategori = kat02, fiyat = 6.50m, stok = 350 });
+        }
+        List<urun> urunler;
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //sürekli aynı şeyi çağırmamak için buraya yazmadık
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   //BU LINQ TO OLMADANNNNNNNNNNNN
+
+            //List<urun> secilenler = new List<urun>();
+            //foreach(var item in urunler)
+            //{
+            //    if(item.fiyat>5)            
+            //    {
+            //        secilenler.Add(item);
+            //    }
+            //}
+            //dataGridView1.DataSource = secilenler; //listelediğimiz verileri çekme
+
+            // LINQ TO OBJECT İLE
+            //var sorgu = (from item in urunler where item.fiyat > 5 select item).ToList();
+            //dataGridView1.DataSource = sorgu;
+
+            var SORGU = (from x in urunler where x.urunadi.StartsWith("P") && x.stok > 250 select x).ToList(); // P İLE BASLAYAN
+            dataGridView1.DataSource = SORGU;
+        }
+    }
+}
+
+urun.cs
+namespace LINQTOOBJECT
+{
+    public class urun
+    {
+        public int urunID { get; set; }
+        public string urunadi { get; set; }
+        public Kategori kategori { get; set; }
+        public decimal fiyat { get; set; }
+        public int stok { get; set; }
+        //public override string ToString()
+        //{
+        //    return urunID + " " + urunadi;
+        //}
+    }
+    public class Kategori
+    {
+        public int KategoriID { get; set; }
+
+        public string KategoriAdi { get; set; }
+        public override string ToString()
+        {
+            return KategoriID +" "+ KategoriAdi;
+            //buradan yazıyor
+        }       
+    }
+}
+
+
+

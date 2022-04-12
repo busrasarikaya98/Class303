@@ -1,0 +1,11 @@
+PROJE ADIMLARI
+Waterfall ->öğren+uygula
+Agile ->öğren+uygula+çalıştır+hataları ayıkla döngüsü
+?-hangi teknolojiler hangi veritabanı
+BİLET REZERVASYONU Teknoloji .Net
+1)Api projesi(form oluştur modelden gelen username ile eşleşiyorsa giriş yap) ile başlanır kullanıcı girişi burada olmalı, hazır giriş yap template i kullanılabilir
+2)Bilet tarihi,yönü,ücreti classlar
+3)hangi şöför hangi otobüs rolleme
+
+SİNEMA Teknoloji Core 
+1)salon koltuk classları generic hale getir

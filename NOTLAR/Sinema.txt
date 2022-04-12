@@ -1,0 +1,24 @@
+SİNEMA BİLETİ mvc core denetleyicisi 
+ornek sayfalar:codepen io,themefisher
+1)layoutta hreflerimizi verdik
+2)hangi sınıfları kullanacağımızı belirledik
+2)bu sınıflara sınıf özelliklerini verdik id,name,date gibi
+3)bu sınıflarla aynı isimde controllerlarını oluşturduk bu controllerlarda indexte boş razor ile otomatik view indexlerini oluşturduk
+4)controllerlarda sınıfın bilgilerini girdik idsi bu, namei bu
+5)sınıfların viewda indexlerini düzenledik indexlerde viewbag ile listeleri çekecek
+6)repositoryleri oluşturacağım bunun için dataacces klasörü 
+7)db baglama nuget paketlerini yüklüyoruz nuget paketleri tools entityframework design sql server
+8)db baglama modelsta cinematicketdb olusturuyoruz bunun icerisine db baglantı kodu yazılır 127.0.0.1 ile
+9)paket yöneticisi konsolu add-migration "First Initialize" ve update-database db otomatil-k sql e gelir
+10)dataaccesse repositoryler eklenecek ancak dep.inj yaparak kullanmak icin core katmanında dataacc baserep acıp ortak isleri oraya yazıp
+datakatmanında implement ederiz, ortaklardan harici islemleri dataccde yazarız
+11)baserepte delete update islemleri yer alacak bu arkaplandki islemler bunların ön yüzdeki delete updtelerle alakası yoktur
+12)baserepte T generici classlardır, IModel kullanma sebebi Id nin diger replerde ortak olması diger replerde kullanılması icindir
+Ornegin T classı product ise; Id, productın Idsidir.IModel kullanmadan id cekebilirdik ama t generic i ile eslesmezdi.
+13)IModeli modellere implemet etmek gerekir yoksa dataaccess katmanındaki bases repositorylere implement ederken generic hatası verir, bundan sonra implement ederiz.
+14)Repositorylerde ortak olmayan özellikleri her repositoryde ayrı tanımlarız. mesela bu projede get basede ortak bir fonksiyon iken filmlerde sinemaid sine göre get fonksiyonu
+sadece movierepositoryde olacak bir fonksiyondur.
+15)ortak olmayan fonksiyonlarda örneği getallbycinemaid --> burada dönen bir cinemaid değeri olmalıdır bunun için constructor tanımlamalıyız
+16)constdan sonra interfacelerde fonksiyonlarda ara birim uygulayarak içinde ortak olmayan fonksiyonları yazdık 
+https://docs.microsoft.com/tr-tr/dotnet/architecture/microservices/multi-container-microservice-net-applications/implement-api-gateways-with-ocelot
+17)şimdi controllerlara geçilir;

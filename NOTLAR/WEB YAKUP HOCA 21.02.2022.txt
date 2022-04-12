@@ -1,0 +1,1216 @@
+########################################################################### 21.02.2022 #####################################################################
+-Abstract class amacı tekrar eden verileri tek bir classtan değiştirebilmektir.
+Örneğin double bir price tanımladık sonra double olmasını istemezsek abs classta tanımlanan değeri değiştirip tüm classlarda otomatik değiştirmiş oluruz.
+-interface ıproduct yapısı gereği diğer sınıflara yol gösterici, rehberlik yapmak için oluşturulan, 
+kendisinden implement edilen bir sınıfa doldurulması zorunlu olan bazı özelliklerin aktarılmasını sağlayan bir kavramdır
+-abstract class baseproduct
+-enum currency sıralama yaptı üstüne gelince gösterdi
+-*extend iki class arası olur
+-*implement bir classın bir interface arasında bağdır
+-*iki interface birbiri arası extend alır
+
+public class Product:BaseProduct,IProduct //ONCE ABSTRACTLAR IMPLEMET EDILIR
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        //method yazalım       
+    }
+
+
+-
+
+public class Car :BaseProduct,IProduct //interface implement ettik //her yerden erişebildik //once abstractlar
+    {
+        public int Id { get; set; }
+        public string Color { get; set; }
+        
+        //INTERFACE GEÇİŞ
+    }
+
+-
+
+ interface IProduct:iTest
+    {
+        public float getPrice();
+    }
+
+-
+
+ public abstract class BaseProduct //ortak ozellikleri bir yere koyma amacı abstract hem car a hem product a koyduk
+        //tekrar eden kodları abstract class a yazarız interfaceten once implement ederiz
+    {
+        public Currency currency { get; set; }
+        public double Price { get; set; }
+
+        public double getPrice() //istersek classın içindeki bir değeri getirir console.writeline a yazarken
+        {
+            {
+                return this.Price;
+            }
+        }
+    }
+
+
+-
+public enum Currency
+    {//içerisinde barındırabileceğin
+        USD,
+        TRY,
+        EUR
+    }
+
+-
+
+namespace Kbt303
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            var Product1 = new Product();
+            Product1.Id = 1;
+            Product1.Name = "Elma";
+            Product1.Price = 10;
+            Product1.currency = Currency.EUR; //hangi para birimi ile çalışıyorsun
+            Console.WriteLine(Product1.Name);
+            Console.WriteLine(Product1.getPrice().ToString());
+            IProduct val = new Car(); //interfaceteki değeri sınıftan çekebildik 
+            val.getPrice();
+
+
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------------WEB-------------------------------------------------------------------------------------------
+http://json.parser.online.fr/
+-layout sabit kalan pencere değerleri her tıka değişmeyen veriler
+html:5 
+head:kütüphaneleri yazdığımız kısımdır
+content edge tipine uygun
+title
+
+
+<!-- HTML GİRİŞ -->
+<!DOCTYPE html> 
+<html lang="tr-TR">
+<head>
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YENİ SAYFA</title>
+    <!-- GÖRÜNÜM -->
+    <style>
+    .kutu-class{
+        /* kutu-class sellektör çağırdığımız çağrılan*/
+        background-color: #28d353;
+        /* padding: 10px 20px 50px 100px; */
+        /* padding iç boşluk yazı kenarlarında renkli boşluk sağlıyor
+        yukarı sol aşağı sağ */
+        
+        padding-left: 4px; 
+        padding-bottom: 50px;
+        /* padding in diğer kullanımı */
+    }
+    #kutu-id{
+        margin: 50px;
+        /* kenar boşlukları dış boşluk*/
+    }
+    </style>
+</head>
+<body>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+    <!-- h tagları ın 6 tipi vardır bold-satır yükssekliği -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia enim ad dolore atque, a debitis magni, officiis, animi inventore autem itaque tempora alias vel maiores dolorem labore laborum fugiat sequi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eum omnis iure nisi. A fugit magnam sequi nam expedita labore aspernatur facilis totam non obcaecati, officiis ducimus quos quo impedit?</p>
+    <!-- p paragraf tagı -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5UbGG9zkHXZh5uPuGiklVwT0T2Z8MLCVuew&usqp=CAU">
+    
+    <div class="kutu-class" id="kutu-id">Kutu</div>
+    <!-- class bir proptur diğerleri, id ile class arası farklar
+        classta ortak özellikler,id şahsına ozel ozellikler
+        sol kısım class sağ kısım sellektör
+     -->
+     
+</body>
+</html>
+
+------------------------------------------------
+
+<!-- GİRİŞ BİLGİLERİ YAZMA,DROPDOWN SEÇİM,RADİOBUTTON,CHECKBOX,TEXTBOX EKLEME -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <input type="text"/>
+    <br>
+    <input type="number"/>
+    <br>
+    <input type="password"/>
+    <br>
+    <input type="date"/>
+    <br>
+    <input type="time"/>
+    <!-- yazı yazdırılan butonlar -->
+    <br>
+    <select>
+        <option>Seçim1</option>
+        <option>Seçim2</option>
+        <option>Seçim3</option>
+        <option>Seçim4</option>
+        <!--liste halinde drop down açıldı aşağıya doğru seçimler -->
+    </select>
+    <br>
+    <input type="radio" name="gender" value="kız"/>
+    <input type="radio" name="gender" value="erkek"/>
+    <!-- nameler aynı olmazsa birden fazla seçim yapılabilir butonlar çıkıyor radiobutton -->
+    <br>
+    <input type="checkbox" /> Duygusal
+    <br>
+    <input type="checkbox" /> Sinirli
+    <br>
+    <input type="checkbox" /> Şakacı
+    <br>
+    <input type="checkbox" /> Agresif
+    <br>
+    <!-- farklı seçimler yapacak nameler farklı ise checkbox -->
+    <textarea rows="10"></textarea>
+    <!-- textbox geldi  -->
+</body>
+</html>
+
+
+
+--------------------------------------------------
+
+
+<!-- KUTU İÇİNDE KUTULAR VE YERLERİ SAĞ SOL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .content{
+          background-color: rgb(186, 216, 79); 
+      }
+      /* BİRİNCİ YOL */
+      .content>div{
+       width: 100px;
+       height: 100px;
+       display: inline-block;   
+      }
+      /* display inline içeriği kadar yer kapla aşağı atar,inline block yanına atar
+      content>div contentin içerisindeki divler ortak özellikleri attık */
+      
+      /* İKİNCİ YOL */
+      /* .left,.right,.kutu3{
+       width: 100px;
+       height: 100px;
+       display: inline-block; 
+      } */
+      /* sadece left ve right için çalıştı */
+      .left{ 
+          background-color: #58c8cc;        
+      } 
+      .right{         
+          background-color: rgba(240, 82, 179, 0.849);   
+          float: right;
+          /* float bulunacağı yeri yazdırır 
+          padding ic bosluk mapping dıs bosluk */
+      }
+      .kutu3{
+          background-color: #cca758;
+      }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left" >BUSRA</div>
+        <div class="right">SARIKAYA</div>
+        <div class="kutu3">DENEME</div>
+    </div>
+</body>
+</html>
+
+---------------------------------------------------
+
+
+<!-- KUTUYU SAYFANIN TAM MERKEZİNE KOYDURMA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            /*  */
+            top: 50%;
+            left: 50%;
+            background-color: red;
+            transform: translateX(-50%) translateY(-50%) ;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+</html>
+
+
+
+############################################################################## 22.02.2022 ############################################################################
+
+-FONTLAR
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- googleden font aldık link seoda önemli, import csste tanımlanır,importu csste tanımladık ve linkini buraya aldık -->
+<style>
+p{
+    font-family:Roboto !important;
+}
+div{
+    font-family: Redressed;
+}
+/* p ve div de yukarıda verdiğimiz fontları tanımladık - inline daha baskın !important csste tanımlı özellikleri ezebilir */
+</style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta minima aperiam nam vel fugit totam praesentium labore quas rem iste tempora quod dolor, ex accusamus! Esse optio eligendi harum modi.
+    </p>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor, magnam eveniet commodi labore perspiciatis architecto reprehenderit eligendi animi ipsa voluptatem libero officiis possimus, necessitatibus numquam sed quod voluptatum quaerat.
+    </div>
+    <!-- p ve div de link ve import kullanarak iki farklı yazı tipiyle gördük -->
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Roboto:ital,wght@0,100;1,900&display=swap');
+div{
+    font-family: Redressed !important;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-ANİMASYON TIKLADIĞIMIZDA KUTU BÜYÜSÜN
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANİMASYON</title>
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: #6fe66f;
+            transition: .3s;
+            animation: cube-animation 2s infinite;
+            /* transititon kutunun büyüme süresi */
+            /* 2s de kendini tamamla demek istedik infinite sürekli devam etsin demek */
+        }
+        /* TIKLADIĞIMIZDA BÜYÜSÜN İSTERSEK HOVER */
+        /* .box:hover{ 
+            width: 300px;
+            height: 300px;
+            background-color: #6fe66f;
+        } */
+        /* mouse ile üzerine geldiğimizde kutunun boyutları tanımlandı, transititon buraya yazsaydık mouse ı çektiğimizde direkt küçülürdü*/
+
+
+        /* HER SAYFAYI YENİLEDİĞİMİZDE BÜYÜYÜP KÜÇÜLSÜN  */
+        @-webkit-keyframes cube-animation{
+            0%{
+                width:100px;
+            height: 100px;
+            background-color: #6fe66f;
+            
+            }
+            50%{
+                width:200px;
+            height: 200px;
+            background-color: #6fe66f;
+            }
+            100%{
+                width:100px;
+            height: 100px;
+            background-color: #6fe66f;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"> </div>
+</body>
+</html>
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-KUTU KÖŞELERDE HAREKET ETSİN SOL SAĞ AŞAĞI YUKARI
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMASYON DENEME</title>
+    <style>
+        .kutu {
+            width: 305px;
+            height: 305px;
+            background-color: #ad6fe6;
+            transition: .5s;
+            animation: cube-animation 5s infinite;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+        }
+
+        @-webkit-keyframes cube-animation {
+            0% {
+                left: 0%;
+                top: 0%;
+                transform: translate(0%, 0%);
+            }
+
+            25% {
+                top: 0%;
+                left: 100%;
+                 transform: translate(-100%, 0%); 
+            }
+
+            50% {
+                top: 100%;
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+
+            75% {
+                top: 100%;
+                left: 0%;
+                transform: translate(0%, -100%);
+            }
+
+            100% {
+                top: 0%;
+                left: 0%;
+                transform: translate(0%, 0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu"> </div>
+</body>
+</html>
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-KUTU AŞAĞI YUKARI HAREKET ETSİN
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu {
+            width: 300px;
+            height: 300px;
+            background-color: #ec5c49;
+            transition: .5s;
+            animation: cube-animation 10s infinite;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+        }
+        @-webkit-keyframes cube-animation {
+            0% {
+                left: 0%;
+                top: 0%;
+                transform: translate(0%, 0%);
+            }
+            25% {
+                top: 25%;
+                left: 25%;
+                 transform: translate(-25%, -0%); 
+            }
+            50% {
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%, -0%);
+            }
+            75% {
+                top: 25%;
+                left: 75%;
+                transform: translate(-75%, -0%);
+            }
+            100% {
+                top: 0%;
+                left: 100%;
+                transform: translate(-100%, 0%);
+                /* kendi boyutun kadar x ekseninde geri gel */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu"> </div>
+</body>
+</html>
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-position absolute, en dış sayfanın ölçülerine göre
+-position relative, iç kutuların konumlarını belirlemek için
+-justify align 
+
+-LOGIN SAYFASI OLUSTURMA
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+           /* sayfa köşeleri */
+        }
+
+        body {
+            background-image: url('bg.jfif'); /* klasöre attık jpg css js sırayla */
+        }
+/**/
+        .content {
+            width: 50%;
+            /* sayfa genişliğinin yarısına denk gelecek şekilde bir şekilde olsun */
+            height: 222px;
+            /* alanın yüksekliği */
+            background-color: rgba(221, 221, 221, 0.5); 
+            /*opaklık 0 ile 1 arasındadır*/
+            position: absolute;
+            border-radius: 30px;
+            /* kenar yuvarlama oranı */
+            left: 50%;
+            top: 50%;
+            /*soldan ve yukardan sayfaya göre yarısı kadar */
+            transform: translateX(-50%) translateY(-50%);
+            /* alanın tam merkezini aldık, bu sekilde almazsak köselere göre yüzde elli ortalar */
+        }
+
+        .main {
+            margin: 80px 50px 10px;
+            /* main yazı yazdığımız alan soldaki köşeler dahil değil */
+        }
+
+        .icon-box {
+            background: #00264dff;
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            /* iconbox yukarıdaki yuvarlak alan user simgesi ekleyeceğiz */
+        }
+        
+        .icon-box>i {
+            color: white;
+            font-size: 48px;
+            margin: 33px 36px;
+            /* iconbox i içerideki user simgesi fontawesome cdn indirdik 
+            yuvarlagın(iconbox) kenarlarına göre margin degerleri veririz*/
+        }
+
+        input {
+            height: 30px;
+            border: none;
+            /* kenar çizgileri olmasın demek */
+            width: calc(100% - 33px);
+            background-color: #3b5473;
+            color: #a8aebc;
+            padding-left: 33px;
+            border-radius: 5px;
+            /* input bizim giriş yaptığımız yazı kısmı */
+        }
+
+        input:focus {
+            border: 0px;
+            outline: none;
+        }
+
+        .form-group {
+            position: relative;
+        }
+        /* yazı yazdığımız yerin sol kısmındaki küçük iconlar */
+        .form-group>i {
+            width: 30px;
+            background-color: #00264d;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: white;
+            line-height: 31px;
+            text-align: center;
+            border-radius: 5px 0px 0px 5px;
+            /* iconların özellikleri, left top 0 olmasının sebebi txtboxa bitisik olmasıdır */
+        }
+
+        button {
+            width: 80%;
+            height: 30px;
+            border: none; /*çerçeve yok*/
+            position: absolute;
+            top: calc(100% + 2px);
+            /* yukardan yüzde yüz asağı yani dısarda olsun,+2 biraz daha dısarda olsun */
+            background-color: #ddd;
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+                    from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+                    /* maskeleme olustur linear çizgisel,transparanlık yukardan asagıya dogru azalsın */
+            border-radius: 0px 0px 15px 15px;
+            left: 10%;
+            text-transform: uppercase;
+            /* yazı tipi büyük harfler */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- sayfada br content -->
+        <div class="main">
+            <!-- main kısmı -->
+            <div class="icon-box">
+                <i class="fa-regular fa-user"></i>
+                <!-- en dıştaki icon -->
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+                <!-- usernamein yanındaki icon -->
+            </div>
+            <div class="form-group" style="margin-top:15px">
+                <input type="password" placeholder="Password">
+                <i class="fa-solid fa-lock"></i>
+                <!-- passwordun yanındaki icon -->
+            </div>
+        </div>
+        <button class="btn-login">Login</button>
+        <!-- dısarda login butonu -->
+    </div>
+</body>
+</html>
+
+
+
+###################################################################### 23.02.2022 #################################################################################
+--ROOT NEDİR ROOT DEĞİŞKENİ
+
+ <style>
+        :root{
+            --box-color:rgb(22, 189, 58);
+        }
+        /* değişken ve değerini tanımladık, bu değişkenin olduğu her alanda buradan yaptığımız değişiklik var özelliği kullanarak etkili olacak */
+    .kutu1{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        /*ekranın yukarısından boşluk */
+        margin-left: 100px;
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    .kutu2{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        /*ekranın yukarısından boşluk */
+        margin-left: 100px;
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    .kutu3{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        /*ekranın yukarısından boşluk */
+        margin-left: 100px;
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    .kutu4{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        /*ekranın yukarısından boşluk */
+        margin-left: 100px;
+        /* ekranın solundan boşluk */
+        background-color: var(--box-color);
+    }
+    </style>
+</head>
+<body>
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+    <div class="kutu3"></div>
+    <div class="kutu4"></div>
+</body>
+
+
+
+--------------------------------------------------------------------------
+
+-KUTULARIN ÜSTÜNE GELİNCE RENK DEĞİŞSİN
+
+<style>
+        .box{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;       
+        margin-left: 100px;  
+        transition: .3s;    
+        background-color: grey;
+        }
+        /* classtan box ı çektik */
+        .green:hover{
+            background-color: green;
+        }
+        .blue:hover{
+            background-color:blue;
+        }
+        .purple:hover{
+            background-color: purple;
+        }
+        /* klasstan renkleri aldık ayrıca boxları tanımlamaya gerek kalmadı */
+    </style>
+</head>
+<body>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box purple"></div>
+</body>
+
+
+---------------------------------------------------------------------------------
+
+--JUSTIFY CENTER 
+--DISPLAY FLEX
+dış kutu iç kutunun konumunu belirliyor
+
+<style>
+        .content{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            /* justify ve align kullanarak yapılan hizalama dış kutunun iç kutuların nasıl dizileceğine karar vermesidir
+            position absolute ise kutunun kendi kendisinin nerede hizalanacağını belirlemesidir */
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 50%;
+            height: 35vh;
+            background-color: grey;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .minikkutu{
+            width: 50%;
+            height: 25vh;
+            background-color: rgb(179, 75, 75);  
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .minikkutu2{
+            width: 50%;
+            height: 12vh;
+            background-color: rgb(131, 204, 117); 
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+      <div class="box">
+          <div class="minikkutu">
+             <div class="minikkutu2"></div>
+        </div>
+    </div>
+</body>
+
+
+
+
+----------------------------------------------------------------------------
+
+
+--LOGIN SAYFASI DENEME
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-image: url('radient.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            
+        }
+        .content {
+            width: 30%;
+            height: 280px;
+            background-color: rgba(221, 221, 221, 0.3);
+            position: absolute;
+            border-radius: 30px;
+            left: 50%;
+            top: 60%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .main {
+            margin: 55px 50px 10px
+           
+        }
+        .text{
+            position: absolute;
+            left:260px;
+            top: -10px;
+            transform: translateX(-100%) translateY(-100%); 
+            color: white;
+            font-size: 30px;
+        }
+        .icon-box { 
+            background-color: rgba(221, 221, 221, 0);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 65%;
+            transform: translateY(-120%) translateX(-120%);
+            text-align: center;
+            color: white;
+            font-weight: 100;
+        }
+        .icon-box>i {
+            color: white;
+            font-size: 100px;
+            margin: 20px 30px;
+        }
+        input {
+            height: 40px;
+            border-color: rgb(252, 252, 252);
+            width: calc(100% - 22px);
+            background-color: rgba(218, 205, 205, 0.1);
+            color: white;
+            padding-left: 1px;
+            border-radius: 10px;
+            font-size: 17px;
+            
+        }
+        .form-group {
+            position: relative;
+        }
+        button {
+            color: white;
+            width: 75%;
+            height: 30px;
+            border: none;
+            position: absolute;
+            top: 185px;
+            background-color: rgb(182, 93, 218);
+            left: 10%;
+            border-radius: 5%;
+            text-transform: uppercase;
+            font-weight: 200;           
+        }
+
+    </style>
+</head>
+<body>
+ <div class="content">
+    <div class="main">
+        <div class="text"<h1>SIGN IN</h1>
+        </div>
+        <!-- text ekledim -->
+        <div class="icon-box">
+            <i class="fas fa-users"></i>            
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Username">           
+        </div>
+        <div class="form-group" style="margin-top:15px">
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="btn-login">Login</button>
+    </div>   
+</div>   
+</body>
+</html>
+
+
+------------------------------------------------------------------------------
+
+-KUTU ANIMASYON ORNEGI
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #10131c;
+    }
+    .box{
+        width: 70px;
+        height: 70px;
+        background-color: #212532;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        transition-delay: 0.8s;
+    }
+    .box>span{
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: translate(calc(12px * var(--x)), calc(12px * var(--y)) );
+        transition: width 0.5s, height 0.5s, transform 0.5s, background-color 0.5s;
+        transition-delay: calc(0.1s * var(--i));
+    }
+    .box.active{
+        width: 200px;
+        height: 200px;
+        transition-delay: 0s;
+    }
+    .box.active>span{
+        transform: translate(calc(60px * var(--x)), calc(60px * var(--y)) );
+        width: 50px;
+        height: 50px;
+        background-color: #333849;
+    }
+</style>
+</head>
+<body>
+<div class="box">
+    <span style="--i:0;--x:-1;--y:0"></span>
+    <span style="--i:1;--x:1;--y:0"></span>
+    <span style="--i:2;--x:0;--y:-1"></span>
+    <span style="--i:3;--x:0;--y:1"></span>
+    <span style="--i:4;--x:-1;--y:-1"></span>
+    <span style="--i:5;--x:1;--y:1"></span>
+    <span style="--i:6;--x:0;--y:0"></span>
+    <span style="--i:7;--x:1;--y:-1"></span>
+    <span style="--i:8;--x:-1;--y:1"></span>   
+</div>
+<script>
+        let box=document.querySelector(".box");
+        box.onclick=function(){
+            box.classList.toggle('active');
+            // box ın üzerine tıkladığımızda hareketlendirdik
+            //active classı ekledik classı yukarda cagırdık
+        }
+    </script>
+</body>
+
+
+
+
+
+
+########################################################################## 24.02.2022 #############################################################################
+
+--JS BUTON OLUSTURMA BUTONA TIKLADIGINDA MESAJ GOSTERME
+
+
+<style>
+        .clicked{
+            background-color: red;
+        }
+        /* butona tıklandıktan sonra buton rengi değişsin demek */
+    </style>
+</head>
+<body>
+    <button id="btn">TIKLA</button>
+    <!-- buton tanımladık -->
+    <script>
+        alert('BUSRA');
+        // ekrana mesaj yazdırdı
+        alert(screen.width);
+        // ekranın genişliğini mesaj olarak yazdı
+        alert(screen.height);
+        // ekranın yüksekliğini mesaj olarak yazdı
+        let a="5";
+        var b=10;
+        c=20;
+        alert(b+c);
+        // mesaj olarak islem de yaptırabiliriz 
+        // var ile let arasındaki fark 
+        // eval yazıp text sekilde de islem yaptırılabilir eval("5")+b eval textteki degeri okur
+        //  + textte yanyana yazdırıyor
+        if(b>c){
+            alert("BÜYÜK");
+        }
+        else{
+            alert("KÜÇÜK");
+        }
+        let button=document.querySelector('#btn');       
+        // tıklama yapılacaksa query selector- query sorgula selector id si btn olanı sorgula
+        console.log("button seçildi");
+        button.onclick=function(){ 
+            // on click - click yapılırsa demek
+            alert('BUTONA TIKLANDI')
+            // butona tıklandığında yukarda mesaj yazdırdı
+            button.classList.toggle('clicked');
+            // butona tıklanınca demek class olusturuluyor
+        }
+    </script>
+</body>
+
+
+------------------------------------------------------------
+
+
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1248 @@
+#################################################### 31.01.2022 ########################################################
+SQL veritabanı
+northwind veri tabanını sql e çektik
+new database oluşturduk executive dedik
+yeni table olusturduk verileri girdilk
+düzenleme yapmak istiyorsak design diyoruz
+ekleme icin edit top 200
+
+**OKUL
+
+dbo. ogrenci
+dbo. OGRETMEN
+--DDL VERİ TANIMLAMA
+--1.CREATE
+--2.ALTER
+--3.DROP
+
+--1.CREATE
+--CREATE DATABASE OKUL
+
+--2.ALTER
+--use OKUL
+--alter table Ogrenci 
+--alter column BaslamaTarihi datetime
+--alter table Ogrenci add BitisTarihi smalldatetime 
+use OKUL
+CREATE TABLE OGRETMEN( 
+OgrtmnNo int,
+OgrAd varchar(12),
+OgrtmnSoyad varchar(15),
+OgrtmnBilgi text
+)
+alter table OGRETMEN alter column OgrtmnSoyad varchar(20) --charını değiştirdik
+--drop 
+ALTER TABLE OGRETMEN  
+DROP COLUMN OgrtmnBilgi --bu bilgiyi sildik
+
+--TRUNCATE --TABLO İÇİNİ BOŞALTIR
+TRUNCATE TABLE OGRETMEN
+--DML KOMUTLARI
+--SELECT
+--INSERT
+--UPDATE
+--DELETE
+
+use Northwind --bu veritabınından
+select * from products
+select CustomerID,CompanyName from customers --bu bilgileri seçtik aşağıda yazdı
+
+
+**KİTAPLIK
+edit 200 rows kısmında kitap bilgileri girdik
+
+CREATE database KİTAPLIK -- VERİTABANI OLUŞTURDUK
+use KİTAPLIK -- hangi veritabanında olussun
+CREATE TABLE KİTAP( -- nesnemiz
+KitapNo int,
+KitapAd varchar(50),
+KitapYazar varchar(30),
+KitapSayfa smallint,
+KitapFiyat smallmoney,
+KitapTarih smalldatetime,
+KitapYayınEvi varchar(50) -- EDİT TOP 200 ROWS KISMINDA BİLGİLER GİRDİK
+)
+select * from KİTAP where KitapAd='SATRANÇ' -- GİRDİĞİMİZ BİLGİLERDEN BİR KİTABI İSTEDİK EXC YAPIYORUZ AŞAĞIDA GÖSTERİYOR
+select * from KİTAP where KitapFiyat>=30 -- fiyatı 30dan büyük olanları seçtik exc yaptık
+select * from KİTAP where KitapSayfa>=200 -- sayfa sayısı 200den büyükleri seçtikkkk
+
+
+
+
+
+################################################ 01.02.2022 ###########################################################
+**OPERATORLER
+
+select * from KİTAP where KitapAd ='KÖRLÜK' --kütüphaneden seçtiriyoruz
+select * from KİTAP where KitapYayınEvi ='CAN' and KitapSayfa>=183 --iki şartı da sağlamak zorunda
+select * from KİTAP where KitapSayfa<=112 or KitapSayfa>=65 or KitapYazar='Paulo Coelho' --ikisinden birini sağlaması yeterli
+select * from KİTAP where KitapSayfa in(96,182,120) --parantez içini sağlayan verileri getiriyor --birebir
+select * from KİTAP where KitapAd like '%a%' and KitapSayfa in(120) and KitapFiyat>=37 --kitabın içinde a geçmek zorunda
+select * from KİTAP where KitapAd like 'Ş%' --kitap adı ş ile başlamalı
+select * from KİTAP where KitapAd like '%I' --kitap adı I ile bitmeli
+select * from KİTAP where KitapYazar like '[JMS]%' --içinde jms harfleri geçenler
+select * from KİTAP where KitapYazar like '[A-G]%' --a ile g arasındaki harfler 
+select * from KİTAP where KitapYazar like '[^A-G]%' --a ile g harfleri arsaındaki dışındakiler
+select * from KİTAP where KitapAd like 'S______' --boşluk kadar karakterli olanları yazdırır boşluklar da sayılır
+select top 4 * from KİTAP --tablodaki ilk dort kaydi veriyor
+select top 4 * from KİTAP order by KitapNo desc --sıralamadaki ilk dort
+
+
+--insert ekleme
+insert into KİTAP values(16,'ANNA KARENINA','TOLSTOY',300,48.00,'2014-05-09','CAN') --16.olarak bunu ekledik
+
+insert into KİTAP(KitapNo,KitapAd,KitapYazar,KitapSayfa,KitapFiyat,KitapTarih,KitapYayınEvi) --bu şekilde de ekleyebiliriz
+values(17,'BİR ÖMÜR NASIL YAŞANIR','İLBER ORTAYLI',300,55,'2011-04-06','KORİDOR')
+insert into KİTAP values(18,'X','Y',100,10,'2012-05-05','CAN')
+insert into KİTAP values(19,'OLAĞANÜSTÜ BİR GECE','STEFAN ZWEIG',120,65,'2014-05-10','DENE')
+insert into KİTAP values (20,'LİNMEYEN BİR KADININ MEKTUBU','STEFAN ZWEIG',220,55,'2018-06-22','DENE')
+
+--update
+update KİTAP set KitapTarih='2020-05-14' where KitapAd='BİR ÖMÜR NASIL YAŞANIR'
+update KİTAP set KitapYayınEvi='İŞ BANKASI' where KitapAd='DENEME'
+update KİTAP set KitapNo=16 where KitapAd='olağanüstü bir gece'
+
+--delete 
+delete from KİTAP where KitapNo=18 --SİLDİK
+
+--tekrar eden verilerde sadece birini alır - kaç çeşit var sorusu gibi
+select distinct kitapyayınevi from KİTAP where KitapYazar='STEFAN ZWEIG' --stefan zweıgın yayınevleri 3adet 2çeşit
+
+--alfabetik listeleme or artan denebilir
+select * from KİTAP order by KitapAd 
+select * from KİTAP order by KitapAd desc --tersten or azalan denebilir
+select * from KİTAP order by KitapFiyat desc 
+
+
+--as komutu bu yerine bu
+select KitapAd as 'KİTAP İSMİ' , KitapFiyat as 'KİTAP ÜCRETİ' from KİTAP
+
+select KitapAd, KitapYazar,KitapFiyat,KitapFiyat/2 as 'YENİ FİYAT' from KİTAP --kitap fiyatını yarıya indirip yeni fiyat olarak yazdırdık
+select KitapAd, KitapYazar,KitapFiyat,KitapFiyat+10 as 'YENİ FİYAT' from KİTAP --sadece yazdıklarımızı gösteriyor
+
+--tarih sorguları 
+select*from KİTAP where KitapYayınEvi in ('CAN','KORİDOR','SEL') and KitapTarih>='2014-01-01'order by KitapYazar desc
+
+--between 
+select * from KİTAP where KitapFiyat between 60 and 75
+
+
+----------------------------------------------------------------------------------
+STUDENT
+
+---DDL ve CONSTRAINT KISITLAMALAR
+create database SCHOOL
+use SCHOOL
+create table STUDENT(
+OgrNo int not null primary key,
+OgrAdi varchar(15),
+OgrSoyadi varchar(20),
+OgrSinif varchar(2),
+OgrAdres varchar(50),
+OgrIlce varchar(20) default 'Pozantı',
+OgrSinav1 tinyint check(OgrSinav1>0),
+OgrSinav2 int,
+constraint chck check(OgrSinav2>0 and OgrSinav2<=100)
+OgrKolu varchar(30),
+constraint chcks check(OgrKolu='BİLİŞİM' or OgrKolu='ÇEVRE' or OgrKolu='TRAFİK' or OgrKolu='SAĞLIK') --ogrkol in(....) diyebilirdik
+)
+
+insert into STUDENT (OgrNo,OgrAdi,OgrSoyadi,OgrSinif,OgrAdres,OgrIlce,OgrSinav1,OgrSinav2)
+values (2,'MİRAYET','MÜFTÜOĞLU','3','SAKARYA',default,100,50) --default yukarıda tanımlamıştık
+
+
+
+-----------------------------------------------------------------------------------------------
+**KİTAPLIK
+KİTAP2 KİTAP3
+
+
+use KİTAPLIK
+create table KİTAP2
+(
+KitapNo int not null, --boş geçilmemeli
+KitapAdi varchar(50),
+KitapYazari varchar(30),
+KitapTürü varchar(25),
+)
+insert into KİTAP2 values(1,'OLAĞANÜSTÜ BİR GECE','STEFAN ZWEIG','ROMAN')
+insert into KİTAP2 values(2,'FAHRENHEIT 451','RAY BRADBURY','DİSTOPİK')
+insert into KİTAP2 values(3,'MOMO','MICHEL ENDE','DİSTOPİK')
+insert into KİTAP2 values(4,'BENJAMIN BUTTON''IN TUHAF HİKAYESİ','F.SCOTT','ROMAN')
+insert into KİTAP2 values(5,'THEOYA MEKTUPLAR','VINCENT VAN GOGH','ROMAN')
+
+create table KİTAP3
+(
+KitapNo int not null, --boş geçilmemeli
+KitapAdi varchar(50),
+KitapYazari varchar(30),
+KitapDili varchar(10),
+KitapBaskiSayisi int,
+KitapHamurTipi varchar(50)
+)
+select KİTAP2.KitapAdi,KİTAP3.KitapDili from KİTAP2,KİTAP3 --İKİ FARKLI TABLODAN SEÇİLENLERİ YAZDIRIYOR
+select * from KİTAP where KitapAd like '[AE]%'
+select * from KİTAP where KitapYazar like '[A-H]%'
+select * from KİTAP where  KitapAd like '[%]%'
+select * from KİTAP where KitapSayfa>=100 order by KitapSayfa
+select top 3 * from KİTAP order by KitapTarih
+
+----------------------------------------------------------------------------------------
+
+**KARMA OPERATÖRLER
+
+--ARİTMETİK OPERATÖRLER VE FONKSİYONLAR
+select 15+4 as 'TOPLAM',80-29 as 'FARK',48/12 as 'BÖLÜM' --aşağıda çıktı veriyor tabloyu kendi yapıyor
+--BİRLEŞTİRME
+select kitapad + '-' + kitapyazar as 'kitaplık' from KİTAP --kitap adı ve yazrını kitaplık tabanından çekerek yeni kitaplık tablomuza yazdırdık
+--1.SUBSTRING FONKSIYON
+select substring(kitapad,1,5) as 'substring' from KİTAP --adı parçaladık ilk beş karakteri getirdi
+--2.LEFT
+select left(kitapad,8) from KİTAP -- soldan sekiz tanesini aldık gerisini sildi
+--3.RIGHT 
+select right(kitapad,4) from KİTAP
+--4.UPPER VE LOWER
+select upper(kitapad) 'BÜYÜKHARF',lower(kitapad) as'KÜÇÜK HARF' from KİTAP --küçük ve büyük harfe çeviri tamamı
+--5.LENGTH
+select kitapad, len(kitapad) as 'KARAKTER SAYISI' from KİTAP --kelimelerin karakter uzunluğunu verdi
+select kitapad,len(kitapad) as 'KARAKTER SAYISI' from KİTAP where len(kitapad)<15 --karakter uzunluğu 15ten küçük olanlar
+--6.REPLACE
+select kitapad,replace(kitapyazar,'fyodor dostoyevskI','f.m. dostoyevski') as 'yazar adı' from KİTAP --anlık değişimler bu yerine bu
+--7.REVERSE
+select reverse(kitapad) from KİTAP --yazıları terse çevirdik
+
+
+--SAYISAL FONKSIYONLAR
+--1.ABSOLUTE MUTLAK
+select abs(kitapfiyat) as 'GÜNCEL KİTAP FİYATLARI' from KİTAP where KitapNo=1 --bu değerdeki sayıyı mutlak değere al
+--2.YUVARLAMA
+--a.ceiling
+select ceiling(kitapfiyat) as 'FİYAT',kitapfiyat,kitapad from KİTAP --küsüratları yuvarlıyor
+--b.floor asagı yuvarlama
+select floor(kitapfiyat) as 'FİYAT',kitapfiyat,kitapad from KİTAP --küsüratlarıasagı yuvarlıyor
+--c.round en yakın tamsayıya yuvarlama
+select kitapad,kitapfiyat,round(kitapfiyat,1) as 'YENİ FİYAT' from KİTAP --en yakın ondalığa yuvarlıyor
+--power üs alma
+select power (3,4) as 'ÜS'
+--karekök alma
+select sqrt (121)
+--toplama
+select sum(kitapfiyat) as 'TOPLAM' from KİTAP --fiyatları topluyor
+select sum(kitapfiyat) as 'TOPLAM' from KİTAP where KitapFiyat>50 --50den büyük olanları topluyor
+select kitapad,kitapfiyat from KİTAP where KitapFiyat>=55 --fiyatı 55ten büyük olanlar kitaplar
+--average
+select avg(kitapfiyat) as 'ORTALAMA' from KİTAP --kitap fiyatlarının ortralamsı
+--maks ve min 
+select min(kitapfiyat) as 'MİNİMUM MİKTAR',max(kitapfiyat) as 'MAKSİMUM MİKTAR' from KİTAP --min ve maks degerler
+--count 
+select count(kitapad) from KİTAP --kaç veri var
+
+
+
+################################################### 02.02.2022 ###################################################
+
+--TARİH İŞLEMLERİ
+--1.getdate()
+select getdate() --şuanki tarihi gösteriyor
+
+--2.Datepart
+use KİTAPLIK
+select DATEPART(year,getdate()) as 'YIL' --sadece yılı aldık
+select datepart(month,getdate()) as 'AY' --tek select yazarsak AYNI satıra yazdırır sütunlar şeklinde-her satıra yazarsak FARKLI sütunlara yazar
+select datepart(day,getdate()) as 'GÜN'  --as den sonrası sütunun adı oluyor
+select datepart(week,getdate()) as 'HAFTA'
+select datepart(quarter,getdate()) as 'ÇEYREK'
+select datepart(year,'2021-09-06') --yazılan tarihin yılını veriyor
+
+select*from KİTAP where datepart(year,kitaptarih)=2020 --yayın tarihi 2020 olan kitapları çektik
+select*from KİTAP where datepart(month,kitaptarih)=6 --yayın tarihi 6. ayda olan kitapları çektik
+
+--3.DateDiff ve DateAdd Fonk.
+select DATEDIFF(year,'1919-05-19','2022-02-02') as 'KAÇ YIL OLDU?',
+DATEDIFF(month,'2001-09-09','2022-02-02') as 'KAÇ AY OLDU?',
+DATEDIFF(day,'2021-01-01','2022-02-02') as 'KAÇ GÜN OLDU?'
+select DATEDIFF(year,'1923-10-29',getdate()) --bu tarihten günümüze kaç yıl geçti
+
+select dateadd(day,15,getdate()) --günümüz tarihine 15 gün ekle
+--------------------------------------------------------------------------------------------------------
+
+--GROUP BY
+use KİTAPLIK
+select kitapyazar,count(kitapad) as 'KİTAPSAYISI' from Kitap group by kitapyazar order by kitapsayısı
+--yazarları kitap sayılarına göre grupladık her yazarın kaç kitabı var
+
+select kitapad,count(kitapad) as 'KAÇ TANE BU KİTAPTAN VAR' from KİTAP group by KitapAd
+--kitap adına göre bu kaitaptan kaç kez girilmiş
+
+select kitapyayınevi,count(kitapad) as 'KAÇ ADET BASMIŞ' from KİTAP group by KitapYayınEvi
+--yayınevi kaç adet kitap basmış
+
+select kitapyayınevi,sum(kitapfiyat) as 'TOPLAM KAZANÇ' from KİTAP group by KitapYayınEvi
+--yayınevleri kitap basmaktan ne kadar kazanç sağlamış
+
+select kitapyayınevi,avg(kitapfiyat) as 'ORTALAMA KAZANÇ' from KİTAP group by KitapYayınEvi
+--yayınevinin kitap başına ortalama kazancı
+
+select kitapyayınevi,max(kitapfiyat) as 'MAX FİYAT',
+min(kitapfiyat) as 'MİN FİYAT' from kitap group by KitapYayınEvi --aynı satırda veriyor
+--yayınevinin kitaplarının max ve min fiyatı 
+
+select KitapYayınEvi,count(KitapFiyat) as 'FİYATI 30DAN YÜKSEK OLANLAR' from KİTAP 
+where KitapFiyat>=30 group by KitapYayınEvi --COUNT İÇİ ÖNEMLİ DEĞİL 
+--fiyatı 30dan yüksek olan kaç kitap var ilgili yayınevinde
+------------------------------------------------------------------------------------------------------------
+
+create table Kisiler(
+KisiNo tinyint,
+Ad varchar(20),
+Soyad varchar(30),
+Meslek varchar(30),
+Sehir varchar(15),
+Maas money
+)
+select Meslek,count(ad) as 'Personel Sayısı' from Kisiler group by Meslek order by meslek desc
+--meslege göre kisi sayısı çektik
+
+select Sehir,count(ad) as 'Kişi Sayısı' from Kisiler group by Sehir 
+--şehirlere göre kişi sayısı çektik
+
+select Meslek,count(ad) 'Personel Sayısı',
+sum(maas) 'Toplam Kazanç',
+avg(maas) 'Ortalama'
+from kisiler group by Meslek order by Meslek
+--mesleklerin kişi sayılarına göre toplam kazançları ortalamaları
+
+select Meslek,max(maas) 'MAX',
+min(maas) 'MİN' from Kisiler group by Meslek 
+--mesleklerin min max maas degerleri
+------------------------------------------------------------------------------------------------------------------
+
+--HAVING
+--dönen değere koşul yazılmak istenilirse kullanılır
+--group by ile kullanılır
+--where yetersiz olduğu için group by having kullanılmaktadır
+
+alter table KİTAP
+add Vergi int --kitap a vergi sütunu ekledik
+
+select kitapyayınevi,count(kitapad) as 'KitapSayısı',
+sum(kitapfiyat) as 'TOPLAM KAZANÇ',
+sum(Vergi) as 'VERGİ BORCU',
+sum(kitapfiyat)-sum(Vergi) as 'NET KAZANÇ' from KİTAP group by KitapYayınEvi having count(kitapad)>=2
+--kitap sayısı 2den fazla olan yayınevlerinin vergi borçları ve net kazançları
+------------------------------------------------------------------------------------------------------------------
+
+--INNER JOIN
+select kitapadi,kitapyazari,KitapTürü from KİTAP2 k2
+inner join KİTAP3 k3 on k3.Kitapismi=k2.KitapAdi
+--ortak olan kitap adına göre yazarını ve türünü yazdırdı
+
+select kitapadi,kitapyazari,KitapTürü from KİTAP2 k2
+inner join KİTAP3 k3 on k3.KitapNum=k2.KitapNosu
+select kitapad,kitapyazar from KİTAP k
+inner join KİTAP2 k2 on k.KitapNo=k2.KitapNosu
+--ortak numaradaki sayıları alıyor bunların k2deki değerlerini yazdırıyor
+
+select kitapadi,kitapyazari,KitapTürü,KitapBaskiSayisi from KİTAP2 k2
+inner join KİTAP3 k3 on k3.Kitapİsmi=k2.KitapAdi
+--kitap isimlerine göre eşleştirdi buna göre bu kitabın kitap2deki değelerlerini yazdırdı
+
+select sum(kitapfiyat) as 'TOPLAM FİYAT',
+tür from KİTAP k inner join KİTAP2 k2 
+on k.KitapAd=k2.KitapAdi group by tür 
+--türleri aynı olanların toplam fiyatlarını yazdırdı
+-----------------------------------------------------------------------------------------------------------------
+link database
+https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
+
+-----------------------------------------------------------------------------------------------------------------
+--LEFT VE RIGHT OUTER JOIN
+
+--LEFT OUTER JOIN:1.TABLOYA GÖRE İŞLEM YAPAR
+--2.TABLODA KARŞILIK BULAMAZSA NULL ATAR
+select*from KİTAP2 k2 left outer join KİTAP3 k3 on k2.KitapAdi=k3.Kitapİsmi
+--kitap2 nin tamamını yazdırdı kitap3te sadece isme görevortakları yazdırıyor tüm bilgilerini veriyor
+select*from KİTAP2 k2 right outer join KİTAP3 k3 on k3.Kitapİsmi=k2.KitapAdi
+--kitap3 ün tamamını yazdırıyor kitap2nin isme göre ortaklarını yazdırıyor tüm bişgilerini veriyor
+
+select kitapismi,kitapdili,kitapbaskisayisi,kitaphamurtipi from KİTAP3 k3 left outer join KİTAP2 k2 on k2.KitapAdi=k3.Kitapİsmi
+--kitap2 bilgilerini yazdırdı
+
+--right outer join
+--sağdaki 2.tabloya göre işlem yapar
+select kitapadi,kitapdili from kitap2 k2 right outer join Kitap3 k3 on k2.KitapAdi=k3.Kitapad
+
+
+
+#################################################### 03.02.2022 ###########################################################
+
+
+--except kitap2 deki ortaklarını çıkarıp sadece kitap ı veriyor
+select kitapad from kitap
+except 
+select kitapadi from kitap2
+--except kitaptaki ortaklarını çıkarıp sadece kitap2yi veriyor
+select kitapadi from kitap2
+except 
+select kitapad from kitap
+
+--union -union all
+select KitapAd from Kitap
+union 
+select kitapadi from kitap2
+-----------------------------------------------------------------
+
+--alt sorgular
+select * from kitap where
+vergi=(select vergi from kitap where KitapAd='Küçük Prens') --küçük prensin vergisine eşit olan vergileri sorguladık
+
+select * from kitap2 where
+kitappuani=(select kitappuani from Kitap2 where KitapYazari='Milan Kundera')
+--parantez ici milan kunderanın kitap puanına esit olan puanlara sahip kitap bilgilerini yazdırdı
+
+select * from kitap where
+KitapFiyat=(select kitappuani from kitap2 where KitapYazari='Milan Kundera')
+--parantez ici milan kunderanın kitap puanının kitapta fiyatına eşit olan bilgileri yazdırdı
+
+select * from kitap3 where
+kitapbaskisayisi=(select kitappuani from kitap2 where KitapAdi='Momo')
+--kitap2 de momonun kitap puanının kitap3te kitapbaskısayısına eşit olanların bilgileri
+-------------------------------------------------------------------
+
+--is identity
+use SCHOOL
+create table DENEME(
+ID int not null identity(1,1) primary key, --boş geçmesin bir bir geçsin biz elle yazamıyoruz kendisi yazıyor
+Ad varchar(50),
+Soyad varchar(50)
+)
+set identity_Insert deneme on
+insert deneme(ID,Ad,Soyad) values(1,'BÜŞRA','SARIKAYA') --set ile identity veriye ekleme izni aldık 
+
+set identity_Insert deneme off
+insert deneme(Ad,Soyad) values('MİRAYET','MÜFTÜOĞLU') --set i kapattık
+--------------------------------------------------------------------
+
+--transaction
+use KİTAPLİK
+begin transaction --işlem başlar
+update kitap set kitapsayfa=300 --hepsi 300 oldu
+update kitap set kitapfiyat=100 --hepsi 100 oldu
+select * from kitap --değişikliği yazdırdı
+rollback --kalıcı olmuyor --veri koruyor
+select * from kitap
+commit  -- değişiklikleri kalıcı yapıyor 
+
+begin transaction --islem basladı
+update kitap3 set KitapDil='Türkçe' --kitap3 ün dilleri türkce
+commit --kalıcı yap
+select *from kitap3 --yazdır
+
+--declare -- değişken tanımlama --değişkenin başına @ --anlık islemler
+declare @ulke nvarchar(30)
+set @ulke = 'TÜRKİYE'
+select @ulke as Ulke --değişkenin tablodaki adı as ile yazılır
+print @ulke -- tablo olarak değil mesaj olarak yazdırması için 
+
+declare @ulkesi nvarchar(30)
+set @ulkesi = 'HOLLANDA'
+declare @baskenti nvarchar(30)
+set @baskenti = 'AMSTERDAM'
+print @ulkesi + ' ' +  @baskenti -- tek satıra yazdı
+------------------------------------------------------------------------
+
+--tablo tipi değişkenler
+--bellekte sanal tip tablo oluşturulur ve kullanılır
+
+declare @musteriler table(
+musteri_no int,
+musteri_ad varchar(20),
+musteri_soyad varchar(30),
+musteri_sehir varchar(30),
+medeni_durum varchar(10),
+cinsiyet varchar(10)
+)
+insert into @musteriler values(1,'Büşra','Sarıkaya','Maras','Bekar','Kadın') -- EKLE ME
+insert into @musteriler values(2,'Çisem','Türkoğlu','Kırklareli','Bekar','Kadın')
+insert into @musteriler values(3,'Mertkan','İşkurt','Trabzon','Bekar','Erkek')
+select*from @musteriler
+
+--matematiksel islemler
+declare @sayi1 int,@sayi2 int,
+@toplam int, @fark int, @carpim int, @bolum int
+set @sayi1=144
+set @sayi2=12
+set @toplam=@sayi1+@sayi2
+set @fark=@sayi1-@sayi2
+set @carpim=@sayi1*@sayi2
+set @bolum=@sayi1/@sayi2
+print 'Toplam:'+cast(@toplam as varchar(10)) -- cast int veriyi string yazmak icin cevirmeye yarıyor
+print 'Fark:'+cast(@fark as varchar(10))
+print 'Çarpım:'+cast(@carpim as varchar(10))
+print 'Bölüm:'+cast(@bolum as varchar(10))
+-----------------------------------------------------------------------------
+
+-- case
+select kitapadi, kitappuani, --bunları tabloda yazdır
+'DURUM'= --durum sütunu olustur
+case kitappuani --buna göre
+when 60 then 'ÇOK BEĞENİLEN' --60 olduğunda .. yazdır
+when 30 then 'BEĞENİLEN'
+when 20 then 'BEĞENİLMEYEN'
+end --durumları yazdır
+from Kitap2
+
+select kitapismi, KitapBaskiSayisi, --bunları tabloda yazdır
+'Baskı'= --durum sütunu olustur
+case --buna göre
+when KitapBaskiSayisi>=50 then 'ÇOK BASIM' 
+when 25<KitapBaskiSayisi and KitapBaskiSayisi<49 then 'ORTA BASIM'
+when KitapBaskiSayisi<=25 then 'AZ BASIM'
+end --durumları yazdır
+from Kitap3
+
+-----------------------------------------------------------------------------
+use Northwind
+
+begin transaction
+update customers set ContactTitle='OWN'
+select * from Customers
+rollback
+
+select * from customers where
+country='Germany'
+
+select City,count(city) as 'Sehirler' from Customers group by city
+
+select ORDERID,sum(UnitPrice) as 'TOPLAM SİPARİŞ ÜCRETİ' from OrderDetails group by ORDERID
+--siparis numaralarına göre toplam ödeyecegi miktarlar  
+
+
+##################################################### 04.02.2022 ##########################################################################
+--AKIŞ KONTROLLERİ
+--IF ELSE
+use KİTAPLİK
+declare @adet tinyint
+select @adet = count(kitapturu) from Kitap2
+where kitapturu='Roman'
+if(@adet<=1)
+begin
+print 'Yetersiz Adet Kitap:'+cast(@adet as varchar(3))
+end
+
+else if(@adet>=2 and @adet<3)
+begin
+print 'Orta Adet Kitap:'+cast(@adet as varchar(3))
+end
+
+else
+begin
+print 'Çok Sayıda Kitap:'+cast(@adet as varchar(3))
+end
+----------------------------------------------------------------------
+
+--OUTPUT 
+--birden fazla değer döndürmek için kullanıyoruz!!
+--return, tek değer döner ikisi arasında fark budur!!
+use OKUL
+declare @neww table(
+adi varchar(15),
+soyadi varchar(30),
+medenidurum bit
+)
+insert into Dene
+output inserted.Ad , inserted.Soyad, inserted.medenidurum --ekleme komutları
+into @neww 
+values('Halil','Sezai',0) --sanal tablo oluşturduk --buradan tabloya bilgi ekledik
+select*from @neww --kalıcı oldu
+
+--
+declare @clear table(
+adi varchar(15),
+soyadi varchar(30),
+medenidurumu bit
+)
+delete from dene
+output deleted.ad,deleted.soyad,deleted.medenidurum --silme komutları
+into @clear 
+where ad='halil'
+select*from @clear
+select*from dene --tablodan teoman isimli satırı sildik
+--------------------------------------------------------------------------
+https://www.sqlekibi.com/sql-server/donusum-fonksiyonlari.html/
+https://www.sqlstyle.guide/tr/
+--------------------------------------------------------------------------
+
+--WHILE
+--1den 25e kadar olan sayıları yazdıralım
+declare @number int
+set @number=1
+while(@number<=25)
+begin
+print @number --sayıyı yaz
+set @number=@number+1 --1 arttırarak devam et
+end
+
+--12ye kadar sayıların karesi
+declare @numbers int
+set @numbers=1
+while(@numbers<=12)
+begin
+print cast (@numbers as varchar(10)) +'in KARESİ= ' +cast(@numbers*@numbers as varchar(5)) --sayının karesini al 
+set @numbers=@numbers+1 --1 arttırarak devam et
+end
+
+--ekrana 10 defa yazı yazdır
+declare @yazdir int
+set @yazdir=1
+while(@yazdir<=10)
+begin
+print'GÜLE GÜLE SQL' --veya cast(@yazdir as varchar(20)) + nın devamına yazı
+set @yazdir=@yazdir+1
+end
+
+--sayıları 40 azaltarak yazdır
+declare @sayacim int
+set @sayacim=1000
+while(@sayacim>=-80)
+begin
+print @sayacim --sayıyı yaz
+set @sayacim=@sayacim-40 --1 arttırarak devam et
+end
+
+--kelimeyi alt alta harflere bölme
+
+declare @cumle varchar(500)='MERHABA DUNYA BEN BUSRA'
+declare @karaktersayisi int=len(@cumle)
+declare @sayac int=0
+while(@sayac<=@karaktersayisi)
+begin
+print substring(@cumle,@sayac,1)
+set @sayac+=1
+end
+----------------------------------------------------------------------------
+
+
+--CONTINUE
+declare @sayi int
+set @sayi=1
+while(@sayi<=12) --döngü şartı
+
+begin --başlat
+
+if(@sayi=6) --sayı 6ya geldiğinde
+begin --başlat
+set @sayi+=1 --sayıyı 1 atla yazdırma
+continue
+end 
+
+print cast(@sayi as varchar(10))+'-->Karesi:' +cast(@sayi*@sayi as varchar(5)) --sayıların karesini yazdır
+set @sayi+=1 --sayıyı 1 arttır
+end --bitir
+
+
+--CONTINUE ORNEK
+declare @ssayac int=0
+while @ssayac<12 --sayaç 12den küçük
+begin
+set @ssayac+=1
+if @ssayac=7 --7ye geldiğinde dur yazdırma
+continue
+if @ssayac=9 --9 a geldiğinde bırak
+break
+print @ssayac --sayaçları yazdır
+end
+
+
+--GOTO
+declare @sayac tinyint
+set @sayac=1
+dön:
+print 'SAYAÇ:'+cast(@sayac as varchar(2))
+set @sayac+=1
+while (@sayac<=8)
+goto dön
+----------------------------------------------------------------------------
+
+--WAITFOR : Belirli saat ve dakikada sorgu çalışmasını istemiyorsak --belirli zamandan sonra sorgu gelsin istiyorsak
+waitfor delay '00:00:05' --5 sn sonra verdi
+select*from kitap
+
+waitfor time '18:24:00' --tam bu saatte verdi
+select*from kitap
+----------------------------------------------------------------------------
+select ASCII('A') as 'ASCII' --ascide a harfinin degeri 65
+select LTRIM('  YASİN GÖKTEPE') as 'AD'--soldaki boslukları sildi
+select RTRIM('YASİN GÖKTEPE  ') as 'AD' --sagdaki boslukları Sildi
+----------------------------------------------------------------------------
+
+--PROCEDURES
+
+--PROCEDURE TANIMLAMA --STORED PROCEDURE
+create procedure test
+as --procedure başlar
+select*from kitap where KitapSayfa>120 --kitap sayfası 120den fazla olanları yazdırdı
+execute test 
+
+--ALTER PROCEDURE AYNI ADLI PROCEDURE SORGUSU GUNCELLEME
+alter procedure test  --eski procedure
+as 
+select*from kitap where kitapsayfa>200 --yeni sorgu
+exec test
+
+create procedure kitapbilgi --yeni procedure
+as
+select kitapadi,kitappuani from kitap2 k2 inner join --kitap2deki bilgiler
+kitap3 k3 on 
+k2.KitapAdi=k3.kitapismi --bu eslesmeyi saglayanlar
+exec kitapbilgi --yazdir
+
+--DROP PROCEDURE SILME
+drop procedure kitapbilgi
+
+--STORED PROCEDURE TABLODA KOLON ADI DEĞİŞTİRME
+exec sp_rename 'Kisiler.Sehir','Memleket','Column' --kisiler tablosundaki sehir kolonunu memleket olarak degistir
+exec sp_rename 'Kisiler.Adi','Ad','Column'
+
+--
+create procedure carpim
+(@a1 int, @a2 int, @a3 int,@sonuc int output) --degiskenler atadik
+as
+set @sonuc=@a1*@a2*@a3 --sonuc 
+print 'SONUC:' + cast(@sonuc as varchar(15)) --sonucu string yaptik --buraya kadar cek
+declare @m int --sonuc icin degisken tanimladik 
+exec carpim 5,8,7,@m output --sonra kalan kısım decalre ve exec
+--
+create procedure ortalama1
+(@b1 float,@b2 float,@b3 float,@ort float output)
+as
+set @ort=((@b1+@b2+@b3)/3)
+print 'ORTALAMA'+cast(@ort as varchar(10))
+declare @n float
+exec ortalama1 25,36,54,@n output
+------------------------------------------------------
+
+########################################################################## 09.02.2022 ########################################################################################
+**PROCEDURE OLUŞTURMA
+
+use KİTAPLİK
+create procedure cek1
+as
+select*from kisiler where Meslek='bilgisayar mühendisi' --once buraya kadar cek
+execute cek1 --sonra bunu
+--
+create procedure kisilerim(@meslek varchar(30))
+as
+select * from kisiler where meslek=@meslek --once buraya kadar cek
+exec kisilerim 'bilgisayar mühendisi' --sonra bunu
+
+--------------------------------------------------------------------------------------------
+
+**CÜMLEYİ KELİMELERE BÖLME
+
+select value from STRING_SPLIT('bu sql bitmeli',' ') --satır satır böldü
+
+--------------------------------------------------------------------------------------------
+
+--**FUNCTIONS
+--**KULLANICI TANIMLI FONKSİYONLAR
+--1.SCALAR FONKSİYONLAR
+--return geriye tek değer döndürür
+--returns birden fazla değer döndürmek için kullanılır
+
+-- kelimeleri büyük harf yapma
+create function buyukharf(@gelendeger varchar(15)) --büyük harf metodu calıstırdık
+returns varchar(15)
+as
+begin
+return upper(@gelendeger) --büyük yaptı
+end --burada calıstır
+select dbo.buyukharf(kitaptür) from kitap --ayrı calıstır --hangileri büyük olacak
+
+--parametre olarak dışardan veri gönderme
+create function kayitsayisi(@kitaptur varchar(15)) --kayit sayisi adli parametre olusturduk
+returns int
+as
+begin 
+declare @sayi int
+select @sayi = count(kitapturu) from kitap2 where kitapturu=@kitaptur --kitap turune gore sayma olusturduk
+return @sayi
+end --buradan cek
+select dbo.kayitsayisi('roman') as 'adet'--bunu ayrı cek roman olanların sayısı
+
+--table functions
+create function kitappuan(@gelenpuan int) --kitappuan adli parametre
+returns table
+as
+return(select*from kitap2 where kitappuani>@gelenpuan) --kittappuanina gore karsilastirma
+
+select kitapadi,kitapyazari from dbo.kitappuan(30) --gelen puan 30, kitap adi ve yazarini versin
+
+-----------------------------------------------------------------------------------------
+
+--NOCOUNT ON/OFF
+
+set nocount off -- mesaj bölümün de etkilenen satır sayısının gösterimini açıp kapamak --xx rows affected mesajı
+select * from kitap
+
+-------------------------------------------------------------------------------------------
+
+--TABLO BİRLEŞTİRME
+insert into ekle2(adi,soyadi,yasi) --sütun isimleri 1 den
+select adim,soyadim,yasim from ekle1 --bir tabledaki veriyi diğerine aktarıyoruz
+select*from ekle2
+
+-------------------------------------------------------------------------------------------
+
+--TRIGGERS TETIKLEYICILER
+-- bir tabloda gerçeklesen sorgu sonucuna göre başka bir sorgunun çalışmasını sağlar
+--procedure den farkı kullanıcı tarafından tetiklenmemesidir
+--trigger 2 şekilde çalışır:
+--1.instead off ana sorguyu engeller --pasife cekip yerine tetikleyici kullanmak
+--2.after for sorgular birlikte çalışır 
+-- '''diyelim bir tablodan bir key sildik, diger baska tablodan da ayni keyi silmek icin kullaniriz veya ekleme'''
+--instead kullanmak; diger tablodan veri silmek yerine pasife cekeriz
+--after kullanmak; diger tablodan da silmek
+
+create trigger test1
+on kitap2
+after insert as
+begin
+select 'yeni kayıt yapıldı'
+end --buraya kadar çek
+insert into kitap2 values(7,'Madam Bovary','Gustaev Flaubert','Roman','Türkçe',85) --kayıt mesajını verdi ekledi
+select*from kitap2
+
+
+create trigger dene1
+on kitap2
+after insert as
+begin
+select kitapadi,kitapyazari,kitappuani,kitappuan=kitappuani+10 --sanal ekler tabloyu degistirmez
+from kitap2
+where kitappuani=30
+end  --buraya kadar cek
+insert into kitap2 (kitapadi,kitapyazari,kitappuani)  values('İnsan ne ile Yasar','Tolstoy',95) --ekle
+select*from kitap2 --göster
+
+------------------------------------------------------
+create trigger yenileme
+on kitap2
+after insert as
+begin
+select 'update gerçekleşti'
+end --buraya kadar çek
+update kitap2 set kitappuani=40 where kitapadi='momo'
+select*from kitap2
+
+-------------------------------------------------------
+
+create trigger updatecontrol
+on kitap2
+after update
+as
+begin
+update updatee set sayac=sayac+1
+end
+update kitap2 set kitappuani=55 where kitapadi='Karamazov Kardeşler'
+select*from kitap2
+
+------------------------------------------------------
+
+create trigger insteadofdeneme
+on kitap2
+instead of update 
+as
+begin
+select 'Ekleme işlemi oldu'
+end
+insert into kitap2(kitapadi,kitapyazari)
+values('tutunamayanlar','oğuz atay')
+select*from kitap2
+
+---------------------------------------------------------
+
+use KİTAPLİK
+alter table kisiler add cinsiyet varchar(6)null --tabloya sütun ekleme
+
+
+-------- TRIGGER OLUSTURMA -----------------
+create trigger guncelle on kisiler
+after update
+as begin
+if
+(exists(select*from inserted,deleted where inserted.kisino=deleted.kisino and inserted.cinsiyet!=deleted.cinsiyet))
+begin
+raiserror('Cinsiyet Güncellenemez',16,1) --('hata mesajınız',error_severity,error_state) 
+--1 ile 10 arası bilg mesajı/11 ile 16 arası kullanıcı kaynaklı hatalar
+rollback transaction
+end
+end
+select*from kisiler where kisino=1  
+update kisiler set cinsiyet='Erkek' where kisino=1
+
+-----------------------------------------------
+
+use KİTAPLİK
+create trigger hatalikayitlarr on kitap
+after insert
+as 
+if
+(exists(select*from inserted where inserted.Kitaptür='Roman' and inserted.KitapSayfa<300))
+begin
+raiserror('Kitap Sayfası 500den Küçük Olamaz',15,1) 
+rollback transaction
+end
+
+insert into kitap(Kitaptür,KitapAd,KitapSayfa) values('Roman','MOMO',400)
+
+
+create trigger sili
+on Ogretmen
+ for delete
+as begin
+select  'islem olmadı' as 'silmek kolay mı'
+end
+############################################################################# 10.02.2022 ###########################################################################################3
+
+**INSTEAD OF
+
+use KİTAPLİK
+create trigger degistir
+on kitap2
+instead of update
+as
+begin
+select 'KAYIT GÜNCELLENEBİLİR'
+end
+update kitap2 set kitapadi='Ezilenler' where kitapadi='Karamazov Kardeşler' --mesajı gösterdi
+select*from kitap2
+--
+
+use KİTAPLİK
+create trigger instdof
+on kitap2
+instead of delete
+as 
+begin
+update kitap2 set kitapadi='Ezilenler' where kitapadi='Karamazov Kardeşler'
+end
+delete from kitap2 where kitapadi='karamazov kardeşler'
+select*from kitap2
+----------------------------
+
+**TRY CATCH VE @@ERROR
+
+begin try
+select 1/0 --işlemi sunduk
+end try
+begin catch
+select
+ERROR_NUMBER() as Hata_no,
+ERROR_SEVERITY() as Oncelik,
+ERROR_LINE() as Hata_satiri,
+ERROR_MESSAGE() as Hata_mesaji --0ın bölünemediğini söyledi
+end catch
+
+--
+
+begin try
+drop table gazetee --olmayan bir table adı girdik
+end try
+begin catch
+print 'HATA OLUŞTU'
+print ERROR_NUMBER() 
+print ERROR_MESSAGE() --böyle bir table olmadığını sç-öyledi
+end catch
+
+--
+
+use okul
+delete from dene where ad='busra'
+print @@error
+
+select*from sys.messages where message_id=245 --mesaj kodu sorgulama
+
+------------------------------------------------------------------
+
+
+**TRY CATCH ORNEGI
+
+declare @adres_id int 
+begin try --ikinci try basladi
+begin transaction --beginin içinde önce trans. basladi --güvenli degisimi sagladi hata varsa tabloya ekleme yapmıyor
+
+begin try --aradaki try basladi
+begin transaction
+save transaction baslangic
+insert into adresler(mahalle,binano,sehir) values('Yeni Dünya Mah.','2/1','Istanbul')
+set @adres_id=SCOPE_IDENTITY() --açtığımız kolonun son atanma üretilme satırını gösterimi sağlıyor
+commit
+end try --aradaki try bitti
+begin catch
+rollback transaction baslangic --tekrar başa dön
+select 'Adres Girilirken Hata Oluştu:'+ERROR_MESSAGE()
+end catch --ara catch bitti
+
+insert into uyeler(uyeadi,uyesoyadi,cinsiyet,adresno)values ('Mertkan','İşkurt','Cinsiyet:Erkek',@adres_id) --ikinci try devam
+commit
+end try --ikinci try bitti
+begin catch --ikinci catch basladi
+select*from adresler a
+rollback --hatalı islem gördügünde islemi basa döndürür
+select 'Üye Girilirken Hata Oluştu:'+ERROR_MESSAGE()
+select*from adresler a
+end catch --ikinci catch bitti
+
+
+
+--------------------------------------------------------------------
+**vıew lar
+
+
+---view oluşturma
+create view orderlist
+as
+select orderID,customerID,orderDate,ShipAddress,ShipCity,ShipCountry from Orders --sadece bu bilgileri gösterdi viewda
+---view çağırma
+select*from orderlist --yazdir
+
+
+
+
+--alter view iki tablodaki verileri cagırma
+alter view orderlist
+as
+select
+c.customerID,c.Contactname,O.orderID,o.orderdate,o.shipaddress,o.shipcity,o.shipcountry --bu bilgileri istedik
+from orders as O -- o ile orders a seslendik
+join customers as c --c ile customera seslendik
+on c.customerID=o.customerID --iki tablodaki ayni customer idleri tek bi kere cagiriyoruz
+select*from orderlist --yazdir
+
+
+
+--view silme
+drop view orderlist
+select*from orderlist
+
+
+
+--sifreli view olusturma 
+create view orderlist
+with encryption --sifreledik --designda degisim yapılmıyor
+as
+select
+c.customerID,c.Contactname,O.orderID,o.orderdate,o.shipaddress,o.shipcity,o.shipcountry --bu bilgileri istedik
+from orders as O -- o ile orders a seslendik
+join customers as c --c ile customera seslendik
+on c.customerID=o.customerID --iki tablodaki ayni customer idleri tek bi kere cagiriyoruz
+select*from orderlist 
+
+
+-----------------------------------------------------------
+
+**viewlarda design a tıklayarak kodları aşağıda görebilirsin tabloların bağlantılarını gösteriyor
+mesela northwind orders view ı 
+SELECT dbo.Orders.OrderID, dbo.Orders.CustomerID, dbo.Orders.EmployeeID, dbo.Orders.OrderDate, dbo.Orders.RequiredDate, dbo.Orders.ShippedDate, dbo.Orders.ShipVia, dbo.Orders.Freight, dbo.Orders.ShipName, dbo.Orders.ShipAddress, 
+                  dbo.Orders.ShipCity, dbo.Orders.ShipRegion, dbo.Orders.ShipPostalCode, dbo.Orders.ShipCountry, dbo.Customers.CompanyName, dbo.Customers.Address, dbo.Customers.City, dbo.Customers.Region, dbo.Customers.PostalCode, 
+                  dbo.Customers.Country
+FROM     dbo.Customers INNER JOIN
+                  dbo.Orders ON dbo.Customers.CustomerID = dbo.Orders.CustomerID
+
+-----------------------------------------------------------
+
+** KULLANICININ YETKİLERİNİ GÖSTERME
+sp_srvrolepermission 'sysadmin'
+
+-----------------------------------------------------------
+
+
+use OKUL
+create function yashesabı(@tarih date)
+returns int
+as
+begin
+declare @yas int
+set @yas=datediff(year,@tarih,getdate())
+return @yas
+end
+select dbo.yashesabı('07.27.1998')
+
+-------------------------------------------------------------
+
+use okul
+create function kelimebirlesme(@kelime1 varchar(20),@kelime2 varchar(20))
+returns varchar(41)
+as
+begin
+return rtrim(@kelime1)+space(1)+rtrim(@kelime2) --sütunları tek sütunda birleştirme komutu
+end
+select dbo.kelimebirlesme(OgrAd,OgrSoyad) from Ogrenci
+drop function kelimebirlesme --fonksiyonu buradan silebiliriz
+
+
+
+
+
+############################################################################### 11.02.2022 #######################################################################################
+
+**SİSTEM HATA MESAJLARI
+use master
+select*from sys.messages
+
+
+--KULLANICI TANIMLI HATA EKLEME
+use master
+exec sp_addmessage
+@msgnum=60001,
+@severity=16,
+@msgtext='INVALID PROCESS',
+@lang='us_english' --ingilizce ekledik
+select*from sys.messages where message_id=60001 
+
+exec sp_addmessage
+@msgnum=60001,
+@severity=16,
+@msgtext='Geçersiz İşlem',
+@lang='Turkish' --türkçe ekledik
+select*from sys.messages where message_id=60001 
+-----
+exec sp_dropmessage
+@msgnum=60001
+
+--KULLANICI TANIMLI HATAYI SİLME
+exec sp_dropmessage
+@msgnum=60001,
+@lang='Turkish' --sadece türkçe olanı sildik
+
+
+
+---------------------------------------------------------------------------
+
+**PRIMARY KEY & FOREIGN KEY
+
+create database SIRKET
+use SIRKET
+create table DEPARTMAN(
+DeptID int primary key,--dept id giremedik --designda identity yes yaptık kendisi artması icin
+Ad varchar(50) not null,
+Adres varchar(200) not null,
+)
+create table PERSONEL(
+ID int primary key,
+SiraNo varchar(50) not null, --aday anahtar--
+Ad varchar(50) not null,
+KayitNo varchar(50) unique, --aday anahtar--
+Adres varchar(200) not null,
+DeptID int foreign key references DEPARTMAN(DeptID) --BİRLEŞTİRME KODU
+)
+-- İKİ TABLO BİRLESTİRME
+select PERSONEL.ID, PERSONEL.Ad,PERSONEL.SiraNo,PERSONEL.KayitNo,
+PERSONEL.Adres,DEPARTMAN.Ad from PERSONEL --PERSONEL TABLOSUNDAN BUNLAR GELSİN
+inner join
+DEPARTMAN
+on 
+PERSONEL.DeptID=DEPARTMAN.DeptID --DEPT IDLERI ESIT OLANLAR ESITLENSIN
+
+
+-----------------------
+
+
+CREATE DATABASE KUTUPHANE
+USE KUTUPHANE
+CREATE TABLE Yazar(
+Yazarno INT IDENTITY(1,1) NOT NULL PRIMARY KEY ,
+Yazarad varchar(50),
+DogumTarih date
+)
+
+CREATE TABLE Tur(
+TurNo int identity(1,1) not null primary key,
+TurAd varchar(50)
+)
+
+CREATE TABLE Kitap(
+KitapNo int identity(1,1) not null primary key,
+IsbNo varchar(50),
+KitapAdi varchar(100),
+YazarNo int foreign key references Yazar(YazarNo), --yazar tablosundan referans aldık
+TurNo int,
+SayfaSayisi int
+)
+--sonradan foreign key ekleme
+alter table kitap add constraint Fk_turno foreign key(turno) references tur(turno)
+
+--tablolarda eklemeleri yaptık
+select Kitap.KitapNo,Kitap.KitapAdi,Tur.TurAd,Kitap.SayfaSayisi,Kitap.IsbNo,Yazar.Yazarno,Yazar.Yazarad,Yazar.DogumTarih from Yazar
+inner join Kitap
+on Kitap.YazarNo=Yazar.Yazarno
+inner join Tur
+on Kitap.TurNo=Tur.TurNo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

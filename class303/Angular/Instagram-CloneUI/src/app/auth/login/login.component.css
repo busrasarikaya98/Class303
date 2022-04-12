@@ -1,0 +1,76 @@
+.slider {
+  background-image: url("/assets/images/background-phone.png");
+  background-repeat: no-repeat;
+  width: 465px;
+  height: 635px;
+  margin-bottom: 12px;
+  margin-right: 32px;
+  margin-top: 30px;
+  position: relative;
+}
+.images{
+    width: 250px;
+    height: 540px;
+    position: absolute;
+    top: 26px;
+    left: 156px;
+}
+.images>img{
+    opacity: 0;
+    animation: imageAnimation 3s infinite;
+}
+@keyframes imageAnimation{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.logo{
+  background-image: url('/assets/images/all-icons.png');
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  height: 51px;
+  width: 175px;
+  margin: 22px auto 12px;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color:  rgb(218, 218, 218) !important;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+.animation-bar{
+  display: inline;
+}
+
+@media only screen and (max-width: 1330px) {
+  .animation-bar{
+    display: none;
+  }
+  .loginbar{
+    width: 80% !important; 
+  }
+}

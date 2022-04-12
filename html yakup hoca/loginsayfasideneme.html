@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-image: url('radient.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            
+        }
+        .content {
+            width: 30%;
+            height: 280px;
+            background-color: rgba(221, 221, 221, 0.3);
+            position: absolute;
+            border-radius: 30px;
+            left: 50%;
+            top: 60%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .main {
+            margin: 55px 50px 10px
+           
+        }
+        .text{
+            position: absolute;
+            left:260px;
+            top: -10px;
+            transform: translateX(-100%) translateY(-100%); 
+            color: white;
+            font-size: 30px;
+        }
+        .icon-box { 
+            background-color: rgba(221, 221, 221, 0);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 65%;
+            transform: translateY(-120%) translateX(-120%);
+            text-align: center;
+            color: white;
+            font-weight: 100;
+        }
+        .icon-box>i {
+            color: white;
+            font-size: 100px;
+            margin: 20px 30px;
+        }
+        input {
+            height: 40px;
+            border-color: rgb(252, 252, 252);
+            width: calc(100% - 22px);
+            background-color: rgba(218, 205, 205, 0.1);
+            color: white;
+            padding-left: 1px;
+            border-radius: 10px;
+            font-size: 17px;
+            
+        }
+        .form-group {
+            position: relative;
+        }
+        button {
+            color: white;
+            width: 75%;
+            height: 30px;
+            border: none;
+            position: absolute;
+            top: 185px;
+            background-color: rgb(182, 93, 218);
+            left: 10%;
+            border-radius: 5%;
+            text-transform: uppercase;
+            font-weight: 200;           
+        }
+
+    </style>
+</head>
+<body>
+ <div class="content">
+    <div class="main">
+        <div class="text"<h1>SIGN IN</h1>
+        </div>
+        <!-- text ekledim -->
+        <div class="icon-box">
+            <i class="fas fa-users"></i>            
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Username">           
+        </div>
+        <div class="form-group" style="margin-top:15px">
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="btn-login">Login</button>
+    </div>   
+</div>   
+</body>
+</html>

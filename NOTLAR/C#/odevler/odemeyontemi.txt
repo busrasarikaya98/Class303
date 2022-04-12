@@ -1,0 +1,95 @@
+namespace KREDIKARTI
+{
+    public class odemeyontemi
+    {
+        private string kredikartino;
+        public string KERDIKARTINO
+        {
+            get { return kredikartino;}
+            set {
+                bool control = false;
+                if (value.Length == 16)
+                {
+                    for (int i = 0; i < value.Length; i++)
+                    {
+                        bool sayi = char.IsNumber(value[i]);
+                        if (sayi)
+                        {
+                           
+                        }
+                        else
+                        {
+                            control = true;
+                            break;
+                        }
+                    }
+                    if (control)
+                    {
+                        Console.WriteLine("GEÇERSİZ KARAKTER BULUNDU!");
+
+                    }
+                    else
+                    {
+                        kredikartino = value;
+                    }
+                }
+                else if (value.Length != 16)
+                {
+
+                    Console.WriteLine("KREDİ KARTI NO 16 HANELİ OLMALIDIR!");
+                    
+                }
+            }
+        }
+
+        private string sonkullanim;
+        public string SONKULLANIM
+        {
+            get { return sonkullanim;}
+            set { sonkullanim = value;}
+        }
+        private string cvv;
+        public string CVV
+        {
+            get { return cvv;}
+            set { cvv = value;}
+        }
+        
+
+    }
+}
+
+
+
+
+
+
+namespace KREDIKARTI
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("LÜTFEN ÖDEME YÖNTEMİNİZİ SEÇİNİZ: " + "\n" + "1-ONLINE ODEME   2-KAPIDA ODEME   3-HAVALE/EFT");
+            int secim = Convert.ToInt32(Console.ReadLine());
+            if (secim == 1) 
+            {
+                odemeyontemi kredikartiyontemi = new odemeyontemi();
+                kredikartiyontemi.KERDIKARTINO = "1234567891234577";
+                kredikartiyontemi.SONKULLANIM = "0127";
+                kredikartiyontemi.CVV = "789";
+                Console.WriteLine("KREDİ KARTI NO: " + kredikartiyontemi.KERDIKARTINO + "\n" + "SON KULLANMA TARİHİ: " + kredikartiyontemi.SONKULLANIM + "\n" + "CVV: " + kredikartiyontemi.CVV);
+
+            }
+            if (secim == 2)
+            {
+                Console.WriteLine("SİPARİŞİNİZ OLUŞTURULDU! TEŞEKKÜRLER!");
+            }
+            if (secim == 3)
+            {
+                Console.WriteLine("ÖDEME BİLGİLERİMİZ BİR SONRAKİ ADIMDA GÖSTERİLECEKTİR!");
+            }
+            Console.ReadLine();
+        }
+    }
+}

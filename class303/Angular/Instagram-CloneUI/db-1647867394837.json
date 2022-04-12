@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Macbook",
+      "brand": "Apple",
+      "price": 1200,
+      "currency": "USD"
+    },
+    {
+      "id": 1,
+      "name": "IdeaPad",
+      "brand": "Lenovo",
+      "price": 800,
+      "currency": "USD"
+    }
+  ]
+}
