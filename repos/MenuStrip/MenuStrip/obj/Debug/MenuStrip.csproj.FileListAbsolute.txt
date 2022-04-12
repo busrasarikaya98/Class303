@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\bin\Debug\MenuStrip.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\bin\Debug\MenuStrip.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\bin\Debug\MenuStrip.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MenuStrip\MenuStrip\obj\Debug\MenuStrip.pdb

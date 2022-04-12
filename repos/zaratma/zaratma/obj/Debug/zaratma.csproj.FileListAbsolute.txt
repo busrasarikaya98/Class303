@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\bin\Debug\zaratma.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\bin\Debug\zaratma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\bin\Debug\zaratma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\zaratma\zaratma\obj\Debug\zaratma.pdb

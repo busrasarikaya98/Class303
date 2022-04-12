@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\bin\Debug\ButonYakala.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\bin\Debug\ButonYakala.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\bin\Debug\ButonYakala.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ButonYakala\ButonYakala\obj\Debug\ButonYakala.pdb

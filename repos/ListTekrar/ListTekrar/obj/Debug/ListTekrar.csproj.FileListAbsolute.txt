@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\bin\Debug\ListTekrar.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\bin\Debug\ListTekrar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\bin\Debug\ListTekrar.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\obj\Debug\ListTekrar.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\obj\Debug\ListTekrar.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\obj\Debug\ListTekrar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\ListTekrar\obj\Debug\ListTekrar.pdb

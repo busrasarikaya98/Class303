@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\bin\Debug\kronometrealarm.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\bin\Debug\kronometrealarm.exe
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\bin\Debug\kronometrealarm.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.exe
+C:\Users\303BUSRA_AKSAM\source\repos\kronometrealarm\kronometrealarm\obj\Debug\kronometrealarm.pdb

@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\bin\Debug\CALISANUYGULAMA.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\bin\Debug\CALISANUYGULAMA.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\bin\Debug\CALISANUYGULAMA.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\obj\Debug\CALISANUYGULAMA.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\obj\Debug\CALISANUYGULAMA.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\obj\Debug\CALISANUYGULAMA.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\CALISANUYGULAMA\obj\Debug\CALISANUYGULAMA.pdb

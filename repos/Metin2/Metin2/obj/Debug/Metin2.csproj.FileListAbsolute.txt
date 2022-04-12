@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\bin\Debug\Metin2.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\bin\Debug\Metin2.exe
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\bin\Debug\Metin2.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.exe
+C:\Users\303BUSRA_AKSAM\source\repos\Metin2\Metin2\obj\Debug\Metin2.pdb

@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\bin\Debug\netcoreapp3.1\RastgeleSayıOlusturma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\bin\Debug\netcoreapp3.1\RastgeleSayıOlusturma.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\bin\Debug\netcoreapp3.1\RastgeleSayıOlusturma.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\bin\Debug\netcoreapp3.1\RastgeleSayıOlusturma.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\bin\Debug\netcoreapp3.1\RastgeleSayıOlusturma.dll
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\bin\Debug\netcoreapp3.1\RastgeleSayıOlusturma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.dll
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\RastgeleSayıOlusturma\RastgeleSayıOlusturma\obj\Debug\netcoreapp3.1\RastgeleSayıOlusturma.genruntimeconfig.cache

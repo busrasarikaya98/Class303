@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metin2", "Metin2\Metin2.csproj", "{0ECC0E08-2AAF-4883-A891-A8EE9C3A024F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ECC0E08-2AAF-4883-A891-A8EE9C3A024F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECC0E08-2AAF-4883-A891-A8EE9C3A024F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECC0E08-2AAF-4883-A891-A8EE9C3A024F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECC0E08-2AAF-4883-A891-A8EE9C3A024F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71FA3EAB-0930-40A0-800D-41498A4A0A7E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.deps.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\ref\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfo.cs
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\ref\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.deps.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\ref\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfoInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfo.cs
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.CoreCompileInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\ref\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.deps.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\ref\Integrations.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfoInputs.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfo.cs
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.CoreCompileInputs.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\ref\Integrations.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\ref\Integrations.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\ref\Integrations.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.pdb

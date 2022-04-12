@@ -1,0 +1,6 @@
+C:\Users\303BUSRA_AKSAM\source\repos\AbstrachtUygulama\AbstrachtUygulama\obj\Debug\AbstractUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AbstrachtUygulama\AbstrachtUygulama\obj\Debug\AbstrachtUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AbstrachtUygulama\AbstrachtUygulama\obj\Debug\AbstrachtUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\AbstrachtUygulama\AbstrachtUygulama\bin\Debug\AbstrachtUygulama.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\AbstrachtUygulama\AbstrachtUygulama\bin\Debug\AbstrachtUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AbstrachtUygulama\AbstrachtUygulama\bin\Debug\AbstrachtUygulama.pdb

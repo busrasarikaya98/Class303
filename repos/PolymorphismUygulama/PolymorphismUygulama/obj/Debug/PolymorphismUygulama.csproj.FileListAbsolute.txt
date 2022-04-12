@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\bin\Debug\PolymorphismUygulama.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\bin\Debug\PolymorphismUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\bin\Debug\PolymorphismUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\obj\Debug\PolymorphismUygulama.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\obj\Debug\PolymorphismUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\obj\Debug\PolymorphismUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\PolymorphismUygulama\PolymorphismUygulama\obj\Debug\PolymorphismUygulama.pdb

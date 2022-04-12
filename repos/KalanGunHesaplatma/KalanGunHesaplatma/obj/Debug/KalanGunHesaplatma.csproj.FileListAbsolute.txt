@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\bin\Debug\KalanGunHesaplatma.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\bin\Debug\KalanGunHesaplatma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\bin\Debug\KalanGunHesaplatma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\KalanGunHesaplatma\KalanGunHesaplatma\obj\Debug\KalanGunHesaplatma.pdb

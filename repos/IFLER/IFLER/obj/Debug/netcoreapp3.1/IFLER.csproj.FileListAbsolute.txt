@@ -1,0 +1,14 @@
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\bin\Debug\netcoreapp3.1\IFLER.exe
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\bin\Debug\netcoreapp3.1\IFLER.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\bin\Debug\netcoreapp3.1\IFLER.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\bin\Debug\netcoreapp3.1\IFLER.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\bin\Debug\netcoreapp3.1\IFLER.dll
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\bin\Debug\netcoreapp3.1\IFLER.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.dll
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\IFLER\IFLER\obj\Debug\netcoreapp3.1\IFLER.genruntimeconfig.cache

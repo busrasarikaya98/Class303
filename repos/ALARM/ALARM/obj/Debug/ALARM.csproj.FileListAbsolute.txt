@@ -1,0 +1,15 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\bin\Debug\ALARM.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\bin\Debug\ALARM.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\bin\Debug\ALARM.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\bin\Debug\Interop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\Interop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\ALARM\ALARM\obj\Debug\ALARM.csproj.ResolveComReference.cache

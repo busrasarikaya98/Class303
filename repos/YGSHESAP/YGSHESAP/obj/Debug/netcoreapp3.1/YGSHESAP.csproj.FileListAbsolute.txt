@@ -1,0 +1,17 @@
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\bin\Debug\netcoreapp3.1\YGSHESAP.exe
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\bin\Debug\netcoreapp3.1\YGSHESAP.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\bin\Debug\netcoreapp3.1\YGSHESAP.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\bin\Debug\netcoreapp3.1\YGSHESAP.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\bin\Debug\netcoreapp3.1\YGSHESAP.dll
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\bin\Debug\netcoreapp3.1\YGSHESAP.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.dll
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\YGSHESAP\YGSHESAP\obj\Debug\netcoreapp3.1\YGSHESAP.genruntimeconfig.cache

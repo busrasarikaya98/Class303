@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\bin\Debug\DOWHILEFORM.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\bin\Debug\DOWHILEFORM.exe
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\bin\Debug\DOWHILEFORM.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.exe
+C:\Users\303BUSRA_AKSAM\source\repos\DOWHILEFORM\DOWHILEFORM\obj\Debug\DOWHILEFORM.pdb

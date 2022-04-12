@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpimTablosu", "CarpimTablosu\CarpimTablosu.csproj", "{8CE15F34-FD93-41AC-A96C-E1E7F78E7EDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CE15F34-FD93-41AC-A96C-E1E7F78E7EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE15F34-FD93-41AC-A96C-E1E7F78E7EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE15F34-FD93-41AC-A96C-E1E7F78E7EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE15F34-FD93-41AC-A96C-E1E7F78E7EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23A023EC-9246-4DBD-B0BA-87C8FE770D62}
+	EndGlobalSection
+EndGlobal

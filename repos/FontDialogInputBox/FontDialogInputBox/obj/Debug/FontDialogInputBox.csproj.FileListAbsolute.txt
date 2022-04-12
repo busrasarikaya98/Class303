@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\bin\Debug\FontDialogInputBox.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\bin\Debug\FontDialogInputBox.exe
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\bin\Debug\FontDialogInputBox.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.exe
+C:\Users\303BUSRA_AKSAM\source\repos\FontDialogInputBox\FontDialogInputBox\obj\Debug\FontDialogInputBox.pdb

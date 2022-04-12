@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\bin\Debug\netcoreapp3.1\sehirlerplakalar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\bin\Debug\netcoreapp3.1\sehirlerplakalar.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\bin\Debug\netcoreapp3.1\sehirlerplakalar.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\bin\Debug\netcoreapp3.1\sehirlerplakalar.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\bin\Debug\netcoreapp3.1\sehirlerplakalar.dll
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\bin\Debug\netcoreapp3.1\sehirlerplakalar.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.dll
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\sehirlerplakalar\sehirlerplakalar\obj\Debug\netcoreapp3.1\sehirlerplakalar.genruntimeconfig.cache

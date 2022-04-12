@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\bin\Debug\netcoreapp3.1\SayıListelemeUyg.exe
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\bin\Debug\netcoreapp3.1\SayıListelemeUyg.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\bin\Debug\netcoreapp3.1\SayıListelemeUyg.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\bin\Debug\netcoreapp3.1\SayıListelemeUyg.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\bin\Debug\netcoreapp3.1\SayıListelemeUyg.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\bin\Debug\netcoreapp3.1\SayıListelemeUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SayıListelemeUyg\SayıListelemeUyg\obj\Debug\netcoreapp3.1\SayıListelemeUyg.genruntimeconfig.cache

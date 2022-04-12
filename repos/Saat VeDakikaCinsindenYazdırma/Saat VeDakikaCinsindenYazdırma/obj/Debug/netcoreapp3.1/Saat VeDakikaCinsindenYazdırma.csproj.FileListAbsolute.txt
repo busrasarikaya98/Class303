@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\bin\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\bin\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\bin\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\bin\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\bin\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.dll
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\bin\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat_VeDakikaCinsindenYazdırma.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.dll
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\Saat VeDakikaCinsindenYazdırma\Saat VeDakikaCinsindenYazdırma\obj\Debug\netcoreapp3.1\Saat VeDakikaCinsindenYazdırma.genruntimeconfig.cache

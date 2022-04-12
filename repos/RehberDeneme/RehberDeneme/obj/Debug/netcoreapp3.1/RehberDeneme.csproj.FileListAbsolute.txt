@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\bin\Debug\netcoreapp3.1\RehberDeneme.exe
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\bin\Debug\netcoreapp3.1\RehberDeneme.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\bin\Debug\netcoreapp3.1\RehberDeneme.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\bin\Debug\netcoreapp3.1\RehberDeneme.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\bin\Debug\netcoreapp3.1\RehberDeneme.dll
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\bin\Debug\netcoreapp3.1\RehberDeneme.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.dll
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\RehberDeneme\RehberDeneme\obj\Debug\netcoreapp3.1\RehberDeneme.genruntimeconfig.cache

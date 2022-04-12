@@ -1,0 +1,14 @@
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\bin\Debug\netcoreapp3.1\Kbt303.exe
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\bin\Debug\netcoreapp3.1\Kbt303.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\bin\Debug\netcoreapp3.1\Kbt303.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\bin\Debug\netcoreapp3.1\Kbt303.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\bin\Debug\netcoreapp3.1\Kbt303.dll
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\bin\Debug\netcoreapp3.1\Kbt303.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.dll
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\Kbt303\Kbt303\obj\Debug\netcoreapp3.1\Kbt303.genruntimeconfig.cache

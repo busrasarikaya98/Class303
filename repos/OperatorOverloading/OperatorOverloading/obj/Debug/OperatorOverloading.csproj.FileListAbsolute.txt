@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\bin\Debug\OperatorOverloading.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\bin\Debug\OperatorOverloading.exe
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\bin\Debug\OperatorOverloading.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\obj\Debug\OperatorOverloading.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\obj\Debug\OperatorOverloading.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\obj\Debug\OperatorOverloading.exe
+C:\Users\303BUSRA_AKSAM\source\repos\OperatorOverloading\OperatorOverloading\obj\Debug\OperatorOverloading.pdb

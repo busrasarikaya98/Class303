@@ -1,0 +1,11 @@
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\bin\Debug\16022022_TelefonRehberi.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\bin\Debug\16022022_TelefonRehberi.exe
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\bin\Debug\16022022_TelefonRehberi.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\16022022_TelefonRehberi.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\_16022022_TelefonRehberi.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\_16022022_TelefonRehberi.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\16022022_TelefonRehberi.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\16022022_TelefonRehberi.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\16022022_TelefonRehberi.exe
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\16022022_TelefonRehberi.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\16022022_TelefonRehberi\16022022_TelefonRehberi\obj\Debug\_16022022_TelefonRehberi.RehberForm.resources

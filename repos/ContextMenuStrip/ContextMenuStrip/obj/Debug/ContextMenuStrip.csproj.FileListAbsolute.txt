@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\bin\Debug\ContextMenuStrip.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ContextMenuStrip\ContextMenuStrip\obj\Debug\ContextMenuStrip.pdb

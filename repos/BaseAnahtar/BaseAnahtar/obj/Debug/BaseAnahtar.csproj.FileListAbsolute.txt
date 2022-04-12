@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\bin\Debug\BaseAnahtar.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\bin\Debug\BaseAnahtar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\bin\Debug\BaseAnahtar.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\obj\Debug\BaseAnahtar.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\obj\Debug\BaseAnahtar.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\obj\Debug\BaseAnahtar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BaseAnahtar\BaseAnahtar\obj\Debug\BaseAnahtar.pdb

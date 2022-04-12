@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\bin\Debug\netcoreapp3.1\NotHesaplama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\bin\Debug\netcoreapp3.1\NotHesaplama.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\bin\Debug\netcoreapp3.1\NotHesaplama.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\bin\Debug\netcoreapp3.1\NotHesaplama.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\bin\Debug\netcoreapp3.1\NotHesaplama.dll
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\bin\Debug\netcoreapp3.1\NotHesaplama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.dll
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\NotHesaplama\NotHesaplama\obj\Debug\netcoreapp3.1\NotHesaplama.genruntimeconfig.cache

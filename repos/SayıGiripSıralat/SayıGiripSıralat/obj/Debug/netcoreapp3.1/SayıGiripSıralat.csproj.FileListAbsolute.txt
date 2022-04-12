@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\bin\Debug\netcoreapp3.1\SayıGiripSıralat.exe
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\bin\Debug\netcoreapp3.1\SayıGiripSıralat.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\bin\Debug\netcoreapp3.1\SayıGiripSıralat.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\bin\Debug\netcoreapp3.1\SayıGiripSıralat.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\bin\Debug\netcoreapp3.1\SayıGiripSıralat.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\bin\Debug\netcoreapp3.1\SayıGiripSıralat.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SayıGiripSıralat\SayıGiripSıralat\obj\Debug\netcoreapp3.1\SayıGiripSıralat.genruntimeconfig.cache

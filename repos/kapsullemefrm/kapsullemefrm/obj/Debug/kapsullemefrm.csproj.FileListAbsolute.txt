@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\bin\Debug\kapsullemefrm.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\bin\Debug\kapsullemefrm.exe
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\bin\Debug\kapsullemefrm.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.exe
+C:\Users\303BUSRA_AKSAM\source\repos\kapsullemefrm\kapsullemefrm\obj\Debug\kapsullemefrm.pdb

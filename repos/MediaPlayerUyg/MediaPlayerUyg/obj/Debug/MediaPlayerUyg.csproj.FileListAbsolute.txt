@@ -1,0 +1,15 @@
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\bin\Debug\MediaPlayerUyg.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\bin\Debug\MediaPlayerUyg.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\bin\Debug\MediaPlayerUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\bin\Debug\Interop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\Interop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.csproj.ResolveComReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MediaPlayerUyg\MediaPlayerUyg\obj\Debug\MediaPlayerUyg.pdb

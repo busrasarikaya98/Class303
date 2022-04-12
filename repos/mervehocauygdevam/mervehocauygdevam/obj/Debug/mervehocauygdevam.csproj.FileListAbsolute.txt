@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\bin\Debug\mervehocauygdevam.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\bin\Debug\mervehocauygdevam.exe
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\bin\Debug\mervehocauygdevam.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.exe
+C:\Users\303BUSRA_AKSAM\source\repos\mervehocauygdevam\mervehocauygdevam\obj\Debug\mervehocauygdevam.pdb

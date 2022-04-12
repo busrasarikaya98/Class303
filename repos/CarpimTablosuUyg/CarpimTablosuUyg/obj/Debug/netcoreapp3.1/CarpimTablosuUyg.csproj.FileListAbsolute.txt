@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\bin\Debug\netcoreapp3.1\CarpimTablosuUyg.exe
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\bin\Debug\netcoreapp3.1\CarpimTablosuUyg.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\bin\Debug\netcoreapp3.1\CarpimTablosuUyg.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\bin\Debug\netcoreapp3.1\CarpimTablosuUyg.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\bin\Debug\netcoreapp3.1\CarpimTablosuUyg.dll
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\bin\Debug\netcoreapp3.1\CarpimTablosuUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.dll
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\CarpimTablosuUyg\CarpimTablosuUyg\obj\Debug\netcoreapp3.1\CarpimTablosuUyg.genruntimeconfig.cache

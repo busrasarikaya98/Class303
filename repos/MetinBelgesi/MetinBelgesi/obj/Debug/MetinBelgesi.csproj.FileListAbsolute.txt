@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\bin\Debug\MetinBelgesi.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\bin\Debug\MetinBelgesi.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\bin\Debug\MetinBelgesi.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MetinBelgesi\MetinBelgesi\obj\Debug\MetinBelgesi.pdb

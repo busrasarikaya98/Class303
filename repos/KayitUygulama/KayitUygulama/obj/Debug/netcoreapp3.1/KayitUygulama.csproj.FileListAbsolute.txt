@@ -1,0 +1,15 @@
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\bin\Debug\netcoreapp3.1\KayitUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\bin\Debug\netcoreapp3.1\KayitUygulama.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\bin\Debug\netcoreapp3.1\KayitUygulama.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\bin\Debug\netcoreapp3.1\KayitUygulama.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\bin\Debug\netcoreapp3.1\KayitUygulama.dll
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\bin\Debug\netcoreapp3.1\KayitUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.dll
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\KayitUygulama\KayitUygulama\obj\Debug\netcoreapp3.1\KayitUygulama.genruntimeconfig.cache

@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\bin\Debug\BasketbolSuperLig.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\bin\Debug\BasketbolSuperLig.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\bin\Debug\BasketbolSuperLig.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\obj\Debug\BasketbolSuperLig.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\obj\Debug\BasketbolSuperLig.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\obj\Debug\BasketbolSuperLig.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BasketbolSuperLig\BasketbolSuperLig\obj\Debug\BasketbolSuperLig.pdb

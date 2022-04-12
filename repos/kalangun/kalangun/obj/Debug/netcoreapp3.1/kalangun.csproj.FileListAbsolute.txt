@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\bin\Debug\netcoreapp3.1\kalangun.exe
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\bin\Debug\netcoreapp3.1\kalangun.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\bin\Debug\netcoreapp3.1\kalangun.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\bin\Debug\netcoreapp3.1\kalangun.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\bin\Debug\netcoreapp3.1\kalangun.dll
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\bin\Debug\netcoreapp3.1\kalangun.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.dll
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\kalangun\kalangun\obj\Debug\netcoreapp3.1\kalangun.genruntimeconfig.cache

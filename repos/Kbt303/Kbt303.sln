@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kbt303", "Kbt303\Kbt303.csproj", "{AAB738FC-1990-4DD2-A359-07BDF46F6E54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAB738FC-1990-4DD2-A359-07BDF46F6E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB738FC-1990-4DD2-A359-07BDF46F6E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB738FC-1990-4DD2-A359-07BDF46F6E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB738FC-1990-4DD2-A359-07BDF46F6E54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C04AB396-3355-494E-86C3-C981F17A18B1}
+	EndGlobalSection
+EndGlobal

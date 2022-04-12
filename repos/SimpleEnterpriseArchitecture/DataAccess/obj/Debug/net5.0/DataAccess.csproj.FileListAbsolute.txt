@@ -1,0 +1,74 @@
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Core.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entities.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Core.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entities.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Entities.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Core.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Entities.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Core.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Entities.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Integrations.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Core.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Entities.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\bin\Debug\net5.0\Integrations.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.pdb

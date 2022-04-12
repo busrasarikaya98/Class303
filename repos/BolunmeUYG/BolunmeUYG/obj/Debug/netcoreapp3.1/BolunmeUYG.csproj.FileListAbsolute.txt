@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\bin\Debug\netcoreapp3.1\BolunmeUYG.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\bin\Debug\netcoreapp3.1\BolunmeUYG.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\bin\Debug\netcoreapp3.1\BolunmeUYG.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\bin\Debug\netcoreapp3.1\BolunmeUYG.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\bin\Debug\netcoreapp3.1\BolunmeUYG.dll
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\bin\Debug\netcoreapp3.1\BolunmeUYG.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.dll
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\BolunmeUYG\BolunmeUYG\obj\Debug\netcoreapp3.1\BolunmeUYG.genruntimeconfig.cache

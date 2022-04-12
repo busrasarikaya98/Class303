@@ -1,0 +1,11 @@
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\bin\Debug\NumerikUpDown.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\bin\Debug\NumerikUpDown.exe
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\bin\Debug\NumerikUpDown.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.exe
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\NumerikUpDown\NumerikUpDown\obj\Debug\NumerikUpDown.Form2.resources

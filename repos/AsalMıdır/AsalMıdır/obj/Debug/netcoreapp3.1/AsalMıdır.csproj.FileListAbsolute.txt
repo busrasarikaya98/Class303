@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\bin\Debug\netcoreapp3.1\AsalMıdır.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\bin\Debug\netcoreapp3.1\AsalMıdır.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\bin\Debug\netcoreapp3.1\AsalMıdır.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\bin\Debug\netcoreapp3.1\AsalMıdır.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\bin\Debug\netcoreapp3.1\AsalMıdır.dll
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\bin\Debug\netcoreapp3.1\AsalMıdır.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.dll
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\AsalMıdır\AsalMıdır\obj\Debug\netcoreapp3.1\AsalMıdır.genruntimeconfig.cache

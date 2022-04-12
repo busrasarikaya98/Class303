@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\bin\Debug\REHBER.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\bin\Debug\REHBER.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\bin\Debug\REHBER.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\obj\Debug\REHBER.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\obj\Debug\REHBER.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\obj\Debug\REHBER.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ListTekrar\REHBER\obj\Debug\REHBER.pdb

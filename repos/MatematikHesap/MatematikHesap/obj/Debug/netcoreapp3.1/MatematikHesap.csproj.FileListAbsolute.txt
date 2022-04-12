@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\bin\Debug\netcoreapp3.1\MatematikHesap.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\bin\Debug\netcoreapp3.1\MatematikHesap.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\bin\Debug\netcoreapp3.1\MatematikHesap.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\bin\Debug\netcoreapp3.1\MatematikHesap.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\bin\Debug\netcoreapp3.1\MatematikHesap.dll
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\bin\Debug\netcoreapp3.1\MatematikHesap.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.dll
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MatematikHesap\MatematikHesap\obj\Debug\netcoreapp3.1\MatematikHesap.genruntimeconfig.cache

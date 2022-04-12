@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\bin\Debug\polimorphism.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\bin\Debug\polimorphism.exe
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\bin\Debug\polimorphism.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.exe
+C:\Users\303BUSRA_AKSAM\source\repos\polimorphism\polimorphism\obj\Debug\polimorphism.pdb

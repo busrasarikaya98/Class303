@@ -1,0 +1,6 @@
+C:\Users\303BUSRA_AKSAM\source\repos\EnumUygulama1\EnumUygulama2\bin\Debug\EnumUygulama2.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\EnumUygulama1\EnumUygulama2\bin\Debug\EnumUygulama2.exe
+C:\Users\303BUSRA_AKSAM\source\repos\EnumUygulama1\EnumUygulama2\bin\Debug\EnumUygulama2.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\EnumUygulama1\EnumUygulama2\obj\Debug\EnumUygulama2.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\EnumUygulama1\EnumUygulama2\obj\Debug\EnumUygulama2.exe
+C:\Users\303BUSRA_AKSAM\source\repos\EnumUygulama1\EnumUygulama2\obj\Debug\EnumUygulama2.pdb

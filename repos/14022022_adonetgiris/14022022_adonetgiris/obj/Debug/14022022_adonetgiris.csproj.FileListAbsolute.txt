@@ -1,0 +1,13 @@
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\bin\Debug\14022022_adonetgiris.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\bin\Debug\14022022_adonetgiris.exe
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\bin\Debug\14022022_adonetgiris.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\14022022_adonetgiris.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\_14022022_adonetgiris.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\_14022022_adonetgiris.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\14022022_adonetgiris.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\14022022_adonetgiris.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\14022022_adonetgiris.exe
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\14022022_adonetgiris.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\_14022022_adonetgiris.Urunler.resources
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\_14022022_adonetgiris.kategoriler.resources
+C:\Users\303BUSRA_AKSAM\source\repos\14022022_adonetgiris\14022022_adonetgiris\obj\Debug\_14022022_adonetgiris.resimekleme.resources

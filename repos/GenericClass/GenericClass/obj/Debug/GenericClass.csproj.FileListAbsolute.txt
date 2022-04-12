@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\bin\Debug\GenericClass.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\bin\Debug\GenericClass.exe
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\bin\Debug\GenericClass.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\obj\Debug\GenericClass.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\obj\Debug\GenericClass.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\obj\Debug\GenericClass.exe
+C:\Users\303BUSRA_AKSAM\source\repos\GenericClass\GenericClass\obj\Debug\GenericClass.pdb

@@ -1,0 +1,72 @@
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.runtimeconfig.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.CopyComplete
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.runtimeconfig.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.CopyComplete
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.runtimeconfig.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Integrations.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Integrations.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.CopyComplete
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\303MERTKAN_AKSAM\Desktop\Net-Core-main\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.CopyComplete
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache

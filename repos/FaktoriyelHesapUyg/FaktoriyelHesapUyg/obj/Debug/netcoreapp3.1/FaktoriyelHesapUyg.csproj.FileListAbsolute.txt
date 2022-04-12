@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\bin\Debug\netcoreapp3.1\FaktoriyelHesapUyg.exe
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\bin\Debug\netcoreapp3.1\FaktoriyelHesapUyg.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\bin\Debug\netcoreapp3.1\FaktoriyelHesapUyg.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\bin\Debug\netcoreapp3.1\FaktoriyelHesapUyg.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\bin\Debug\netcoreapp3.1\FaktoriyelHesapUyg.dll
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\bin\Debug\netcoreapp3.1\FaktoriyelHesapUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.dll
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\FaktoriyelHesapUyg\FaktoriyelHesapUyg\obj\Debug\netcoreapp3.1\FaktoriyelHesapUyg.genruntimeconfig.cache

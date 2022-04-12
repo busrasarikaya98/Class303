@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\bin\Debug\dinamiklabel.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\bin\Debug\dinamiklabel.exe
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\bin\Debug\dinamiklabel.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.exe
+C:\Users\303BUSRA_AKSAM\source\repos\dinamiklabel\dinamiklabel\obj\Debug\dinamiklabel.pdb

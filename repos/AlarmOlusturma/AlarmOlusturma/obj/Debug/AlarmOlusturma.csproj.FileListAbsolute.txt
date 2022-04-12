@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\bin\Debug\AlarmOlusturma.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\bin\Debug\AlarmOlusturma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\bin\Debug\AlarmOlusturma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.pdb

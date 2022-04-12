@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\bin\Debug\netcoreapp3.1\HesapUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\bin\Debug\netcoreapp3.1\HesapUygulama.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\bin\Debug\netcoreapp3.1\HesapUygulama.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\bin\Debug\netcoreapp3.1\HesapUygulama.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\bin\Debug\netcoreapp3.1\HesapUygulama.dll
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\bin\Debug\netcoreapp3.1\HesapUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.dll
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\HesapUygulama\HesapUygulama\obj\Debug\netcoreapp3.1\HesapUygulama.genruntimeconfig.cache

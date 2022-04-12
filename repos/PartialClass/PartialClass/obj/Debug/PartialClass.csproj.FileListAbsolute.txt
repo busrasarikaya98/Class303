@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\bin\Debug\PartialClass.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\bin\Debug\PartialClass.exe
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\bin\Debug\PartialClass.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\obj\Debug\PartialClass.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\obj\Debug\PartialClass.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\obj\Debug\PartialClass.exe
+C:\Users\303BUSRA_AKSAM\source\repos\PartialClass\PartialClass\obj\Debug\PartialClass.pdb

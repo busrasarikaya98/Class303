@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\bin\Debug\LezzetHamburger.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\bin\Debug\LezzetHamburger.exe
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\bin\Debug\LezzetHamburger.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.exe
+C:\Users\303BUSRA_AKSAM\source\repos\LezzetHamburger\LezzetHamburger\obj\Debug\LezzetHamburger.pdb

@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\bin\Debug\netcoreapp3.1\KelimeParcala.exe
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\bin\Debug\netcoreapp3.1\KelimeParcala.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\bin\Debug\netcoreapp3.1\KelimeParcala.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\bin\Debug\netcoreapp3.1\KelimeParcala.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\bin\Debug\netcoreapp3.1\KelimeParcala.dll
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\bin\Debug\netcoreapp3.1\KelimeParcala.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.dll
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\KelimeParcala\KelimeParcala\obj\Debug\netcoreapp3.1\KelimeParcala.genruntimeconfig.cache

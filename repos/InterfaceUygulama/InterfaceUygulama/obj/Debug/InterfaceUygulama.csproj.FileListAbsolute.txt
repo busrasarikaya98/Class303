@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\bin\Debug\InterfaceUygulama.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\bin\Debug\InterfaceUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\bin\Debug\InterfaceUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\obj\Debug\InterfaceUygulama.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\obj\Debug\InterfaceUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\obj\Debug\InterfaceUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\InterfaceUygulama\InterfaceUygulama\obj\Debug\InterfaceUygulama.pdb

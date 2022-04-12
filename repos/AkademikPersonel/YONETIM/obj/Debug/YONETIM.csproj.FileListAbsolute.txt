@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\bin\Debug\YONETIM.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\bin\Debug\YONETIM.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\bin\Debug\YONETIM.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\obj\Debug\YONETIM.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\obj\Debug\YONETIM.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\obj\Debug\YONETIM.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AkademikPersonel\YONETIM\obj\Debug\YONETIM.pdb

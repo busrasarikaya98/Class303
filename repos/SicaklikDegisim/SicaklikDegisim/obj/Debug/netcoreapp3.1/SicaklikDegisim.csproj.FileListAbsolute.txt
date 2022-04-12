@@ -1,0 +1,16 @@
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\bin\Debug\netcoreapp3.1\SicaklikDegisim.exe
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\bin\Debug\netcoreapp3.1\SicaklikDegisim.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\bin\Debug\netcoreapp3.1\SicaklikDegisim.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\bin\Debug\netcoreapp3.1\SicaklikDegisim.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\bin\Debug\netcoreapp3.1\SicaklikDegisim.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\bin\Debug\netcoreapp3.1\SicaklikDegisim.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.dll
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\SicaklikDegisim\SicaklikDegisim\obj\Debug\netcoreapp3.1\SicaklikDegisim.genruntimeconfig.cache

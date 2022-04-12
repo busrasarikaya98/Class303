@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\bin\Debug\GünleriSorgulatma.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\bin\Debug\GünleriSorgulatma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\bin\Debug\GünleriSorgulatma.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\GünleriSorgulatma\GünleriSorgulatma\obj\Debug\GünleriSorgulatma.pdb

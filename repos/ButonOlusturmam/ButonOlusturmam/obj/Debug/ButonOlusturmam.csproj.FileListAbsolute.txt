@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\bin\Debug\ButonOlusturmam.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\bin\Debug\ButonOlusturmam.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\bin\Debug\ButonOlusturmam.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ButonOlusturmam\ButonOlusturmam\obj\Debug\ButonOlusturmam.pdb

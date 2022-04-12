@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\bin\Debug\BackGroundWorker.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\bin\Debug\BackGroundWorker.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\bin\Debug\BackGroundWorker.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.exe
+C:\Users\303BUSRA_AKSAM\source\repos\BackGroundWorker\BackGroundWorker\obj\Debug\BackGroundWorker.pdb

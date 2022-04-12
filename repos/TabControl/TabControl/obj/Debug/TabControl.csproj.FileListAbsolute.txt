@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\bin\Debug\TabControl.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\bin\Debug\TabControl.exe
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\bin\Debug\TabControl.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.exe
+C:\Users\303BUSRA_AKSAM\source\repos\TabControl\TabControl\obj\Debug\TabControl.pdb

@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\bin\Debug\TrafikLambası.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\bin\Debug\TrafikLambası.exe
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\bin\Debug\TrafikLambası.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.exe
+C:\Users\303BUSRA_AKSAM\source\repos\TrafikLambası\TrafikLambası\obj\Debug\TrafikLambası.pdb

@@ -1,0 +1,11 @@
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\bin\Debug\Formlararasıgeçiş.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\bin\Debug\Formlararasıgeçiş.exe
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\bin\Debug\Formlararasıgeçiş.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.Form2.resources
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.exe
+C:\Users\303BUSRA_AKSAM\source\repos\Formlararasıgeçiş\Formlararasıgeçiş\obj\Debug\Formlararasıgeçiş.pdb

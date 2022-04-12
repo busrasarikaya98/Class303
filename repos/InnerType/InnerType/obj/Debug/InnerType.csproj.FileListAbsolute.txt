@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\bin\Debug\InnerType.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\bin\Debug\InnerType.exe
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\bin\Debug\InnerType.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\obj\Debug\InnerType.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\obj\Debug\InnerType.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\obj\Debug\InnerType.exe
+C:\Users\303BUSRA_AKSAM\source\repos\InnerType\InnerType\obj\Debug\InnerType.pdb

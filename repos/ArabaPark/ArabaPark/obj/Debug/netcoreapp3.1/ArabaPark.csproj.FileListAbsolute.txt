@@ -1,0 +1,13 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\bin\Debug\netcoreapp3.1\ArabaPark.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\bin\Debug\netcoreapp3.1\ArabaPark.deps.json
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\bin\Debug\netcoreapp3.1\ArabaPark.runtimeconfig.json
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\bin\Debug\netcoreapp3.1\ArabaPark.runtimeconfig.dev.json
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\bin\Debug\netcoreapp3.1\ArabaPark.dll
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\bin\Debug\netcoreapp3.1\ArabaPark.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.AssemblyInfoInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.AssemblyInfo.cs
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.dll
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ArabaPark\ArabaPark\obj\Debug\netcoreapp3.1\ArabaPark.genruntimeconfig.cache

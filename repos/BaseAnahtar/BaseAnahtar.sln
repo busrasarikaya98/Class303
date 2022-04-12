@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAnahtar", "BaseAnahtar\BaseAnahtar.csproj", "{27403387-7069-491E-8416-3283BAC8A9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAnahtar1", "BaseAnahtar1\BaseAnahtar1.csproj", "{67CA2117-D349-4BBF-999E-165A96C76EB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27403387-7069-491E-8416-3283BAC8A9B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27403387-7069-491E-8416-3283BAC8A9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27403387-7069-491E-8416-3283BAC8A9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27403387-7069-491E-8416-3283BAC8A9B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CA2117-D349-4BBF-999E-165A96C76EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CA2117-D349-4BBF-999E-165A96C76EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CA2117-D349-4BBF-999E-165A96C76EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CA2117-D349-4BBF-999E-165A96C76EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D11041F-DE50-4399-A16A-1F6BD1A77A80}
+	EndGlobalSection
+EndGlobal

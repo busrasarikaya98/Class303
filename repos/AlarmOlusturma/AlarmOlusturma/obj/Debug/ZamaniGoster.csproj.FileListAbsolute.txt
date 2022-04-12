@@ -1,0 +1,6 @@
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\ZamaniGoster.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\ZamaniGoster.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\ZamaniGoster.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AlarmOlusturma\AlarmOlusturma\obj\Debug\AlarmOlusturma.pdb

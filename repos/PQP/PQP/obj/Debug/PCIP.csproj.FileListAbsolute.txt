@@ -1,0 +1,10 @@
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\bin\Debug\PQP.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\bin\Debug\PQP.exe
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\bin\Debug\PQP.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PCIP.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PQP.Form1.resources
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PQP.Properties.Resources.resources
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PCIP.csproj.GenerateResource.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PCIP.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PQP.exe
+C:\Users\303BUSRA_AKSAM\source\repos\PQP\PQP\obj\Debug\PQP.pdb
