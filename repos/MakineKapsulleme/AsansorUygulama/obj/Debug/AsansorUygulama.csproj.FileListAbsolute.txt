@@ -1,0 +1,6 @@
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\AsansorUygulama\bin\Debug\AsansorUygulama.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\AsansorUygulama\bin\Debug\AsansorUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\AsansorUygulama\bin\Debug\AsansorUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\AsansorUygulama\obj\Debug\AsansorUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\AsansorUygulama\obj\Debug\AsansorUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\AsansorUygulama\obj\Debug\AsansorUygulama.pdb

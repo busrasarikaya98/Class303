@@ -1,0 +1,6 @@
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticDeneme\obj\Debug\StaticDeneme.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticDeneme\bin\Debug\StaticDeneme.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticDeneme\bin\Debug\StaticDeneme.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticDeneme\bin\Debug\StaticDeneme.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticDeneme\obj\Debug\StaticDeneme.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticDeneme\obj\Debug\StaticDeneme.pdb

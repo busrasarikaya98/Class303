@@ -1,0 +1,6 @@
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticUygulama\bin\Debug\StaticUygulama.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticUygulama\bin\Debug\StaticUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticUygulama\bin\Debug\StaticUygulama.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticUygulama\obj\Debug\StaticUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticUygulama\obj\Debug\StaticUygulama.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticClass\StaticUygulama\obj\Debug\StaticUygulama.pdb

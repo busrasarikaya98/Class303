@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\bin\Debug\StaticYapiciMethod.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\bin\Debug\StaticYapiciMethod.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\bin\Debug\StaticYapiciMethod.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\obj\Debug\StaticYapiciMethod.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\obj\Debug\StaticYapiciMethod.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\obj\Debug\StaticYapiciMethod.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticYapiciMethod\obj\Debug\StaticYapiciMethod.pdb

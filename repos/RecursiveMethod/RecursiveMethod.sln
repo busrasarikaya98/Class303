@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveUygulama", "RecursiveMethod\RecursiveUygulama.csproj", "{7E849681-D97A-4E87-AB8C-BED1D4C70A33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E849681-D97A-4E87-AB8C-BED1D4C70A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E849681-D97A-4E87-AB8C-BED1D4C70A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E849681-D97A-4E87-AB8C-BED1D4C70A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E849681-D97A-4E87-AB8C-BED1D4C70A33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {989BE217-3AFD-45A9-AE7B-95D5073B97CE}
+	EndGlobalSection
+EndGlobal

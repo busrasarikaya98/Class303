@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\bin\Debug\MakineKapsulleme.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\bin\Debug\MakineKapsulleme.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\bin\Debug\MakineKapsulleme.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\obj\Debug\MakineKapsulleme.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\obj\Debug\MakineKapsulleme.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\obj\Debug\MakineKapsulleme.exe
+C:\Users\303BUSRA_AKSAM\source\repos\MakineKapsulleme\MakineKapsulleme\obj\Debug\MakineKapsulleme.pdb

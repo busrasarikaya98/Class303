@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\bin\Debug\StaticDegisken.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\bin\Debug\StaticDegisken.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\bin\Debug\StaticDegisken.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\obj\Debug\StaticDegisken.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\obj\Debug\StaticDegisken.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\obj\Debug\StaticDegisken.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticDegisken\StaticDegisken\obj\Debug\StaticDegisken.pdb

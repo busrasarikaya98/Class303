@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\bin\Debug\RecursiveMethod.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\bin\Debug\RecursiveMethod.exe
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\bin\Debug\RecursiveMethod.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\obj\Debug\RecursiveUygulama.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\obj\Debug\RecursiveUygulama.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\obj\Debug\RecursiveMethod.exe
+C:\Users\303BUSRA_AKSAM\source\repos\RecursiveMethod\RecursiveMethod\obj\Debug\RecursiveMethod.pdb

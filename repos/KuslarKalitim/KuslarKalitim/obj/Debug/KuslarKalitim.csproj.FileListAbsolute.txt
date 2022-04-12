@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\bin\Debug\KuslarKalitim.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\bin\Debug\KuslarKalitim.exe
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\bin\Debug\KuslarKalitim.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\obj\Debug\KuslarKalitim.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\obj\Debug\KuslarKalitim.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\obj\Debug\KuslarKalitim.exe
+C:\Users\303BUSRA_AKSAM\source\repos\KuslarKalitim\KuslarKalitim\obj\Debug\KuslarKalitim.pdb

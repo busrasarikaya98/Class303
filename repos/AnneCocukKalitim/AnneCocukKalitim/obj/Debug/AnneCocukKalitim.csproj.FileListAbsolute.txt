@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\obj\Debug\AnneCocukKalitim.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\obj\Debug\AnneCocukKalitim.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\bin\Debug\AnneCocukKalitim.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\bin\Debug\AnneCocukKalitim.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\bin\Debug\AnneCocukKalitim.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\obj\Debug\AnneCocukKalitim.exe
+C:\Users\303BUSRA_AKSAM\source\repos\AnneCocukKalitim\AnneCocukKalitim\obj\Debug\AnneCocukKalitim.pdb

@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\bin\Debug\ParamsAnahtar.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\bin\Debug\ParamsAnahtar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\bin\Debug\ParamsAnahtar.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\obj\Debug\ParamsAnahtar.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\obj\Debug\ParamsAnahtar.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\obj\Debug\ParamsAnahtar.exe
+C:\Users\303BUSRA_AKSAM\source\repos\ParamsAnahtar\ParamsAnahtar\obj\Debug\ParamsAnahtar.pdb

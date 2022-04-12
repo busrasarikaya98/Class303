@@ -1,0 +1,7 @@
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\obj\Debug\StaticMethod.csproj.AssemblyReference.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\obj\Debug\StaticMethod.csproj.CoreCompileInputs.cache
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\bin\Debug\StaticMethod.exe.config
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\bin\Debug\StaticMethod.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\bin\Debug\StaticMethod.pdb
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\obj\Debug\StaticMethod.exe
+C:\Users\303BUSRA_AKSAM\source\repos\StaticMethod\StaticMethod\obj\Debug\StaticMethod.pdb
