@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<partial name="_Style" />
+
+</head>
+
+
+<body>
+
+	<!-- Begin page -->
+	<div id="wrapper">
+
+		<!-- Top Bar Start -->
+		<partial name="_TopBar" />
+		<!-- Top Bar End -->
+		<!-- ========== Left Sidebar Start ========== -->
+		<partial name="_SideMenu" />
+		<!-- Left Sidebar End -->
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<!-- ============================================================== -->
+		<div class="content-page">
+			<!-- Start content -->
+			<div class="content">
+				<div class="container-fluid">
+					@RenderBody()
+				</div> <!-- container -->
+				<partial name="_Footer" />
+			</div> <!-- content -->
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Right content here -->
+		<!-- ============================================================== -->
+	</div>
+	<!-- END wrapper -->
+
+	<partial name="_Javascriptt" />
+
+
+
+</body>
+</html>

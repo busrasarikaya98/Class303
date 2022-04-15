@@ -1,0 +1,14 @@
+﻿@{
+	Layout = "_Layout";
+}
+
+<h1>
+	@*<a  asp-controller="Hesap" asp-action="Giris">
+		ADMİN GİRİŞİ
+	</a>
+	<input type="button" onclick="location.href='@Url.Action("Giris", "Hesap")'" />*@
+	@using (Html.BeginForm("Giris", "Hesap"))
+                            {
+                                <button class="btn btn-dark">ADMİN GİRİŞİ</button>
+                            }
+</h1>
