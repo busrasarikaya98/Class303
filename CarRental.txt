@@ -1,0 +1,29 @@
+****************************** CAR RENTAL PROJESI ****************************************
+1)invidual account projesinde appsetting.jsondaki bağlantı stringini ve program.cs connection stringibi kendi projeye e ekledik
+2)nuget paketlerini yükledik
+3)modelsta deneme sınıfına key attribute ve proplar koyduk
+4)projectte propertieste nullable disable yaparız .net6 özelliği
+5)migration eklemeleri database için
+6)controller ekledik framework ile; model class ve data seçtik ref tik i geri çektik ve layoutunu ekleyip controllerı olusturduk..
+7)denemes linkinde laayoutuna renderbody() ekledik.
+8)hazır template aldık themeforest royal cars- https://themewagon.com/ -,nulled.cx
+9)hazır templatei wwwroota attık istediğimiz sayfayı layouta atıp parçaladık
+10)parçalama yaparken razor görünümü ile yeni layout açtık bunlara verdiğimiz isimleri layout içinde <partial name,= ile yönlendirdik.
+11)layout linki verdiğimiz sayfa layoutu görerek açar
+12)Car cs ini açtık içine özelliklerini verdik brand id gibi özellikleri hataya yer vermemek için ikinci bir tablo ile göstereceğiz
+Yani ikinci bir sınıf açılacak...
+13)fake datayı dbye attık
+14)Kullanıcı Girişi için kayıt ol giriş yap ve  şifremi unuttum modelleri ile hesap controllerlarını oluşturduk.
+15)hukum ve kosulları googledan alıp yönlendirme yaptık butonda
+16)hesap cont.da kayıt ol metotlarında http post kullanırız bizden servere gidenler postttur
+view butondan metottan sonra gösterilen yerdir -id frontent tarafında name backend tarafında kullanılır
+17)kayit.cste form controllerlarda method a post vermeliyiz yoksa controllerlardaki method oluşmaz
+18)user kayıt için user.cs oluşturduk burada kullanıcı kayıt propertyleri oluşturduk. navigasyon modeli kullandık navigasyon ile yeni cs açtık rolle cs i
+19)veritabanına kaydetme maplemek -notmapped kaydetme demek örneğin şifre tekrarını kaydetmez
+20)her seyin bir classtan yapılmasına fluent api denir 
+21)database notation id yi elle girerken olusacak hataları engeller
+
+
+
+
+
