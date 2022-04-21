@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarRental.Models
 {
-    public class Userrr
+    public class Userr
     {
 
 

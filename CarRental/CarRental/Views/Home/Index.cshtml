@@ -1,13 +1,13 @@
-﻿@{
+﻿@*@{
 	Layout = "_Layout";
 }
-
+*@
 <h1>
-	@*<a  asp-controller="Hesap" asp-action="Giris">
+@*	<a  asp-controller="Hesap" asp-action="Giris">
 		ADMİN GİRİŞİ
-	</a>
-	<input type="button" onclick="location.href='@Url.Action("Giris", "Hesap")'" />*@
-	@using (Html.BeginForm("Giris", "Hesap"))
+	</a>*@
+@*	<input type="button" onclick="location.href='@Url.Action("Giris", "Hesap",FormMethod.Get)'" />*@
+	@using (Html.BeginForm("Giris", "Hesap",FormMethod.Get))
                             {
                                 <button class="btn btn-dark">ADMİN GİRİŞİ</button>
                             }

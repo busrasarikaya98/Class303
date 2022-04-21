@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\busra repos\\CarRental\\CarRental\\CarRental.csproj": {}
+    "C:\\Users\\303BUSRA_AKSAM\\Documents\\GitHub\\HtmlExercise\\CarRental\\CarRental\\CarRental.csproj": {}
   },
   "projects": {
-    "D:\\busra repos\\CarRental\\CarRental\\CarRental.csproj": {
+    "C:\\Users\\303BUSRA_AKSAM\\Documents\\GitHub\\HtmlExercise\\CarRental\\CarRental\\CarRental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\busra repos\\CarRental\\CarRental\\CarRental.csproj",
+        "projectUniqueName": "C:\\Users\\303BUSRA_AKSAM\\Documents\\GitHub\\HtmlExercise\\CarRental\\CarRental\\CarRental.csproj",
         "projectName": "CarRental",
-        "projectPath": "D:\\busra repos\\CarRental\\CarRental\\CarRental.csproj",
+        "projectPath": "C:\\Users\\303BUSRA_AKSAM\\Documents\\GitHub\\HtmlExercise\\CarRental\\CarRental\\CarRental.csproj",
         "packagesPath": "C:\\Users\\303BUSRA_AKSAM\\.nuget\\packages\\",
-        "outputPath": "D:\\busra repos\\CarRental\\CarRental\\obj\\",
+        "outputPath": "C:\\Users\\303BUSRA_AKSAM\\Documents\\GitHub\\HtmlExercise\\CarRental\\CarRental\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303BUSRA_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,6 +57,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

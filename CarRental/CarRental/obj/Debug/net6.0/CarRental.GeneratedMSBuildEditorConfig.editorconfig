@@ -8,65 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CarRental
 build_property.RootNamespace = CarRental
-build_property.ProjectDir = D:\busra repos\CarRental\CarRental\
+build_property.ProjectDir = C:\Users\303BUSRA_AKSAM\Documents\GitHub\HtmlExercise\CarRental\CarRental\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\busra repos\CarRental\CarRental
+build_property.MSBuildProjectDirectory = C:\Users\303BUSRA_AKSAM\Documents\GitHub\HtmlExercise\CarRental\CarRental
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/busra repos/CarRental/CarRental/Views/Hesap/Giris.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/AdminAnaSayfa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5BbmFTYXlmYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Hesap/Aktivasyon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcQWt0aXZhc3lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Hesap/AktivasyonBilgilendirmesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcQWt0aXZhc3lvbkJpbGdpbGVuZGlybWVzaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Hesap/Giris.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcR2lyaXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Hesap/HukumveKosullar.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Hesap/HukumveKosullar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcSHVrdW12ZUtvc3VsbGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Hesap/Kayit.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Hesap/Kayit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcS2F5aXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Hesap/SifreSifirla.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Hesap/SifreSifirla.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcU2lmcmVTaWZpcmxhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Home/Index.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_Footer.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_Javascriptt.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_Javascriptt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9KYXZhc2NyaXB0dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_SideMenu.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_SideMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_Style.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_Style.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_TopBar.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_TopBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/_ViewImports.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/_ViewStart.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/busra repos/CarRental/CarRental/Views/Shared/_Layout.cshtml]
+[C:/Users/303BUSRA_AKSAM/Documents/GitHub/HtmlExercise/CarRental/CarRental/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pihumplo1e

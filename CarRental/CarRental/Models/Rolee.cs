@@ -6,7 +6,7 @@ namespace CarRental.Models
     public class Rolee
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int RoleeID { get; set; }
+        public byte RoleeID { get; set; }
         [Required(ErrorMessage = "{0} Gerekli"),  StringLength(20, MinimumLength = 6, ErrorMessage = "{0} , {2} - {1} Karakter Olmalı"), Display(Name = "Rol Adı")]
         public string RoleeName { get; set; }
     }

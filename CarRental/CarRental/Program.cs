@@ -1,4 +1,5 @@
 using CarRental.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +11,26 @@ builder.Services.AddDbContext<CarRentalDBContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.Configure<Microsoft.AspNetCore.Mvc.CookieTempDataProviderOptions>(options =>
+{
+    options.Cookie.IsEssential = true; //cookie baslatýr
+});
 
+
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None; //site ayarý
+});
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = "/Hesap/Giris"; //cookie olustururken
+    options.AccessDeniedPath = "/Hesap/Giris"; //giris olustururken eger basarýsýz ise buraya yonlendir
+    options.LogoutPath = "/Hesap/Giris"; //logouttan sonra nereye gitsin giris yapmaya gitsin
+
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,7 +43,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseCookiePolicy();
+app.UseAuthentication();
 app.UseRouting();
 
 app.UseAuthorization();
