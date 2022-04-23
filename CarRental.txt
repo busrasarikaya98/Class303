@@ -22,6 +22,134 @@ view butondan metottan sonra gösterilen yerdir -id frontent tarafında name bac
 19)veritabanına kaydetme maplemek -notmapped kaydetme demek örneğin şifre tekrarını kaydetmez
 20)her seyin bir classtan yapılmasına fluent api denir 
 21)database notation id yi elle girerken olusacak hataları engeller
+22)user x = new user() x bir user, user bir tür
+23)DEPENDENCY INJECTION
+private readonly CarRentalDBContext _context;
+        //dep inj. bunun faydası bizim contextimiz ile databasein contexti üretirlir. ve bundan sonra surekli database değil bizim contextimiz ile iş görür.
+        //hız için önemlidir. en genel db contextte kullanılır. en yogun kullanılan oldugu icin. insanları bekletmemek için
+        //çok sık kullanılan dosyalarda çok fazla kullanıcı istekte bulunduğu zaman  kullanıcıları sıraya sokmamak adına bekleme sürelerini azaltmak adına kullanılır
+        public HesapController(CarRentalDBContext context)
+        {
+            _context = context;
+        }
+_context tüm database işlemlerini bilen ve controllerlarda kullanılabilen
+24)hesap controller oluşturduk kayıt giris metodları
+25)ASENKRON ÇALIŞMA
+public async Task< IActionResult> Kayit([Bind("UserID", "Emaill", "Passwordd", "PasswordRepeatt", "FullName", "Surname","MobileNO")] Userr userr)
+        {
+            if (ModelState.IsValid)
+            {
+                await _context.Userrs.AddAsync(userr); //user classına ekledi //userr girilen kullanıcı
+                                                       //memoryde db set türündeki usera ekledik
+                await _context.SaveChangesAsync(); //şimdi database e gitti
+                                                   //asenkron çalışma verimli olarak tüm çekirdekleri kullanma multijob
+                return RedirectToAction("Giris","Hesap");
+            }
+            return View(userr); //form yeniden döndüğünde içerikler silinmeden gelsin
+            //task async işlemciye async görevi veriyor 
+            //await bekletmektir
+        }
+26)HTMLDE INDEX E VALUE VERME KULLANICI TARAFINDAN GİRİLEN DEĞERİ DATADA TUTMA
+public IActionResult Kayit()
+        {
+            Userr userr = new Userr(); //html kısmında value ya model verdiğimiz için error vermemesi için boş user döndürdük
+            return View(userr);
+        }
+27)CLASSTAKİ ERRORLARI GÖSTERMEK İÇİN HTML E
+@model Userr
+//model userr kullanıcının az önceki girdiği bilgiler buraya data olarak geldi
+<!DOCTYPE html>
+<div asp-validation-summary="All" class="text-danger"></div>
+28)ÜYELİK TİPİ ROLEEID 1 OLUR KENDİ ÜYE OLAN HERKES PASİF KULLANICI
+public async Task< IActionResult> Kayit([Bind("UserID", "Emaill", "Passwordd", "PasswordRepeatt", "FullName", "Surname","MobileNO","RoleeID")] Userr userr)
+        {
+            userr.RoleeID = 1;
+28)login ve kayıt işlemleri tamam şimdi authentication kimlik doğrulama işlemleri authorization yetki işlemleri
+authentication ve authorization 
+29)        [Authorize(Roles="PasifKullanıcı")]
+        public IActionResult AktivasyonBilgilendirmesi()
+        {
+            return View();
+        }
+
+yalnızca burada authorize olması önemli
+bu kısma anonimler giremeyecek sadece pasifler girecek
+bad request ise kullanıcının
+30)middleware sitenin heryerinde kullanılacak ara katman
+program.cslerde yazılır, program.cs izinlerden oluşur
+31)aktif pasif admin kullanıcılarını dbcontextte tanımladık
+32)adminanasayfacontrollera authorize koşulu ekledik sadece amin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
