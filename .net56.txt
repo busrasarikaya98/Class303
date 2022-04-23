@@ -1,0 +1,24 @@
+***.NET 5 TEKI PROJEYE .NET 6 YA TAŞIMA ***
+--KLASÖRLERİ REPOSTA TAŞIYIP BOŞ SOLUTIONA ADD DİYİP VAR OLAN PROJELERİ EKLE ŞEKLİNDE EKLERİZ, API KATMANI İÇİN ADD ASP.NET CORE WEB APISI
+
+*SİLME İŞLEMLERİ
+-entitieste dtosta giris yapma islemleri haric digerleri, abstactta ve concretede user ve auth hariç hepsini sileriz 
+-migrationslar temizlenir
+-context klasöründeki dbcontextadı değiştirilir, dbcontextte de sadece user auth verification code ve mail kalır
+-entitylerde projeler farklılık gösterir o yüzden temizleriz
+-buna bağlı olarak businessta dependency resolversta tanımlanan yerler temizlenir
+-userrep te getclaims harici metotlar silinir
+-ioc cont autofacbusinessmoduleda user, auth, verificationcode ve mail olacak(ioc conteyner tanımlamalarıdır)
+-program.cste 5 ve 6 farkları var
+-nuget paketlerini 6.0 a cevirmek gerekir
+-katmanlarda özelliklerde 6.0 a cevirmek gerekir
+
+
+
+**PRODUCT VE CATEGORY
+-ilk önce product ve categorylrein entitylerini oluştururuz entities katmanı.Categoryde id ve name veririz,productta id, catid,name ve price veririz
+-productta virtual olarak category tanımlarız
+-dbsette category ve product tablolarını veririz
+-category ve product repositorylerini olustururuz
+-category ve product service ve managerlarını olustururuz. Burada category repi türettik. IDataResult GetAll list tipinde
+-
