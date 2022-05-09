@@ -13,12 +13,14 @@ namespace WebApi.Controllers
     {
         private IMovieRepository _movieRepository;
         private ISaloonRepository _saloonRepository;
-        private ITimeRepository _timeRepository;
+        private ISeanseRepository _seanseRepository;
+        private IPriceRepository _priceRepository;
         public MoviesController() 
         {
             _movieRepository = new MovieRepository();
-            _timeRepository = new TimeRepository();
+            _seanseRepository = new SeanseRepository();
             _saloonRepository = new SaloonRepository();
+            _priceRepository = new PriceRepository();
         }
         public IActionResult Index()
         {
@@ -27,8 +29,9 @@ namespace WebApi.Controllers
         }
         public IActionResult Add(string message)
         {
-            ViewBag.times = this._timeRepository.GetAll();
+            ViewBag.seanses = this._seanseRepository.GetAll();
             ViewBag.saloons = this._saloonRepository.GetAll();
+            ViewBag.prices = this._priceRepository.GetAll();
             ViewBag.message = message;
             return View();
         }
@@ -63,7 +66,7 @@ namespace WebApi.Controllers
             {
                 return RedirectToAction(route, new ErrorResult(movie.Id, "Please Select Saloon!"));
             }
-            if(movie.TimeId == 0)
+            if(movie.SeanseId == 0)
             {
                 return RedirectToAction(route, new ErrorResult(movie.Id, "Please Select Seanse!"));
             }
@@ -78,6 +81,10 @@ namespace WebApi.Controllers
             if (movie.Description == null)
             {
                 return RedirectToAction(route, new ErrorResult(movie.Id, "Please Enter Description About Movie!"));
+            }
+            if (movie.ImageUrl == null)
+            {
+                return RedirectToAction(route, new ErrorResult(movie.Id, "Please Enter URL!"));
             }
             return RedirectToAction("Index");
         }

@@ -1,0 +1,944 @@
+﻿++Solution 'CinemaTickets' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:CinemaTickets.sln
+++WebApi
+i:{00000000-0000-0000-0000-000000000000}:WebApi
+++Connected Services 
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>833
+++Dependencies
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>832
+++Imports
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>346
+++Properties
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\properties\
+++wwwroot
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\
+++cinemahtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\
+++css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\css\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\js\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\unix\lib\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\lib\
+++bootstrap
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\
+++jquery
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery\
+++jquery-validation
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\
+++dist
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\dist\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery\dist\
+++additional-methods.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.min.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++LICENSE.md
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\license.md
+++jquery-validation-unobtrusive
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation-unobtrusive\
+++jquery.validate.unobtrusive.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++LICENSE.txt
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery\license.txt
+++cinemahomepage.zip
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahomepage.zip
+++cinemahtml.zip
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml.zip
+++favicon.ico
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\favicon.ico
+++bin
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\
+++Controllers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\
+++AccountsController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\accountscontroller.cs
+++AdminsController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\adminscontroller.cs
+++HomeController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\homecontroller.cs
+++MoviesController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\moviescontroller.cs
+++PricesController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\pricescontroller.cs
+++SaloonsController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\saloonscontroller.cs
+++SeansesController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\seansescontroller.cs
+++SeatsController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\seatscontroller.cs
+++TicketsController.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\controllers\ticketscontroller.cs
+++Core
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\
+++DataAccess
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\dataaccess\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\
+++Abstract
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\dataaccess\abstract\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\
+++IBaseRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\dataaccess\abstract\ibaserepository.cs
+++Concrete
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\dataaccess\concrete\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\
+++Model
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\model\
+++IModel.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\model\imodel.cs
+++IMovieRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\imovierepository.cs
+++IPriceRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\ipricerepository.cs
+++ISaloonRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\isaloonrepository.cs
+++ISeanseRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\iseanserepository.cs
+++ISeatRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\iseatrepository.cs
+++ITicketRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\iticketrepository.cs
+++IUserrRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\abstract\iuserrrepository.cs
+++MovieRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\movierepository.cs
+++PriceRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\pricerepository.cs
+++SaloonRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\saloonrepository.cs
+++SeanseRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\seanserepository.cs
+++SeatRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\seatrepository.cs
+++TicketRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\ticketrepository.cs
+++UserrRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\dataaccess\concrete\userrrepository.cs
+++Helpers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\helpers\
+++Migrations
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\migrations\
+++20220509152417_first.cs
+++20220509152417_first.Designer.cs
+++CinemaTicketDbContextModelSnapshot.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\migrations\cinematicketdbcontextmodelsnapshot.cs
+++Models
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\
+++CinemaTicketDbContext.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\cinematicketdbcontext.cs
+++ErrorResult.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\errorresult.cs
+++ErrorViewModel.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\errorviewmodel.cs
+++Movie.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\movie.cs
+++MovieDto.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\moviedto.cs
+++Price.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\price.cs
+++Rolee.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\rolee.cs
+++Saloon.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\saloon.cs
+++Seanse.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\seanse.cs
+++Seat.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\seat.cs
+++Ticket.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\ticket.cs
+++TicketDto.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\ticketdto.cs
+++Userr.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\userr.cs
+++UserrViewModel.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\models\userrviewmodel.cs
+++obj
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\
+++Debug
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\
+++net5.0
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\
+++Razor
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\
+++Views
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\
+++Accounts
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\
+++Admins
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\admins\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\admins\
+++Home
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\home\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\home\
+++Movies
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\movies\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\movies\
+++Add.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\movies\add.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\prices\add.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\saloons\add.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seanses\add.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seats\add.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\tickets\add.cshtml.g.cs
+++Index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\admins\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\home\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\movies\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\prices\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\saloons\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seanses\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seats\index.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\tickets\index.cshtml.g.cs
+++Update.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\movies\update.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\prices\update.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\saloons\update.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seanses\update.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seats\update.cshtml.g.cs
+++Saloons
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\saloons\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\saloons\
+++Seanses
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seanses\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seanses\
+++Seats
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\seats\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seats\
+++Shared
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\shared\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\shared\
+++Tickets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\tickets\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\tickets\
+++_ViewImports.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\_viewimports.cshtml.g.cs
+++_ViewStart.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\_viewstart.cshtml.g.cs
+++ref
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\ref\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\ref\
+++refint
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\refint\
+++staticwebassets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\staticwebassets\
+++.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+++apphost.exe
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\apphost.exe
+++CinemaTickets.AssemblyInfo.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.assemblyinfo.cs
+++CinemaTickets.AssemblyInfoInputs.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.assemblyinfoinputs.cache
+++CinemaTickets.assets.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.assets.cache
+++CinemaTickets.csproj.AssemblyReference.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.csproj.assemblyreference.cache
+++CinemaTickets.GeneratedMSBuildEditorConfig.editorconfig
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.generatedmsbuildeditorconfig.editorconfig
+++CinemaTickets.RazorAssemblyInfo.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.razorassemblyinfo.cache
+++CinemaTickets.RazorAssemblyInfo.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\cinematickets.razorassemblyinfo.cs
+++project.razor.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\project.razor.json
+++WebApi.AssemblyInfo.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.assemblyinfo.cs
+++WebApi.AssemblyInfoInputs.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.assemblyinfoinputs.cache
+++WebApi.assets.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.assets.cache
+++WebApi.csproj.AssemblyReference.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.csproj.assemblyreference.cache
+++WebApi.csproj.BuildWithSkipAnalyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.csproj.buildwithskipanalyzers
+++WebApi.csproj.CopyComplete
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.csproj.copycomplete
+++WebApi.csproj.CoreCompileInputs.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.csproj.corecompileinputs.cache
+++WebApi.csproj.FileListAbsolute.txt
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.csproj.filelistabsolute.txt
+++WebApi.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\ref\webapi.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\refint\webapi.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.dll
+++WebApi.GeneratedMSBuildEditorConfig.editorconfig
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.generatedmsbuildeditorconfig.editorconfig
+++WebApi.genruntimeconfig.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.genruntimeconfig.cache
+++WebApi.MvcApplicationPartsAssemblyInfo.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.mvcapplicationpartsassemblyinfo.cache
+++WebApi.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.pdb
+++WebApi.RazorAssemblyInfo.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.razorassemblyinfo.cache
+++WebApi.RazorAssemblyInfo.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.razorassemblyinfo.cs
+++WebApi.RazorCoreGenerate.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.razorcoregenerate.cache
+++WebApi.RazorTargetAssemblyInfo.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.razortargetassemblyinfo.cache
+++WebApi.RazorTargetAssemblyInfo.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.razortargetassemblyinfo.cs
+++WebApi.TagHelpers.input.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.taghelpers.input.cache
+++WebApi.TagHelpers.output.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.taghelpers.output.cache
+++WebApi.Views.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.views.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.views.dll
+++WebApi.Views.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\webapi.views.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.views.pdb
+++CinemaTickets.csproj.nuget.dgspec.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\cinematickets.csproj.nuget.dgspec.json
+++CinemaTickets.csproj.nuget.g.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\cinematickets.csproj.nuget.g.props
+++CinemaTickets.csproj.nuget.g.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\cinematickets.csproj.nuget.g.targets
+++project.assets.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\project.assets.json
+++project.nuget.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\project.nuget.cache
+++WebApi.csproj.nuget.dgspec.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\webapi.csproj.nuget.dgspec.json
+++WebApi.csproj.nuget.g.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\webapi.csproj.nuget.g.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\webapi.csproj.nuget.g.props
+++WebApi.csproj.nuget.g.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\webapi.csproj.nuget.g.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\webapi.csproj.nuget.g.targets
+++ViewModel
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\viewmodel\
+++UserrViewModelss.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\viewmodel\userrviewmodelss.cs
+++Activation.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\activation.cshtml
+++ActivationInformation.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\activationinformation.cshtml
+++ResetPassword.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\resetpassword.cshtml
+++SignIn.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\signin.cshtml
+++SignUp.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\signup.cshtml
+++TermsandConditions.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\accounts\termsandconditions.cshtml
+++Add.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\movies\add.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\saloons\add.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seanses\add.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seats\add.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\tickets\add.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\prices\add.cshtml
+++Index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\movies\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\saloons\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seanses\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seats\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\tickets\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\admins\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\home\index.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\prices\index.cshtml
+++Update.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\movies\update.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\saloons\update.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seanses\update.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\seats\update.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\prices\update.cshtml
+++_ViewImports.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\_viewstart.cshtml
+++appsettings.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\appsettings.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\appsettings.json
+++Program.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\program.cs
+++Startup.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\startup.cs
+++No service dependencies discovered
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>834
+++Analyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:analyzers
+++Frameworks
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:frameworks
+++Packages
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:packages
+++Sdk.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\sdk\sdk.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\sdk\sdk.targets
+++launchSettings.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\properties\launchsettings.json
+++blog
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\
+++images
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\
+++About.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\about.css
+++About.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\about.html
+++Blog-Template.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog-template.css
+++Contact.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\contact.css
+++Contact.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\contact.html
+++Home.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\home.css
+++HomeIndex.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\homeindex.html
+++index.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\index.html
+++jquery.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\jquery.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery\dist\jquery.js
+++page.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\page.css
+++page.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\page.js
+++Post-Template.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\post-template.css
+++site.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\css\site.css
+++site.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\js\site.js
+++LICENSE
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\license
+++additional-methods.min.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++BaseRepository.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\core\dataaccess\concrete\baserepository.cs
+++EMailWorks.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\helpers\emailworks.cs
+++EncryptionWorks.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\helpers\encryptionworks.cs
+++Activation.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\activation.cshtml.g.cs
+++ActivationInformation.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\activationinformation.cshtml.g.cs
+++ResetPassword.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\resetpassword.cshtml.g.cs
+++SignIn.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\signin.cshtml.g.cs
+++SignUp.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\signup.cshtml.g.cs
+++TermsandConditions.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\accounts\termsandconditions.cshtml.g.cs
+++Privacy.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\home\privacy.cshtml.g.cs
+++_Layout.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\shared\_layout.cshtml.g.cs
+++_ValidationScriptsPartial.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\shared\_validationscriptspartial.cshtml.g.cs
+++Error.cshtml.g.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\shared\error.cshtml.g.cs
+++WebApi.StaticWebAssets.Manifest.cache
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\staticwebassets\webapi.staticwebassets.manifest.cache
+++Privacy.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\home\privacy.cshtml
+++_Layout.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\shared\error.cshtml
+++appsettings.Development.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\appsettings.development.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.15\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore (5.0.15)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>845
+++Microsoft.EntityFrameworkCore.Design (5.0.15)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>847
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.15)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>846
+++Microsoft.EntityFrameworkCore.Tools (5.0.15)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>848
+++NEST (7.17.1)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:>849
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\sdk\sdk.props
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.201\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\sdk\sdk.targets
+++blog.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\blog.html
+++post.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\post.html
+++post-1.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\post-1.html
+++post-2.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\post-2.html
+++post-3.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\post-3.html
+++post-4.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\post-4.html
+++post-5.html
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\blog\post-5.html
+++1.jpeg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\1.jpeg
+++2.jpeg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\2.jpeg
+++3.jpeg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\3.jpeg
+++benjaminslider.jpg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\benjaminslider.jpg
+++danish-girl-posters-redmayne-vikander-triplet.webp
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\danish-girl-posters-redmayne-vikander-triplet.webp
+++default-image.jpg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\default-image.jpg
+++imitationgame.jpg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\imitationgame.jpg
+++royalcinemaheadersaloon.png
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\royalcinemaheadersaloon.png
+++royalmisir.jpg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\royalmisir.jpg
+++topmovies2.jpg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\topmovies2.jpg
+++yellowticket.jpg
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\cinemahtml\images\yellowticket.jpg
+++Microsoft.Common.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Sdk.Razor.CurrentVersion.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.props
+++Microsoft.NET.Sdk.Web.ProjectSystem.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.props
+++Microsoft.NET.Sdk.Publish.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++Sdk.Razor.CurrentVersion.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.targets
+++Microsoft.NET.Sdk.Web.ProjectSystem.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.targets
+++Microsoft.NET.Sdk.Publish.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.targets
+++bootstrap.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery\dist\jquery.min.js
+++runtimes
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\
+++Elasticsearch.Net.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\elasticsearch.net.dll
+++Humanizer.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\humanizer.dll
+++Microsoft.Data.SqlClient.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.data.sqlclient.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+++Microsoft.EntityFrameworkCore.Abstractions.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.entityframeworkcore.abstractions.dll
+++Microsoft.EntityFrameworkCore.Design.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.entityframeworkcore.design.dll
+++Microsoft.EntityFrameworkCore.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.entityframeworkcore.dll
+++Microsoft.EntityFrameworkCore.Relational.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.entityframeworkcore.relational.dll
+++Microsoft.EntityFrameworkCore.SqlServer.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.entityframeworkcore.sqlserver.dll
+++Microsoft.Extensions.DependencyInjection.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.extensions.dependencyinjection.dll
+++Microsoft.Identity.Client.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.identity.client.dll
+++Microsoft.IdentityModel.JsonWebTokens.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.identitymodel.jsonwebtokens.dll
+++Microsoft.IdentityModel.Logging.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.identitymodel.logging.dll
+++Microsoft.IdentityModel.Protocols.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.identitymodel.protocols.dll
+++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.identitymodel.protocols.openidconnect.dll
+++Microsoft.IdentityModel.Tokens.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\microsoft.identitymodel.tokens.dll
+++Nest.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\nest.dll
+++Newtonsoft.Json.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\newtonsoft.json.dll
+++System.Configuration.ConfigurationManager.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\system.configuration.configurationmanager.dll
+++System.Diagnostics.DiagnosticSource.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\system.diagnostics.diagnosticsource.dll
+++System.IdentityModel.Tokens.Jwt.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\system.identitymodel.tokens.jwt.dll
+++System.Runtime.Caching.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\system.runtime.caching.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.runtime.caching.dll
+++System.Security.Cryptography.ProtectedData.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\system.security.cryptography.protecteddata.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.security.cryptography.protecteddata.dll
+++WebApi.deps.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.deps.json
+++WebApi.exe
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.exe
+++WebApi.runtimeconfig.dev.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.runtimeconfig.dev.json
+++WebApi.runtimeconfig.json
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\webapi.runtimeconfig.json
+++Microsoft.NuGet.ImportBefore.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Sdk.Razor.StaticAssets.ProjectSystem.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\sdk\sdk.razor.staticassets.projectsystem.props
+++Microsoft.TypeScript.Default.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.default.props
+++Microsoft.NET.Sdk.Web.DefaultItems.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.defaultitems.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.beforecommon.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++Microsoft.NET.Sdk.Razor.Compilation.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.compilation.targets
+++Microsoft.NET.Sdk.Razor.Configuration.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.configuration.targets
+++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.codegeneration.targets
+++Microsoft.NET.Sdk.Razor.Component.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.component.targets
+++Microsoft.NET.Sdk.Razor.StaticWebAssets.5_0.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.staticwebassets.5_0.targets
+++Microsoft.NET.Sdk.Razor.ScopedCss.5_0.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.scopedcss.5_0.targets
+++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.generateassemblyinfo.targets
+++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.mvcapplicationpartsdiscovery.targets
+++Microsoft.NET.Sdk.Razor.DesignTime.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\razor\microsoft.net.sdk.razor.designtime.targets
+++Microsoft.TypeScript.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files (x86)\microsoft sdks\typescript\4.3\build\microsoft.typescript.targets
+++Microsoft.TypeScript.DotNetCore.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.dotnetcore.targets
+++Microsoft.Web.Designtime.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.designtime.targets
+++Default.pubxml
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\publishprofiles\default.pubxml
+++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\computetargets\microsoft.net.sdk.publish.computefiles.targets
+++Microsoft.NET.Sdk.Publish.FilterFiles.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.filterfiles.targets
+++Microsoft.NET.Sdk.Publish.CopyFiles.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.copyfiles.targets
+++Microsoft.NET.Sdk.Publish.TransformFiles.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\transformtargets\microsoft.net.sdk.publish.transformfiles.targets
+++Microsoft.NET.Sdk.Publish.FileSystem.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\publishtargets\microsoft.net.sdk.publish.filesystem.targets
+++Microsoft.NET.Sdk.DotNetCLITool.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.publish\targets\dotnetclitooltargets\microsoft.net.sdk.dotnetclitool.targets
+++bootstrap.css.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap-grid.css.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-reboot.css.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap.bundle.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.js.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\jquery\dist\jquery.min.map
+++unix
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\unix\
+++win
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\
+++win-arm
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm\
+++win-arm64
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm64\
+++win-x64
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x64\
+++win-x86
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x86\
+++Microsoft.EntityFrameworkCore.Design.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\.nuget\packages\microsoft.entityframeworkcore.design\5.0.15\build\netcoreapp3.0\microsoft.entityframeworkcore.design.props
+++Microsoft.NuGet.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.android)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.ios)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maccatalyst)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.macos)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maui)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.tvos)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.emscripten)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.mono.toolchain)
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++04.03.05.00.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files (x86)\microsoft sdks\typescript\versions\04.03.05.00.props
+++bootstrap.min.css.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap-grid.min.css.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-reboot.min.css.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap.bundle.js.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.min.js.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++native
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm\native\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm64\native\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x64\native\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x86\native\
+++Microsoft.NET.ILLink.Tasks.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++bootstrap.bundle.min.js.map
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++netcoreapp3.1
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\
+++netstandard2.0
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\
+++Microsoft.Data.SqlClient.SNI.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.dll
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.dll
+++Microsoft.Data.SqlClient.SNI.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.pdb
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.pdb
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++WebApi.csproj.user
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\webapi.csproj.user
+++Microsoft.NET.props
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Microsoft.Docker.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++Microsoft.Web.IISSupport.targets
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.iissupport.targets
+++20220509152536_first.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\migrations\20220509152536_first.cs
+++20220509152536_first.Designer.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\migrations\20220509152536_first.designer.cs
+++NewFolder
+++Prices
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\views\prices\
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\obj\debug\net5.0\razor\views\prices\
+++20220509155310_second.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\migrations\20220509155310_second.cs
+++20220509155310_second.Designer.cs
+i:{5476913a-7c07-4392-a868-1eb53693be1c}:c:\users\303busra_aksam\desktop\cinematickets\cinematickets\migrations\20220509155310_second.designer.cs

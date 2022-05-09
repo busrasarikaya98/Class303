@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\303BUSRA_AKSAM\\source\\repos\\CinemaTickets\\CinemaTickets\\WebApi.csproj": {}
+    "C:\\Users\\303BUSRA_AKSAM\\Desktop\\CinemaTickets\\CinemaTickets\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\303BUSRA_AKSAM\\source\\repos\\CinemaTickets\\CinemaTickets\\WebApi.csproj": {
+    "C:\\Users\\303BUSRA_AKSAM\\Desktop\\CinemaTickets\\CinemaTickets\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303BUSRA_AKSAM\\source\\repos\\CinemaTickets\\CinemaTickets\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\303BUSRA_AKSAM\\Desktop\\CinemaTickets\\CinemaTickets\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\303BUSRA_AKSAM\\source\\repos\\CinemaTickets\\CinemaTickets\\WebApi.csproj",
+        "projectPath": "C:\\Users\\303BUSRA_AKSAM\\Desktop\\CinemaTickets\\CinemaTickets\\WebApi.csproj",
         "packagesPath": "C:\\Users\\303BUSRA_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303BUSRA_AKSAM\\source\\repos\\CinemaTickets\\CinemaTickets\\obj\\",
+        "outputPath": "C:\\Users\\303BUSRA_AKSAM\\Desktop\\CinemaTickets\\CinemaTickets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303BUSRA_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.15, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.1, )"
             }
           },
           "imports": [

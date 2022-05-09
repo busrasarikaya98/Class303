@@ -21,18 +21,17 @@ namespace WebApi.Core.DataAccess.Concrete
                 return true;
             }
         }
-
         public bool DeleteById(int id)
         {
-            using(var context=new CinemaTicketDbContext())
+            var model = this.GetById(id);
+            using (var context=new CinemaTicketDbContext())
             {
-                var deletedModel = context.Entry(id);
+                var deletedModel = context.Entry(model);
                 deletedModel.State = EntityState.Deleted;
                 context.SaveChanges();
                 return true;
             }
         }
-
         public virtual List<T> GetAll()
         {
             using (var context = new CinemaTicketDbContext())
@@ -40,7 +39,6 @@ namespace WebApi.Core.DataAccess.Concrete
                 return context.Set<T>().ToList();
             }
         }
-
         public T GetById(int id)
         {
            using (var context=new CinemaTicketDbContext())
@@ -48,7 +46,6 @@ namespace WebApi.Core.DataAccess.Concrete
                 return context.Set<T>().SingleOrDefault(u => u.Id == id); //t genericindeki hangi modelse o modelin id si
            }
         }
-
         public bool Update(T model)
         {
            using(var context=new CinemaTicketDbContext())

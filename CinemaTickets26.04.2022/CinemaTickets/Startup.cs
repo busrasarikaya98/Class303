@@ -8,6 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApi.DataAccess.Abstract;
+using WebApi.DataAccess.Concrete;
+using WebApi.Models;
 
 namespace CinemaTickets
 {
@@ -23,6 +26,12 @@ namespace CinemaTickets
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<ISaloonRepository, SaloonRepository>();
+            services.AddScoped<ISeatRepository, SeatRepository>();
+            services.AddScoped<ITicketRepository, TicketRepository>();
+            services.AddScoped<ISeanseRepository, SeanseRepository>();
+            services.AddScoped<CinemaTicketDbContext, CinemaTicketDbContext>();
             services.AddControllersWithViews();
         }
 

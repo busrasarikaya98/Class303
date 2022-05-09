@@ -10,11 +10,11 @@ namespace WebApi.DataAccess.Concrete
 {
     public class MovieRepository : BaseRepository<Movie>, IMovieRepository
     {
-        public List<Movie> GetAllByTimeId(int timeId)
+        public List<Movie> GetAllByTimeId(int seanseId)
         {
             using (var context = new CinemaTicketDbContext())
             {
-                return context.Set<Movie>().Where(t => t.TimeId == timeId).ToList();
+                return context.Set<Movie>().Where(t => t.SeanseId == seanseId).ToList();
             }
         }
         public List<Movie> GetAllBySaloonId(int saloonId)
@@ -29,15 +29,16 @@ namespace WebApi.DataAccess.Concrete
             using (var context = new CinemaTicketDbContext())
             {
                 var result = from m in context.Movies
-                             join t in context.Times on m.TimeId equals t.Id
+                             join t in context.Seanses on m.SeanseId equals t.Id
                              join s in context.Saloons on m.SaloonId equals s.Id
                              select new MovieDto()
                              {
                                  Id = m.Id,
                                  Name = m.Name,
                                  Description = m.Description,
-                                 IMDB = m.IMDB,                                 
-                                 Time = t.MovieTime,                                 
+                                 IMDB = m.IMDB,
+                                 ImageUrl= m.ImageUrl,
+                                 Seanse = t.MovieTime,                                 
                                  Saloon=s.Name
                              };
                 return result.ToList();

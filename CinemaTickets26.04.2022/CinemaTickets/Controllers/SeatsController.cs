@@ -20,41 +20,48 @@ namespace WebApi.Controllers
         [HttpGet]
         public IActionResult GetById(int id)
         {
-            var saloon = this._seatRepository.GetById(id);
-            if (saloon != null)
+            var seat = this._seatRepository.GetById(id);
+            if (seat != null)
             {
-                return Ok(saloon);
+                return Ok(seat);
             }
-            return BadRequest(new ErrorResult(saloon.Id, "Saloon is not found"));
+            return BadRequest(new ErrorResult(seat.Id, "Seat is not found"));
         }
         public IActionResult Add(string message)
         {
             ViewBag.message = message;
             return View();
         }
-        [HttpPost]
-        public IActionResult Save(Saloon saloon)
+        public IActionResult Update(int id, string message)
         {
-            string route = (saloon.Id == 0) ? "Add" : "Update";
-            if (saloon.Name == null)
+            var seat = this._seatRepository.GetById(id);
+            if (seat == null)
             {
-                return BadRequest(new ErrorResult(saloon.Id, "Please Enter Name"));
+                RedirectToAction("Index");
             }
-            if (saloon.Id == 0)
+            ViewBag.seat = seat;
+            ViewBag.message = message;
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Save(Seat seat)
+        {
+            string route = (seat.Id == 0) ? "Add" : "Update";
+            if (seat.Id == 0)
             {
-                this._seatRepository.Add(saloon);
+                this._seatRepository.Add(seat);
             }
             else
             {
-                this._seatRepository.Update(saloon);
+                this._seatRepository.Update(seat);
             }
-            return Ok(saloon);
+            return RedirectToAction("Index");
         }
-        [HttpDelete]
-        public IActionResult DeleteById(Saloon saloon)
+        //[HttpDelete]
+        public IActionResult Delete(int id)
         {
-            this._seatRepository.DeleteById(saloon.Id);
-            return Ok(saloon);
+            this._seatRepository.DeleteById(id);
+            return RedirectToAction("Index");
         }
     }
 }

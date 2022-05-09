@@ -12,20 +12,25 @@ namespace WebApi.Models
         public string Name { get; set; }
         public double IMDB { get; set; }
         public string Description { get; set; }
-        public int TimeId { get; set; }
+        public string ImageUrl { get; set; }
+        public int SeanseId { get; set; }
         public int SaloonId { get; set; }
+        public int PriceId { get; set; }
+        public virtual Seanse Seanse { get; set; }
 
         public Movie()
         {
         }
-        public Movie(int id,int saloonId,int timeId,string name,double imdb,string description)
+        public Movie(int id,int saloonId,int seanseId,string name,double imdb,string description,string imageUrl,int price)
         {
             Id = id;
             Name = name;
             IMDB = imdb;
             Description = description;
-            TimeId = timeId;
+            ImageUrl = imageUrl;
+            SeanseId = seanseId;
             SaloonId = saloonId;
+            PriceId = price;
         }
     }
 }

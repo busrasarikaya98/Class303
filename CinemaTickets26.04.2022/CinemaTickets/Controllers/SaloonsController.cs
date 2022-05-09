@@ -36,6 +36,18 @@ namespace WebApi.Controllers
             ViewBag.message = message;
             return View();
         }
+        public IActionResult Update(int id, string message)
+        {
+            var saloon = this._saloonRepository.GetById(id);
+            if (saloon == null)
+            {
+                RedirectToAction("Index");
+            }
+            ViewBag.saloon = saloon;
+            ViewBag.message = message;
+            return View();
+
+        }
         [HttpPost]
         public IActionResult Save(Saloon saloon)
         {
@@ -52,13 +64,13 @@ namespace WebApi.Controllers
             {
                 this._saloonRepository.Update(saloon);
             }
-            return Ok(saloon);
+            return RedirectToAction("Index");
         }
-        [HttpDelete]
-        public IActionResult DeleteById(Saloon saloon)
+        //[HttpDelete]
+        public IActionResult Delete(int id)
         {
-            this._saloonRepository.DeleteById(saloon.Id);
-            return Ok(saloon);
+            this._saloonRepository.DeleteById(id);
+            return RedirectToAction("Index");
         }
     }
 }
